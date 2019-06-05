@@ -1,7 +1,10 @@
 # 智能手表测试项目
 
-> Author: AmosHuKe,SkyLyt,sunJ96  
-> Vue2.0 - Uni-App - ColorUi  
+[![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
+[![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
+[![ColorUI](https://img.shields.io/badge/UI-ColorUI-%230081ff.svg)](https://github.com/weilanwl/ColorUI)
+[![HBuilderX-v1.9.9](https://img.shields.io/badge/HBuilderX-v1.9.9-green.svg)](http://www.dcloud.io/hbuilderx.html)
+
 
 ## 目录  
 
