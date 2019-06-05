@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "watch-test",
+  "compilerVersion": "1.9.9",
+  "usingComponents": {
+    "cu-custom": "/lib/colorui/components/cu-custom",
+    "home": "/pages/index/children/home",
+    "list": "/pages/index/children/list",
+    "ble": "/pages/index/children/ble"
+  }
+}
