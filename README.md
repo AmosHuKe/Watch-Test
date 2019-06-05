@@ -1,7 +1,7 @@
 # 智能手表测试项目
 
 > Author: AmosHuKe,SkyLyt,sunJ96  
-> Uni-App
+> Uni-App  
 
 ## 目录  
 
@@ -10,5 +10,5 @@
 ├── common  // 共用组件文件夹  
 ├── components  // 组件文件夹  
 ├── pages  // 页面文件夹  
-├── lib  // 第三方库/框架 
+├── lib  // 第三方库/框架  
 ├── static  // 静态文件  
