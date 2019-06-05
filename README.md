@@ -7,11 +7,19 @@
 
 
 ## 目录  
-
+```
 ├── App.vue  // APP入口文件  
 ├── main.js  // 项目配置文件  
 ├── common  // 共用组件文件夹  
 ├── components  // 组件文件夹  
 ├── pages  // 页面文件夹  
+│   └── index  // 主布局页
+│   │   ├── index.vue  // 主布局页
+│   │   ├── children  // 布局子页
+│   |   |   ├── home.vue //首页
+│   |   |   ├── ble.vue //设备（蓝牙）
 ├── lib  // 第三方库/框架  
+│   └── colorui  // ColorUi
 ├── static  // 静态文件  
+
+```
