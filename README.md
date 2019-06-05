@@ -1,7 +1,7 @@
 # 智能手表测试项目
 
 > Author: AmosHuKe,SkyLyt,sunJ96  
-> Vue2.0 - Uni-App  
+> Vue2.0 - Uni-App - ColorUi  
 
 ## 目录  
 
