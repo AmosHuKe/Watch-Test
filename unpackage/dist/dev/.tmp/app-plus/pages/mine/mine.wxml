@@ -1,1 +1,1 @@
-<view class="_div" bind:__l="__l"></view>
+<view class="mine" bind:__l="__l"><cu-custom bgColor="bg-white" isBack="{{false}}" vue-slots="{{['backText','content']}}"><view slot="backText"></view><view slot="content">我的</view></cu-custom></view>

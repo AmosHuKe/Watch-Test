@@ -102,7 +102,7 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/ble/ble":1,"pages/home/home":1};
+/******/ 		var cssChunks = {"lib/colorui/components/cu-custom":1,"pages/ble/ble":1,"pages/home/home":1,"pages/motion/motion":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {

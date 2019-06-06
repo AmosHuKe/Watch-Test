@@ -1,5 +1,11 @@
 <template>
-	<view>
+	<view class="ble">
+		<!-- 顶部 -->
+		<cu-custom bgColor="bg-white" :isBack="false">
+			<block slot="backText"></block>
+			<block slot="content">设备</block>
+		</cu-custom>
+		
 		<view class="cu-list menu sm-border card-menu margin-top" v-for="(bleList,index) in bleData" v-bind:key="index">
 			<view class="cu-item">
 				<view class="content">

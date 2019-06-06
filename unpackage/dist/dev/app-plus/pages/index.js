@@ -1,2 +1,2 @@
-setCssToHead([".",[1],"mainIndex{ padding-top: ",[0,64],"; padding-bottom:",[0,128],"; }\n",],undefined,{path:"./pages/index.wxss"})();
+setCssToHead([".",[1],"mainIndex{ padding-bottom:",[0,128],"; }\n",],undefined,{path:"./pages/index.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index.wxml') } }));

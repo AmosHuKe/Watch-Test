@@ -1,11 +1,11 @@
 <template>
 	<view>
 		<view class="mainIndex">
-			<home v-if="PageCur=='home'"></home>
-			<motion v-if="PageCur=='motion'"></motion>
-			<ble v-if="PageCur=='ble'"></ble>
-			<goal v-if="PageCur=='goal'"></goal>
-			<mine v-if="PageCur=='mine'"></mine>
+			<home v-if="PageCur=='home'"></home> <!-- 首页 -->
+			<motion v-if="PageCur=='motion'"></motion> <!-- 运动 -->
+			<ble v-if="PageCur=='ble'"></ble> <!-- 设备蓝牙 -->
+			<goal v-if="PageCur=='goal'"></goal> <!-- 目标 -->
+			<mine v-if="PageCur=='mine'"></mine> <!-- 我的 -->
 		</view>
 		
 		<view class="cu-bar tabbar bg-white shadow foot">
@@ -41,6 +41,7 @@
 		data() {
 			return {
 				PageCur: 'home', //切换菜单
+				toPageCur: '', //上次切换的菜单
 			}
 		},
 		methods: {
@@ -52,7 +53,15 @@
 		watch:{
 			//监听菜单变化
 			'PageCur': function(newVal){
-				
+				var _this=this
+				if(newVal!="ble" && _this.toPageCur=="ble"){
+					uni.stopBluetoothDevicesDiscovery({
+					  success(res) {
+						console.log("关闭蓝牙搜索"+res)
+					  }
+					})
+				}
+				_this.toPageCur=newVal //赋值上一次切换的菜单
 			},
 		}
 	}
@@ -60,7 +69,6 @@
 
 <style>
 	.mainIndex{
-		padding-top: 64upx;
 		padding-bottom:128upx;
 	}
 </style>

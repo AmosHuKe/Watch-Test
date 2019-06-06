@@ -98,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -140,7 +140,8 @@ var _default =
 {
   data: function data() {
     return {
-      PageCur: 'home' //切换菜单
+      PageCur: 'home', //切换菜单
+      toPageCur: '' //上次切换的菜单
     };
   },
   methods: {
@@ -152,8 +153,17 @@ var _default =
   watch: {
     //监听菜单变化
     'PageCur': function PageCur(newVal) {
+      var _this = this;
+      if (newVal != "ble" && _this.toPageCur == "ble") {
+        uni.stopBluetoothDevicesDiscovery({
+          success: function success(res) {
+            console.log("关闭蓝牙搜索" + res, " at pages\\index.vue:60");
+          } });
 
+      }
+      _this.toPageCur = newVal; //赋值上一次切换的菜单
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 

@@ -1,6 +1,5 @@
 
 .mainIndex{
-	padding-top: 64rpx;
 	padding-bottom:128rpx;
 }
 

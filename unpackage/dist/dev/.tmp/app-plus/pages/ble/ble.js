@@ -119,6 +119,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -136,16 +142,16 @@ var _default =
       //初始化蓝牙
       uni.openBluetoothAdapter({
         success: function success(res) {
-          console.log(res, " at pages\\ble\\ble.vue:39");
+          console.log(res, " at pages\\ble\\ble.vue:45");
           if (res.errMsg == "openBluetoothAdapter:ok") {
-            console.log("ok", " at pages\\ble\\ble.vue:41");
+            console.log("ok", " at pages\\ble\\ble.vue:47");
             //搜寻蓝牙
             uni.startBluetoothDevicesDiscovery({
               services: [],
               success: function success(res) {
                 //搜寻新蓝牙
                 uni.onBluetoothDeviceFound(function (devices) {
-                  console.log('new device list has founded', " at pages\\ble\\ble.vue:48");
+                  console.log('new device list has founded', " at pages\\ble\\ble.vue:54");
                   var bels = devices.devices[0]; //蓝牙信息
                   if (_this.bleIndex.indexOf(bels.deviceId) == -1) {
                     if (bels.name == "") {
