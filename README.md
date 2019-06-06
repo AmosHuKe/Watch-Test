@@ -15,14 +15,22 @@
 ├── common    //共用文件
 ├── components    //组件文件
 ├── pages    //页面文件夹  
-│   └── index    //主布局页
-│   │   ├── index.vue    //主布局页
-│   │   ├── children    //布局子页
-│   |   |   ├── home.vue   //首页
-│   |   |   ├── motion.vue   //运动
-│   |   |   ├── ble.vue   //设备（蓝牙）
-│   |   |   ├── goal.vue   //目标
-│   |   |   ├── mine.vue   //我的
+│   └── index.vue    //主布局页
+│   └── home    //首页
+│   │   ├── children  //首页子
+│   │   ├── home.vue   //首页
+│   └── motion    //运动
+│   │   ├── children  //运动页子
+│   │   ├── motion.vue   //运动页
+│   └── ble    //设备（蓝牙）
+│   │   ├── children  //设备（蓝牙）页子
+│   │   ├── ble.vue   //设备（蓝牙）页
+│   └── goal    //目标
+│   │   ├── children  //目标页子
+│   │   ├── goal.vue   //目标页
+│   └── mine    //我的
+│   │   ├── children  //我的页子
+│   │   ├── mine.vue   //我的页
 ├── lib    //第三方库/框架  
 │   └── colorui    //ColorUi
 ├── static    //静态文件  

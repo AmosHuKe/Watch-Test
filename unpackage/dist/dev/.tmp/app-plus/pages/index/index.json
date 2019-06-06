@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "home": "/pages/index/children/home",
-    "motion": "/pages/index/children/motion",
-    "ble": "/pages/index/children/ble",
-    "goal": "/pages/index/children/goal",
-    "mine": "/pages/index/children/mine"
-  }
-}

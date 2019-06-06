@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index"
   ],
   "subPackages": [],
   "window": {
@@ -18,10 +18,10 @@
   "compilerVersion": "1.9.9",
   "usingComponents": {
     "cu-custom": "/lib/colorui/components/cu-custom",
-    "home": "/pages/index/children/home",
-    "motion": "/pages/index/children/motion",
-    "ble": "/pages/index/children/ble",
-    "goal": "/pages/index/children/goal",
-    "mine": "/pages/index/children/mine"
+    "home": "/pages/home/home",
+    "motion": "/pages/motion/motion",
+    "ble": "/pages/ble/ble",
+    "goal": "/pages/goal/goal",
+    "mine": "/pages/mine/mine"
   }
 }

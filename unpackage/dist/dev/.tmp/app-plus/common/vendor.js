@@ -16,19 +16,19 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../
 
 _vue.default.component('cu-custom', cuCustom);
 //首页
-var home = function home() {return __webpack_require__.e(/*! import() | pages/index/children/home */ "pages/index/children/home").then(__webpack_require__.bind(null, /*! ./pages/index/children/home.vue */ "../../../../Aproject/github/watch-test/pages/index/children/home.vue"));};
+var home = function home() {return __webpack_require__.e(/*! import() | pages/home/home */ "pages/home/home").then(__webpack_require__.bind(null, /*! ./pages/home/home.vue */ "../../../../Aproject/github/watch-test/pages/home/home.vue"));};
 _vue.default.component('home', home);
 //运动
-var motion = function motion() {return __webpack_require__.e(/*! import() | pages/index/children/motion */ "pages/index/children/motion").then(__webpack_require__.bind(null, /*! ./pages/index/children/motion.vue */ "../../../../Aproject/github/watch-test/pages/index/children/motion.vue"));};
+var motion = function motion() {return __webpack_require__.e(/*! import() | pages/motion/motion */ "pages/motion/motion").then(__webpack_require__.bind(null, /*! ./pages/motion/motion.vue */ "../../../../Aproject/github/watch-test/pages/motion/motion.vue"));};
 _vue.default.component('motion', motion);
 //设备（蓝牙）
-var ble = function ble() {return __webpack_require__.e(/*! import() | pages/index/children/ble */ "pages/index/children/ble").then(__webpack_require__.bind(null, /*! ./pages/index/children/ble.vue */ "../../../../Aproject/github/watch-test/pages/index/children/ble.vue"));};
+var ble = function ble() {return __webpack_require__.e(/*! import() | pages/ble/ble */ "pages/ble/ble").then(__webpack_require__.bind(null, /*! ./pages/ble/ble.vue */ "../../../../Aproject/github/watch-test/pages/ble/ble.vue"));};
 _vue.default.component('ble', ble);
 //目标
-var goal = function goal() {return __webpack_require__.e(/*! import() | pages/index/children/goal */ "pages/index/children/goal").then(__webpack_require__.bind(null, /*! ./pages/index/children/goal.vue */ "../../../../Aproject/github/watch-test/pages/index/children/goal.vue"));};
+var goal = function goal() {return __webpack_require__.e(/*! import() | pages/goal/goal */ "pages/goal/goal").then(__webpack_require__.bind(null, /*! ./pages/goal/goal.vue */ "../../../../Aproject/github/watch-test/pages/goal/goal.vue"));};
 _vue.default.component('goal', goal);
 //我的
-var mine = function mine() {return __webpack_require__.e(/*! import() | pages/index/children/mine */ "pages/index/children/mine").then(__webpack_require__.bind(null, /*! ./pages/index/children/mine.vue */ "../../../../Aproject/github/watch-test/pages/index/children/mine.vue"));};
+var mine = function mine() {return __webpack_require__.e(/*! import() | pages/mine/mine */ "pages/mine/mine").then(__webpack_require__.bind(null, /*! ./pages/mine/mine.vue */ "../../../../Aproject/github/watch-test/pages/mine/mine.vue"));};
 _vue.default.component('mine', mine);
 
 _vue.default.config.productionTip = false;
@@ -43,10 +43,10 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
-/*!******************************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \******************************************************************************/
+/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Findex\"}":
+/*!**********************************************************************!*\
+  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Findex"} ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -54,7 +54,7 @@ createApp(app).$mount();
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../../../Aproject/github/watch-test/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index.vue */ "../../../../Aproject/github/watch-test/pages/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 

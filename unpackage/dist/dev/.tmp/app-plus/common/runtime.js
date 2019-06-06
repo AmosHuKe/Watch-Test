@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/index/children/ble":1,"pages/index/children/home":1};
+/******/ 		var cssChunks = {"pages/ble/ble":1,"pages/home/home":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"lib/colorui/components/cu-custom":"lib/colorui/components/cu-custom","pages/index/children/ble":"pages/index/children/ble","pages/index/children/goal":"pages/index/children/goal","pages/index/children/home":"pages/index/children/home","pages/index/children/mine":"pages/index/children/mine","pages/index/children/motion":"pages/index/children/motion"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"lib/colorui/components/cu-custom":"lib/colorui/components/cu-custom","pages/ble/ble":"pages/ble/ble","pages/goal/goal":"pages/goal/goal","pages/home/home":"pages/home/home","pages/mine/mine":"pages/mine/mine","pages/motion/motion":"pages/motion/motion"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

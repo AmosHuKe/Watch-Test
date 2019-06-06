@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "home": "/pages/home/home",
+    "motion": "/pages/motion/motion",
+    "ble": "/pages/ble/ble",
+    "goal": "/pages/goal/goal",
+    "mine": "/pages/mine/mine"
+  }
+}
