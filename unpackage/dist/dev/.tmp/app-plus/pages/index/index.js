@@ -98,7 +98,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
 //
 //
 //
@@ -138,25 +140,20 @@ var _default =
 {
   data: function data() {
     return {
-      PageCur: 'home' };
-
+      PageCur: 'home' //切换菜单
+    };
   },
   methods: {
     NavChange: function NavChange(e) {
+      //底部菜单切换
       this.PageCur = e.currentTarget.dataset.cur;
-    },
-    tick: function tick() {
-      setTimeout(function () {uni.vibrateLong();}, 0);
-      setTimeout(function () {uni.vibrateShort();}, 500);
-      setTimeout(function () {uni.vibrateShort();}, 1500);
-      setTimeout(function () {uni.vibrateLong();}, 2000);
     } },
 
   watch: {
+    //监听菜单变化
     'PageCur': function PageCur(newVal) {
 
     } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 

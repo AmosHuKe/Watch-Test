@@ -13,16 +13,23 @@ var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../Aproject/github/watch-test/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | lib/colorui/components/cu-custom */ "lib/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./lib/colorui/components/cu-custom.vue */ "../../../../Aproject/github/watch-test/lib/colorui/components/cu-custom.vue"));};
 
 
-_vue.default.component('cu-custom', cuCustom);var home = function home() {return __webpack_require__.e(/*! import() | pages/index/children/home */ "pages/index/children/home").then(__webpack_require__.bind(null, /*! ./pages/index/children/home.vue */ "../../../../Aproject/github/watch-test/pages/index/children/home.vue"));};
 
-
-_vue.default.component('home', home);var list = function list() {return __webpack_require__.e(/*! import() | pages/index/children/list */ "pages/index/children/list").then(__webpack_require__.bind(null, /*! ./pages/index/children/list.vue */ "../../../../Aproject/github/watch-test/pages/index/children/list.vue"));};
-
-
-_vue.default.component('list', list);var ble = function ble() {return __webpack_require__.e(/*! import() | pages/index/children/ble */ "pages/index/children/ble").then(__webpack_require__.bind(null, /*! ./pages/index/children/ble.vue */ "../../../../Aproject/github/watch-test/pages/index/children/ble.vue"));};
-
-
+_vue.default.component('cu-custom', cuCustom);
+//首页
+var home = function home() {return __webpack_require__.e(/*! import() | pages/index/children/home */ "pages/index/children/home").then(__webpack_require__.bind(null, /*! ./pages/index/children/home.vue */ "../../../../Aproject/github/watch-test/pages/index/children/home.vue"));};
+_vue.default.component('home', home);
+//运动
+var motion = function motion() {return __webpack_require__.e(/*! import() | pages/index/children/motion */ "pages/index/children/motion").then(__webpack_require__.bind(null, /*! ./pages/index/children/motion.vue */ "../../../../Aproject/github/watch-test/pages/index/children/motion.vue"));};
+_vue.default.component('motion', motion);
+//设备（蓝牙）
+var ble = function ble() {return __webpack_require__.e(/*! import() | pages/index/children/ble */ "pages/index/children/ble").then(__webpack_require__.bind(null, /*! ./pages/index/children/ble.vue */ "../../../../Aproject/github/watch-test/pages/index/children/ble.vue"));};
 _vue.default.component('ble', ble);
+//目标
+var goal = function goal() {return __webpack_require__.e(/*! import() | pages/index/children/goal */ "pages/index/children/goal").then(__webpack_require__.bind(null, /*! ./pages/index/children/goal.vue */ "../../../../Aproject/github/watch-test/pages/index/children/goal.vue"));};
+_vue.default.component('goal', goal);
+//我的
+var mine = function mine() {return __webpack_require__.e(/*! import() | pages/index/children/mine */ "pages/index/children/mine").then(__webpack_require__.bind(null, /*! ./pages/index/children/mine.vue */ "../../../../Aproject/github/watch-test/pages/index/children/mine.vue"));};
+_vue.default.component('mine', mine);
 
 _vue.default.config.productionTip = false;
 

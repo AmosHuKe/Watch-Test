@@ -85,10 +85,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     console.log('App Launch', " at App.vue:4");
   },
   onShow: function onShow() {
-    console.log('App Show', " at App.vue:7");
+    console.log('App 开启', " at App.vue:7");
   },
   onHide: function onHide() {
-    console.log('App Hide', " at App.vue:10");
+    console.log('App 关闭', " at App.vue:10");
   } };exports.default = _default;
 
 /***/ }),

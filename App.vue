@@ -4,10 +4,10 @@
 			console.log('App Launch')
 		},
 		onShow: function() {
-			console.log('App Show')
+			console.log('App 开启')
 		},
 		onHide: function() {
-			console.log('App Hide')
+			console.log('App 关闭')
 		}
 	}
 </script>

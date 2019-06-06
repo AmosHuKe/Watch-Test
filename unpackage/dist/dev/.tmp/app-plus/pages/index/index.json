@@ -1,8 +1,9 @@
 {
-  "navigationBarTitleText": "uni-app",
   "usingComponents": {
     "home": "/pages/index/children/home",
-    "list": "/pages/index/children/list",
-    "ble": "/pages/index/children/ble"
+    "motion": "/pages/index/children/motion",
+    "ble": "/pages/index/children/ble",
+    "goal": "/pages/index/children/goal",
+    "mine": "/pages/index/children/mine"
   }
 }
