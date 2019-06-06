@@ -1,0 +1,1 @@
+<view class="goal" bind:__l="__l"><cu-custom bgColor="bg-white" isBack="{{false}}" vue-slots="{{['backText','content']}}"><view slot="backText"></view><view slot="content">目标</view></cu-custom></view>
