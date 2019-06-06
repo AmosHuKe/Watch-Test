@@ -1,34 +1,34 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../../../Aproject/github/watch-test/main.js":
-/*!*********************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js ***!
-  \*********************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js":
+/*!*********************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../Aproject/github/watch-test/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | lib/colorui/components/cu-custom */ "lib/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./lib/colorui/components/cu-custom.vue */ "../../../../Aproject/github/watch-test/lib/colorui/components/cu-custom.vue"));};
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../Amos_project/project/github/Watch-Test/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | lib/colorui/components/cu-custom */ "lib/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./lib/colorui/components/cu-custom.vue */ "../../../../../Amos_project/project/github/Watch-Test/lib/colorui/components/cu-custom.vue"));};
 
 
 
 _vue.default.component('cu-custom', cuCustom);
 //首页
-var home = function home() {return __webpack_require__.e(/*! import() | pages/home/home */ "pages/home/home").then(__webpack_require__.bind(null, /*! ./pages/home/home.vue */ "../../../../Aproject/github/watch-test/pages/home/home.vue"));};
+var home = function home() {return __webpack_require__.e(/*! import() | pages/home/home */ "pages/home/home").then(__webpack_require__.bind(null, /*! ./pages/home/home.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/home/home.vue"));};
 _vue.default.component('home', home);
 //运动
-var motion = function motion() {return __webpack_require__.e(/*! import() | pages/motion/motion */ "pages/motion/motion").then(__webpack_require__.bind(null, /*! ./pages/motion/motion.vue */ "../../../../Aproject/github/watch-test/pages/motion/motion.vue"));};
+var motion = function motion() {return __webpack_require__.e(/*! import() | pages/motion/motion */ "pages/motion/motion").then(__webpack_require__.bind(null, /*! ./pages/motion/motion.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/motion/motion.vue"));};
 _vue.default.component('motion', motion);
 //设备（蓝牙）
-var ble = function ble() {return __webpack_require__.e(/*! import() | pages/ble/ble */ "pages/ble/ble").then(__webpack_require__.bind(null, /*! ./pages/ble/ble.vue */ "../../../../Aproject/github/watch-test/pages/ble/ble.vue"));};
+var ble = function ble() {return __webpack_require__.e(/*! import() | pages/ble/ble */ "pages/ble/ble").then(__webpack_require__.bind(null, /*! ./pages/ble/ble.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/ble/ble.vue"));};
 _vue.default.component('ble', ble);
 //目标
-var goal = function goal() {return __webpack_require__.e(/*! import() | pages/goal/goal */ "pages/goal/goal").then(__webpack_require__.bind(null, /*! ./pages/goal/goal.vue */ "../../../../Aproject/github/watch-test/pages/goal/goal.vue"));};
+var goal = function goal() {return __webpack_require__.e(/*! import() | pages/goal/goal */ "pages/goal/goal").then(__webpack_require__.bind(null, /*! ./pages/goal/goal.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/goal/goal.vue"));};
 _vue.default.component('goal', goal);
 //我的
-var mine = function mine() {return __webpack_require__.e(/*! import() | pages/mine/mine */ "pages/mine/mine").then(__webpack_require__.bind(null, /*! ./pages/mine/mine.vue */ "../../../../Aproject/github/watch-test/pages/mine/mine.vue"));};
+var mine = function mine() {return __webpack_require__.e(/*! import() | pages/mine/mine */ "pages/mine/mine").then(__webpack_require__.bind(null, /*! ./pages/mine/mine.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/mine/mine.vue"));};
 _vue.default.component('mine', mine);
 
 _vue.default.config.productionTip = false;
@@ -43,27 +43,27 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Findex\"}":
-/*!**********************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Findex"} ***!
-  \**********************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Findex\"}":
+/*!**********************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Findex"} ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index.vue */ "../../../../Aproject/github/watch-test/pages/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/pages.json":
-/*!************************************************!*\
-  !*** D:/Aproject/github/watch-test/pages.json ***!
-  \************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/pages.json":
+/*!************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/pages.json ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -538,7 +538,7 @@ function getData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -6612,7 +6612,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -6633,14 +6633,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -6709,7 +6709,7 @@ var patch = function(oldVnode, vnode) {
         });
         var diffData = diff(data, mpData);
         if (Object.keys(diffData).length) {
-            if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+            if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
                 console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
                     ']差量更新',
                     JSON.stringify(diffData));

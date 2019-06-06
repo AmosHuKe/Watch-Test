@@ -7,70 +7,88 @@
 	background-repeat: no-repeat; 
 	height: 410rpx;
 }
+.tagTitle{
+	margin: 48rpx 24rpx 0rpx 24rpx;
+	font-size: 32rpx;
+	font-weight: 700;
+	color: rgba(0,0,0,0.5);
+}
 
 /* 顶部数据圈 */
 .m-time{
 	position: absolute;
 	left:216rpx;
 	top:36rpx;
-	font-weight: 900;
+	font-weight: 900!important;
 	color: rgba(0,129,255,1);
 }
 .m-kll{
 	position: absolute;
 	left:24rpx;
 	top:176rpx;
-	font-weight: 900;
+	font-weight: 900!important;
 	color: rgba(229,77,66,1);
 }
 .m-foot{
 	position: absolute;
 	left:500rpx;
 	top:248rpx;
-	font-weight: 900;
+	font-weight: 900!important; 
 	color: rgba(28,187,180,1);
 }
 .line-red{
-	font-size: 2px;
-}
-.line-red::after{
 	color:rgba(229,77,66,0.5)
 }
-.line-blue{
-	font-size: 2px;
+.text-red{
+	font-size: 24rpx;
+	color:rgba(229,77,66,1)
 }
-.line-blue::after{
+.line-blue{
 	color:rgba(0,129,255,0.5)
 }
-.line-cyan{
-	font-size: 2px;
+.text-blue{
+	font-size: 24rpx;
+	color:rgba(0,129,255,1)
 }
-.line-cyan::after{
+.line-cyan{
 	color:rgba(28,187,180,0.5)
 }
-.cu-tag{
-	padding: 0px 4px;
-	height: 42px;
+.text-cyan{
+	font-size: 24rpx;
+	color:rgba(28,187,180,1)
 }
-.cu-tag .round::after {
+.round {
 	border-radius: 50%;
 }
-.cu-tag::after {
+.cu-tag {
 	content: " ";
-	width: 84px;
-	height: 84px;
+	width: 84rpx;
+	height: 84rpx;
 	position: absolute;
-	border: 6px solid currentColor;
+	border: 8rpx solid currentColor;
 }
 .page-m{
-	margin-left: 20rpx;
-	line-height: 22px;
+	margin-left: 100rpx;
+	line-height: 44rpx;
 }
 .t-title{
 	font-size: 48rpx;
 }
 .t-text{
-	font-weight: 500; 
-	font-size: 2px ;
+	font-weight: 500 !important; 
+	font-size: 24rpx;
+}
+
+/* 具体运动数据 */
+.page_motion_tag{
+	height: 400rpx;
+	padding: 0 24rpx;
+}
+.cu-card {
+	width: 620rpx;
+}
+.cu-card.article>.cu-item {
+	padding-bottom: 260rpx;
+	margin-left: 0px;
 }
 

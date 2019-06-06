@@ -9,19 +9,20 @@
 		<scroll-view scroll-y class="page">
 			<!-- 顶部数据图 -->
 			<view class="bg-img padding-bottom-xl motion_top">
-				<view class="m-time">
-					<view class="flex justify-center">
-						<view class="cu-tag round line-blue">10%</view>
+				
+				<view class="m-time" >
+					<view class="flex">
+						<view class="cu-tag round line-blue"><text class="text-blue">100%</text></view>
 						<view class="flex-sub page-m">
-							<view class="t-title">2</view>
+							<view class="t-title">12</view>
 							<view class="t-text"><text class="cuIcon-timefill"></text>12小时</view>
 						</view>
 					</view>
 				</view>
 				
 				<view class="m-foot">
-					<view class="flex justify-center">
-						<view class="cu-tag round line-cyan">36%</view>
+					<view class="flex ">
+						<view class="cu-tag round line-cyan"><text class="text-cyan">36%</text></view>
 						<view class="flex-sub page-m">
 							<view class="t-title">3600</view>
 							<view class="t-text"><text class="cuIcon-usefullfill"></text>5000步</view>
@@ -30,8 +31,8 @@
 				</view>
 				
 				<view class="m-kll">
-					<view class="flex justify-center">
-						<view class="cu-tag round line-red">32%</view>
+					<view class="flex">
+						<view class="cu-tag round line-red"><text class="text-red">32%</text></view>
 						<view class="flex-sub page-m">
 							<view class="t-title">198</view>
 							<view class="t-text"><text class="cuIcon-hotfill"></text>307千卡</view>
@@ -41,6 +42,25 @@
 				
 			</view>
 			
+			<!-- 具体运动数据 -->
+			<view class="tagTitle">运动</view>
+			<scroll-view scroll-x="true" class="page_motion_tag">
+				
+				<view class="flex">
+					<view class="flex-sub" v-for="(item,index) in list" :key="index">
+						<view class="cu-card article">
+							<view class="cu-item bg-img shadow-blur " :style="[{backgroundImage:'url('+item.img+')'}]" >
+								<view class="cardTitle">
+									{{item.title}}
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+				
+			</scroll-view>
+			
+			
 		</scroll-view>
 	</view>
 </template>
@@ -49,9 +69,34 @@
 	export default {
 		data() {
 			return {
+				list: [{
+						title: ' ',
+						img: 'https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg',
+						url: ' '
+					},
+					{
+						title: ' ',
+						img: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
+						url: ' '
+					},
+					{
+						title: ' ',
+						img: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
+						url: ' '
+					},
+					{
+						title: ' ',
+						img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
+						url: ' '
+					}
+				]
+				
 			}
 		},
 		mounted(){
+			
+			
+
 		},
 		methods: {
 		}
@@ -68,73 +113,91 @@
 		height: 410upx;
 	}
 	
+	.tagTitle{
+		margin: 48upx 24upx 0upx 24upx;
+		font-size: 32upx;
+		font-weight: 700;
+		color: rgba(0,0,0,0.5);
+	}
+	
 	/* 顶部数据圈 */
 	.m-time{
 		position: absolute;
 		left:216upx;
 		top:36upx;
-		font-weight: 900;
+		font-weight: 900!important;
 		color: rgba(0,129,255,1);
 	}
 	.m-kll{
 		position: absolute;
 		left:24upx;
 		top:176upx;
-		font-weight: 900;
+		font-weight: 900!important;
 		color: rgba(229,77,66,1);
 	}
 	.m-foot{
 		position: absolute;
 		left:500upx;
 		top:248upx;
-		font-weight: 900;
+		font-weight: 900!important; 
 		color: rgba(28,187,180,1);
 	}
 	
 	.line-red{
-		font-size: 2px;
-	}
-	.line-red::after{
 		color:rgba(229,77,66,0.5)
 	}
-	.line-blue{
-		font-size: 2px;
+	.text-red{
+		font-size: 24upx;
+		color:rgba(229,77,66,1)
 	}
-	.line-blue::after{
+	.line-blue{
 		color:rgba(0,129,255,0.5)
 	}
-	.line-cyan{
-		font-size: 2px;
+	.text-blue{
+		font-size: 24upx;
+		color:rgba(0,129,255,1)
 	}
-	.line-cyan::after{
+	.line-cyan{
 		color:rgba(28,187,180,0.5)
 	}
-	
-	
-	
-	.cu-tag{
-		padding: 0px 4px;
-		height: 42px;
+	.text-cyan{
+		font-size: 24upx;
+		color:rgba(28,187,180,1)
 	}
-	.cu-tag .round::after {
+	
+	
+	.round {
 		border-radius: 50%;
 	}
-	.cu-tag::after {
+	.cu-tag {
 		content: " ";
-		width: 84px;
-		height: 84px;
+		width: 84upx;
+		height: 84upx;
 		position: absolute;
-		border: 6px solid currentColor;
+		border: 8upx solid currentColor;
 	}
 	.page-m{
-		margin-left: 20upx;
-		line-height: 22px;
+		margin-left: 100upx;
+		line-height: 44upx;
 	}
 	.t-title{
 		font-size: 48upx;
 	}
 	.t-text{
-		font-weight: 500; 
-		font-size: 2px ; 
+		font-weight: 500 !important; 
+		font-size: 24upx; 
+	}
+	
+	/* 具体运动数据 */
+	.page_motion_tag{
+		height: 400upx;
+		padding: 0 24upx;
+	}
+	.cu-card {
+		width: 620upx;
+	}
+	.cu-card.article>.cu-item {
+		padding-bottom: 260upx;
+		margin-left: 0px; 
 	}
 </style>
