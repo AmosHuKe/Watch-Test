@@ -18,6 +18,7 @@
     "url": ""
   },
   "permissions": {
+    "Bluetooth": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
