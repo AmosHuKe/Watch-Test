@@ -81,14 +81,28 @@
 
 /* 具体运动数据 */
 .page_motion_tag{
-	height: 400rpx;
 	padding: 0 24rpx;
 }
 .cu-card {
 	width: 620rpx;
 }
 .cu-card.article>.cu-item {
-	padding-bottom: 260rpx;
+	padding-bottom: 240rpx;
 	margin-left: 0px;
+}
+.yd-title{
+	padding: 36rpx 0rpx 0rpx 36rpx;
+	font-size: 48rpx;
+	font-weight: 700;
+}
+
+/* 具体健康数据 */
+.cu-card-jk {
+	width: 100%;
+}
+.cu-card-jk.article>.cu-item {
+	padding-bottom: 108rpx;
+	margin-left: 0px; 
+	margin-right: 0px;
 }
 
