@@ -199,10 +199,43 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
+      //通知
+      notice: {
+        contentmain: "请连接蓝牙进行操作",
+        content: {
+          0: '请连接蓝牙进行操作',
+          1: '坚持运动' } },
+
+
       //运动数据
       ydList: [{
         title: '跑步',
@@ -251,18 +284,44 @@ var _default =
         url: ' ',
         //背景颜色
         bgcolor: 'rgba(229,77,66,0.7)',
-        title_0: '距离（公里）', //内容
-        content_0: '3600',
-        title_1: '时间',
-        content_1: '12小时' } };
+        content: [{
+          time: '昨日11:30',
+          content: '开始睡眠',
+          color: 'rgba(0,0,0,0.7)' },
 
+        {
+          time: '昨日11:46',
+          content: '浅度睡眠',
+          color: 'rgba(0,129,255,0.7)' },
+
+        {
+          time: '凌晨12:02',
+          content: '深度睡眠',
+          color: 'rgba(229,77,66,0.7)' },
+
+        {
+          time: '结束06:09',
+          color: 'rgba(0,0,0,0.7)' }]
+
+        //内容
+      } };
 
 
 
   },
   mounted: function mounted() {
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    noticeClose: function noticeClose(e) {
+      //关闭通知
+      this.notice.contentmain = "";
+    },
+    noticeRun: function noticeRun(index) {
+      /**
+                                           * 通知轮询
+                                           * @param {index} 通知内容下标  
+                                           */
+    } } };exports.default = _default;
 
 /***/ }),
 

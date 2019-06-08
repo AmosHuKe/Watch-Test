@@ -1165,6 +1165,13 @@ Z([3,'motion'])
 Z([3,'bg-white'])
 Z([1,false])
 Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
+Z([3,'page'])
+Z([[2,'?:'],[[2,'=='],[[6],[[7],[3,'notice']],[3,'contentmain']],[1,'']],[1,false],[1,true]])
+Z([3,'index'])
+Z([3,'sleepD'])
+Z([[6],[[7],[3,'sleepData']],[3,'content']])
+Z(z[7])
+Z([[6],[[7],[3,'sleepD']],[3,'content']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
@@ -1432,6 +1439,33 @@ cs.push("./pages/motion/motion.wxml:cu-custom:1:37")
 var cZB=_mz(z,'cu-custom',['bgColor',2,'isBack',1,'vueSlots',2],[],e,s,gg)
 cs.pop()
 _(fYB,cZB)
+cs.push("./pages/motion/motion.wxml:scroll-view:1:200")
+var h1B=_mz(z,'scroll-view',['scrollY',-1,'class',5],[],e,s,gg)
+var o2B=_v()
+_(h1B,o2B)
+if(_oz(z,6,e,s,gg)){o2B.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:1148")
+cs.pop()
+}
+var c3B=_v()
+_(h1B,c3B)
+cs.push("./pages/motion/motion.wxml:block:1:2773")
+var o4B=function(a6B,l5B,t7B,gg){
+var b9B=_v()
+_(t7B,b9B)
+if(_oz(z,11,a6B,l5B,gg)){b9B.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:3005")
+cs.pop()
+}
+b9B.wxXCkey=1
+return t7B
+}
+c3B.wxXCkey=2
+_2z(z,9,o4B,e,s,gg,c3B,'sleepD','index','index')
+cs.pop()
+o2B.wxXCkey=1
+cs.pop()
+_(fYB,h1B)
 cs.pop()
 _(r,fYB)
 return r
@@ -10384,10 +10418,43 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
     //
     //
     //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
     var _default =
     {
       data: function data() {
         return {
+          //通知
+          notice: {
+            contentmain: "请连接蓝牙进行操作",
+            content: {
+              0: '请连接蓝牙进行操作',
+              1: '坚持运动' } },
+
+
           //运动数据
           ydList: [{
             title: '跑步',
@@ -10436,18 +10503,44 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
             url: ' ',
             //背景颜色
             bgcolor: 'rgba(229,77,66,0.7)',
-            title_0: '距离（公里）', //内容
-            content_0: '3600',
-            title_1: '时间',
-            content_1: '12小时' } };
+            content: [{
+              time: '昨日11:30',
+              content: '开始睡眠',
+              color: 'rgba(0,0,0,0.7)' },
 
+            {
+              time: '昨日11:46',
+              content: '浅度睡眠',
+              color: 'rgba(0,129,255,0.7)' },
+
+            {
+              time: '凌晨12:02',
+              content: '深度睡眠',
+              color: 'rgba(229,77,66,0.7)' },
+
+            {
+              time: '结束06:09',
+              color: 'rgba(0,0,0,0.7)' }]
+
+            //内容
+          } };
 
 
 
       },
       mounted: function mounted() {
       },
-      methods: {} };exports.default = _default;
+      methods: {
+        noticeClose: function noticeClose(e) {
+          //关闭通知
+          this.notice.contentmain = "";
+        },
+        noticeRun: function noticeRun(index) {
+          /**
+                                                                                   * 通知轮询
+                                                                                   * @param {index} 通知内容下标  
+                                                                                   */
+        } } };exports.default = _default;
 
     /***/},
 

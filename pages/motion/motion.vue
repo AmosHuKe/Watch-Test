@@ -12,7 +12,7 @@
 				
 				<view class="m-time" >
 					<view class="flex">
-						<view class="cu-tag round line-blue"><text class="text-blue">100%</text></view>
+						<view class="cu-tag cu-tag-top round line-blue"><text class="text-blue">100%</text></view>
 						<view class="flex-sub page-m">
 							<view class="t-title">12</view>
 							<view class="t-text"><text class="cuIcon-timefill"></text>12小时</view>
@@ -22,7 +22,7 @@
 				
 				<view class="m-foot">
 					<view class="flex ">
-						<view class="cu-tag round line-cyan"><text class="text-cyan">36%</text></view>
+						<view class="cu-tag cu-tag-top round line-cyan"><text class="text-cyan">36%</text></view>
 						<view class="flex-sub page-m">
 							<view class="t-title">3600</view>
 							<view class="t-text"><text class="cuIcon-usefullfill"></text>5000步</view>
@@ -32,7 +32,7 @@
 				
 				<view class="m-kll">
 					<view class="flex">
-						<view class="cu-tag round line-red"><text class="text-red">32%</text></view>
+						<view class="cu-tag cu-tag-top round line-red"><text class="text-red">32%</text></view>
 						<view class="flex-sub page-m">
 							<view class="t-title">198</view>
 							<view class="t-text"><text class="cuIcon-hotfill"></text>307千卡</view>
@@ -40,6 +40,19 @@
 					</view>
 				</view>
 				
+			</view>
+			
+			<!-- 通知 -->
+			<view class="content-notice" v-if="notice.contentmain==''?false:true " :style="[{ backgroundColor:'rgba(0,0,0,0.2)',color:'#FFFFFF'}]">
+				<view class="flex">
+					<view class="flex-treble">
+						<text class="lg icon cuIcon-notice"></text>
+						{{notice.contentmain}}
+					</view>
+					<view class="justify-start icon-close" @tap="noticeClose">
+						<text class="lg cuIcon-close"></text>
+					</view>
+				</view>
 			</view>
 			
 			<!-- 具体运动数据 -->
@@ -79,15 +92,27 @@
 			<!-- 具体健康数据 -->
 			<view class="tagTitle">健康</view>
 			<!-- 睡眠 -->
-			<view class="">
+			<view class="sleep">
 				<view class="cu-card cu-card-jk article">
-					<view class="cu-item bg-img shadow" :style="[{backgroundImage:'url('+sleepData.img+')'}]" >
+					<view class="cu-item bg-img shadow-warp">
 						<view class="cardTitle">
 							<view class="flex">
-								<view class="flex-sub jk-title">{{sleepData.title}}</view>
+								<view class="flex-sub jk-title" >
+									{{sleepData.title}}
+								</view>
 							</view>
-							<!-- 健康详情 -->
-							<view class="flex jk-text">
+							<!-- 睡眠详情 -->
+							<view class="flex jk-text" v-for="(sleepD,index) in sleepData.content" :key="index">
+								<view class="cu-timeline" >
+									<view class="cu-time" :style="[{color:sleepD.color}]">{{sleepD.time}}</view>
+									<view class="cu-item" :style="[{color:sleepD.color}]" v-if="sleepD.content">
+										<view class="content" :style="[{ backgroundColor:sleepD.color,color:'#FFFFFF'}]">
+											{{sleepD.content}}
+										</view>
+									</view>
+								</view>
+								
+								
 							</view>
 						</view>
 					</view>
@@ -103,6 +128,14 @@
 	export default {
 		data() {
 			return {
+				//通知
+				notice: {
+					contentmain:"请连接蓝牙进行操作",
+					content:{
+						0:'请连接蓝牙进行操作',
+						1:'坚持运动'
+					}
+				},
 				//运动数据
 				ydList: [{
 						title: '跑步',
@@ -151,10 +184,26 @@
 					url: ' ',
 					//背景颜色
 					bgcolor:'rgba(229,77,66,0.7)',
-					title_0: '距离（公里）', //内容
-					content_0: '3600',
-					title_1: '时间',
-					content_1: '12小时',
+					content: [{
+							time:'昨日11:30',
+							content:'开始睡眠',
+							color:'rgba(0,0,0,0.7)'
+						},
+						{
+							time:'昨日11:46',
+							content:'浅度睡眠',
+							color:'rgba(0,129,255,0.7)'
+						},
+						{
+							time:'凌晨12:02',
+							content:'深度睡眠',
+							color:'rgba(229,77,66,0.7)'
+						},
+						{
+							time:'结束06:09',
+							color:'rgba(0,0,0,0.7)'
+						},
+					], //内容
 				}
 				
 				
@@ -163,6 +212,16 @@
 		mounted(){
 		},
 		methods: {
+			noticeClose(e){
+				//关闭通知
+				this.notice.contentmain=""
+			},
+			noticeRun(index){
+				/**
+				 * 通知轮询
+				 * @param {index} 通知内容下标  
+				 */
+			}
 		}
 	}
 </script>
@@ -176,7 +235,17 @@
 		background-repeat: no-repeat; 
 		height: 410upx;
 	}
-	
+	.content-notice {
+		padding: 15upx;
+		margin: 24upx;
+		border-radius: 8upx;
+	}
+	.icon{
+		margin-right: 6upx;
+	}
+	.icon-close{
+		margin-top: 4upx;
+	}
 	.tagTitle{
 		margin: 48upx 24upx 0upx 24upx;
 		font-size: 32upx;
@@ -233,7 +302,7 @@
 	.round {
 		border-radius: 50%;
 	}
-	.cu-tag {
+	.cu-tag-top {
 		content: "";
 		width: 84upx;
 		height: 84upx;
@@ -306,6 +375,7 @@
 		margin-right: 0;
 		margin-left: 0;
 	}
+	
 	.jk-title{
 		margin-bottom: 24upx;
 		font-size: 48upx;
@@ -313,7 +383,7 @@
 		color: #333333;
 	}
 	.jk-text{
-		color: #FFFFFF;
+		color: #333333;
 	}
 	.jk-text-title{
 		font-size: 24upx;

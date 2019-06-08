@@ -7,13 +7,23 @@
 	background-repeat: no-repeat; 
 	height: 410rpx;
 }
+.content-notice {
+	padding: 15rpx;
+	margin: 24rpx;
+	border-radius: 8rpx;
+}
+.icon{
+	margin-right: 6rpx;
+}
+.icon-close{
+	margin-top: 4rpx;
+}
 .tagTitle{
 	margin: 48rpx 24rpx 0rpx 24rpx;
 	font-size: 32rpx;
 	font-weight: 100; 
 	color: rgba(0,0,0,0.5);
 }
-
 /* 顶部数据圈 */
 .m-time{
 	position: absolute;
@@ -60,7 +70,7 @@
 .round {
 	border-radius: 50%;
 }
-.cu-tag {
+.cu-tag-top {
 	content: "";
 	width: 84rpx;
 	height: 84rpx;
@@ -78,7 +88,6 @@
 	font-weight: 500 !important; 
 	font-size: 24rpx;
 }
-
 /* 具体运动数据 */
 .bg-img-yd{
 	background-size: 256rpx;
@@ -119,7 +128,6 @@
 	font-size: 40rpx;
 	font-weight: 700;
 }
-
 /* 具体健康数据 */
 .cu-card-jk {
 	width: 100%;
@@ -137,7 +145,7 @@
 	color: #333333;
 }
 .jk-text{
-	color: #FFFFFF;
+	color: #333333;
 }
 .jk-text-title{
 	font-size: 24rpx;
