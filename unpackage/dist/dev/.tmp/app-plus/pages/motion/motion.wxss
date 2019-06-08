@@ -154,4 +154,11 @@
 	font-size: 40rpx;
 	font-weight: 700;
 }
+.text-center{
+	margin-right: 24rpx;
+}
+.text-blue{
+	font-size: 28rpx;
+	color: rgba(0,129,255,1);
+}
 
