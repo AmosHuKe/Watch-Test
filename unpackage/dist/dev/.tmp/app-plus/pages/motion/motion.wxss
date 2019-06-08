@@ -10,7 +10,7 @@
 .tagTitle{
 	margin: 48rpx 24rpx 0rpx 24rpx;
 	font-size: 32rpx;
-	font-weight: 700;
+	font-weight: 100; 
 	color: rgba(0,0,0,0.5);
 }
 
@@ -61,7 +61,7 @@
 	border-radius: 50%;
 }
 .cu-tag {
-	content: " ";
+	content: "";
 	width: 84rpx;
 	height: 84rpx;
 	position: absolute;
@@ -80,6 +80,15 @@
 }
 
 /* 具体运动数据 */
+.bg-img-yd{
+	background-size: 256rpx;
+	background-position: right;
+}
+.cu-yd{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
 .page_motion_tag{
 	padding: 0 24rpx;
 }
@@ -90,19 +99,51 @@
 	padding-bottom: 240rpx;
 	margin-left: 0px;
 }
-.yd-title{
+.cardTitle{
 	padding: 36rpx 0rpx 0rpx 36rpx;
+	z-index: 1;
+}
+.yd-title{
+	margin-bottom: 24rpx;
 	font-size: 48rpx;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+.yd-text{
+	color: #FFFFFF;
+}
+.yd-text-title{
+	font-size: 24rpx;
+}
+.yd-text-t{
+	font-size: 40rpx;
 	font-weight: 700;
 }
 
 /* 具体健康数据 */
 .cu-card-jk {
 	width: 100%;
+	padding: 0 24rpx;
 }
 .cu-card-jk.article>.cu-item {
 	padding-bottom: 108rpx;
-	margin-left: 0px; 
-	margin-right: 0px;
+	margin-right: 0;
+	margin-left: 0;
+}
+.jk-title{
+	margin-bottom: 24rpx;
+	font-size: 48rpx;
+	font-weight: 700;
+	color: #333333;
+}
+.jk-text{
+	color: #FFFFFF;
+}
+.jk-text-title{
+	font-size: 24rpx;
+}
+.jk-text-t{
+	font-size: 40rpx;
+	font-weight: 700;
 }
 
