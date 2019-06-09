@@ -33,6 +33,7 @@
 │   │   ├── mine.vue   //我的页
 ├── lib    //第三方库/框架  
 │   └── colorui    //ColorUi
+├── style    //样式文件  
 ├── static    //静态文件  
 
 ```
