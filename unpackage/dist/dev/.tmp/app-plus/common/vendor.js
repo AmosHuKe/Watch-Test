@@ -60,6 +60,23 @@ createPage(_index.default);
 
 /***/ }),
 
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Fmotion%2Fchildren%2Fmotion_ydData\"}":
+/*!**************************************************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Fmotion%2Fchildren%2Fmotion_ydData"} ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _motion_ydData = _interopRequireDefault(__webpack_require__(/*! ./pages/motion/children/motion_ydData.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/motion/children/motion_ydData.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_motion_ydData.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "../../../../../Amos_project/project/github/Watch-Test/pages.json":
 /*!************************************************************!*\
   !*** E:/Amos_project/project/github/Watch-Test/pages.json ***!
