@@ -35,5 +35,6 @@
 │   └── colorui    //ColorUi
 ├── style    //样式文件  
 ├── static    //静态文件  
+├── unpackage    //打包后文件（dist）  
 
 ```
