@@ -61,7 +61,7 @@
 				
 				<view class="flex">
 					<view class="flex-sub" v-for="(item,index) in ydList" :key="index">
-						<view class="cu-card article " >
+						<view class="cu-card article " @tap="ydToUrl({'title':item.title,'bgcolor':item.bgcolor,'title_0':item.title_0,'content_0':item.content_0,'title_1':item.title_1,'content_1':item.content_1})">  <!--跳转到详情-->
 							<view class="cu-item bg-img bg-img-yd shadow-warp " :style="[{backgroundImage:'url('+item.img+')'}]" >
 								<view class="cu-yd" :style="[{backgroundColor:item.bgcolor}]">
 									<view class="cardTitle">
@@ -155,7 +155,7 @@
 	const notice={
 		contentmain:"请连接蓝牙进行操作",
 		content:{
-			0:'请连接蓝牙设备进行操作',
+			0:'请连接蓝牙设备和打开位置服务进行操作',
 			1:'坚持运动'
 		}
 	}
@@ -197,7 +197,10 @@
 		img: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4NDA5NTM5IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEzMzYiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTY2Mi41IDM3OS41bS00NS41IDBhNDUuNSA0NS41IDAgMSAwIDkxIDAgNDUuNSA0NS41IDAgMSAwLTkxIDBaIiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMzM3Ij48L3BhdGg+PHBhdGggZD0iTTY0OS4wOTUgNTU4LjE4M2wtOC44MjktNjUuNjU2SDUzMi42NjNjLTExLjAwNy0xMS44MjMtMTMuNzU5LTIzLjI2OS04LjI1NS0zNC4zMzgtMTIuNTg1LTguNjEtNy40NjgtMzMuMTg5IDguMjU1LTMzLjE4OSAxMC40ODMgMCA0OS4yOTQgNS45ODggMTE2LjQzMiAxNy45NjVoMjAuNjJjMzIuNDI0LTEyLjEyIDUxLjE4Mi03LjA0NSA1Ni4yNzMgMTUuMjI0IDUuMDkxIDIyLjI2OCAxMy4yNjcgNjYuMTQ1IDI0LjUyNyAxMzEuNjMgNS42NDIgMTguNzc2LTQuNzkgMzEuMjM1LTMxLjI5MyAzNy4zNzctMjYuNTA0IDYuMTQyLTY0LjI3IDMuMDctMTEzLjI5Ni05LjIxM2wtNjQuODIyIDM3LjU5Yy0xNS42NDQgMS42NC0yNS4yOTUtMS40NDUtMjguOTU0LTkuMjUyLTMuNjYtNy44MDctMS44My0xNi4wMzMgNS40ODgtMjQuNjc3LTMuOTcyLTEuNDExLTcuNTIxLTUuNzI0LTEwLjY0Ny0xMi45MzktNC42ODktMTAuODIzLTAuMzMtMjAuOTQ4IDUuMTU5LTI2LjEzNCA1LjQ4OC01LjE4NiA5My43NzYtMzkuOTE3IDkzLjc3Ni0zOS45MTdsNDMuMTcgMTUuNTI5ek0yNjcgNjc0aDQ5MXYxN0gyNjd6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMzM4Ij48L3BhdGg+PC9zdmc+',
 		url: ' ',
 		bgcolor:'rgba(0,0,0,0.7)',
-		content_0: '······', //内容
+		title_0: '时间（小时）', //内容
+		content_0: '- -',
+		title_1: '次数',
+		content_1: '0次',
 	}]
 	
 	const jkList= {
@@ -317,8 +320,20 @@
 				 */
 			},
 			tabSelect(e){
+				//健康切换
 				this.TabCur = e.currentTarget.dataset.id
+			},
+			ydToUrl(e){
+				//运动
+				const datas= JSON.stringify(e)
+				console.log(datas)
+				uni.navigateTo({
+					url: './motion/children/motion_ydData?id=1&datas='+datas,
+					animationType: 'pop-in',
+					animationDuration: 200
+				});
 			}
+			
 		}
 	}
 </script>

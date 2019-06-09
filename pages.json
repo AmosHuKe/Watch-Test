@@ -1,7 +1,13 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			//大布局页
 			"path": "pages/index",
+			"style": {}
+		},
+		{
+			//运动详情页
+			"path": "pages/motion/children/motion_ydData",
 			"style": {}
 		}
 	],
