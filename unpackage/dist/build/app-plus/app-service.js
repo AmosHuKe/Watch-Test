@@ -1161,13 +1161,24 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
 __WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__l'])
-Z([3,'motion'])
+Z([3,'motion_ydData'])
+Z([3,'bg-white '])
+Z([1,true])
+Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
+}
+function gz$gwx_8(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
+__WXML_GLOBAL__.ops_cached.$gwx_8=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'__l'])
+Z([3,'motion animation-fade'])
 Z([3,'bg-white'])
 Z([1,false])
 Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
 Z([3,'page'])
 Z([[2,'?:'],[[2,'=='],[[6],[[7],[3,'notice']],[3,'contentmain']],[1,'']],[1,false],[1,true]])
-Z([3,'cardTitle'])
+Z([3,'cardTitle-jk'])
 Z([3,'index'])
 Z([3,'jk'])
 Z([[7],[3,'jkList']])
@@ -1187,13 +1198,13 @@ Z(z[8])
 Z([[6],[[7],[3,'sleepD']],[3,'content']])
 Z([[2,'=='],[[7],[3,'TabCur']],[1,'heartbeat']])
 Z([[2,'=='],[[7],[3,'TabCur']],[1,'pulse']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
+})(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./lib/colorui/components/cu-custom.wxml','./pages/ble/ble.wxml','./pages/goal/goal.wxml','./pages/home/home.wxml','./pages/index.wxml','./pages/mine/mine.wxml','./pages/motion/motion.wxml'];d_[x[0]]={}
+var x=['./lib/colorui/components/cu-custom.wxml','./pages/ble/ble.wxml','./pages/goal/goal.wxml','./pages/home/home.wxml','./pages/index.wxml','./pages/mine/mine.wxml','./pages/motion/children/motion_ydData.wxml','./pages/motion/motion.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 cs.push("./lib/colorui/components/cu-custom.wxml:view:1:1")
@@ -1448,104 +1459,118 @@ e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-cs.push("./pages/motion/motion.wxml:view:1:1")
+cs.push("./pages/motion/children/motion_ydData.wxml:view:1:1")
 var fYB=_mz(z,'view',['bind:__l',0,'class',1],[],e,s,gg)
-cs.push("./pages/motion/motion.wxml:cu-custom:1:37")
+cs.push("./pages/motion/children/motion_ydData.wxml:cu-custom:1:44")
 var cZB=_mz(z,'cu-custom',['bgColor',2,'isBack',1,'vueSlots',2],[],e,s,gg)
 cs.pop()
 _(fYB,cZB)
-cs.push("./pages/motion/motion.wxml:scroll-view:1:200")
-var h1B=_mz(z,'scroll-view',['scrollY',-1,'class',5],[],e,s,gg)
-var o2B=_v()
-_(h1B,o2B)
-if(_oz(z,6,e,s,gg)){o2B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:1148")
-cs.pop()
-}
-cs.push("./pages/motion/motion.wxml:view:1:2656")
-var c3B=_n('view')
-_rz(z,c3B,'class',7,e,s,gg)
-var t7B=_v()
-_(c3B,t7B)
-cs.push("./pages/motion/motion.wxml:block:1:2754")
-var e8B=function(o0B,b9B,xAC,gg){
-cs.push("./pages/motion/motion.wxml:view:1:2834")
-var fCC=_mz(z,'view',['bindtap',12,'class',1,'data-event-opts',2,'data-id',3],[],o0B,b9B,gg)
-var cDC=_v()
-_(fCC,cDC)
-if(_oz(z,16,o0B,b9B,gg)){cDC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:2990")
-cs.pop()
-}
-var hEC=_v()
-_(fCC,hEC)
-if(_oz(z,17,o0B,b9B,gg)){hEC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3051")
-cs.pop()
-}
-var oFC=_v()
-_(fCC,oFC)
-if(_oz(z,18,o0B,b9B,gg)){oFC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3116")
-cs.pop()
-}
-cDC.wxXCkey=1
-hEC.wxXCkey=1
-oFC.wxXCkey=1
-cs.pop()
-_(xAC,fCC)
-return xAC
-}
-t7B.wxXCkey=2
-_2z(z,10,e8B,e,s,gg,t7B,'jk','index','index')
-cs.pop()
-var o4B=_v()
-_(c3B,o4B)
-if(_oz(z,19,e,s,gg)){o4B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3213")
-var cGC=_v()
-_(o4B,cGC)
-cs.push("./pages/motion/motion.wxml:block:1:3254")
-var oHC=function(aJC,lIC,tKC,gg){
-var bMC=_v()
-_(tKC,bMC)
-if(_oz(z,24,aJC,lIC,gg)){bMC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3492")
-cs.pop()
-}
-bMC.wxXCkey=1
-return tKC
-}
-cGC.wxXCkey=2
-_2z(z,22,oHC,e,s,gg,cGC,'sleepD','index','index')
-cs.pop()
-cs.pop()
-}
-var l5B=_v()
-_(c3B,l5B)
-if(_oz(z,25,e,s,gg)){l5B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3771")
-cs.pop()
-}
-var a6B=_v()
-_(c3B,a6B)
-if(_oz(z,26,e,s,gg)){a6B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3837")
-cs.pop()
-}
-o4B.wxXCkey=1
-l5B.wxXCkey=1
-a6B.wxXCkey=1
-cs.pop()
-_(h1B,c3B)
-o2B.wxXCkey=1
-cs.pop()
-_(fYB,h1B)
 cs.pop()
 _(r,fYB)
 return r
 }
 e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
+d_[x[7]]={}
+var m7=function(e,s,r,gg){
+var z=gz$gwx_8()
+cs.push("./pages/motion/motion.wxml:view:1:1")
+var o2B=_mz(z,'view',['bind:__l',0,'class',1],[],e,s,gg)
+cs.push("./pages/motion/motion.wxml:cu-custom:1:52")
+var c3B=_mz(z,'cu-custom',['bgColor',2,'isBack',1,'vueSlots',2],[],e,s,gg)
+cs.pop()
+_(o2B,c3B)
+cs.push("./pages/motion/motion.wxml:scroll-view:1:215")
+var o4B=_mz(z,'scroll-view',['scrollY',-1,'class',5],[],e,s,gg)
+var l5B=_v()
+_(o4B,l5B)
+if(_oz(z,6,e,s,gg)){l5B.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:1205")
+cs.pop()
+}
+cs.push("./pages/motion/motion.wxml:view:1:2936")
+var a6B=_n('view')
+_rz(z,a6B,'class',7,e,s,gg)
+var o0B=_v()
+_(a6B,o0B)
+cs.push("./pages/motion/motion.wxml:block:1:3037")
+var xAC=function(fCC,oBC,cDC,gg){
+cs.push("./pages/motion/motion.wxml:view:1:3117")
+var oFC=_mz(z,'view',['bindtap',12,'class',1,'data-event-opts',2,'data-id',3],[],fCC,oBC,gg)
+var cGC=_v()
+_(oFC,cGC)
+if(_oz(z,16,fCC,oBC,gg)){cGC.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:3273")
+cs.pop()
+}
+var oHC=_v()
+_(oFC,oHC)
+if(_oz(z,17,fCC,oBC,gg)){oHC.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:3334")
+cs.pop()
+}
+var lIC=_v()
+_(oFC,lIC)
+if(_oz(z,18,fCC,oBC,gg)){lIC.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:3399")
+cs.pop()
+}
+cGC.wxXCkey=1
+oHC.wxXCkey=1
+lIC.wxXCkey=1
+cs.pop()
+_(cDC,oFC)
+return cDC
+}
+o0B.wxXCkey=2
+_2z(z,10,xAC,e,s,gg,o0B,'jk','index','index')
+cs.pop()
+var t7B=_v()
+_(a6B,t7B)
+if(_oz(z,19,e,s,gg)){t7B.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:3496")
+var aJC=_v()
+_(t7B,aJC)
+cs.push("./pages/motion/motion.wxml:block:1:3537")
+var tKC=function(bMC,eLC,oNC,gg){
+var oPC=_v()
+_(oNC,oPC)
+if(_oz(z,24,bMC,eLC,gg)){oPC.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:3790")
+cs.pop()
+}
+oPC.wxXCkey=1
+return oNC
+}
+aJC.wxXCkey=2
+_2z(z,22,tKC,e,s,gg,aJC,'sleepD','index','index')
+cs.pop()
+cs.pop()
+}
+var e8B=_v()
+_(a6B,e8B)
+if(_oz(z,25,e,s,gg)){e8B.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:4069")
+cs.pop()
+}
+var b9B=_v()
+_(a6B,b9B)
+if(_oz(z,26,e,s,gg)){b9B.wxVkey=1
+cs.push("./pages/motion/motion.wxml:block:1:4450")
+cs.pop()
+}
+t7B.wxXCkey=1
+e8B.wxXCkey=1
+b9B.wxXCkey=1
+cs.pop()
+_(o4B,a6B)
+l5B.wxXCkey=1
+cs.pop()
+_(o2B,o4B)
+cs.pop()
+_(r,o2B)
+return r
+}
+e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1566,7 +1591,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8","navigationStyle":"custom"},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"watch-test","compilerVersion":"1.9.9","usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","home":"/pages/home/home","motion":"/pages/motion/motion","ble":"/pages/ble/ble","goal":"/pages/goal/goal","mine":"/pages/mine/mine"}};
+__wxAppCode__['app.json']={"pages":["pages/index","pages/motion/children/motion_ydData"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8","navigationStyle":"custom"},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"watch-test","compilerVersion":"1.9.9","usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","home":"/pages/home/home","motion":"/pages/motion/motion","ble":"/pages/ble/ble","goal":"/pages/goal/goal","mine":"/pages/mine/mine"}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['lib/colorui/components/cu-custom.json']={"usingComponents":{},"component":true};
@@ -1586,6 +1611,9 @@ __wxAppCode__['pages/index.wxml']=$gwx('./pages/index.wxml');
 
 __wxAppCode__['pages/mine/mine.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"},"component":true};
 __wxAppCode__['pages/mine/mine.wxml']=$gwx('./pages/mine/mine.wxml');
+
+__wxAppCode__['pages/motion/children/motion_ydData.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"}};
+__wxAppCode__['pages/motion/children/motion_ydData.wxml']=$gwx('./pages/motion/children/motion_ydData.wxml');
 
 __wxAppCode__['pages/motion/motion.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"},"component":true};
 __wxAppCode__['pages/motion/motion.wxml']=$gwx('./pages/motion/motion.wxml');
@@ -1774,7 +1802,7 @@ define('common/runtime.js',function(require, module, exports, window, document, 
 })([]);
 });
 define('common/vendor.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["common/vendor"],{"00ea":function(t,e,n){"use strict";(function(t){n("2589");r(n("66fd"));var e=r(n("4c61"));function r(t){return t&&t.__esModule?t:{default:t}}t(e.default)}).call(this,n("6e42")["createPage"])},"188c":function(t,e,n){"use strict";(function(t){n("2589");var e=o(n("66fd")),r=o(n("9f14"));function o(t){return t&&t.__esModule?t:{default:t}}function i(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{},r=Object.keys(n);"function"===typeof Object.getOwnPropertySymbols&&(r=r.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),r.forEach(function(e){a(t,e,n[e])})}return t}function a(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}var s=function(){return n.e("lib/colorui/components/cu-custom").then(n.bind(null,"5d43"))};e.default.component("cu-custom",s);var c=function(){return n.e("pages/home/home").then(n.bind(null,"c1e8"))};e.default.component("home",c);var u=function(){return n.e("pages/motion/motion").then(n.bind(null,"464c"))};e.default.component("motion",u);var f=function(){return n.e("pages/ble/ble").then(n.bind(null,"5148"))};e.default.component("ble",f);var l=function(){return n.e("pages/goal/goal").then(n.bind(null,"913e"))};e.default.component("goal",l);var p=function(){return n.e("pages/mine/mine").then(n.bind(null,"0650"))};e.default.component("mine",p),e.default.config.productionTip=!1,r.default.mpType="app";var h=new e.default(i({},r.default));t(h).$mount()}).call(this,n("6e42")["createApp"])},2589:function(t,e,n){},2877:function(t,e,n){"use strict";function r(t,e,n,r,o,i,a,s){var c,u="function"===typeof t?t.options:t;if(e&&(u.render=e,u.staticRenderFns=n,u._compiled=!0),r&&(u.functional=!0),i&&(u._scopeId="data-v-"+i),a?(c=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"===typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),o&&o.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(a)},u._ssrRegister=c):o&&(c=s?function(){o.call(this,this.$root.$options.shadowRoot)}:o),c)if(u.functional){u._injectStyles=c;var f=u.render;u.render=function(t,e){return c.call(e),f(t,e)}}else{var l=u.beforeCreate;u.beforeCreate=l?[].concat(l,c):[c]}return{exports:t,options:u}}n.d(e,"a",function(){return r})},"66fd":function(t,e,n){"use strict";n.r(e),function(t){
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["common/vendor"],{"00ea":function(t,e,n){"use strict";(function(t){n("2589");r(n("66fd"));var e=r(n("4c61"));function r(t){return t&&t.__esModule?t:{default:t}}t(e.default)}).call(this,n("6e42")["createPage"])},"06ec":function(t,e,n){"use strict";(function(t){n("2589");r(n("66fd"));var e=r(n("e070"));function r(t){return t&&t.__esModule?t:{default:t}}t(e.default)}).call(this,n("6e42")["createPage"])},"188c":function(t,e,n){"use strict";(function(t){n("2589");var e=o(n("66fd")),r=o(n("9f14"));function o(t){return t&&t.__esModule?t:{default:t}}function i(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{},r=Object.keys(n);"function"===typeof Object.getOwnPropertySymbols&&(r=r.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),r.forEach(function(e){a(t,e,n[e])})}return t}function a(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}var s=function(){return n.e("lib/colorui/components/cu-custom").then(n.bind(null,"5d43"))};e.default.component("cu-custom",s);var c=function(){return n.e("pages/home/home").then(n.bind(null,"c1e8"))};e.default.component("home",c);var u=function(){return n.e("pages/motion/motion").then(n.bind(null,"464c"))};e.default.component("motion",u);var f=function(){return n.e("pages/ble/ble").then(n.bind(null,"5148"))};e.default.component("ble",f);var l=function(){return n.e("pages/goal/goal").then(n.bind(null,"913e"))};e.default.component("goal",l);var p=function(){return n.e("pages/mine/mine").then(n.bind(null,"0650"))};e.default.component("mine",p),e.default.config.productionTip=!1,r.default.mpType="app";var h=new e.default(i({},r.default));t(h).$mount()}).call(this,n("6e42")["createApp"])},2589:function(t,e,n){},2877:function(t,e,n){"use strict";function r(t,e,n,r,o,i,a,s){var c,u="function"===typeof t?t.options:t;if(e&&(u.render=e,u.staticRenderFns=n,u._compiled=!0),r&&(u.functional=!0),i&&(u._scopeId="data-v-"+i),a?(c=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"===typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),o&&o.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(a)},u._ssrRegister=c):o&&(c=s?function(){o.call(this,this.$root.$options.shadowRoot)}:o),c)if(u.functional){u._injectStyles=c;var f=u.render;u.render=function(t,e){return c.call(e),f(t,e)}}else{var l=u.beforeCreate;u.beforeCreate=l?[].concat(l,c):[c]}return{exports:t,options:u}}n.d(e,"a",function(){return r})},"66fd":function(t,e,n){"use strict";n.r(e),function(t){
 /*!
  * Vue.js v2.6.10
  * (c) 2014-2019 Evan You
@@ -2459,142 +2487,155 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
   "05bb": function bb(M, N, j) {
     "use strict";
 
-    Object.defineProperty(N, "__esModule", {
-      value: !0
-    }), N.default = void 0;
-    var I = {
-      contentmain: "请连接蓝牙进行操作",
-      content: {
-        0: "请连接蓝牙设备进行操作",
-        1: "坚持运动"
-      }
-    },
-        D = [{
-      title: "跑步",
-      img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
-      url: " ",
-      bgcolor: "rgba(229,77,66,0.7)",
-      title_0: "距离（公里）",
-      content_0: "3600",
-      title_1: "时间",
-      content_1: "12小时"
-    }, {
-      title: "健步走",
-      img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzg1NzM4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEwOTMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTQ3Ny44NDcgMjk3LjUzMmE0NS41MzggNDUuNTMyIDAgMSAwIDkxLjA3NiAwIDQ1LjUzOCA0NS41MzIgMCAxIDAtOTEuMDc2IDBaIiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMDk0Ij48L3BhdGg+PHBhdGggZD0iTTM3NS4wODYgNTU1Ljg4OWM3Ljk1OC01MS42MzMgMTYuNjg3LTg2LjIyNSAyNi4xODgtMTAzLjc3OSAzMS4wNDctNTcuMzU5IDYzLjIxOS04My4wNDUgNzIuOTg0LTg0LjI1OSAxOS42NjYtMi40NDUgNDMuMDY5LTIuOTM0IDU0LjgwNiAwIDEzLjYxNSAzLjQwMyAyMi45NTMgMTAuNTQ2IDI4LjAxMyAyMS40MjggNC43MDUgNDcuMjYzIDExLjgzIDc2Ljc1OCAyMS4zNzQgODguNDg1IDI2LjQyNyAzMi40NyA2Ni4wNyA0My4zMjggNzcuNDU1IDQzLjMyOCAwIDExLjM4My01Ljc2IDMwLjEwMS01Ljc2IDMwLjEwMS0xNi44ODYgMC03NC42NDkgMC0xMDUuOS01MC4yNjgtMS43NTctMi44MjYtNC4xNSAxMy45My03LjE3NiA1MC4yNjggNDAuNDkgMzkuMzAxIDY2LjY1NSA3MS4xOSA3OC40OTMgOTUuNjY1IDExLjgzOCAyNC40NzUgMTcuNzQ0IDcxLjE3NiAxNy43MTggMTQwLjEwM2gtMzkuNzYzYy0yLjc3Mi0zNy42NTctNy43OTQtNjYuNzE2LTE1LjA2Ny04Ny4xNzctNy4yNzMtMjAuNDYtMjguNjU2LTQ3LjIyNS02NC4xNS04MC4yOTMtMTMuNTYzIDMyLjE4LTI4Ljc0MyA2Mi41MzQtNDUuNTM4IDkxLjA2NC0xNi43OTYgMjguNTMtMzguMzg5IDUzLjk5OC02NC43NzggNzYuNDA2SDM2NGMzMy4xNjEtNDcuNDMgNTYuNjk3LTg0LjI4MiA3MC42MDktMTEwLjU1NSAxMy45MS0yNi4yNzMgMjMuODAxLTUyLjQyMyAyOS42Ny03OC40NDlWNDM4LjQwMmMtMTAuNDcgMy4xLTIwLjM2IDE0LjEzNy0yOS42NyAzMy4xMS01Ljc5MiAxMS44MDMtMTYgMzkuOTI4LTMwLjYyNCA4NC4zNzdoLTI4Ljg5OXoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9IjEwOTUiPjwvcGF0aD48L3N2Zz4=",
-      url: " ",
-      bgcolor: "rgba(0,129,255,0.7)",
-      title_0: "距离（公里）",
-      content_0: "- -",
-      title_1: "时间",
-      content_1: "0小时"
-    }, {
-      title: "骑行",
-      img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4MzYwNjc4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijg1NiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTQ2LjE0MyAzNTIuNTU2YTQ1LjUyNCA0NS41NTYgMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjU1NiAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijg1NyI+PC9wYXRoPjxwYXRoIGQ9Ik02NTQuMjYyIDcxN2MtNTMuNDI3IDAtOTYuNzM4LTQzLjM0MS05Ni43MzgtOTYuODA2IDAtNTMuNDY0IDQzLjMxLTk2LjgwNSA5Ni43MzgtOTYuODA1IDUzLjQyNyAwIDk2LjczOCA0My4zNDEgOTYuNzM4IDk2LjgwNUM3NTEgNjczLjY2IDcwNy42ODkgNzE3IDY1NC4yNjIgNzE3eiBtMC0zNC4xNjdjMzQuNTcgMCA2Mi41OTUtMjguMDQ0IDYyLjU5NS02Mi42MzkgMC0zNC41OTQtMjguMDI1LTYyLjYzOC02Mi41OTUtNjIuNjM4cy02Mi41OTUgMjguMDQ0LTYyLjU5NSA2Mi42MzhjMCAzNC41OTUgMjguMDI1IDYyLjY0IDYyLjU5NSA2Mi42NHpNMzY5LjczOCA3MTdDMzE2LjMxMSA3MTcgMjczIDY3My42NTkgMjczIDYyMC4xOTRjMC01My40NjQgNDMuMzExLTk2LjgwNSA5Ni43MzgtOTYuODA1czk2LjczOCA0My4zNDEgOTYuNzM4IDk2LjgwNWMwIDUzLjQ2NS00My4zMSA5Ni44MDYtOTYuNzM4IDk2LjgwNnogbTAtMzQuMTY3YzM0LjU3IDAgNjIuNTk1LTI4LjA0NCA2Mi41OTUtNjIuNjM5IDAtMzQuNTk0LTI4LjAyNS02Mi42MzgtNjIuNTk1LTYyLjYzOHMtNjIuNTk1IDI4LjA0NC02Mi41OTUgNjIuNjM4YzAgMzQuNTk1IDI4LjAyNSA2Mi42NCA2Mi41OTUgNjIuNjR6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSI4NTgiPjwvcGF0aD48cGF0aCBkPSJNNTQwLjIwMyA0NDUuODE0bDQwLjk5IDQ1Ljk2NWg3OC45OGM5LjI1MS0yLjY1NSAxMy44NzctOC4zNjIgMTMuODc3LTE3LjEyIDAtOC43Ni00LjYyNi0xMy43NjYtMTMuODc3LTE1LjAyaC02My4xMzhsLTU2LjgzMi02NS41NDhjLTUuNjA4LTQuOTEyLTEwLjgwNS03LjM2OS0xNS41OTEtNy4zNjktNC43ODcgMC05LjMzMSAyLjQ1Ny0xMy42MzQgNy4zN2wtOTQuMjc2IDk3LjY4N2MtNC43NTQgNC4yNDEtNy4xMyA4Ljc2LTcuMTMgMTMuNTYgMCA0LjggMi4zNzYgOSA3LjEzIDEyLjYwMmw3Ni4xIDUzLjU0Ny00LjgzNCA4NC42ODFjMy4xIDExLjQ4NyA5Ljc0MiAxNy4yMyAxOS45MjUgMTcuMjNzMTYuNzM3LTQuOTYyIDE5LjY2My0xNC44ODVsNy4yOTItOTMuMTg3YzAuMzE3LTQuMTU4IDAuMzE3LTYuOTM5IDAtOC4zNDItMC4zMTgtMS40MDMtMS4zMzctMy4xMjMtMy4wNTctNS4xNmwtNTIuNTA5LTM5LjM0OSA2MC45Mi02Ni42NjJ6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSI4NTkiPjwvcGF0aD48L3N2Zz4=",
-      url: " ",
-      bgcolor: "rgba(28,187,180,0.7)",
-      title_0: "距离（公里）",
-      content_0: "23333",
-      title_1: "次数",
-      content_1: "1次"
-    }, {
-      title: "其他运动",
-      img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4NDA5NTM5IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEzMzYiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTY2Mi41IDM3OS41bS00NS41IDBhNDUuNSA0NS41IDAgMSAwIDkxIDAgNDUuNSA0NS41IDAgMSAwLTkxIDBaIiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMzM3Ij48L3BhdGg+PHBhdGggZD0iTTY0OS4wOTUgNTU4LjE4M2wtOC44MjktNjUuNjU2SDUzMi42NjNjLTExLjAwNy0xMS44MjMtMTMuNzU5LTIzLjI2OS04LjI1NS0zNC4zMzgtMTIuNTg1LTguNjEtNy40NjgtMzMuMTg5IDguMjU1LTMzLjE4OSAxMC40ODMgMCA0OS4yOTQgNS45ODggMTE2LjQzMiAxNy45NjVoMjAuNjJjMzIuNDI0LTEyLjEyIDUxLjE4Mi03LjA0NSA1Ni4yNzMgMTUuMjI0IDUuMDkxIDIyLjI2OCAxMy4yNjcgNjYuMTQ1IDI0LjUyNyAxMzEuNjMgNS42NDIgMTguNzc2LTQuNzkgMzEuMjM1LTMxLjI5MyAzNy4zNzctMjYuNTA0IDYuMTQyLTY0LjI3IDMuMDctMTEzLjI5Ni05LjIxM2wtNjQuODIyIDM3LjU5Yy0xNS42NDQgMS42NC0yNS4yOTUtMS40NDUtMjguOTU0LTkuMjUyLTMuNjYtNy44MDctMS44My0xNi4wMzMgNS40ODgtMjQuNjc3LTMuOTcyLTEuNDExLTcuNTIxLTUuNzI0LTEwLjY0Ny0xMi45MzktNC42ODktMTAuODIzLTAuMzMtMjAuOTQ4IDUuMTU5LTI2LjEzNCA1LjQ4OC01LjE4NiA5My43NzYtMzkuOTE3IDkzLjc3Ni0zOS45MTdsNDMuMTcgMTUuNTI5ek0yNjcgNjc0aDQ5MXYxN0gyNjd6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMzM4Ij48L3BhdGg+PC9zdmc+",
-      url: " ",
-      bgcolor: "rgba(0,0,0,0.7)",
-      content_0: "······"
-    }],
-        L = {
-      sleep: [{
-        title: "睡眠",
-        mode: "sleep",
-        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
-        url: " ",
-        bgcolor: "rgba(229,77,66,0.7)",
-        content: [{
-          time: "昨日11:30",
-          content: "开始睡眠",
-          color: "rgba(0,0,0,0.7)"
-        }, {
-          time: "昨日11:46",
-          content: "浅度睡眠",
-          color: "rgba(0,129,255,0.7)"
-        }, {
-          time: "凌晨12:02",
-          content: "深度睡眠",
-          color: "rgba(229,77,66,0.7)"
-        }, {
-          time: "结束06:09",
-          color: "rgba(0,0,0,0.7)"
-        }]
-      }],
-      heartbeat: [{
-        title: "心跳",
-        mode: "heartbeat",
-        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
-        url: " ",
-        bgcolor: "rgba(229,77,66,0.7)",
-        content: [{
-          time: "昨日11:30",
-          content: "开始睡眠",
-          color: "rgba(0,0,0,0.7)"
-        }, {
-          time: "昨日11:46",
-          content: "浅度睡眠",
-          color: "rgba(0,129,255,0.7)"
-        }, {
-          time: "凌晨12:02",
-          content: "深度睡眠",
-          color: "rgba(229,77,66,0.7)"
-        }, {
-          time: "结束06:09",
-          color: "rgba(0,0,0,0.7)"
-        }]
-      }],
-      pulse: [{
-        title: "脉搏",
-        mode: "pulse",
-        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
-        url: " ",
-        bgcolor: "rgba(229,77,66,0.7)",
-        content: [{
-          time: "昨日11:30",
-          content: "开始睡眠",
-          color: "rgba(0,0,0,0.7)"
-        }, {
-          time: "昨日11:46",
-          content: "浅度睡眠",
-          color: "rgba(0,129,255,0.7)"
-        }, {
-          time: "凌晨12:02",
-          content: "深度睡眠",
-          color: "rgba(229,77,66,0.7)"
-        }, {
-          time: "结束06:09",
-          color: "rgba(0,0,0,0.7)"
-        }]
-      }]
-    },
-        T = {
-      data: function data() {
-        return {
-          notice: I,
-          ydList: D,
-          jkList: L,
-          TabCur: "sleep"
-        };
-      },
-      mounted: function mounted() {},
-      methods: {
-        noticeClose: function noticeClose(M) {
-          this.notice.contentmain = "";
-        },
-        noticeRun: function noticeRun(M) {},
-        tabSelect: function tabSelect(M) {
-          this.TabCur = M.currentTarget.dataset.id;
+    (function (M) {
+      Object.defineProperty(N, "__esModule", {
+        value: !0
+      }), N.default = void 0;
+      var j = {
+        contentmain: "请连接蓝牙进行操作",
+        content: {
+          0: "请连接蓝牙设备和打开位置服务进行操作",
+          1: "坚持运动"
         }
-      }
-    };
-    N.default = T;
+      },
+          I = [{
+        title: "跑步",
+        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
+        url: " ",
+        bgcolor: "rgba(229,77,66,0.7)",
+        title_0: "距离（公里）",
+        content_0: "3600",
+        title_1: "时间",
+        content_1: "12小时"
+      }, {
+        title: "健步走",
+        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzg1NzM4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEwOTMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTQ3Ny44NDcgMjk3LjUzMmE0NS41MzggNDUuNTMyIDAgMSAwIDkxLjA3NiAwIDQ1LjUzOCA0NS41MzIgMCAxIDAtOTEuMDc2IDBaIiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMDk0Ij48L3BhdGg+PHBhdGggZD0iTTM3NS4wODYgNTU1Ljg4OWM3Ljk1OC01MS42MzMgMTYuNjg3LTg2LjIyNSAyNi4xODgtMTAzLjc3OSAzMS4wNDctNTcuMzU5IDYzLjIxOS04My4wNDUgNzIuOTg0LTg0LjI1OSAxOS42NjYtMi40NDUgNDMuMDY5LTIuOTM0IDU0LjgwNiAwIDEzLjYxNSAzLjQwMyAyMi45NTMgMTAuNTQ2IDI4LjAxMyAyMS40MjggNC43MDUgNDcuMjYzIDExLjgzIDc2Ljc1OCAyMS4zNzQgODguNDg1IDI2LjQyNyAzMi40NyA2Ni4wNyA0My4zMjggNzcuNDU1IDQzLjMyOCAwIDExLjM4My01Ljc2IDMwLjEwMS01Ljc2IDMwLjEwMS0xNi44ODYgMC03NC42NDkgMC0xMDUuOS01MC4yNjgtMS43NTctMi44MjYtNC4xNSAxMy45My03LjE3NiA1MC4yNjggNDAuNDkgMzkuMzAxIDY2LjY1NSA3MS4xOSA3OC40OTMgOTUuNjY1IDExLjgzOCAyNC40NzUgMTcuNzQ0IDcxLjE3NiAxNy43MTggMTQwLjEwM2gtMzkuNzYzYy0yLjc3Mi0zNy42NTctNy43OTQtNjYuNzE2LTE1LjA2Ny04Ny4xNzctNy4yNzMtMjAuNDYtMjguNjU2LTQ3LjIyNS02NC4xNS04MC4yOTMtMTMuNTYzIDMyLjE4LTI4Ljc0MyA2Mi41MzQtNDUuNTM4IDkxLjA2NC0xNi43OTYgMjguNTMtMzguMzg5IDUzLjk5OC02NC43NzggNzYuNDA2SDM2NGMzMy4xNjEtNDcuNDMgNTYuNjk3LTg0LjI4MiA3MC42MDktMTEwLjU1NSAxMy45MS0yNi4yNzMgMjMuODAxLTUyLjQyMyAyOS42Ny03OC40NDlWNDM4LjQwMmMtMTAuNDcgMy4xLTIwLjM2IDE0LjEzNy0yOS42NyAzMy4xMS01Ljc5MiAxMS44MDMtMTYgMzkuOTI4LTMwLjYyNCA4NC4zNzdoLTI4Ljg5OXoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9IjEwOTUiPjwvcGF0aD48L3N2Zz4=",
+        url: " ",
+        bgcolor: "rgba(0,129,255,0.7)",
+        title_0: "距离（公里）",
+        content_0: "- -",
+        title_1: "时间",
+        content_1: "0小时"
+      }, {
+        title: "骑行",
+        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4MzYwNjc4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijg1NiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTQ2LjE0MyAzNTIuNTU2YTQ1LjUyNCA0NS41NTYgMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjU1NiAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijg1NyI+PC9wYXRoPjxwYXRoIGQ9Ik02NTQuMjYyIDcxN2MtNTMuNDI3IDAtOTYuNzM4LTQzLjM0MS05Ni43MzgtOTYuODA2IDAtNTMuNDY0IDQzLjMxLTk2LjgwNSA5Ni43MzgtOTYuODA1IDUzLjQyNyAwIDk2LjczOCA0My4zNDEgOTYuNzM4IDk2LjgwNUM3NTEgNjczLjY2IDcwNy42ODkgNzE3IDY1NC4yNjIgNzE3eiBtMC0zNC4xNjdjMzQuNTcgMCA2Mi41OTUtMjguMDQ0IDYyLjU5NS02Mi42MzkgMC0zNC41OTQtMjguMDI1LTYyLjYzOC02Mi41OTUtNjIuNjM4cy02Mi41OTUgMjguMDQ0LTYyLjU5NSA2Mi42MzhjMCAzNC41OTUgMjguMDI1IDYyLjY0IDYyLjU5NSA2Mi42NHpNMzY5LjczOCA3MTdDMzE2LjMxMSA3MTcgMjczIDY3My42NTkgMjczIDYyMC4xOTRjMC01My40NjQgNDMuMzExLTk2LjgwNSA5Ni43MzgtOTYuODA1czk2LjczOCA0My4zNDEgOTYuNzM4IDk2LjgwNWMwIDUzLjQ2NS00My4zMSA5Ni44MDYtOTYuNzM4IDk2LjgwNnogbTAtMzQuMTY3YzM0LjU3IDAgNjIuNTk1LTI4LjA0NCA2Mi41OTUtNjIuNjM5IDAtMzQuNTk0LTI4LjAyNS02Mi42MzgtNjIuNTk1LTYyLjYzOHMtNjIuNTk1IDI4LjA0NC02Mi41OTUgNjIuNjM4YzAgMzQuNTk1IDI4LjAyNSA2Mi42NCA2Mi41OTUgNjIuNjR6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSI4NTgiPjwvcGF0aD48cGF0aCBkPSJNNTQwLjIwMyA0NDUuODE0bDQwLjk5IDQ1Ljk2NWg3OC45OGM5LjI1MS0yLjY1NSAxMy44NzctOC4zNjIgMTMuODc3LTE3LjEyIDAtOC43Ni00LjYyNi0xMy43NjYtMTMuODc3LTE1LjAyaC02My4xMzhsLTU2LjgzMi02NS41NDhjLTUuNjA4LTQuOTEyLTEwLjgwNS03LjM2OS0xNS41OTEtNy4zNjktNC43ODcgMC05LjMzMSAyLjQ1Ny0xMy42MzQgNy4zN2wtOTQuMjc2IDk3LjY4N2MtNC43NTQgNC4yNDEtNy4xMyA4Ljc2LTcuMTMgMTMuNTYgMCA0LjggMi4zNzYgOSA3LjEzIDEyLjYwMmw3Ni4xIDUzLjU0Ny00LjgzNCA4NC42ODFjMy4xIDExLjQ4NyA5Ljc0MiAxNy4yMyAxOS45MjUgMTcuMjNzMTYuNzM3LTQuOTYyIDE5LjY2My0xNC44ODVsNy4yOTItOTMuMTg3YzAuMzE3LTQuMTU4IDAuMzE3LTYuOTM5IDAtOC4zNDItMC4zMTgtMS40MDMtMS4zMzctMy4xMjMtMy4wNTctNS4xNmwtNTIuNTA5LTM5LjM0OSA2MC45Mi02Ni42NjJ6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSI4NTkiPjwvcGF0aD48L3N2Zz4=",
+        url: " ",
+        bgcolor: "rgba(28,187,180,0.7)",
+        title_0: "距离（公里）",
+        content_0: "23333",
+        title_1: "次数",
+        content_1: "1次"
+      }, {
+        title: "其他运动",
+        img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4NDA5NTM5IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEzMzYiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTY2Mi41IDM3OS41bS00NS41IDBhNDUuNSA0NS41IDAgMSAwIDkxIDAgNDUuNSA0NS41IDAgMSAwLTkxIDBaIiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMzM3Ij48L3BhdGg+PHBhdGggZD0iTTY0OS4wOTUgNTU4LjE4M2wtOC44MjktNjUuNjU2SDUzMi42NjNjLTExLjAwNy0xMS44MjMtMTMuNzU5LTIzLjI2OS04LjI1NS0zNC4zMzgtMTIuNTg1LTguNjEtNy40NjgtMzMuMTg5IDguMjU1LTMzLjE4OSAxMC40ODMgMCA0OS4yOTQgNS45ODggMTE2LjQzMiAxNy45NjVoMjAuNjJjMzIuNDI0LTEyLjEyIDUxLjE4Mi03LjA0NSA1Ni4yNzMgMTUuMjI0IDUuMDkxIDIyLjI2OCAxMy4yNjcgNjYuMTQ1IDI0LjUyNyAxMzEuNjMgNS42NDIgMTguNzc2LTQuNzkgMzEuMjM1LTMxLjI5MyAzNy4zNzctMjYuNTA0IDYuMTQyLTY0LjI3IDMuMDctMTEzLjI5Ni05LjIxM2wtNjQuODIyIDM3LjU5Yy0xNS42NDQgMS42NC0yNS4yOTUtMS40NDUtMjguOTU0LTkuMjUyLTMuNjYtNy44MDctMS44My0xNi4wMzMgNS40ODgtMjQuNjc3LTMuOTcyLTEuNDExLTcuNTIxLTUuNzI0LTEwLjY0Ny0xMi45MzktNC42ODktMTAuODIzLTAuMzMtMjAuOTQ4IDUuMTU5LTI2LjEzNCA1LjQ4OC01LjE4NiA5My43NzYtMzkuOTE3IDkzLjc3Ni0zOS45MTdsNDMuMTcgMTUuNTI5ek0yNjcgNjc0aDQ5MXYxN0gyNjd6IiBmaWxsPSIjOUI5N0FEIiBwLWlkPSIxMzM4Ij48L3BhdGg+PC9zdmc+",
+        url: " ",
+        bgcolor: "rgba(0,0,0,0.7)",
+        title_0: "时间（小时）",
+        content_0: "- -",
+        title_1: "次数",
+        content_1: "0次"
+      }],
+          D = {
+        sleep: [{
+          title: "睡眠",
+          mode: "sleep",
+          img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
+          url: " ",
+          bgcolor: "rgba(229,77,66,0.7)",
+          content: [{
+            time: "昨日11:30",
+            content: "开始睡眠",
+            color: "rgba(0,0,0,0.7)"
+          }, {
+            time: "昨日11:46",
+            content: "浅度睡眠",
+            color: "rgba(0,129,255,0.7)"
+          }, {
+            time: "凌晨12:02",
+            content: "深度睡眠",
+            color: "rgba(229,77,66,0.7)"
+          }, {
+            time: "结束06:09",
+            color: "rgba(0,0,0,0.7)"
+          }]
+        }],
+        heartbeat: [{
+          title: "心跳",
+          mode: "heartbeat",
+          img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
+          url: " ",
+          bgcolor: "rgba(229,77,66,0.7)",
+          content: [{
+            time: "昨日11:30",
+            content: "开始睡眠",
+            color: "rgba(0,0,0,0.7)"
+          }, {
+            time: "昨日11:46",
+            content: "浅度睡眠",
+            color: "rgba(0,129,255,0.7)"
+          }, {
+            time: "凌晨12:02",
+            content: "深度睡眠",
+            color: "rgba(229,77,66,0.7)"
+          }, {
+            time: "结束06:09",
+            color: "rgba(0,0,0,0.7)"
+          }]
+        }],
+        pulse: [{
+          title: "脉搏",
+          mode: "pulse",
+          img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
+          url: " ",
+          bgcolor: "rgba(229,77,66,0.7)",
+          content: [{
+            time: "昨日11:30",
+            content: "开始睡眠",
+            color: "rgba(0,0,0,0.7)"
+          }, {
+            time: "昨日11:46",
+            content: "浅度睡眠",
+            color: "rgba(0,129,255,0.7)"
+          }, {
+            time: "凌晨12:02",
+            content: "深度睡眠",
+            color: "rgba(229,77,66,0.7)"
+          }, {
+            time: "结束06:09",
+            color: "rgba(0,0,0,0.7)"
+          }]
+        }]
+      },
+          L = {
+        data: function data() {
+          return {
+            notice: j,
+            ydList: I,
+            jkList: D,
+            TabCur: "sleep"
+          };
+        },
+        mounted: function mounted() {},
+        methods: {
+          noticeClose: function noticeClose(M) {
+            this.notice.contentmain = "";
+          },
+          noticeRun: function noticeRun(M) {},
+          tabSelect: function tabSelect(M) {
+            this.TabCur = M.currentTarget.dataset.id;
+          },
+          ydToUrl: function ydToUrl(N) {
+            var j = JSON.stringify(N);
+            console.log(j, " at pages\\motion\\motion.vue:329"), M.navigateTo({
+              url: "./motion/children/motion_ydData?id=1&datas=" + j,
+              animationType: "pop-in",
+              animationDuration: 200
+            });
+          }
+        }
+      };
+      N.default = L;
+    }).call(this, j("6e42")["default"]);
   },
   "18f1": function f1(M, N, j) {
     "use strict";
@@ -2603,27 +2644,11 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
         D = j.n(I);
     D.a;
   },
-  "30e4": function e4(M, N, j) {
-    "use strict";
-
-    var I = function I() {
-      var M = this,
-          N = M.$createElement;
-      M._self._c;
-    },
-        D = [];
-
-    j.d(N, "a", function () {
-      return I;
-    }), j.d(N, "b", function () {
-      return D;
-    });
-  },
   "464c": function c(M, N, j) {
     "use strict";
 
     j.r(N);
-    var I = j("30e4"),
+    var I = j("6914"),
         D = j("f3fe");
 
     for (var L in D) {
@@ -2638,6 +2663,22 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
     var T = j("2877"),
         g = Object(T["a"])(D["default"], I["a"], I["b"], !1, null, null, null);
     N["default"] = g.exports;
+  },
+  6914: function _(M, N, j) {
+    "use strict";
+
+    var I = function I() {
+      var M = this,
+          N = M.$createElement;
+      M._self._c;
+    },
+        D = [];
+
+    j.d(N, "a", function () {
+      return I;
+    }), j.d(N, "b", function () {
+      return D;
+    });
   },
   "99a7": function a7(M, N, j) {},
   f3fe: function f3fe(M, N, j) {
@@ -2673,6 +2714,12 @@ define('pages/index.js',function(require, module, exports, window, document, fra
 (global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index"],{"0711":function(e,t,n){"use strict";(function(e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n={data:function(){return{PageCur:"home",toPageCur:""}},methods:{NavChange:function(e){this.PageCur=e.currentTarget.dataset.cur}},watch:{PageCur:function(t){var n=this;"ble"!=t&&"ble"==n.toPageCur&&e.stopBluetoothDevicesDiscovery({success:function(e){console.log("关闭蓝牙搜索"+e," at pages\\index.vue:60")}}),n.toPageCur=t}}};t.default=n}).call(this,n("6e42")["default"])},"0dc6":function(e,t,n){"use strict";var u=function(){var e=this,t=e.$createElement;e._self._c},a=[];n.d(t,"a",function(){return u}),n.d(t,"b",function(){return a})},"13b8":function(e,t,n){"use strict";n.r(t);var u=n("0711"),a=n.n(u);for(var r in u)"default"!==r&&function(e){n.d(t,e,function(){return u[e]})}(r);t["default"]=a.a},"4c61":function(e,t,n){"use strict";n.r(t);var u=n("0dc6"),a=n("13b8");for(var r in a)"default"!==r&&function(e){n.d(t,e,function(){return a[e]})}(r);n("534b");var o=n("2877"),c=Object(o["a"])(a["default"],u["a"],u["b"],!1,null,null,null);t["default"]=c.exports},"534b":function(e,t,n){"use strict";var u=n("5ee9"),a=n.n(u);a.a},"5ee9":function(e,t,n){}},[["00ea","common/runtime","common/vendor"]]]);
 });
 require('pages/index.js');
+__wxRoute = 'pages/motion/children/motion_ydData';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/motion/children/motion_ydData.js';
+
+define('pages/motion/children/motion_ydData.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/motion/children/motion_ydData"],{"76dd":function(n,t,a){"use strict";a.r(t);var e=a("92ab"),u=a.n(e);for(var o in e)"default"!==o&&function(n){a.d(t,n,function(){return e[n]})}(o);t["default"]=u.a},"92ab":function(n,t,a){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var e={data:function(){return{datas:{}}},onLoad:function(n){this.datas=JSON.parse(n.datas)}};t.default=e},dafb:function(n,t,a){"use strict";var e=function(){var n=this,t=n.$createElement;n._self._c},u=[];a.d(t,"a",function(){return e}),a.d(t,"b",function(){return u})},e070:function(n,t,a){"use strict";a.r(t);var e=a("dafb"),u=a("76dd");for(var o in u)"default"!==o&&function(n){a.d(t,n,function(){return u[n]})}(o);var r=a("2877"),d=Object(r["a"])(u["default"],e["a"],e["b"],!1,null,null,null);t["default"]=d.exports}},[["06ec","common/runtime","common/vendor"]]]);
+});
+require('pages/motion/children/motion_ydData.js');
 ;(function(global) {
     __uni_launch_ready(function() {
         var entryPagePath = __wxConfig.entryPagePath.replace('.html', '')
