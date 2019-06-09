@@ -1161,13 +1161,13 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
 __WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__l'])
-Z([3,'motion'])
+Z([3,'motion animation-fade'])
 Z([3,'bg-white'])
 Z([1,false])
 Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
 Z([3,'page'])
 Z([[2,'?:'],[[2,'=='],[[6],[[7],[3,'notice']],[3,'contentmain']],[1,'']],[1,false],[1,true]])
-Z([3,'cardTitle'])
+Z([3,'cardTitle-jk'])
 Z([3,'index'])
 Z([3,'jk'])
 Z([[7],[3,'jkList']])
@@ -1450,43 +1450,43 @@ var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
 cs.push("./pages/motion/motion.wxml:view:1:1")
 var fYB=_mz(z,'view',['bind:__l',0,'class',1],[],e,s,gg)
-cs.push("./pages/motion/motion.wxml:cu-custom:1:37")
+cs.push("./pages/motion/motion.wxml:cu-custom:1:52")
 var cZB=_mz(z,'cu-custom',['bgColor',2,'isBack',1,'vueSlots',2],[],e,s,gg)
 cs.pop()
 _(fYB,cZB)
-cs.push("./pages/motion/motion.wxml:scroll-view:1:200")
+cs.push("./pages/motion/motion.wxml:scroll-view:1:215")
 var h1B=_mz(z,'scroll-view',['scrollY',-1,'class',5],[],e,s,gg)
 var o2B=_v()
 _(h1B,o2B)
 if(_oz(z,6,e,s,gg)){o2B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:1148")
+cs.push("./pages/motion/motion.wxml:block:1:1205")
 cs.pop()
 }
-cs.push("./pages/motion/motion.wxml:view:1:2656")
+cs.push("./pages/motion/motion.wxml:view:1:2714")
 var c3B=_n('view')
 _rz(z,c3B,'class',7,e,s,gg)
 var t7B=_v()
 _(c3B,t7B)
-cs.push("./pages/motion/motion.wxml:block:1:2754")
+cs.push("./pages/motion/motion.wxml:block:1:2815")
 var e8B=function(o0B,b9B,xAC,gg){
-cs.push("./pages/motion/motion.wxml:view:1:2834")
+cs.push("./pages/motion/motion.wxml:view:1:2895")
 var fCC=_mz(z,'view',['bindtap',12,'class',1,'data-event-opts',2,'data-id',3],[],o0B,b9B,gg)
 var cDC=_v()
 _(fCC,cDC)
 if(_oz(z,16,o0B,b9B,gg)){cDC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:2990")
+cs.push("./pages/motion/motion.wxml:block:1:3051")
 cs.pop()
 }
 var hEC=_v()
 _(fCC,hEC)
 if(_oz(z,17,o0B,b9B,gg)){hEC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3051")
+cs.push("./pages/motion/motion.wxml:block:1:3112")
 cs.pop()
 }
 var oFC=_v()
 _(fCC,oFC)
 if(_oz(z,18,o0B,b9B,gg)){oFC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3116")
+cs.push("./pages/motion/motion.wxml:block:1:3177")
 cs.pop()
 }
 cDC.wxXCkey=1
@@ -1502,15 +1502,15 @@ cs.pop()
 var o4B=_v()
 _(c3B,o4B)
 if(_oz(z,19,e,s,gg)){o4B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3213")
+cs.push("./pages/motion/motion.wxml:block:1:3274")
 var cGC=_v()
 _(o4B,cGC)
-cs.push("./pages/motion/motion.wxml:block:1:3254")
+cs.push("./pages/motion/motion.wxml:block:1:3315")
 var oHC=function(aJC,lIC,tKC,gg){
 var bMC=_v()
 _(tKC,bMC)
 if(_oz(z,24,aJC,lIC,gg)){bMC.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3492")
+cs.push("./pages/motion/motion.wxml:block:1:3568")
 cs.pop()
 }
 bMC.wxXCkey=1
@@ -1524,13 +1524,13 @@ cs.pop()
 var l5B=_v()
 _(c3B,l5B)
 if(_oz(z,25,e,s,gg)){l5B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3771")
+cs.push("./pages/motion/motion.wxml:block:1:3847")
 cs.pop()
 }
 var a6B=_v()
 _(c3B,a6B)
 if(_oz(z,26,e,s,gg)){a6B.wxVkey=1
-cs.push("./pages/motion/motion.wxml:block:1:3837")
+cs.push("./pages/motion/motion.wxml:block:1:4228")
 cs.pop()
 }
 o4B.wxXCkey=1
@@ -10393,6 +10393,20 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
 
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
     //
     //
     //
