@@ -1,0 +1,13 @@
+
+page{background:#F2F2F2;width: 750rpx;overflow-x: hidden;}
+.qiun-padding{padding:2%; width:96%;}
+.qiun-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap;}
+.qiun-rows{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-orient:horizontal !important; -webkit-box-direction:normal !important; -webkit-flex-direction:row !important; -ms-flex-direction:row !important; flex-direction:row !important;}
+.qiun-columns{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical !important; -webkit-box-direction:normal !important; -webkit-flex-direction:column !important; -ms-flex-direction:column !important; flex-direction:column !important;}
+.qiun-common-mt{margin-top:10rpx;}
+.qiun-bg-white{background:#FFFFFF;}
+.qiun-title-bar{width:96%; padding:10rpx 2%; -webkit-flex-wrap:nowrap; -ms-flex-wrap:nowrap; flex-wrap:nowrap;}
+.qiun-title-dot-light{border-left: 10rpx solid #0ea391; padding-left: 10rpx; font-size: 32rpx;color: #000000}
+.qiun-charts{width: 750rpx; height:500rpx;background-color: #FFFFFF;}
+.charts{width: 750rpx; height:500rpx;background-color: #FFFFFF;}
+

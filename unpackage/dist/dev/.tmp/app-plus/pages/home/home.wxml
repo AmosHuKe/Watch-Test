@@ -1,0 +1,1 @@
+<view class="qiun-columns" bind:__l="__l"><view class="qiun-bg-white qiun-title-bar qiun-common-mt"><view class="qiun-title-dot-light">饼状图</view></view><view class="qiun-charts"><canvas class="charts" canvas-id="canvasPie" id="canvasPie" data-event-opts="{{[['touchstart',[['touchPie',['$event']]]]]}}" bindtouchstart="__e"></canvas></view></view>
