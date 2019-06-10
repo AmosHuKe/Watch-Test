@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="cu-custom" :style="[{height:CustomBar + 'px'}]">
-			<view class="cu-bar fixed" :style="style" :class="[bgImage!=''?'none-bg text-white bg-img':'',bgColor]">
+			<view class="cu-bar fixed" :style="style" :class="[bgImage!=''?'none-bg text-white bg-img':'',bgColor,isShadown?' cu-bar-shadown':'']">
 				<view class="action" @tap="BackPage" v-if="isBack">
 					<text class="cuIcon-back"></text>
 					<slot name="backText"></slot>
@@ -31,7 +31,7 @@
 				var bgImage = this.bgImage;
 				var style = `height:${CustomBar}px;padding-top:${StatusBar}px;`;
 				if (this.bgImage) {
-					style = `${style}background-image:url(${bgImage});`;
+					style = `${style}background-color:${bgImage};`;
 				}
 				return style
 			}
@@ -49,6 +49,10 @@
 				type: String,
 				default: ''
 			},
+			isShadown:{
+				type: [Boolean, String],
+				default: true
+			}
 		},
 		methods: {
 			BackPage() {
@@ -61,7 +65,7 @@
 </script>
 
 <style>
-	.cu-bar{
+	.cu-bar-shadown{
 		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 		box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 	}
