@@ -1,9 +1,0 @@
-
-.page{
-	color:#000000;
-	height: 100vh;
-}
-.gglist{
-	margin-top:100rpx;
-}
-

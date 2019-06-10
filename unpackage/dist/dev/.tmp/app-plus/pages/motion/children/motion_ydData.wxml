@@ -1,1 +1,0 @@
-<view class="motion_ydData" bind:__l="__l"><cu-custom bgColor="bg-white " isBack="{{true}}" vue-slots="{{['backText','content']}}"><view slot="backText"></view><view slot="content">{{datas.title}}</view></cu-custom>{{''+datas.title_0+datas.content_0+"\n\t"+datas.title_1+datas.content_1+''}}</view>
