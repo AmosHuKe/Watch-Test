@@ -6,10 +6,48 @@
 			<block slot="content">{{ datas.title }}</block>
 		</cu-custom>
 		
-		<view class="main-data shadow" :style="{backgroundColor:datas.bgcolor}">
-			{{ datas.title_0 }}{{ datas.content_0 }}
-			{{ datas.title_1 }}{{ datas.content_1 }}
-		</view>
+		<scroll-view scroll-y class="page">
+			<view class="main-data shadow" :style="{background:datas.bgcolor}">
+				<view class="flex justify-center padding align-end">
+					<view class=" margin-xs data-title">{{ datas.content_total_0 }}</view>
+					<view class=" margin-xs data-d">{{ datas.title_total_0 }}</view>
+				</view>
+				<view class="flex data-content">
+					<view class="flex-sub">
+						<view class="flex">
+							<view class=" margin-xs data-ct">{{ datas.title_total_1 }}</view>
+						</view>
+						<view class="flex">
+							<view class=" margin-xs data-cd">{{ datas.content_total_1 }}</view>
+						</view>
+					</view>
+					<view class="flex-sub">
+						<view class="flex">
+							<view class=" margin-xs data-ct">{{ datas.title_total_2 }}</view>
+						</view>
+						<view class="flex">
+							<view class=" margin-xs data-cd">{{ datas.content_total_2 }}</view>
+						</view>
+					</view>
+					
+				</view>
+			</view>
+			
+			<!-- 运动历程 -->
+			<view class="flex">
+				<view class="cu-timeline list-data" >
+					<view class="cu-time">2019.06.10</view>
+					<view class="cu-item">
+						<view class="content">
+							{{ datas.content_total_0 }}
+							{{ datas.title_total_0 }}
+						</view>
+					</view>
+					
+					<view class="cu-time">开始</view>
+				</view>
+			</view>
+		</scroll-view>
 		
 	</view>
 </template>
@@ -28,8 +66,38 @@
 </script>
 
 <style>
+	.shadow{
+		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
+		box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
+	}
 	.main-data{
 		width: 100%;
-		height: 560upx;
+		height: 540upx;
+		color: #FFFFFF;
+	}
+	.data-title{
+		font-size: 76upx;
+		font-weight: 900;
+		font-style: italic;
+		margin-top: 180upx;
+	}
+	.data-d{
+		font-style: italic;
+	}
+	.data-content{
+		margin-left: 128upx;
+		margin-top: 40upx;
+		font-size: 32upx;
+		color: rgba(255,255,255,0.7);
+	}
+	.data-ct{
+		font-size: 24upx;
+	}
+	.data-cd{
+		font-weight: 700;
+	}
+	.list-data{
+		margin-top: 4upx;
+		width: 100%;
 	}
 </style>
