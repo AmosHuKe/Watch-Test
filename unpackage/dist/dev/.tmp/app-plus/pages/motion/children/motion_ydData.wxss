@@ -1,36 +1,36 @@
 
-.shadow{
+.shadow.data-v-471cd040{
 	-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 	box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 }
-.main-data{
+.main-data.data-v-471cd040{
 	width: 100%;
 	height: 540rpx;
 	color: #FFFFFF;
 }
-.data-title{
+.data-title.data-v-471cd040{
 	font-size: 76rpx;
 	font-weight: 900;
 	font-style: italic;
 	margin-top: 180rpx;
 }
-.data-d{
+.data-d.data-v-471cd040{
 	font-style: italic;
 }
-.data-content{
+.data-content.data-v-471cd040{
 	margin-left: 128rpx;
 	margin-top: 40rpx;
 	font-size: 32rpx;
 	color: rgba(255,255,255,0.7);
 }
-.data-ct{
+.data-ct.data-v-471cd040{
 	font-size: 24rpx;
 }
-.data-cd{
+.data-cd.data-v-471cd040{
 	font-weight: 700;
 }
-.list-data{
-	margin-top: 4rpx;
+.list-data.data-v-471cd040{
+	margin-top: 0rpx;
 	width: 100%;
 }
 

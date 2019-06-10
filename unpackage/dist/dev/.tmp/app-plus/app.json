@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index",
-    "pages/motion/children/motion_ydData"
+    "pages/motion/children/motion_ydData",
+    "pages/mine/children/login",
+    "pages/mine/children/register",
+    "pages/mine/children/forget"
   ],
   "subPackages": [],
   "window": {
@@ -15,7 +18,7 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "watch-test",
+  "appname": "智能手表测试",
   "compilerVersion": "1.9.9",
   "usingComponents": {
     "cu-custom": "/lib/colorui/components/cu-custom",
