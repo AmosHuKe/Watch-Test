@@ -9,6 +9,21 @@
 			//运动详情页
 			"path": "pages/motion/children/motion_ydData",
 			"style": {}
+		},
+		{
+			//登陆
+			"path": "pages/mine/children/login",
+			"style": {}
+		},
+		{
+			//注册
+			"path": "pages/mine/children/register",
+			"style": {}
+		},
+		{
+			//找回密码
+			"path": "pages/mine/children/forget",
+			"style": {}
 		}
 	],
 	"globalStyle": {
