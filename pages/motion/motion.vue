@@ -1,5 +1,5 @@
 <template>
-	<view class="motion animation-fade">
+	<view class="motion">
 		<!-- 顶部 -->
 		<cu-custom bgColor="bg-white" :isBack="false">
 			<block slot="backText"></block>
@@ -145,7 +145,8 @@
 					</view>
 				</view>
 			</view>
-				
+			
+			
 			
 		</scroll-view>
 	</view>
@@ -380,7 +381,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 @import url("../../style/animation/animation.css"); /* 动画 */
 	
 	.motion_top{
@@ -595,7 +596,7 @@
 		margin-left: -12upx;
 	}
 	.bg-blue{
-		background-color:rgba(0,129,255,0.7);
+		background-color:rgba(0,129,255,0.7); 
 	}
 	
 	

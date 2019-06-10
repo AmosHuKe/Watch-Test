@@ -67,7 +67,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.mainIndex{
 		padding-bottom:128upx;
 	}
