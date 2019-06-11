@@ -55,4 +55,8 @@
 		height: 30px;
 		border-left: 3px solid #FFF0F6;
 	}
+	.bar-shadown{
+		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
+		box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
+	}
 </style>
