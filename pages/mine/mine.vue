@@ -16,7 +16,7 @@
 			</view>
 		</view>
 		
-		<view class="cu-list menu sm-border card-menu margin-top">
+		<view class="cu-list menu sm-border card-menu margin-top bar-shadown">
 			<view class="cu-item arrow" >
 				<view class="content">
 					<text class="cuIcon-roundadd text-grey"></text>
