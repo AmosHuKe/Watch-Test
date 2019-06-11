@@ -1,28 +1,86 @@
 <template>
-	<view>
-		<!--轮播图 -->
-		<swiper class="card-swiper" :class="dotStyle?'square-dot':'round-dot'" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000" duration="500" @change="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-			<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''">
-				<view class="swiper-item">
-					<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
-					<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
-				</view>
-			</swiper-item>
-		</swiper>
-		
-		<!-- 统计图 -->
-		<view class="flex ring">
-			<view class="bg-white">
-				<view class="qiun-columns">
-					<view class="qiun-bg-white qiun-title-bar qiun-common-mt" >
-						<view class="qiun-title-dot-light run_logo" ></view><view class="today_run">今日运动{{hour}}小时{{minute}}分，{{kilometer}}公里</view>
+	<view class="home">
+		<scroll-view scroll-y class="page">
+			<!--轮播图 -->
+			<swiper class="card-swiper swiperbox" :class="dotStyle?'square-dot':'round-dot'" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000" duration="500" @change="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+				<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''">
+					<view class="swiper-item">
+						<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
+						<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
 					</view>
-					<view class="qiun-charts" >
-						<canvas canvas-id="canvasRing" id="canvasRing" class="charts" @touchstart="touchRing"></canvas>
+				</swiper-item>
+			</swiper>
+			
+			<!-- 统计图 -->
+			<view class="ring">
+				<view class="cu-card article">
+					<view class="cu-item bar-shadown">
+						<view class="title">
+							<view class="text-cut">
+								<text class="cuIcon-title text-black"></text> 今日运动{{hour}}小时{{minute}}分，{{kilometer}}公里
+							</view>
+						</view>
+						<view class="content">
+							<view class="flex" >
+								<view class="flex-sub">
+									<canvas canvas-id="canvasRing" id="canvasRing" class="charts" @touchstart="touchRing"></canvas>
+								</view>
+								<view class="flex-sub">
+									<view class="tagb-content" >
+										<view class="flex">
+											<text class="cuIcon-title text-blue tagb"></text>跑步
+										</view>
+										<view class="flex">
+											<text>46分钟，2公里</text>
+										</view>
+									</view>
+									
+									<view class="tagb-content" >
+										<view class="flex">
+											<text class="cuIcon-title text-green tagb"></text>骑行
+										</view>
+										<view class="flex">
+											<text>1小时20分钟，12公里</text>
+										</view>
+									</view>
+									
+									<view class="tagb-content" >
+										<view class="flex">
+											<text class="cuIcon-title text-yellow tagb"></text>健走
+										</view>
+										<view class="flex">
+											<text>52分钟，1公里</text>
+										</view>
+									</view>
+									
+									<view class="tagb-content" >
+										<view class="flex">
+											<text class="cuIcon-title text-red tagb"></text>登山
+										</view>
+										<view class="flex">
+											<text>3小时分钟，4公里</text>
+										</view>
+									</view>
+									
+									<view class="tagb-content" >
+										<view class="flex">
+											<text class="cuIcon-title text-purple tagb"></text>滑雪
+										</view>
+										<view class="flex">
+											<text>1分钟，1公里</text>
+										</view>
+									</view>
+									
+								</view>
+							</view>
+						</view>
 					</view>
 				</view>
+				
+				
 			</view>
-		</view>
+			
+		</scroll-view>
 	
 	</view>
 </template>
@@ -40,7 +98,7 @@
 				cHeight:'',
 				pixelRatio:1,
 				serverData:'',
-				hour: 1,
+				hour: 5,
 				minute: 20,
 				kilometer: 26,
 				//轮播
@@ -74,15 +132,15 @@
 					type: 'image',
 					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
 				}],
-				dotStyle: false,
+				dotStyle: true,
 				towerStart: 0,
 				direction: ''
 			}
 		},
 		mounted() {
 			_self = this;
-			this.cWidth=uni.upx2px(750);
-			this.cHeight=uni.upx2px(500);
+			this.cWidth=uni.upx2px(360);
+			this.cHeight=uni.upx2px(360);
 			this.getServerData();
 		},
 		methods: {
@@ -97,19 +155,19 @@
 						let Ring= {
 						  "series": [{
 							"name": "跑步",
-							"data": 50
+							"data": 2
 						  }, {
 							"name": "骑行",
-							"data": 30
+							"data": 12
 						  }, {
 							"name": "健走",
-							"data": 10
+							"data": 1
 						  }, {
 							"name": "登山",
-							"data": 5
+							"data": 4
 						  }, {
 							"name": "滑雪",
-							"data": 5
+							"data": 1
 						  }]
 						};
 						//这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
@@ -127,7 +185,7 @@
 					canvasId: canvasId,
 					type: 'ring',
 					fontSize:11,
-					legend:true,
+					legend:false, //底部tag
 					// title: {
 					// 	name: '',
 					// 	color: '#7cb5ec',
@@ -135,10 +193,10 @@
 					// 	offsetY:-20*_self.pixelRatio,
 					// },
 					subtitle: {
-						name: '运动量',
+						name: '运动',
 						color: '#666666',
 						fontSize: 15*_self.pixelRatio,
-						offsetY:6*_self.pixelRatio,
+						offsetY:2*_self.pixelRatio,
 					},
 					extra: {
 						pie: {
@@ -153,8 +211,8 @@
 					animation: true,
 					width: _self.cWidth*_self.pixelRatio,
 					height: _self.cHeight*_self.pixelRatio,
-					disablePieStroke: true,
-					dataLabel: true,
+					disablePieStroke: false,
+					dataLabel: false,
 				});
 			},
 			touchRing(e){
@@ -164,25 +222,82 @@
 					}
 				});
 			},
+			DotStyle(e) {
+				this.dotStyle = e.detail.value
+			},
+			// cardSwiper
+			cardSwiper(e) {
+				this.cardCur = e.detail.current
+			},
+			// towerSwiper
+			// 初始化towerSwiper
+			TowerSwiper(name) {
+				let list = this[name];
+				for (let i = 0; i < list.length; i++) {
+					list[i].zIndex = parseInt(list.length / 2) + 1 - Math.abs(i - parseInt(list.length / 2))
+					list[i].mLeft = i - parseInt(list.length / 2)
+				}
+				this.swiperList = list
+			},
+			
+			// towerSwiper触摸开始
+			TowerStart(e) {
+				this.towerStart = e.touches[0].pageX
+			},
+			
+			// towerSwiper计算方向
+			TowerMove(e) {
+				this.direction = e.touches[0].pageX - this.towerStart > 0 ? 'right' : 'left'
+			},
+			
+			// towerSwiper计算滚动
+			TowerEnd(e) {
+				let direction = this.direction;
+				let list = this.swiperList;
+				if (direction == 'right') {
+					let mLeft = list[0].mLeft;
+					let zIndex = list[0].zIndex;
+					for (let i = 1; i < this.swiperList.length; i++) {
+						this.swiperList[i - 1].mLeft = this.swiperList[i].mLeft
+						this.swiperList[i - 1].zIndex = this.swiperList[i].zIndex
+					}
+					this.swiperList[list.length - 1].mLeft = mLeft;
+					this.swiperList[list.length - 1].zIndex = zIndex;
+				} else {
+					let mLeft = list[list.length - 1].mLeft;
+					let zIndex = list[list.length - 1].zIndex;
+					for (let i = this.swiperList.length - 1; i > 0; i--) {
+						this.swiperList[i].mLeft = this.swiperList[i - 1].mLeft
+						this.swiperList[i].zIndex = this.swiperList[i - 1].zIndex
+					}
+					this.swiperList[0].mLeft = mLeft;
+					this.swiperList[0].zIndex = zIndex;
+				}
+				this.direction = ""
+				this.swiperList = this.swiperList
+			},
 		}
 	}
 </script>
 
 <style scoped>
-	
+.home{
+	margin-top: 100upx;
+}
+.swiperbox{
+	margin-bottom: 32upx;
+}
+.tagb-content{
+	margin-bottom: 10upx;
+}
+
+.tagb{
+	font-size: 40upx;
+}
+
 	
 /*uCharts start*/
-page{background:#F2F2F2;width: 750upx;overflow-x: hidden;}
-.qiun-padding{padding:2%; width:96%;}
-.qiun-wrap{display:flex; flex-wrap:wrap;}
-.qiun-rows{display:flex; flex-direction:row !important;}
-.qiun-columns{display:flex; flex-direction:column !important;}
-.qiun-common-mt{margin-top:10upx;}
-.qiun-bg-white{background:#FFFFFF;}
-.qiun-title-bar{width:96%; padding:10upx 2%; flex-wrap:nowrap;}
-.qiun-title-dot-light{border-left: 10upx solid #0ea391; padding-left: 10upx; font-size: 32upx;color: #000000}
-.qiun-charts{width: 750upx; height:500upx;background-color: #FFFFFF;}
-.charts{width: 750upx; height:500upx;background-color: #FFFFFF;}
+.charts{width: 360upx; height:360upx;background-color:transparent;}
 /*uCharts end*/
 .run_logo{
 	width: 40upx;
