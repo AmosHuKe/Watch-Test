@@ -5,7 +5,7 @@
     "iPad"
   ],
   "id": "__UNI__98CA8AF",
-  "name": "watch-test",
+  "name": "智能手表测试",
   "version": {
     "name": "1.0.0",
     "code": "100"
@@ -85,8 +85,9 @@
     "arguments": "{\"name\":\"\",\"path\":\"\",\"query\":\"\",\"id\":0}",
     "allowsInlineMediaPlayback": true,
     "uni-app": {
-      "compilerVersion": "1.9.9",
-      "control": "v8"
+      "compilerVersion": "2.0.0",
+      "control": "v8",
+      "nvueCompiler": "weex"
     }
   }
 }

@@ -65,7 +65,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.shadow{
 		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 		box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
@@ -97,7 +97,7 @@
 		font-weight: 700;
 	}
 	.list-data{
-		margin-top: 4upx;
+		margin-top: 0upx;
 		width: 100%;
 	}
 </style>

@@ -22,19 +22,19 @@
 }
 @keyframes heart1{
 	from{transform:translate(0,0)}
-	to{transform:translate(0,6px)}
+	to{transform:translate(0,14upx)}
 }
 .heart2{
 	animation: heart2 ease-in-out 2.4s infinite alternate;
 }
 @keyframes heart2{
 	from{transform:translate(0,0)}
-	to{transform:translate(0,6px)}
+	to{transform:translate(0,14upx)}
 }
 .heart3{
 	animation: heart3 ease-in-out 2.8s infinite alternate;
 }
 @keyframes heart3{
 	from{transform:translate(0,0)}
-	to{transform:translate(0,6px)}
+	to{transform:translate(0,14upx)}
 }

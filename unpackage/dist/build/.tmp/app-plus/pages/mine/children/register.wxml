@@ -1,0 +1,1 @@
+<view bind:__l="__l"><cu-custom bgColor="bg-white" isBack="{{true}}" vue-slots="{{['backText','content']}}"><view slot="backText"></view><view slot="content">注册</view></cu-custom></view>

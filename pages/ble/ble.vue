@@ -76,7 +76,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.belid{
 		margin-left:10upx;
 	}

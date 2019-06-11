@@ -9,11 +9,26 @@
 			//运动详情页
 			"path": "pages/motion/children/motion_ydData",
 			"style": {}
+		},
+		{
+			//登陆
+			"path": "pages/mine/children/login",
+			"style": {}
+		},
+		{
+			//注册
+			"path": "pages/mine/children/register",
+			"style": {}
+		},
+		{
+			//找回密码
+			"path": "pages/mine/children/forget",
+			"style": {}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "手表",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
 		"navigationStyle": "custom"

@@ -1,22 +1,26 @@
 {
   "pages": [
     "pages/index",
-    "pages/motion/children/motion_ydData"
+    "pages/motion/children/motion_ydData",
+    "pages/mine/children/login",
+    "pages/mine/children/register",
+    "pages/mine/children/forget"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "手表",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "navigationStyle": "custom"
   },
+  "nvueCompiler": "weex",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "watch-test",
-  "compilerVersion": "1.9.9",
+  "appname": "智能手表测试",
+  "compilerVersion": "2.0.0",
   "usingComponents": {
     "cu-custom": "/lib/colorui/components/cu-custom",
     "home": "/pages/home/home",
