@@ -1,5 +1,5 @@
 
-.contentLogin {
+.content {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -81,6 +81,22 @@
 	line-height: 100rpx;
 	margin-left: 16rpx;
 }
+.yzm {
+	color: #FF7D13;
+	font-size: 24rpx;
+	line-height: 64rpx;
+	padding-left: 10rpx;
+	padding-right: 10rpx;
+	width:auto;
+	height:64rpx;
+	border:1rpx solid #FFA800;
+	-webkit-border-radius: 50rpx;
+	        border-radius: 50rpx;
+}
+.yzms {
+	color: #999999 !important;
+	border:1rpx solid #999999;
+}
 .dlbutton {
 	color: #FFFFFF;
 	font-size: 34rpx;
@@ -131,9 +147,8 @@
 	height: 40rpx;
 	line-height: 40rpx;
 }
-.xieyi text{
-	font-size: 24rpx;
-	margin-left: 15rpx;
-	margin-right: 15rpx;
+.xieyi image{
+	width: 40rpx;
+	height: 40rpx;
 }
 

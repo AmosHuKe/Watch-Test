@@ -9,17 +9,18 @@
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "手表",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "navigationStyle": "custom"
   },
+  "nvueCompiler": "weex",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
   "appname": "智能手表测试",
-  "compilerVersion": "1.9.9",
+  "compilerVersion": "2.0.0",
   "usingComponents": {
     "cu-custom": "/lib/colorui/components/cu-custom",
     "home": "/pages/home/home",

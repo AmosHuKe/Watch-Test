@@ -32,6 +32,7 @@ page.data-v-3628eae8 {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.6)));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	background: -o-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	-webkit-box-orient: horizontal;
@@ -50,7 +51,8 @@ page.data-v-3628eae8 {
 .logo-img.data-v-3628eae8 {
 	width: 150rpx;
 	height: 150rpx;
-	border-radius: 150rpx;
+	-webkit-border-radius: 150rpx;
+	        border-radius: 150rpx;
 }
 .logo-title.data-v-3628eae8 {
 	height: 150rpx;
