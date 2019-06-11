@@ -101,7 +101,7 @@
 	}
 </script>
 
-<style scoped>
+<style>
 	.contentLogin {
 		display: flex;
 		flex-direction: column;
@@ -141,7 +141,6 @@
 	.list-call .img{
 		width: 40upx;
 		height: 40upx;
-		font-size: 40upx;
 	}
 	.list-call .biaoti{
 		flex: 1;
