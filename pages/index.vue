@@ -8,7 +8,7 @@
 			<mine v-if="PageCur=='mine'"></mine> <!-- 我的 -->
 		</view>
 		
-		<view class="cu-bar tabbar bg-white shadow foot">
+		<view class="cu-bar tabbar bg-white shadow foot mainCD">
 			<view class="action" :class="PageCur=='home'?'text-black':'text-gray'" @click="NavChange" data-cur="home">
 				<view class="cuIcon-homefill"></view> 首页
 			</view>
@@ -68,6 +68,9 @@
 </script>
 
 <style scoped>
+	.mainCD{
+		z-index: 9999999999;
+	}
 	.mainIndex{
 		padding-bottom:128upx;
 	}

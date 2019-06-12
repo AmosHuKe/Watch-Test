@@ -19,9 +19,9 @@
 				<view class="list-call">
 					<text class="img cuIcon-lock text-black"></text>
 					<input class="biaoti" v-model="password" type="text" maxlength="32" placeholder="登录密码" :password="!showPassword" />
-					<image class="img " :class="showPassword?'cuIcon-attentionforbid':'cuIcon-attention'" @tap="display"></image>
+					<image class="img " :class="showPassword?'cuIcon-attention':'cuIcon-attentionforbid'" @tap="display"></image>
 				</view>
-				<view class="list-call">
+				<view class="list-call"> 
 					<text class="img cuIcon-safe text-black"></text>
 					<input class="biaoti" v-model="code" type="number" maxlength="4" placeholder="验证码" />
 					<view class="yzm " :class="{ yzms: second>0 }" @tap="getcode">{{yanzhengma}}</view>

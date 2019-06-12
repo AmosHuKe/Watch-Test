@@ -1,7 +1,14 @@
 <script>
 	import Vue from 'vue'
+	
 	export default {
+		created() {
+			// #ifdef APP-PLUS
+			plus.navigator.closeSplashscreen(); 
+			// #endif 
+		},
 		onLaunch: function() {
+			
 			console.log('App Launch')
 			uni.getSystemInfo({
 				success: function(e) {
