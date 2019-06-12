@@ -1501,7 +1501,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index","pages/motion/children/motion_ydData","pages/mine/children/login","pages/mine/children/register","pages/mine/children/forget"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8","navigationStyle":"custom"},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"智能手表测试","compilerVersion":"2.0.0","usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","home":"/pages/home/home","motion":"/pages/motion/motion","ble":"/pages/ble/ble","goal":"/pages/goal/goal","mine":"/pages/mine/mine"}};
+__wxAppCode__['app.json']={"pages":["pages/index","pages/motion/children/motion_ydData","pages/mine/children/login","pages/mine/children/register","pages/mine/children/forget"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"手表","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8","navigationStyle":"custom"},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"智能手表测试","compilerVersion":"2.0.0","usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","home":"/pages/home/home","motion":"/pages/motion/motion","ble":"/pages/ble/ble","goal":"/pages/goal/goal","mine":"/pages/mine/mine"}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['lib/colorui/components/cu-custom.json']={"usingComponents":{},"component":true};
@@ -1534,7 +1534,7 @@ __wxAppCode__['pages/mine/mine.wxml']=$gwx('./pages/mine/mine.wxml');
 __wxAppCode__['pages/motion/children/motion_ydData.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"}};
 __wxAppCode__['pages/motion/children/motion_ydData.wxml']=$gwx('./pages/motion/children/motion_ydData.wxml');
 
-__wxAppCode__['pages/motion/motion.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"},"component":true};
+__wxAppCode__['pages/motion/motion.json']={"usingComponents":{},"component":true};
 __wxAppCode__['pages/motion/motion.wxml']=$gwx('./pages/motion/motion.wxml');
 
 
@@ -4526,7 +4526,7 @@ function drawPieDataPoints(series, opts, config, context) {
   if (opts.type === 'ring') {
     var innerPieWidth = radius * 0.6;
     if (typeof opts.extra.pie.ringWidth === 'number' && opts.extra.pie.ringWidth > 0) {
-      innerPieWidth = Math.max(0, radius - opts.extra.pie.ringWidth + 30); //环形空圆 半径
+      innerPieWidth = Math.max(0, radius - opts.extra.pie.ringWidth - 10); //环形空圆 半径
     }
     context.beginPath();
     context.setFillStyle(opts.background || '#ffffff');
@@ -14719,33 +14719,53 @@ define('pages/home/home.js',function(require, module, exports, window, document,
       //
       var _self;var canvaRing = null;var _default = { data: function data() {return { //环状统计初始化数据
             cWidth: '', cHeight: '', pixelRatio: 1, serverData: '', hour: 5, minute: 20, kilometer: 26, //轮播
-            cardCur: 0, swiperList: [{ id: 0, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg' }, { id: 1, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg' }, { id: 2, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg' }, { id: 3, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg' }, { id: 4, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg' }, { id: 5, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg' }, { id: 6, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg' }], dotStyle: true, towerStart: 0, direction: '' };}, mounted: function mounted() {_self = this;this.cWidth = uni.upx2px(360);this.cHeight = uni.upx2px(360);this.getServerData();}, methods: { getServerData: function getServerData() {uni.request({ url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2', data: {}, success: function success(res) {console.log(res.data.data, " at pages\\home\\home.vue:153"); // let Ring={series:[]};
-                var Ring = { "series": [{ "name": "跑步", "data": 2 }, { "name": "骑行", "data": 12 }, { "name": "健走", "data": 1 }, { "name": "登山", "data": 4 }, { "name": "滑雪", "data": 1 }] }; //这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
-                // Ring.series=res.data.data.Ring.series;
-                _self.showRing("canvasRing", Ring);}, fail: function fail() {_self.tips = "网络错误，小程序端请检查合法域名";} });},
-          showRing: function showRing(canvasId, chartData) {
-            canvaRing = new _uCharts.default({
-              $this: _self,
-              canvasId: canvasId,
-              type: 'ring',
-              fontSize: 11,
-              legend: false, //底部tag
+            cardCur: 0, swiperList: [{ id: 0, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg' }, { id: 1, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg' }, { id: 2, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg' }, { id: 3, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg' }, { id: 4, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg' }, { id: 5, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg' }, { id: 6, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg' }], dotStyle: true, towerStart: 0, direction: '' };}, mounted: function mounted() {_self = this;this.cWidth = uni.upx2px(400);this.cHeight = uni.upx2px(400);this.getServerData();}, methods: { getServerData: function getServerData() {var Ring = { "series": [{ "name": "跑步", "data": 2 }, { "name": "骑行", "data": 12 }, { "name": "健走", "data": 1 }, { "name": "登山", "data": 4 }, { "name": "滑雪", "data": 1 }] };_self.showRing("canvasRing", Ring); // uni.request({
+            // 	url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2',
+            // 	data:{
+            // 	},
+            // 	success: function(res) {
+            // 		console.log(res.data.data)
+            // 		// let Ring={series:[]};
+            // 		let Ring= {
+            // 		  "series": [{
+            // 			"name": "跑步",
+            // 			"data": 2
+            // 		  }, {
+            // 			"name": "骑行",
+            // 			"data": 12
+            // 		  }, {
+            // 			"name": "健走",
+            // 			"data": 1
+            // 		  }, {
+            // 			"name": "登山",
+            // 			"data": 4
+            // 		  }, {
+            // 			"name": "滑雪",
+            // 			"data": 1
+            // 		  }]
+            // 		};
+            // 		//这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
+            // 		// Ring.series=res.data.data.Ring.series;
+            // 		_self.showRing("canvasRing",Ring);
+            // 	},
+            // 	fail: () => {
+            // 		_self.tips="网络错误，小程序端请检查合法域名";
+            // 	},
+            // });
+          }, showRing: function showRing(canvasId, chartData) {canvaRing = new _uCharts.default({ $this: _self, canvasId: canvasId, type: 'ring', fontSize: 11, legend: false, //底部tag
               // title: {
               // 	name: '',
               // 	color: '#7cb5ec',
               // 	fontSize: 25*_self.pixelRatio,
               // 	offsetY:-20*_self.pixelRatio,
               // },
-              subtitle: {
-                name: '运动',
-                color: '#666666',
-                fontSize: 15 * _self.pixelRatio,
+              subtitle: { name: '', color: '#666666', fontSize: 1 * _self.pixelRatio,
                 offsetY: 2 * _self.pixelRatio },
 
               extra: {
                 pie: {
                   offsetAngle: -45,
-                  ringWidth: 40 * _self.pixelRatio,
+                  ringWidth: 5 * _self.pixelRatio,
                   lableWidth: 15 } },
 
 
@@ -14756,7 +14776,7 @@ define('pages/home/home.js',function(require, module, exports, window, document,
               width: _self.cWidth * _self.pixelRatio,
               height: _self.cHeight * _self.pixelRatio,
               disablePieStroke: false,
-              dataLabel: false });
+              dataLabel: true });
 
           },
           touchRing: function touchRing(e) {

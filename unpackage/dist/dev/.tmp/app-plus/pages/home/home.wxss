@@ -6,13 +6,20 @@
 	margin-bottom: 32rpx;
 }
 .tagb-content.data-v-5b29a268{
+	font-size: 24rpx; 
 	margin-bottom: 10rpx;
 }
 .tagb.data-v-5b29a268{
 	font-size: 40rpx;
+	width: 40rpx;
 }
 /*uCharts start*/
-.charts.data-v-5b29a268{width: 360rpx; height:360rpx;background-color:transparent;}
+.charts.data-v-5b29a268{
+	width: 400rpx; 
+	height:400rpx;
+	background-color:transparent;
+	margin-top: 36rpx;
+}
 /*uCharts end*/
 .run_logo.data-v-5b29a268{
 	width: 40rpx;

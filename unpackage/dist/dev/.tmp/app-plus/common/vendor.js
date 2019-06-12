@@ -2583,7 +2583,7 @@ function drawPieDataPoints(series, opts, config, context) {
   if (opts.type === 'ring') {
     var innerPieWidth = radius * 0.6;
     if (typeof opts.extra.pie.ringWidth === 'number' && opts.extra.pie.ringWidth > 0) {
-      innerPieWidth = Math.max(0, radius - opts.extra.pie.ringWidth + 30); //环形空圆 半径
+      innerPieWidth = Math.max(0, radius - opts.extra.pie.ringWidth - 10); //环形空圆 半径
     }
     context.beginPath();
     context.setFillStyle(opts.background || '#ffffff');
