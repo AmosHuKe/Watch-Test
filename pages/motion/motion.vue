@@ -62,7 +62,7 @@
 				<view class="flex">
 					<view class="flex-sub" v-for="(item,index) in ydList" :key="index">
 						<view class="cu-card article " @tap="ydToUrl(index)">  <!--跳转到详情-->
-							<view class="cu-item bg-img bg-img-yd shadow-warp " :style="[{backgroundImage:'url('+item.img+')'}]" >
+							<view class="cu-item bg-img bg-img-yd shadow-warp" :style="[{backgroundImage:'url('+item.img+')'}]" >
 								<view class="cu-yd" :style="[{background:item.bgcolor}]">
 									<view class="cardTitle">
 										<!-- 运动类型 -->
@@ -382,7 +382,6 @@
 </script>
 
 <style scoped>
-@import url("../../style/animation/animation.css"); /* 动画 */
 	.motion{
 		margin-top:100upx;
 	}
