@@ -81,9 +81,16 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+
 {
+  created: function created() {
+
+    plus.navigator.closeSplashscreen();
+
+  },
   onLaunch: function onLaunch() {
-    console.log('App Launch', " at App.vue:5");
+
+    console.log('App Launch', " at App.vue:12");
     uni.getSystemInfo({
       success: function success(e) {
 
@@ -110,10 +117,10 @@ var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules
 
   },
   onShow: function onShow() {
-    console.log('App 开启', " at App.vue:32");
+    console.log('App 开启', " at App.vue:39");
   },
   onHide: function onHide() {
-    console.log('App 关闭', " at App.vue:35");
+    console.log('App 关闭', " at App.vue:42");
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

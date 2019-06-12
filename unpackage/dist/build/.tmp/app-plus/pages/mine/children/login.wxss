@@ -1,5 +1,5 @@
 
-.contentLogin.data-v-1e109036 {
+.contentLogin {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -14,22 +14,24 @@
 	    -ms-flex-pack:center;
 	        justify-content:center;
 }
-.header.data-v-1e109036 {
+.header {
 	width:161rpx;
 	height:161rpx;
 	-webkit-box-shadow:0rpx 12rpx 13rpx 0rpx rgba(0,0,0,0.1);
 	        box-shadow:0rpx 12rpx 13rpx 0rpx rgba(0,0,0,0.1);
-	border-radius:50%;
+	-webkit-border-radius:50%;
+	        border-radius:50%;
 	margin-top: 128rpx;
 	margin-left: auto;
 	margin-right: auto;
 }
-.header image.data-v-1e109036{
+.header image{
 	width:161rpx;
 	height:161rpx;
-	border-radius:50%;
+	-webkit-border-radius:50%;
+	        border-radius:50%;
 }
-.list.data-v-1e109036 {
+.list {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -43,7 +45,7 @@
 	padding-left: 70rpx;
 	padding-right: 70rpx;
 }
-.list-call.data-v-1e109036{
+.list-call{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -65,12 +67,11 @@
 	color: #333333;
 	border-bottom: 1rpx solid rgba(230,230,230,1);
 }
-.list-call .img.data-v-1e109036{
+.list-call .img{
 	width: 40rpx;
 	height: 40rpx;
-	font-size: 40rpx;
 }
-.list-call .biaoti.data-v-1e109036{
+.list-call .biaoti{
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
@@ -80,29 +81,32 @@
 	line-height: 100rpx;
 	margin-left: 16rpx;
 }
-.dlbutton.data-v-1e109036 {
+.dlbutton {
 	color: #FFFFFF;
 	font-size: 34rpx;
 	width:470rpx;
 	height:100rpx;
 	background:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.6)));
+	background:-webkit-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	background:-o-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	-webkit-box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.2);
 	        box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.2);
-	border-radius:50rpx;
+	-webkit-border-radius:50rpx;
+	        border-radius:50rpx;
 	line-height: 100rpx;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100rpx;
 }
-.dlbutton-hover.data-v-1e109036 {
+.dlbutton-hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(deg, -90), color-stop(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.6)));
+	background:-webkit-linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	background:-o-linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 	background:linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 }
-.xieyi.data-v-1e109036{
+.xieyi{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -127,7 +131,7 @@
 	height: 40rpx;
 	line-height: 40rpx;
 }
-.xieyi text.data-v-1e109036{
+.xieyi text{
 	font-size: 24rpx;
 	margin-left: 15rpx;
 	margin-right: 15rpx;

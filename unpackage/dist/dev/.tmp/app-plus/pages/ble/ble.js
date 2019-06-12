@@ -125,52 +125,114 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       bleData: [], //蓝牙名字列表
-      bleIndex: [] //蓝牙查重
+      bleIndex: [], //蓝牙查重
+      modalName: "", //提示窗口 默认弹出蓝牙
+      available: false, //蓝牙是否可用
+      discovering: false //蓝牙是否已开始搜索
     };
   },
   mounted: function mounted() {
-    this.getBel();
+    var _this = this;
+
+    _this.initBle(); //初始化蓝牙
+    setInterval(function () {
+      if (!_this.available) {
+        _this.initBle(); //初始化蓝牙
+      }
+    }, 1000);
+
   },
   methods: {
-    getBel: function getBel() {
+    hideModal: function hideModal() {
+      //隐藏弹出
+      this.modalName = "";
+    },
+    getBleState: function getBleState() {
+      //判断蓝牙是否在启用或者搜索 蓝牙状态
       var _this = this;
+      uni.onBluetoothAdapterStateChange(function (res) {
+        _this.available = res.available;
+        _this.discovering = res.discovering;
+        console.log('蓝牙是否可用：' + res.available, " at pages\\ble\\ble.vue:78");
+        console.log('蓝牙是否搜索：' + res.discovering, " at pages\\ble\\ble.vue:79");
+
+        if (!_this.available) {
+          _this.modalName = "isOpenBle";
+        } else {
+          _this.modalName = "";
+        }
+      });
+    },
+    initBle: function initBle() {
       //初始化蓝牙
+      var _this = this;
+      var bleCount = 1; //新蓝牙数量
       uni.openBluetoothAdapter({
         success: function success(res) {
-          console.log(res, " at pages\\ble\\ble.vue:45");
+
+          console.log(res, " at pages\\ble\\ble.vue:95");
           if (res.errMsg == "openBluetoothAdapter:ok") {
-            console.log("ok", " at pages\\ble\\ble.vue:47");
+            console.log("************************初始化蓝牙成功************************", " at pages\\ble\\ble.vue:97");
+            //蓝牙状态
+            _this.getBleState();
             //搜寻蓝牙
             uni.startBluetoothDevicesDiscovery({
               services: [],
               success: function success(res) {
+                console.log("************************开始搜寻蓝牙************************", " at pages\\ble\\ble.vue:104");
                 //搜寻新蓝牙
                 uni.onBluetoothDeviceFound(function (devices) {
-                  console.log('new device list has founded', " at pages\\ble\\ble.vue:54");
-                  var bels = devices.devices[0]; //蓝牙信息
-                  if (_this.bleIndex.indexOf(bels.deviceId) == -1) {
-                    if (bels.name == "") {
-                      _this.bleData.push({ "name": bels.deviceId, "id": bels.deviceId, "tag": false });
-                      _this.bleIndex.push(bels.deviceId);
+
+                  console.log("************************新蓝牙 " + bleCount + "************************", " at pages\\ble\\ble.vue:108");
+                  bleCount++;
+                  var bles = devices.devices[0]; //蓝牙信息
+                  if (_this.bleIndex.indexOf(bles.deviceId) == -1) {
+                    if (bles.name == "") {
+                      _this.bleData.push({ "name": bles.deviceId, "id": bles.deviceId, "tag": false });
+                      _this.bleIndex.push(bles.deviceId);
 
                     } else {
-                      _this.bleData.push({ "name": bels.name, "id": bels.deviceId, "tag": true });
-                      _this.bleIndex.push(bels.deviceId);
+                      _this.bleData.push({ "name": bles.name, "id": bles.deviceId, "tag": true });
+                      _this.bleIndex.push(bles.deviceId);
                     }
                   }
 
-                });
-
-              } });
-
+                }); //搜寻新蓝牙
+              } //搜寻蓝牙 success
+            }); //搜寻蓝牙
+          } //初始化蓝牙 ok
+        }, //初始化蓝牙 success
+        fail: function fail(re) {
+          //初始化蓝牙失败
+          console.log(re, " at pages\\ble\\ble.vue:129");
+          if (re.errCode = "10001") {
+            _this.modalName = "isOpenBle";
           }
-        } });
-
+        } //初始化蓝牙 fail
+      });
+      //初始化蓝牙
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

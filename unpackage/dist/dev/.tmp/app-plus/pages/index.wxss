@@ -1,4 +1,7 @@
 
+.mainCD.data-v-2358f62b{
+	z-index: 9999999999;
+}
 .mainIndex.data-v-2358f62b{
 	padding-bottom:128rpx;
 }

@@ -16,8 +16,8 @@
   },
   "nvueCompiler": "weex",
   "splashscreen": {
-    "alwaysShowBeforeRender": true,
-    "autoclose": false
+    "alwaysShowBeforeRender": false,
+    "autoclose": true
   },
   "appname": "智能手表测试",
   "compilerVersion": "2.0.0",

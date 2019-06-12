@@ -29,9 +29,8 @@
       "concatenate": true
     },
     "splashscreen": {
-      "target": "id:1",
-      "autoclose": true,
-      "waiting": true,
+      "autoclose": false,
+      "waiting": false,
       "delay": 0
     },
     "popGesture": "close",
@@ -84,8 +83,9 @@
     },
     "allowsInlineMediaPlayback": true,
     "uni-app": {
-      "compilerVersion": "1.9.9",
-      "control": "v8"
+      "compilerVersion": "2.0.0",
+      "control": "v8",
+      "nvueCompiler": "weex"
     }
   }
 }
