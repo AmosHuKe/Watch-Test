@@ -21,7 +21,7 @@
 							</view>
 						</view>
 						<view class="content">
-							<view class="flex" >
+							<view class="flex">
 								<view class="flex-sub">
 									<canvas canvas-id="canvasRing" id="canvasRing" class="charts" @touchstart="touchRing"></canvas>
 								</view>
@@ -31,7 +31,7 @@
 											<text class="cuIcon-title text-blue tagb"></text>跑步
 										</view>
 										<view class="flex">
-											<text>46分钟，2公里</text>
+											<text class="tagb"></text>00:46:32，2公里
 										</view>
 									</view>
 									
@@ -40,7 +40,7 @@
 											<text class="cuIcon-title text-green tagb"></text>骑行
 										</view>
 										<view class="flex">
-											<text>1小时20分钟，12公里</text>
+											<text class="tagb"></text>01:20:12，12公里
 										</view>
 									</view>
 									
@@ -49,7 +49,7 @@
 											<text class="cuIcon-title text-yellow tagb"></text>健走
 										</view>
 										<view class="flex">
-											<text>52分钟，1公里</text>
+											<text class="tagb"></text>00:52:02，1公里
 										</view>
 									</view>
 									
@@ -58,7 +58,7 @@
 											<text class="cuIcon-title text-red tagb"></text>登山
 										</view>
 										<view class="flex">
-											<text>3小时分钟，4公里</text>
+											<text class="tagb"></text>03:01:00，4公里
 										</view>
 									</view>
 									
@@ -67,7 +67,7 @@
 											<text class="cuIcon-title text-purple tagb"></text>滑雪
 										</view>
 										<view class="flex">
-											<text>1分钟，1公里</text>
+											<text class="tagb"></text>00:01:00，1公里
 										</view>
 									</view>
 									
@@ -139,45 +139,65 @@
 		},
 		mounted() {
 			_self = this;
-			this.cWidth=uni.upx2px(360);
-			this.cHeight=uni.upx2px(360);
+			this.cWidth=uni.upx2px(400);
+			this.cHeight=uni.upx2px(400);
 			this.getServerData();
 		},
 		methods: {
 			getServerData(){
-				uni.request({
-					url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2',
-					data:{
-					},
-					success: function(res) {
-						console.log(res.data.data)
-						// let Ring={series:[]};
-						let Ring= {
-						  "series": [{
-							"name": "跑步",
-							"data": 2
-						  }, {
-							"name": "骑行",
-							"data": 12
-						  }, {
-							"name": "健走",
-							"data": 1
-						  }, {
-							"name": "登山",
-							"data": 4
-						  }, {
-							"name": "滑雪",
-							"data": 1
-						  }]
-						};
-						//这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
-						// Ring.series=res.data.data.Ring.series;
-						_self.showRing("canvasRing",Ring);
-					},
-					fail: () => {
-						_self.tips="网络错误，小程序端请检查合法域名";
-					},
-				});
+				let Ring= {
+				  "series": [{
+					"name": "跑步",
+					"data": 2
+				  }, {
+					"name": "骑行",
+					"data": 12
+				  }, {
+					"name": "健走",
+					"data": 1
+				  }, {
+					"name": "登山",
+					"data": 4
+				  }, {
+					"name": "滑雪",
+					"data": 1
+				  }]
+				};
+				_self.showRing("canvasRing",Ring);
+				
+				// uni.request({
+				// 	url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2',
+				// 	data:{
+				// 	},
+				// 	success: function(res) {
+				// 		console.log(res.data.data)
+				// 		// let Ring={series:[]};
+				// 		let Ring= {
+				// 		  "series": [{
+				// 			"name": "跑步",
+				// 			"data": 2
+				// 		  }, {
+				// 			"name": "骑行",
+				// 			"data": 12
+				// 		  }, {
+				// 			"name": "健走",
+				// 			"data": 1
+				// 		  }, {
+				// 			"name": "登山",
+				// 			"data": 4
+				// 		  }, {
+				// 			"name": "滑雪",
+				// 			"data": 1
+				// 		  }]
+				// 		};
+				// 		//这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
+				// 		// Ring.series=res.data.data.Ring.series;
+				// 		_self.showRing("canvasRing",Ring);
+				// 	},
+				// 	fail: () => {
+				// 		_self.tips="网络错误，小程序端请检查合法域名";
+				// 	},
+				// });
 			},
 			showRing(canvasId,chartData){
 				canvaRing=new uCharts({
@@ -193,16 +213,16 @@
 					// 	offsetY:-20*_self.pixelRatio,
 					// },
 					subtitle: {
-						name: '运动',
+						name: '',
 						color: '#666666',
-						fontSize: 15*_self.pixelRatio,
+						fontSize: 1*_self.pixelRatio,
 						offsetY:2*_self.pixelRatio,
 					},
 					extra: {
 						pie: {
 						  offsetAngle: -45,
-						  ringWidth: 40*_self.pixelRatio,
-						  lableWidth:15
+						  ringWidth: 5*_self.pixelRatio,
+						  lableWidth: 15,
 						}
 					},
 					background:'#FFFFFF',
@@ -212,7 +232,7 @@
 					width: _self.cWidth*_self.pixelRatio,
 					height: _self.cHeight*_self.pixelRatio,
 					disablePieStroke: false,
-					dataLabel: false,
+					dataLabel: true,
 				});
 			},
 			touchRing(e){
@@ -288,16 +308,22 @@
 	margin-bottom: 32upx;
 }
 .tagb-content{
+	font-size: 24upx; 
 	margin-bottom: 10upx;
 }
 
 .tagb{
 	font-size: 40upx;
+	width: 40upx;
 }
-
 	
 /*uCharts start*/
-.charts{width: 360upx; height:360upx;background-color:transparent;}
+.charts{
+	width: 400upx; 
+	height:400upx;
+	background-color:transparent;
+	margin-top: 36upx;
+}
 /*uCharts end*/
 .run_logo{
 	width: 40upx;
