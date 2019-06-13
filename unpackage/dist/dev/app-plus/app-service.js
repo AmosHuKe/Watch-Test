@@ -1075,6 +1075,32 @@ function gz$gwx_2(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'range-slider'])
+Z([[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[7],[3,'width']]],[1,'rpx;height:']],[[7],[3,'height']]],[1,'rpx']])
+Z([3,'__e'])
+Z(z[2])
+Z(z[2])
+Z([3,'block_'])
+Z([[4],[[5],[[5],[[5],[[4],[[5],[[5],[1,'touchstart']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchStart']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'touchmove']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchMove']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'touchend']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchEnd']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([[7],[3,'minBlockLeft']])
+Z([3,'minBlock'])
+Z([[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[7],[3,'blockSize']]],[1,'rpx;height:']],[[7],[3,'blockSize']]],[1,'rpx;margin-left:']],[[7],[3,'minBlockLeft']]],[1,'rpx;']])
+Z(z[8])
+Z(z[2])
+Z(z[2])
+Z(z[2])
+Z([3,'block'])
+Z(z[6])
+Z([[7],[3,'maxBlockLeft']])
+Z([3,'maxBlock'])
+Z([[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[7],[3,'blockSize']]],[1,'rpx;height:']],[[7],[3,'blockSize']]],[1,'rpx;margin-left:']],[[7],[3,'maxBlockLeft']]],[1,'rpx;']])
+Z(z[17])
+})(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
+}
+function gz$gwx_3(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
+__WXML_GLOBAL__.ops_cached.$gwx_3=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'ble data-v-3dd92140'])
 Z([3,'bg-white'])
 Z([3,'__l'])
@@ -1087,23 +1113,51 @@ Z([3,'bleList'])
 Z([[7],[3,'bleData']])
 Z(z[7])
 Z([[6],[[7],[3,'bleList']],[3,'tag']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
+})(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
 }
-function gz$gwx_3(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
-__WXML_GLOBAL__.ops_cached.$gwx_3=[];
+function gz$gwx_4(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
+__WXML_GLOBAL__.ops_cached.$gwx_4=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'goal data-v-b810ba30'])
 Z([3,'bg-white'])
 Z([3,'__l'])
 Z([3,'data-v-b810ba30'])
 Z([1,false])
 Z([3,'1'])
 Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
+Z([[7],[3,'barheight']])
+Z(z[2])
+Z([3,'__e'])
+Z([[7],[3,'slideBlockSize']])
+Z(z[3])
+Z([[4],[[5],[[4],[[5],[[5],[1,'^rangechange']],[[4],[[5],[[4],[[5],[1,'onRangeChange']]]]]]]]])
+Z([[7],[3,'slideHeight']])
+Z([[7],[3,'slideMax']])
+Z([[7],[3,'slideMin']])
+Z([1,50])
+Z([[7],[3,'rangeValues']])
+Z([3,'2'])
+Z([[4],[[5],[1,'maxBlock']]])
+Z([[7],[3,'slideWidth']])
+Z(z[7])
+Z(z[2])
+Z(z[9])
+Z(z[10])
+Z(z[3])
+Z([[4],[[5],[[4],[[5],[[5],[1,'^rangechange']],[[4],[[5],[[4],[[5],[1,'onRangeChange2']]]]]]]]])
+Z(z[13])
+Z([[7],[3,'slideMax2']])
+Z(z[15])
+Z([[7],[3,'rangeValues2']])
+Z([3,'3'])
+Z(z[19])
+Z(z[20])
+})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
-function gz$gwx_4(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
-__WXML_GLOBAL__.ops_cached.$gwx_4=[];
+function gz$gwx_5(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
+__WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([1,true])
 Z([3,'__e'])
@@ -1122,11 +1176,11 @@ Z(z[10])
 Z([3,'swiper-item bar-shadown data-v-5b29a268'])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'image']])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'video']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
+})(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
-function gz$gwx_5(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
-__WXML_GLOBAL__.ops_cached.$gwx_5=[];
+function gz$gwx_6(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
+__WXML_GLOBAL__.ops_cached.$gwx_6=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'mainIndex data-v-2358f62b'])
 Z([[2,'=='],[[7],[3,'PageCur']],[1,'home']])
@@ -1149,17 +1203,6 @@ Z([[2,'=='],[[7],[3,'PageCur']],[1,'mine']])
 Z(z[2])
 Z(z[3])
 Z([3,'5'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
-}
-function gz$gwx_6(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
-__WXML_GLOBAL__.ops_cached.$gwx_6=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'bg-white'])
-Z([3,'__l'])
-Z([1,true])
-Z([3,'1'])
-Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
 function gz$gwx_7(){
@@ -1188,16 +1231,27 @@ function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'__e'])
-Z([3,'logo flexlogo data-v-3628eae8'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goLogin']],[[4],[[5],[1,'$event']]]]]]]]]]])
-Z([[2,'?:'],[[2,'!'],[[7],[3,'login']]],[1,'logo-hover'],[1,'']])
-Z([[2,'!'],[[7],[3,'login']]])
+Z([3,'bg-white'])
+Z([3,'__l'])
+Z([1,true])
+Z([3,'1'])
+Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
 }
 function gz$gwx_10(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'__e'])
+Z([3,'logo flexlogo data-v-3628eae8'])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goLogin']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([[2,'?:'],[[2,'!'],[[7],[3,'login']]],[1,'logo-hover'],[1,'']])
+Z([[2,'!'],[[7],[3,'login']]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
+}
+function gz$gwx_11(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
+__WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[6],[[7],[3,'datas']],[3,'bgcolor']])
 Z([3,'__l'])
@@ -1206,11 +1260,11 @@ Z([1,true])
 Z([1,false])
 Z([3,'1'])
 Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
+})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
-function gz$gwx_11(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
-__WXML_GLOBAL__.ops_cached.$gwx_11=[];
+function gz$gwx_12(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
+__WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'page data-v-2daf6e08'])
 Z([[2,'?:'],[[2,'=='],[[6],[[7],[3,'notice']],[3,'contentmain']],[1,'']],[1,false],[1,true]])
@@ -1234,13 +1288,13 @@ Z(z[3])
 Z([[6],[[7],[3,'sleepD']],[3,'content']])
 Z([[2,'=='],[[7],[3,'TabCur']],[1,'heartbeat']])
 Z([[2,'=='],[[7],[3,'TabCur']],[1,'pulse']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
+})(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./lib/colorui/components/cu-custom.wxml','./pages/ble/ble.wxml','./pages/goal/goal.wxml','./pages/home/home.wxml','./pages/index.wxml','./pages/mine/children/forget.wxml','./pages/mine/children/login.wxml','./pages/mine/children/register.wxml','./pages/mine/mine.wxml','./pages/motion/children/motion_ydData.wxml','./pages/motion/motion.wxml'];d_[x[0]]={}
+var x=['./lib/colorui/components/cu-custom.wxml','./lib/range-slider/range-slider.wxml','./pages/ble/ble.wxml','./pages/goal/goal.wxml','./pages/home/home.wxml','./pages/index.wxml','./pages/mine/children/forget.wxml','./pages/mine/children/login.wxml','./pages/mine/children/register.wxml','./pages/mine/mine.wxml','./pages/motion/children/motion_ydData.wxml','./pages/motion/motion.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 var oB=_mz(z,'view',['class',0,'style',1],[],e,s,gg)
@@ -1267,22 +1321,17 @@ e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
 d_[x[1]]={}
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
-var cI=_n('view')
-_rz(z,cI,'class',0,e,s,gg)
-var oJ=_mz(z,'cu-custom',['bgColor',1,'bind:__l',1,'class',2,'isBack',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+var cI=_mz(z,'view',['class',0,'style',1],[],e,s,gg)
+var oJ=_mz(z,'view',['bindtouchend',2,'bindtouchmove',1,'bindtouchstart',2,'class',3,'data-event-opts',4,'data-left',5,'data-tag',6,'style',7],[],e,s,gg)
+var lK=_n('slot')
+_rz(z,lK,'name',10,e,s,gg)
+_(oJ,lK)
 _(cI,oJ)
-var lK=_v()
-_(cI,lK)
-var aL=function(eN,tM,bO,gg){
-var xQ=_v()
-_(bO,xQ)
-if(_oz(z,11,eN,tM,gg)){xQ.wxVkey=1
-}
-xQ.wxXCkey=1
-return bO
-}
-lK.wxXCkey=2
-_2z(z,9,aL,e,s,gg,lK,'bleList','index','index')
+var aL=_mz(z,'view',['bindtouchend',11,'bindtouchmove',1,'bindtouchstart',2,'class',3,'data-event-opts',4,'data-left',5,'data-tag',6,'style',7],[],e,s,gg)
+var tM=_n('slot')
+_rz(z,tM,'name',19,e,s,gg)
+_(aL,tM)
+_(cI,aL)
 _(r,cI)
 return r
 }
@@ -1290,200 +1339,230 @@ e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
 d_[x[2]]={}
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
-var fS=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'class',1,'isBack',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-_(r,fS)
+var bO=_n('view')
+_rz(z,bO,'class',0,e,s,gg)
+var oP=_mz(z,'cu-custom',['bgColor',1,'bind:__l',1,'class',2,'isBack',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(bO,oP)
+var xQ=_v()
+_(bO,xQ)
+var oR=function(cT,fS,hU,gg){
+var cW=_v()
+_(hU,cW)
+if(_oz(z,11,cT,fS,gg)){cW.wxVkey=1
+}
+cW.wxXCkey=1
+return hU
+}
+xQ.wxXCkey=2
+_2z(z,9,oR,e,s,gg,xQ,'bleList','index','index')
+_(r,bO)
 return r
 }
 e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
 d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var hU=_mz(z,'swiper',['autoplay',0,'bindchange',1,'circular',1,'class',2,'data-event-opts',3,'duration',4,'indicatorActiveColor',5,'indicatorColor',6,'indicatorDots',7,'interval',8],[],e,s,gg)
-var oV=_v()
-_(hU,oV)
-var cW=function(lY,oX,aZ,gg){
-var e2=_n('view')
-_rz(z,e2,'class',14,lY,oX,gg)
-var b3=_v()
-_(e2,b3)
-if(_oz(z,15,lY,oX,gg)){b3.wxVkey=1
-}
-var o4=_v()
-_(e2,o4)
-if(_oz(z,16,lY,oX,gg)){o4.wxVkey=1
-}
-b3.wxXCkey=1
-o4.wxXCkey=1
-_(aZ,e2)
-return aZ
-}
-oV.wxXCkey=2
-_2z(z,12,cW,e,s,gg,oV,'item','index','index')
-_(r,hU)
+var lY=_n('view')
+_rz(z,lY,'class',0,e,s,gg)
+var aZ=_mz(z,'cu-custom',['bgColor',1,'bind:__l',1,'class',2,'isBack',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(lY,aZ)
+var t1=_mz(z,'range-slider',['barHeight',7,'bind:__l',1,'bind:rangechange',2,'blockSize',3,'class',4,'data-event-opts',5,'height',6,'max',7,'min',8,'step',9,'values',10,'vueId',11,'vueSlots',12,'width',13],[],e,s,gg)
+_(lY,t1)
+var e2=_mz(z,'range-slider',['barHeight',21,'bind:__l',1,'bind:rangechange',2,'blockSize',3,'class',4,'data-event-opts',5,'height',6,'max',7,'min',8,'values',9,'vueId',10,'vueSlots',11,'width',12],[],e,s,gg)
+_(lY,e2)
+_(r,lY)
 return r
 }
 e_[x[3]]={f:m3,j:[],i:[],ti:[],ic:[]}
 d_[x[4]]={}
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var o6=_n('view')
-_rz(z,o6,'class',0,e,s,gg)
-var f7=_v()
-_(o6,f7)
-if(_oz(z,1,e,s,gg)){f7.wxVkey=1
-var oBB=_mz(z,'home',['bind:__l',2,'class',1,'vueId',2],[],e,s,gg)
-_(f7,oBB)
+var o4=_mz(z,'swiper',['autoplay',0,'bindchange',1,'circular',1,'class',2,'data-event-opts',3,'duration',4,'indicatorActiveColor',5,'indicatorColor',6,'indicatorDots',7,'interval',8],[],e,s,gg)
+var x5=_v()
+_(o4,x5)
+var o6=function(c8,f7,h9,gg){
+var cAB=_n('view')
+_rz(z,cAB,'class',14,c8,f7,gg)
+var oBB=_v()
+_(cAB,oBB)
+if(_oz(z,15,c8,f7,gg)){oBB.wxVkey=1
 }
-var c8=_v()
-_(o6,c8)
-if(_oz(z,5,e,s,gg)){c8.wxVkey=1
-var lCB=_mz(z,'motion',['bind:__l',6,'class',1,'vueId',2],[],e,s,gg)
-_(c8,lCB)
+var lCB=_v()
+_(cAB,lCB)
+if(_oz(z,16,c8,f7,gg)){lCB.wxVkey=1
 }
-var h9=_v()
-_(o6,h9)
-if(_oz(z,9,e,s,gg)){h9.wxVkey=1
-var aDB=_mz(z,'ble',['bind:__l',10,'class',1,'vueId',2],[],e,s,gg)
-_(h9,aDB)
+oBB.wxXCkey=1
+lCB.wxXCkey=1
+_(h9,cAB)
+return h9
 }
-var o0=_v()
-_(o6,o0)
-if(_oz(z,13,e,s,gg)){o0.wxVkey=1
-var tEB=_mz(z,'goal',['bind:__l',14,'class',1,'vueId',2],[],e,s,gg)
-_(o0,tEB)
-}
-var cAB=_v()
-_(o6,cAB)
-if(_oz(z,17,e,s,gg)){cAB.wxVkey=1
-var eFB=_mz(z,'mine',['bind:__l',18,'class',1,'vueId',2],[],e,s,gg)
-_(cAB,eFB)
-}
-f7.wxXCkey=1
-f7.wxXCkey=3
-c8.wxXCkey=1
-c8.wxXCkey=3
-h9.wxXCkey=1
-h9.wxXCkey=3
-o0.wxXCkey=1
-o0.wxXCkey=3
-cAB.wxXCkey=1
-cAB.wxXCkey=3
-_(r,o6)
+x5.wxXCkey=2
+_2z(z,12,o6,e,s,gg,x5,'item','index','index')
+_(r,o4)
 return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
 d_[x[5]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var oHB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,oHB)
+var tEB=_n('view')
+_rz(z,tEB,'class',0,e,s,gg)
+var eFB=_v()
+_(tEB,eFB)
+if(_oz(z,1,e,s,gg)){eFB.wxVkey=1
+var fKB=_mz(z,'home',['bind:__l',2,'class',1,'vueId',2],[],e,s,gg)
+_(eFB,fKB)
+}
+var bGB=_v()
+_(tEB,bGB)
+if(_oz(z,5,e,s,gg)){bGB.wxVkey=1
+var cLB=_mz(z,'motion',['bind:__l',6,'class',1,'vueId',2],[],e,s,gg)
+_(bGB,cLB)
+}
+var oHB=_v()
+_(tEB,oHB)
+if(_oz(z,9,e,s,gg)){oHB.wxVkey=1
+var hMB=_mz(z,'ble',['bind:__l',10,'class',1,'vueId',2],[],e,s,gg)
+_(oHB,hMB)
+}
+var xIB=_v()
+_(tEB,xIB)
+if(_oz(z,13,e,s,gg)){xIB.wxVkey=1
+var oNB=_mz(z,'goal',['bind:__l',14,'class',1,'vueId',2],[],e,s,gg)
+_(xIB,oNB)
+}
+var oJB=_v()
+_(tEB,oJB)
+if(_oz(z,17,e,s,gg)){oJB.wxVkey=1
+var cOB=_mz(z,'mine',['bind:__l',18,'class',1,'vueId',2],[],e,s,gg)
+_(oJB,cOB)
+}
+eFB.wxXCkey=1
+eFB.wxXCkey=3
+bGB.wxXCkey=1
+bGB.wxXCkey=3
+oHB.wxXCkey=1
+oHB.wxXCkey=3
+xIB.wxXCkey=1
+xIB.wxXCkey=3
+oJB.wxXCkey=1
+oJB.wxXCkey=3
+_(r,tEB)
 return r
 }
 e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var oJB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,oJB)
+var lQB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,lQB)
 return r
 }
 e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
 d_[x[7]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var cLB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,cLB)
+var tSB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,tSB)
 return r
 }
 e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var oNB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1,'hoverClass',2],[],e,s,gg)
-var cOB=_v()
-_(oNB,cOB)
-if(_oz(z,4,e,s,gg)){cOB.wxVkey=1
-}
-cOB.wxXCkey=1
-_(r,oNB)
+var bUB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,bUB)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var lQB=_mz(z,'cu-custom',['bgImage',0,'bind:__l',1,'class',1,'isBack',2,'isShadown',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(r,lQB)
+var xWB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1,'hoverClass',2],[],e,s,gg)
+var oXB=_v()
+_(xWB,oXB)
+if(_oz(z,4,e,s,gg)){oXB.wxVkey=1
+}
+oXB.wxXCkey=1
+_(r,xWB)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var tSB=_mz(z,'scroll-view',['scrollY',-1,'class',0],[],e,s,gg)
-var eTB=_v()
-_(tSB,eTB)
-if(_oz(z,1,e,s,gg)){eTB.wxVkey=1
-}
-var bUB=_n('view')
-_rz(z,bUB,'class',2,e,s,gg)
-var fYB=_v()
-_(bUB,fYB)
-var cZB=function(o2B,h1B,c3B,gg){
-var l5B=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'data-id',3],[],o2B,h1B,gg)
-var a6B=_v()
-_(l5B,a6B)
-if(_oz(z,11,o2B,h1B,gg)){a6B.wxVkey=1
-}
-var t7B=_v()
-_(l5B,t7B)
-if(_oz(z,12,o2B,h1B,gg)){t7B.wxVkey=1
-}
-var e8B=_v()
-_(l5B,e8B)
-if(_oz(z,13,o2B,h1B,gg)){e8B.wxVkey=1
-}
-a6B.wxXCkey=1
-t7B.wxXCkey=1
-e8B.wxXCkey=1
-_(c3B,l5B)
-return c3B
-}
-fYB.wxXCkey=2
-_2z(z,5,cZB,e,s,gg,fYB,'jk','index','index')
-var oVB=_v()
-_(bUB,oVB)
-if(_oz(z,14,e,s,gg)){oVB.wxVkey=1
-var b9B=_v()
-_(oVB,b9B)
-var o0B=function(oBC,xAC,fCC,gg){
-var hEC=_v()
-_(fCC,hEC)
-if(_oz(z,19,oBC,xAC,gg)){hEC.wxVkey=1
-}
-hEC.wxXCkey=1
-return fCC
-}
-b9B.wxXCkey=2
-_2z(z,17,o0B,e,s,gg,b9B,'sleepD','index','index')
-}
-var xWB=_v()
-_(bUB,xWB)
-if(_oz(z,20,e,s,gg)){xWB.wxVkey=1
-}
-var oXB=_v()
-_(bUB,oXB)
-if(_oz(z,21,e,s,gg)){oXB.wxVkey=1
-}
-oVB.wxXCkey=1
-xWB.wxXCkey=1
-oXB.wxXCkey=1
-_(tSB,bUB)
-eTB.wxXCkey=1
-_(r,tSB)
+var cZB=_mz(z,'cu-custom',['bgImage',0,'bind:__l',1,'class',1,'isBack',2,'isShadown',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(r,cZB)
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
+d_[x[11]]={}
+var m11=function(e,s,r,gg){
+var z=gz$gwx_12()
+var o2B=_mz(z,'scroll-view',['scrollY',-1,'class',0],[],e,s,gg)
+var c3B=_v()
+_(o2B,c3B)
+if(_oz(z,1,e,s,gg)){c3B.wxVkey=1
+}
+var o4B=_n('view')
+_rz(z,o4B,'class',2,e,s,gg)
+var e8B=_v()
+_(o4B,e8B)
+var b9B=function(xAC,o0B,oBC,gg){
+var cDC=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'data-id',3],[],xAC,o0B,gg)
+var hEC=_v()
+_(cDC,hEC)
+if(_oz(z,11,xAC,o0B,gg)){hEC.wxVkey=1
+}
+var oFC=_v()
+_(cDC,oFC)
+if(_oz(z,12,xAC,o0B,gg)){oFC.wxVkey=1
+}
+var cGC=_v()
+_(cDC,cGC)
+if(_oz(z,13,xAC,o0B,gg)){cGC.wxVkey=1
+}
+hEC.wxXCkey=1
+oFC.wxXCkey=1
+cGC.wxXCkey=1
+_(oBC,cDC)
+return oBC
+}
+e8B.wxXCkey=2
+_2z(z,5,b9B,e,s,gg,e8B,'jk','index','index')
+var l5B=_v()
+_(o4B,l5B)
+if(_oz(z,14,e,s,gg)){l5B.wxVkey=1
+var oHC=_v()
+_(l5B,oHC)
+var lIC=function(tKC,aJC,eLC,gg){
+var oNC=_v()
+_(eLC,oNC)
+if(_oz(z,19,tKC,aJC,gg)){oNC.wxVkey=1
+}
+oNC.wxXCkey=1
+return eLC
+}
+oHC.wxXCkey=2
+_2z(z,17,lIC,e,s,gg,oHC,'sleepD','index','index')
+}
+var a6B=_v()
+_(o4B,a6B)
+if(_oz(z,20,e,s,gg)){a6B.wxVkey=1
+}
+var t7B=_v()
+_(o4B,t7B)
+if(_oz(z,21,e,s,gg)){t7B.wxVkey=1
+}
+l5B.wxXCkey=1
+a6B.wxXCkey=1
+t7B.wxXCkey=1
+_(o2B,o4B)
+c3B.wxXCkey=1
+_(r,o2B)
+return r
+}
+e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1507,10 +1586,13 @@ __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 __wxAppCode__['lib/colorui/components/cu-custom.json']={"usingComponents":{},"component":true};
 __wxAppCode__['lib/colorui/components/cu-custom.wxml']=$gwx('./lib/colorui/components/cu-custom.wxml');
 
+__wxAppCode__['lib/range-slider/range-slider.json']={"usingComponents":{},"component":true};
+__wxAppCode__['lib/range-slider/range-slider.wxml']=$gwx('./lib/range-slider/range-slider.wxml');
+
 __wxAppCode__['pages/ble/ble.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"},"component":true};
 __wxAppCode__['pages/ble/ble.wxml']=$gwx('./pages/ble/ble.wxml');
 
-__wxAppCode__['pages/goal/goal.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"},"component":true};
+__wxAppCode__['pages/goal/goal.json']={"component":true,"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","range-slider":"/lib/range-slider/range-slider"}};
 __wxAppCode__['pages/goal/goal.wxml']=$gwx('./pages/goal/goal.wxml');
 
 __wxAppCode__['pages/home/home.json']={"usingComponents":{},"component":true};
@@ -1786,11 +1868,11 @@ define('common/runtime.js',function(require, module, exports, window, document, 
     /******/
     /******/
     /******/ // mini-css-extract-plugin CSS loading
-    /******/var cssChunks = { "pages/home/home": 1, "lib/colorui/components/cu-custom": 1, "pages/ble/ble": 1, "pages/mine/mine": 1, "pages/motion/motion": 1 };
+    /******/var cssChunks = { "pages/home/home": 1, "lib/colorui/components/cu-custom": 1, "pages/ble/ble": 1, "pages/goal/goal": 1, "pages/mine/mine": 1, "pages/motion/motion": 1, "lib/range-slider/range-slider": 1 };
     /******/if (installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
     /******/else if (installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
         /******/promises.push(installedCssChunks[chunkId] = new Promise(function (resolve, reject) {
-          /******/var href = "" + ({ "pages/home/home": "pages/home/home", "lib/colorui/components/cu-custom": "lib/colorui/components/cu-custom", "pages/ble/ble": "pages/ble/ble", "pages/goal/goal": "pages/goal/goal", "pages/mine/mine": "pages/mine/mine", "pages/motion/motion": "pages/motion/motion" }[chunkId] || chunkId) + ".wxss";
+          /******/var href = "" + ({ "pages/home/home": "pages/home/home", "lib/colorui/components/cu-custom": "lib/colorui/components/cu-custom", "pages/ble/ble": "pages/ble/ble", "pages/goal/goal": "pages/goal/goal", "pages/mine/mine": "pages/mine/mine", "pages/motion/motion": "pages/motion/motion", "lib/range-slider/range-slider": "lib/range-slider/range-slider" }[chunkId] || chunkId) + ".wxss";
           /******/var fullhref = __webpack_require__.p + href;
           /******/var existingLinkTags = document.getElementsByTagName("link");
           /******/for (var i = 0; i < existingLinkTags.length; i++) {
@@ -14080,6 +14162,474 @@ define('lib/colorui/components/cu-custom.js',function(require, module, exports, 
 [['lib/colorui/components/cu-custom-create-component']]]);
 });
 require('lib/colorui/components/cu-custom.js');
+__wxRoute = 'lib/range-slider/range-slider';__wxRouteBegin = true;__wxAppCurrentFile__ = 'lib/range-slider/range-slider.js';
+
+define('lib/range-slider/range-slider.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+"use strict";(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["lib/range-slider/range-slider"], {
+
+  /***/"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue":
+  /*!***********************************************************************!*\
+                                                                                     !*** D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue ***!
+                                                                                     \***********************************************************************/
+  /*! no static exports found */
+  /***/function AprojectGithubWatchTestLibRangeSliderRangeSliderVue(module, __webpack_exports__, __webpack_require__) {
+
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */var _range_slider_vue_vue_type_template_id_793988ae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! ./range-slider.vue?vue&type=template&id=793988ae& */"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=template&id=793988ae&");
+    /* harmony import */var _range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! ./range-slider.vue?vue&type=script&lang=js& */"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=script&lang=js&");
+    /* harmony reexport (unknown) */for (var __WEBPACK_IMPORT_KEY__ in _range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) {if (__WEBPACK_IMPORT_KEY__ !== 'default') (function (key) {__webpack_require__.d(__webpack_exports__, key, function () {return _range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key];});})(__WEBPACK_IMPORT_KEY__);}
+    /* harmony import */var _range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! ./range-slider.vue?vue&type=style&index=0&lang=css& */"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=style&index=0&lang=css&");
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__( /*! ../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */"./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+    /* normalize component */
+
+    var component = Object(_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+    _range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+    _range_slider_vue_vue_type_template_id_793988ae___WEBPACK_IMPORTED_MODULE_0__["render"],
+    _range_slider_vue_vue_type_template_id_793988ae___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+    false,
+    null,
+    null,
+    null);
+
+
+
+    /* hot reload */
+    if (false) {var api;}
+    component.options.__file = "Aproject/github/watch-test/lib/range-slider/range-slider.vue";
+    /* harmony default export */__webpack_exports__["default"] = component.exports;
+
+    /***/},
+
+  /***/"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=script&lang=js&":
+  /*!************************************************************************************************!*\
+                                                                                                              !*** D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=script&lang=js& ***!
+                                                                                                              \************************************************************************************************/
+  /*! no static exports found */
+  /***/function AprojectGithubWatchTestLibRangeSliderRangeSliderVueVueTypeScriptLangJs(module, __webpack_exports__, __webpack_require__) {
+
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! -!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./range-slider.vue?vue&type=script&lang=js& */"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=script&lang=js&");
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+    /* harmony reexport (unknown) */for (var __WEBPACK_IMPORT_KEY__ in _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) {if (__WEBPACK_IMPORT_KEY__ !== 'default') (function (key) {__webpack_require__.d(__webpack_exports__, key, function () {return _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key];});})(__WEBPACK_IMPORT_KEY__);}
+    /* harmony default export */__webpack_exports__["default"] = _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a;
+
+    /***/},
+
+  /***/"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=style&index=0&lang=css&":
+  /*!********************************************************************************************************!*\
+                                                                                                                      !*** D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=style&index=0&lang=css& ***!
+                                                                                                                      \********************************************************************************************************/
+  /*! no static exports found */
+  /***/function AprojectGithubWatchTestLibRangeSliderRangeSliderVueVueTypeStyleIndex0LangCss(module, __webpack_exports__, __webpack_require__) {
+
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! -!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./range-slider.vue?vue&type=style&index=0&lang=css& */"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=style&index=0&lang=css&");
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+    /* harmony reexport (unknown) */for (var __WEBPACK_IMPORT_KEY__ in _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) {if (__WEBPACK_IMPORT_KEY__ !== 'default') (function (key) {__webpack_require__.d(__webpack_exports__, key, function () {return _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key];});})(__WEBPACK_IMPORT_KEY__);}
+    /* harmony default export */__webpack_exports__["default"] = _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a;
+
+    /***/},
+
+  /***/"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=template&id=793988ae&":
+  /*!******************************************************************************************************!*\
+                                                                                                                    !*** D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=template&id=793988ae& ***!
+                                                                                                                    \******************************************************************************************************/
+  /*! exports provided: render, staticRenderFns */
+  /***/function AprojectGithubWatchTestLibRangeSliderRangeSliderVueVueTypeTemplateId793988ae(module, __webpack_exports__, __webpack_require__) {
+
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_template_id_793988ae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! -!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./range-slider.vue?vue&type=template&id=793988ae& */"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=template&id=793988ae&");
+    /* harmony reexport (safe) */__webpack_require__.d(__webpack_exports__, "render", function () {return _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_template_id_793988ae___WEBPACK_IMPORTED_MODULE_0__["render"];});
+
+    /* harmony reexport (safe) */__webpack_require__.d(__webpack_exports__, "staticRenderFns", function () {return _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_range_slider_vue_vue_type_template_id_793988ae___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"];});
+
+
+
+    /***/},
+
+  /***/"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=script&lang=js&":
+  /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+                                                                                                                                                                                                                                                                                                                                                     !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=script&lang=js& ***!
+                                                                                                                                                                                                                                                                                                                                                     \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+  /*! no static exports found */
+  /***/function node_modulesBabelLoaderLibIndexJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesDcloudioWebpackUniMpLoaderLibScriptJsNode_modulesVueLoaderLibIndexJsAprojectGithubWatchTestLibRangeSliderRangeSliderVueVueTypeScriptLangJs(module, exports, __webpack_require__) {
+
+    "use strict";
+    /* WEBPACK VAR INJECTION */(function (uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+
+      /**
+       * range-slider v1.0.6
+       */
+      var _windowWidth = uni.getSystemInfoSync().windowWidth;var _default2 =
+
+      {
+        data: function data() {
+          return {
+
+
+
+
+
+
+            MAX_LENGTH: 700,
+            maxBlockLeft: 350,
+
+
+            minBlockLeft: 0,
+            progressBarLeft: 0,
+            progressBarWidth: 350 };
+
+        },
+        components: {},
+        props: {
+          //组件宽度
+          width: {
+            type: Number,
+            default: 750 },
+
+          //组件高度
+          height: {
+            type: Number,
+            default: 100 },
+
+          //滑块大小
+          blockSize: {
+            type: Number,
+            default: 50 },
+
+          //区间进度条高度
+          barHeight: {
+            type: Number,
+            default: 5 },
+
+          //背景条颜色
+          backgroundColor: {
+            type: String,
+            default: '#e9e9e9' },
+
+          //已选择的颜色
+          activeColor: {
+            type: String,
+            default: '#1aad19' },
+
+          //最小值
+          min: {
+            type: Number,
+            default: 0 },
+
+          //最大值
+          max: {
+            type: Number,
+            default: 100 },
+
+          //设置初始值
+          values: {
+            type: Array,
+            default: function _default() {
+              return [0, 100];
+            } },
+
+          //步长值
+          step: {
+            type: Number,
+            default: 1 } },
+
+
+        created: function created() {
+          //使用自定义组件编译模式时，支持生命周期为：created
+          this._refresh();
+        },
+        onLoad: function onLoad(option) {
+          //不使用自定义组件编译模式时，支持生命周期为：onload
+          this._refresh();
+        },
+        onUnload: function onUnload() {},
+        watch: {
+          //组件宽度
+          width: function width(newVal, oldVal, changedPath) {
+            var that = this;
+            if (newVal != that.width) {
+              this._refresh();
+            }
+          },
+          //滑块大小
+          blockSize: function blockSize(newVal, oldVal, changedPath) {
+            var that = this;
+            if (newVal != that.blockSize) {
+              this._refresh();
+            }
+          },
+          //最小值
+          min: function min(newVal, oldVal, changedPath) {
+            var that = this;
+            if (newVal != that.min) {
+              that._refresh();
+            }
+          },
+          //最大值
+          max: function max(newVal, oldVal, changedPath) {
+            var that = this;
+            if (newVal != that.max) {
+              that._refresh();
+            }
+          },
+          //设置初始值
+          values: function values(newVal, oldVal, changedPath) {
+            var that = this;
+            var values = that.values;
+            if (that._isValuesValid(newVal) && that._isValuesValid(values)) {
+              if (values[0] != oldVal[0] || values[1] != oldVal[1]) that._refresh();
+            }
+          } },
+
+        methods: {
+          //补0
+          _pad: function _pad(num, n) {
+            return Array(n - ('' + num).length + 1).join(0) + num;
+          },
+          _pxToRpx: function _pxToRpx(px) {
+            return 750 * px / _windowWidth;
+          },
+          _onBlockTouchStart: function _onBlockTouchStart(e) {
+            var tag = e.target.dataset.tag;
+            if (tag == 'minBlock' || tag == 'maxBlock') {
+              //兼容h5平台及某版本微信
+              if (e.hasOwnProperty('changedTouches')) {
+                this._blockDownX = e.changedTouches[0].pageX;
+              } else {
+                this._blockDownX = e.pageX;
+              }
+
+
+
+
+
+              this._blockLeft = e.target.dataset.left;
+
+
+              this._curBlock = e.target.dataset.tag;
+            }
+          },
+          _onBlockTouchMove: function _onBlockTouchMove(e) {
+            var tag = e.target.dataset.tag;
+            if (tag == 'minBlock' || tag == 'maxBlock') {
+              var that = this;
+              var values = that._calculateValues(e);
+              that._refreshProgressBar(values[2], values[3]);
+              that._refreshBlock(values[2], values[3]);
+              //拖动时也触发事件
+              var eventDetail = {
+                minValue: this.formatNumber(values[0], this.step),
+                maxValue: this.formatNumber(values[1], this.step),
+                fromUser: true,
+                originalValue: {
+                  minValue: values[0],
+                  maxValue: values[1] } };
+
+
+              var eventOption = {};
+              that.$emit('rangechange', eventDetail, eventOption);
+            }
+          },
+          _onBlockTouchEnd: function _onBlockTouchEnd(e) {
+            var tag = e.target.dataset.tag;
+            if (tag == 'minBlock' || tag == 'maxBlock') {
+              var that = this;
+              var values = that._calculateValues(e.mp.changedTouches[0]);
+              that._refreshProgressBar(values[2], values[3]);
+              that._refreshBlock(values[2], values[3]);
+              var eventDetail = {
+                minValue: this.formatNumber(values[0], this.step),
+                maxValue: this.formatNumber(values[1], this.step),
+                fromUser: true,
+                originalValue: {
+                  minValue: values[0],
+                  maxValue: values[1] } };
+
+
+              var eventOption = {};
+              that.$emit('rangechange', eventDetail, eventOption);
+            }
+          },
+          _isValuesValid: function _isValuesValid(values) {
+            return values != null && values != undefined && values.length == 2;
+          },
+          /**
+                 * 根据手势计算相关数据
+                 */
+          _calculateValues: function _calculateValues(e) {
+            var pageX = e.pageX;
+            //兼容h5平台
+            if (e.hasOwnProperty('changedTouches')) {
+              pageX = e.changedTouches[0].pageX;
+            }
+
+            var that = this;
+            var moveLength = pageX - that._blockDownX;
+            var left = that._blockLeft + that._pxToRpx(moveLength);
+            left = Math.max(0, left);
+            left = Math.min(left, that.MAX_LENGTH);
+            var minBlockLeft = that.minBlockLeft;
+            var maxBlockLeft = that.maxBlockLeft;
+            if (that._curBlock == 'minBlock') {
+              minBlockLeft = left;
+            } else {
+              maxBlockLeft = left;
+            }
+            var range = that.max - that.min;
+            var minLeft = Math.min(minBlockLeft, maxBlockLeft);
+            var maxLeft = Math.max(minBlockLeft, maxBlockLeft);
+            var minValue = minLeft / that.MAX_LENGTH * range + that.min;
+            var maxValue = maxLeft / that.MAX_LENGTH * range + that.min;
+            return [minValue, maxValue, minLeft, maxLeft];
+          },
+          /**
+                 * 计算滑块坐标
+                 */
+          _calculateBlockLeft: function _calculateBlockLeft(minValue, maxValue) {
+            var that = this;
+            var blockSize = that.blockSize;
+            var range = that.max - that.min;
+            var minLeft = (minValue - that.min) / range * that.MAX_LENGTH;
+            var maxLeft = (maxValue - that.min) / range * that.MAX_LENGTH;
+            return [minLeft, maxLeft];
+          },
+          /**
+                 * 刷新进度条视图
+                 */
+          _refreshProgressBar: function _refreshProgressBar(minBlockLeft, maxBlockLeft) {
+            var that = this;
+            var blockSize = that.blockSize;
+            that.progressBarLeft = minBlockLeft + blockSize / 2;
+            that.progressBarWidth = Math.abs(maxBlockLeft - minBlockLeft);
+          },
+          /**
+                 * 刷新滑块视图
+                 */
+          _refreshBlock: function _refreshBlock(minBlockLeft, maxBlockLeft) {
+            var that = this;
+            that.minBlockLeft = minBlockLeft;
+            that.maxBlockLeft = maxBlockLeft;
+          },
+          /**
+                 * 刷新整个视图
+                 */
+          _refresh: function _refresh() {
+            //console.log('refresh');
+            var that = this;
+            var MAX_LENGTH = that.width - that.blockSize;
+            that.MAX_LENGTH = MAX_LENGTH;
+            that.maxBlockLeft = MAX_LENGTH;
+            that.progressBarWidth = MAX_LENGTH;
+            var values = that.values;
+            if (that._isValuesValid(values)) {
+              values[0] = Math.max(that.min, values[0]);
+              values[0] = Math.min(values[0], that.max);
+              values[1] = Math.max(that.min, values[1]);
+              values[1] = Math.min(values[1], that.max);
+              var leftValues = that._calculateBlockLeft(values[0], values[1]);
+              that._refreshProgressBar(leftValues[0], leftValues[1]);
+              that._refreshBlock(leftValues[0], leftValues[1]);
+            }
+          },
+          formatNumber: function formatNumber(num, step) {
+            //格式化数字，保留几位小数
+            var stepStr = '' + step;
+            var index = stepStr.indexOf('.');
+            var len = index > -1 ? stepStr.length - index - 1 : 0;
+            var offestNum = parseInt(1 + Array(('' + len).length + 1).join(0)) * 0.1;
+            var tmpNum = num * offestNum;
+            return (parseInt(tmpNum / step) * step / offestNum).toFixed(len);
+          } } };exports.default = _default2;
+      /* WEBPACK VAR INJECTION */}).call(this, __webpack_require__( /*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */"./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]);
+
+    /***/},
+
+  /***/"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=style&index=0&lang=css&":
+  /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=style&index=0&lang=css& ***!
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+  /*! no static exports found */
+  /***/function node_modulesMiniCssExtractPluginDistLoaderJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesCssLoaderIndexJsNode_modulesVueLoaderLibLoadersStylePostLoaderJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesVueLoaderLibIndexJsAprojectGithubWatchTestLibRangeSliderRangeSliderVueVueTypeStyleIndex0LangCss(module, exports, __webpack_require__) {
+
+    // extracted by mini-css-extract-plugin
+
+    /***/},
+
+  /***/"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=template&id=793988ae&":
+  /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+                                                                                                                                                                                                                                                                                                                                                                             !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!D:/Aproject/github/watch-test/lib/range-slider/range-slider.vue?vue&type=template&id=793988ae& ***!
+                                                                                                                                                                                                                                                                                                                                                                             \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+  /*! exports provided: render, staticRenderFns */
+  /***/function node_modulesVueLoaderLibLoadersTemplateLoaderJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesDcloudioWebpackUniMpLoaderLibTemplateJsNode_modulesVueLoaderLibIndexJsAprojectGithubWatchTestLibRangeSliderRangeSliderVueVueTypeTemplateId793988ae(module, __webpack_exports__, __webpack_require__) {
+
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */__webpack_require__.d(__webpack_exports__, "render", function () {return render;});
+    /* harmony export (binding) */__webpack_require__.d(__webpack_exports__, "staticRenderFns", function () {return staticRenderFns;});
+    var render = function render() {
+      var _vm = this;
+      var _h = _vm.$createElement;
+      var _c = _vm._self._c || _h;
+    };
+    var staticRenderFns = [];
+    render._withStripped = true;
+
+
+
+    /***/} }]);
+
+
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+'lib/range-slider/range-slider-create-component',
+{
+  'lib/range-slider/range-slider-create-component': function libRangeSliderRangeSliderCreateComponent(module, exports, __webpack_require__) {
+    __webpack_require__('./node_modules/@dcloudio/uni-app-plus/dist/index.js')['createComponent'](__webpack_require__("../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue"));
+  } },
+
+[['lib/range-slider/range-slider-create-component']]]);
+});
+require('lib/range-slider/range-slider.js');
 __wxRoute = 'pages/ble/ble';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/ble/ble.js';
 
 define('pages/ble/ble.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
@@ -14411,7 +14961,9 @@ define('pages/goal/goal.js',function(require, module, exports, window, document,
     /* harmony import */var _goal_vue_vue_type_template_id_b810ba30_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! ./goal.vue?vue&type=template&id=b810ba30&scoped=true& */"../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=template&id=b810ba30&scoped=true&");
     /* harmony import */var _goal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! ./goal.vue?vue&type=script&lang=js& */"../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=script&lang=js&");
     /* harmony reexport (unknown) */for (var __WEBPACK_IMPORT_KEY__ in _goal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) {if (__WEBPACK_IMPORT_KEY__ !== 'default') (function (key) {__webpack_require__.d(__webpack_exports__, key, function () {return _goal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key];});})(__WEBPACK_IMPORT_KEY__);}
-    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! ../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */"./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+    /* harmony import */var _goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! ./goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css& */"../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css&");
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__( /*! ../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */"./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -14419,7 +14971,7 @@ define('pages/goal/goal.js',function(require, module, exports, window, document,
 
     /* normalize component */
 
-    var component = Object(_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+    var component = Object(_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
     _goal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
     _goal_vue_vue_type_template_id_b810ba30_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
     _goal_vue_vue_type_template_id_b810ba30_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -14453,6 +15005,22 @@ define('pages/goal/goal.js',function(require, module, exports, window, document,
 
     /***/},
 
+  /***/"../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css&":
+  /*!******************************************************************************************************************!*\
+                                                                                                                                !*** D:/Aproject/github/watch-test/pages/goal/goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css& ***!
+                                                                                                                                \******************************************************************************************************************/
+  /*! no static exports found */
+  /***/function AprojectGithubWatchTestPagesGoalGoalVueVueTypeStyleIndex0IdB810ba30ScopedTrueLangCss(module, __webpack_exports__, __webpack_require__) {
+
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! -!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../Asoftware/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css& */"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css&");
+    /* harmony import */var _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+    /* harmony reexport (unknown) */for (var __WEBPACK_IMPORT_KEY__ in _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) {if (__WEBPACK_IMPORT_KEY__ !== 'default') (function (key) {__webpack_require__.d(__webpack_exports__, key, function () {return _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key];});})(__WEBPACK_IMPORT_KEY__);}
+    /* harmony default export */__webpack_exports__["default"] = _Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Asoftware_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_goal_vue_vue_type_style_index_0_id_b810ba30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a;
+
+    /***/},
+
   /***/"../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=template&id=b810ba30&scoped=true&":
   /*!****************************************************************************************************!*\
                                                                                                                   !*** D:/Aproject/github/watch-test/pages/goal/goal.vue?vue&type=template&id=b810ba30&scoped=true& ***!
@@ -14479,24 +15047,134 @@ define('pages/goal/goal.js',function(require, module, exports, window, document,
   /***/function node_modulesBabelLoaderLibIndexJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesDcloudioWebpackUniMpLoaderLibScriptJsNode_modulesVueLoaderLibIndexJsAprojectGithubWatchTestPagesGoalGoalVueVueTypeScriptLangJs(module, exports, __webpack_require__) {
 
     "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    var _default =
+    Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var RangeSlider = function RangeSlider() {return __webpack_require__.e( /*! import() | lib/range-slider/range-slider */"lib/range-slider/range-slider").then(__webpack_require__.bind(null, /*! ../../lib/range-slider/range-slider.vue */"../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
       data: function data() {
-        return {};
+        return {
+          // rangeValues: [2, 5], //当前区间值
+          // slideWidth: 350, //宽度
+          // slideHeight: 80,  //高度
+          // slideBlockSize: 56, //圆形按钮大小
+          // slideMin: 0,  //slider最小值
+          // slideMax: 12,  //slider最大值
 
+          minValue: 0,
+          maxValue: 10000,
+          rangeValues: [0, 10000], //[0, 10]
+          slideWidth: 700,
+          slideHeight: 100,
+          slideBlockSize: 50,
+          barheight: 20,
+          slideMin: 0,
+          slideMax: 10000,
+          //
+          rangeValues2: [0, 100], //[0, 10]
+          maxValue2: 100,
+          slideMax2: 100 };
 
-      } };exports.default = _default;
+      },
+      components: {
+        RangeSlider: RangeSlider },
+
+      onLoad: function onLoad() {
+        console.log('index onload', " at pages\\goal\\goal.vue:98");
+      },
+      methods: {
+        pad: function pad(num, n) {
+          return Array(n - ('' + num).length + 1).join(0) + num;
+        },
+        onRangeChange: function onRangeChange(e) {
+          // this.rangeValues = [e.minValue, e.maxValue];
+          this.rangeValues = [0, e.maxValue];
+          //console.log(e);
+        },
+        test: function test() {
+          this.rangeValues = [0, 8000];
+        },
+        onRangeChange2: function onRangeChange2(e) {
+          this.rangeValues2 = [0, e.maxValue];
+        },
+        bodyWeight: function bodyWeight() {
+          this.rangeValues2 = [0, 60];
+        } } };exports.default = _default;
+
+    /***/},
+
+  /***/"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../Aproject/github/watch-test/pages/goal/goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css&":
+  /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                 !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!D:/Aproject/github/watch-test/pages/goal/goal.vue?vue&type=style&index=0&id=b810ba30&scoped=true&lang=css& ***!
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+  /*! no static exports found */
+  /***/function node_modulesMiniCssExtractPluginDistLoaderJsNode_modulesDcloudioVueCliPluginUniPackagesWebpackPreprocessLoaderIndexJsNode_modulesCssLoaderIndexJsNode_modulesVueLoaderLibLoadersStylePostLoaderJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesVueLoaderLibIndexJsAprojectGithubWatchTestPagesGoalGoalVueVueTypeStyleIndex0IdB810ba30ScopedTrueLangCss(module, exports, __webpack_require__) {
+
+    // extracted by mini-css-extract-plugin
 
     /***/},
 

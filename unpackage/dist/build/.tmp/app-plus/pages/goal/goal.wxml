@@ -1,1 +1,0 @@
-<view class="goal data-v-83ae75e8"><cu-custom vue-id="1" bgColor="bg-white" isBack="{{false}}" class="data-v-83ae75e8" bind:__l="__l" vue-slots="{{['backText','content']}}"><view slot="backText" class="data-v-83ae75e8"></view><view slot="content" class="data-v-83ae75e8">目标</view></cu-custom></view>
