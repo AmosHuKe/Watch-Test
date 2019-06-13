@@ -159,18 +159,19 @@
 		background-color: #09BB07;
 	 }
 	 
-	 .part1,
-	 .part2 {
+	 .part1,.part2 {
 	 	flex-direction: column;
 	 	justify-content: center;
 	 	border-top: 1upx solid #ccc;
 	 	padding-top: 50upx;
 		padding: 0 24upx;
-	 	.title {
+	 	
+		
+	 }
+	 
+	 .part1,.part2>.title {
 	 		font-size: 32upx;
 	 		padding: 0 30upx;
-	 	}
-		
 	 }
 	 
 	 .part2 {

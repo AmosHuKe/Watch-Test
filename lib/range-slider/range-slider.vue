@@ -288,7 +288,7 @@ export default {
 		 * 刷新整个视图
 		 */
 		_refresh: function() {
-			console.log('refresh');
+			//console.log('refresh');
 			var that = this;
 			var MAX_LENGTH = that.width - that.blockSize;
 			that.MAX_LENGTH = MAX_LENGTH;
