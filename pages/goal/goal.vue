@@ -1,66 +1,96 @@
 <template>
-	<view class="goal">
+	<view class="goal margin100">
 		<!-- 顶部 -->
-		<cu-custom bgColor="bg-white" :isBack="false">
+		<!-- <cu-custom bgColor="bg-white" :isBack="false">
 			<block slot="backText"></block>
-			<block slot="content">目标</block>
-		</cu-custom>
+			<block slot="content">设置目标</block>
+		</cu-custom> -->
 		
-		<view class="part1 mrg50T">
-			<view class="title">运动：</view>
-			<view class="rowBox mrg50T">
-				<view class="sliderBox">
+		<scroll-view scroll-y class="page">
+			<view class="RangeWalk margin100">
+				<!-- 步数 -->
+				<view class="flex">
+					<view class="flex-sub">
+						<view class="title">运动</view>
+					</view>
+					<view class="flex-sub">
+						<view class="text-right">
+							<text class="title">{{ rangeValues[1] }}</text>步
+						</view>
+					</view>
+				</view>
+				<view class="flex">
+					<view class="RangeWalk-page rowBox">
+						<RangeSlider
+							:width="slideWidth"
+							:height="slideHeight"
+							:blockSize="slideBlockSize"
+							:barHeight="barheight"
+							:activeColor="backgroundColor"
+							:min="slideMin"
+							:max="slideMax"
+							:values="rangeValues"
+							:step="50"
+							@rangechange="onRangeChange"
+						>
+							<!-- <view slot="minBlock" class="range-slider-block"></view> -->
+							<!-- 左边滑块的内容 -->
+							<view slot="maxBlock" class="range-slider-block"></view>
+							<!-- 右边滑块的内容 -->
+						</RangeSlider>
+						
+					</view>
+					
+				</view>
+				<view class="flex justify-center margin50">
+					<button class="cu-btn bg-black lg" @tap="setWalk">建议10000步</button>
+				</view>
+				
+			</view>
+			
+			
+			<view class="RangeWeight margin100">
+				<!-- 体重 -->
+				<view class="flex">
+					<view class="flex-sub">
+						<view class="title">体重</view>
+					</view>
+					<view class="flex-sub">
+						<view class="text-right">
+							<text class="title">{{ rangeValues2[1] }}</text>公斤
+						</view>
+					</view>
+				</view>
+				<view class="flex rowBox">
 					<RangeSlider
 						:width="slideWidth"
 						:height="slideHeight"
 						:blockSize="slideBlockSize"
 						:barHeight="barheight"
+						:activeColor="backgroundColor"
 						:min="slideMin"
-						:max="slideMax"
-						:values="rangeValues"
-						:step="50"
-						@rangechange="onRangeChange"
-					>
+						:max="slideMax2"
+						:values="rangeValues2"
+						:step="0.5"
+						@rangechange="onRangeChange2">
 						<!-- <view slot="minBlock" class="range-slider-block"></view> -->
 						<!-- 左边滑块的内容 -->
 						<view slot="maxBlock" class="range-slider-block"></view>
 						<!-- 右边滑块的内容 -->
 					</RangeSlider>
 				</view>
-		
-				<view class="text-center">
-					<text>步数：</text>
-					<text>{{ rangeValues[1] }}步</text>
+				<view class="flex margin50">
+					<text class="text-grey"><text class="cuIcon-info"></text> 建议体重在55-65公斤</text>
 				</view>
+				
 			</view>
+			
+			
+		</scroll-view>
 		
-			<button @tap="test" class="testBtn">建议8000步</button>
-		</view>
-		<view class="part2 mrg50T">
-			<view class="title">体重：</view>
-			<view class="text-center mrg50T">
-				<RangeSlider
-					:width="slideWidth"
-					:height="slideHeight"
-					:blockSize="slideBlockSize"
-					:barHeight="barheight"
-					:min="slideMin"
-					:max="slideMax2"
-					:values="rangeValues2"
-					@rangechange="onRangeChange2"
-				>
-					<!-- <view slot="minBlock" class="range-slider-block"></view> -->
-					<!-- 左边滑块的内容 -->
-					<view slot="maxBlock" class="range-slider-block"></view>
-					<!-- 右边滑块的内容 -->
-				</RangeSlider> 
-			</view>
-			<view class="text-center">
-				<text>重量：</text>
-				<text>{{ rangeValues2[1] }}公斤</text>
-			</view>
-		</view>
-		<button @tap="bodyWeight" class="bodyWeightbtn">建议60公斤</button>
+		
+		
+	
 	</view>
 </template>
 
@@ -75,45 +105,48 @@
 			// slideBlockSize: 56, //圆形按钮大小
 			// slideMin: 0,  //slider最小值
 			// slideMax: 12,  //slider最大值
-
-			minValue: 0,
-			maxValue: 10000,
-			rangeValues: [0, 10000],//[0, 10]
-			slideWidth: 700,
-			slideHeight: 100,
-			slideBlockSize: 50,
-			barheight: 20,
-			slideMin: 0,
-			slideMax: 10000,
-			//
-			rangeValues2: [0, 100],//[0, 10]
-			maxValue2: 100,
-			slideMax2: 100,
+			
+			backgroundColor: 'rgba(0,0,0,0.7)', //条颜色
+			slideMin: 0, //最小值
+			slideMax: 30000, //最大运动
+			rangeValues: [0, 10000],//[0, 10] 运动默认
+			
+			slideMax2: 200, //最大体重
+			rangeValues2: [0, 50.5],//[0, 10] 体重默认
+			
+			slideWidth: 676, //宽
+			slideHeight: 100, //高
+			slideBlockSize: 50, //圆形按钮大小
+			barheight: 20, 
+			
+			
+			
 		};
 	},
 	components: {
 		RangeSlider
-	},
-	onLoad() {
-		console.log('index onload');
 	},
 	methods: {
 		pad: function(num, n) {
 			return Array(n - ('' + num).length + 1).join(0) + num;
 		},
 		onRangeChange: function(e) {
+			//赋值运动
 			// this.rangeValues = [e.minValue, e.maxValue];
 			this.rangeValues =  [0,e.maxValue];
 			//console.log(e);
 		},
-		test: function() {
-			this.rangeValues = [0,8000];
+		setWalk: function() {
+			//运动建议值
+			this.rangeValues = [0,10000];
 		},
 		onRangeChange2: function(e) {
+			//赋值体重
 			this.rangeValues2 =  [0,e.maxValue];
 		},
-		bodyWeight: function() {
-			this.rangeValues2 = [0,60];
+		setWeight: function() {
+			//体重建议值
+			this.rangeValues2 = [0,55];
 		},
 		
 	}
@@ -121,61 +154,30 @@
 </script>
 
 <style scoped>
-	 .content {
-	 	justify-content: center;
-	 	flex-direction: column;
-	 }
-	 
-	 .sliderBox {
-	 	justify-content: center;
-	 	margin-right: 50upx;
-	 }
-	 
-	 .text-center {
-	 	justify-content: center;
-	 }
-	 
-	 .rowBox {
+	.page{
+		padding: 0 36upx;
+		flex-direction: column;
+	}
+	.margin50{
+		margin-top:50upx;
+	}
+	.margin100{
+		margin-top:100upx;
+	}
+	.text-right {
+		justify-content: right;
+	}
+	.title{
+		font-size: 48upx;
+		font-weight: 700;
+	}
+	.rowBox {
 	 	flex-direction: row;
 	 	align-items: center;
 	 	justify-content: center;
 	 }
-	 
-	 .mrg50T {
-	 	margin-top: 50upx;
-	 }
-	 
-	 .tips {
-	 	color: #999;
-	 	font-size: 24upx;
-	 	text-align: center;
-	 	margin-top: 100upx;
-	 }
-	 
-	 .testBtn,.bodyWeightbtn {
-	 	margin-top: 50upx;
-		border-radius: 50upx;
-		width: 240upx;
-		background-color: #09BB07;
-	 }
-	 
-	 .part1,.part2 {
-	 	flex-direction: column;
-	 	justify-content: center;
-	 	border-top: 1upx solid #ccc;
-	 	padding-top: 50upx;
-		padding: 0 24upx;
-	 	
-		
-	 }
-	 
-	 .part1,.part2>.title {
-	 		font-size: 32upx;
-	 		padding: 0 30upx;
-	 }
-	 
-	 .part2 {
-	 	margin-top: 27px;
-	 }
-	 
+	.bg-black{
+		background: rgba(0,0,0,0.7);
+	}
+	
 </style>
