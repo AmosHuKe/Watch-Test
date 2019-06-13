@@ -116,7 +116,7 @@
 			
 			slideWidth: 676, //宽
 			slideHeight: 100, //高
-			slideBlockSize: 50, //圆形按钮大小
+			slideBlockSize: 64, //圆形按钮大小
 			barheight: 20, 
 			
 			

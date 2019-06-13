@@ -5,7 +5,7 @@
 			<view class="range-bar-progress" :style="'margin-left:' + progressBarLeft + 'rpx;width:' + progressBarWidth + 'rpx;background-color:' + activeColor + ''"></view>
 		</view>
 
-		<view
+		<!-- <view
 			class="block_"
 			:style="'width:' + blockSize + 'rpx;height:' + blockSize + 'rpx;margin-left:' + minBlockLeft + 'rpx;'"
 			@touchstart="_onBlockTouchStart"
@@ -15,7 +15,7 @@
 			data-tag="minBlock"
 		>
 			<slot name="minBlock"></slot>
-		</view>
+		</view> -->
 		<view
 			class="block"
 			:style="'width:' + blockSize + 'rpx;height:' + blockSize + 'rpx;margin-left:' + maxBlockLeft + 'rpx;'"
@@ -346,6 +346,8 @@ export default {
 	width: 100%;
 	margin-left: 0 !important;
 	height: 100%;
+	margin-left: 0 !important;
+	border-radius: 10000upx 0 0 10000upx;
 	background-color: blueviolet;
 }
 
