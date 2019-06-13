@@ -9,7 +9,7 @@
 				<view class="content" :style="[{top:StatusBar + 'px'}]">
 					<slot name="content"></slot>
 				</view>
-				<slot name="right"></slot>
+				<slot name="right" ></slot>
 			</view>
 		</view>
 	</view>
