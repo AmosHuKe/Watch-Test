@@ -142,6 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -158,10 +159,12 @@ var _default =
 
     _this.initBle(); //初始化蓝牙
     setInterval(function () {
-      if (!_this.available) {
-        _this.initBle(); //初始化蓝牙
-      }
-    }, 1000);
+      setTimeout(function () {
+        if (!_this.available) {
+          _this.initBle(); //初始化蓝牙
+        }
+      }, 0);
+    }, 2000);
 
   },
   methods: {
@@ -169,14 +172,24 @@ var _default =
       //隐藏弹出
       this.modalName = "";
     },
+    // ArrayBuffer转16进度字符串示例
+    ab2hex: function ab2hex(buffer) {
+      var hexArr = Array.prototype.map.call(
+      new Uint8Array(buffer),
+      function (bit) {
+        return ('00' + bit.toString(16)).slice(-2);
+      });
+
+      return hexArr.join('');
+    },
     getBleState: function getBleState() {
       //判断蓝牙是否在启用或者搜索 蓝牙状态
       var _this = this;
       uni.onBluetoothAdapterStateChange(function (res) {
         _this.available = res.available;
         _this.discovering = res.discovering;
-        console.log('蓝牙是否可用：' + res.available, " at pages\\ble\\ble.vue:78");
-        console.log('蓝牙是否搜索：' + res.discovering, " at pages\\ble\\ble.vue:79");
+        console.log('蓝牙是否可用：' + res.available, " at pages\\ble\\ble.vue:91");
+        console.log('蓝牙是否搜索：' + res.discovering, " at pages\\ble\\ble.vue:92");
 
         if (!_this.available) {
           _this.modalName = "isOpenBle";
@@ -189,23 +202,35 @@ var _default =
       //初始化蓝牙
       var _this = this;
       var bleCount = 1; //新蓝牙数量
+
       uni.openBluetoothAdapter({
         success: function success(res) {
 
-          console.log(res, " at pages\\ble\\ble.vue:95");
+          console.log(res, " at pages\\ble\\ble.vue:109");
           if (res.errMsg == "openBluetoothAdapter:ok") {
-            console.log("************************初始化蓝牙成功************************", " at pages\\ble\\ble.vue:97");
+            console.log("************************初始化蓝牙成功************************", " at pages\\ble\\ble.vue:111");
             //蓝牙状态
             _this.getBleState();
             //搜寻蓝牙
             uni.startBluetoothDevicesDiscovery({
               services: [],
               success: function success(res) {
-                console.log("************************开始搜寻蓝牙************************", " at pages\\ble\\ble.vue:104");
+                console.log("************************开始搜寻旧蓝牙************************", " at pages\\ble\\ble.vue:118");
+                //搜寻新旧蓝牙
+                uni.getBluetoothDevices({
+                  success: function success(res) {
+                    console.log(res, " at pages\\ble\\ble.vue:122");
+                    if (res.devices[0]) {
+                      console.log(_this.ab2hex(res.devices[0].advertisData), " at pages\\ble\\ble.vue:124");
+                    }
+                  } });
+
+
+                console.log("************************开始搜寻新蓝牙************************", " at pages\\ble\\ble.vue:129");
                 //搜寻新蓝牙
                 uni.onBluetoothDeviceFound(function (devices) {
 
-                  console.log("************************新蓝牙 " + bleCount + "************************", " at pages\\ble\\ble.vue:108");
+                  console.log("************************新蓝牙 " + bleCount + "************************", " at pages\\ble\\ble.vue:133");
                   bleCount++;
                   var bles = devices.devices[0]; //蓝牙信息
                   if (_this.bleIndex.indexOf(bles.deviceId) == -1) {
@@ -220,13 +245,14 @@ var _default =
                   }
 
                 }); //搜寻新蓝牙
+
               } //搜寻蓝牙 success
             }); //搜寻蓝牙
           } //初始化蓝牙 ok
         }, //初始化蓝牙 success
         fail: function fail(re) {
           //初始化蓝牙失败
-          console.log(re, " at pages\\ble\\ble.vue:129");
+          //console.log(re);
           if (re.errCode = "10001") {
             _this.modalName = "isOpenBle";
           }

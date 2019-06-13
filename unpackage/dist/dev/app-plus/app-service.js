@@ -1119,7 +1119,7 @@ Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'swiperList']])
 Z(z[10])
-Z([3,'swiper-item data-v-5b29a268'])
+Z([3,'swiper-item bar-shadown data-v-5b29a268'])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'image']])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'video']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
@@ -14227,6 +14227,7 @@ define('pages/ble/ble.js',function(require, module, exports, window, document, f
       //
       //
       //
+      //
       var _default =
       {
         data: function data() {
@@ -14243,10 +14244,12 @@ define('pages/ble/ble.js',function(require, module, exports, window, document, f
 
           _this.initBle(); //初始化蓝牙
           setInterval(function () {
-            if (!_this.available) {
-              _this.initBle(); //初始化蓝牙
-            }
-          }, 1000);
+            setTimeout(function () {
+              if (!_this.available) {
+                _this.initBle(); //初始化蓝牙
+              }
+            }, 0);
+          }, 2000);
 
         },
         methods: {
@@ -14254,14 +14257,24 @@ define('pages/ble/ble.js',function(require, module, exports, window, document, f
             //隐藏弹出
             this.modalName = "";
           },
+          // ArrayBuffer转16进度字符串示例
+          ab2hex: function ab2hex(buffer) {
+            var hexArr = Array.prototype.map.call(
+            new Uint8Array(buffer),
+            function (bit) {
+              return ('00' + bit.toString(16)).slice(-2);
+            });
+
+            return hexArr.join('');
+          },
           getBleState: function getBleState() {
             //判断蓝牙是否在启用或者搜索 蓝牙状态
             var _this = this;
             uni.onBluetoothAdapterStateChange(function (res) {
               _this.available = res.available;
               _this.discovering = res.discovering;
-              console.log('蓝牙是否可用：' + res.available, " at pages\\ble\\ble.vue:78");
-              console.log('蓝牙是否搜索：' + res.discovering, " at pages\\ble\\ble.vue:79");
+              console.log('蓝牙是否可用：' + res.available, " at pages\\ble\\ble.vue:91");
+              console.log('蓝牙是否搜索：' + res.discovering, " at pages\\ble\\ble.vue:92");
 
               if (!_this.available) {
                 _this.modalName = "isOpenBle";
@@ -14274,23 +14287,35 @@ define('pages/ble/ble.js',function(require, module, exports, window, document, f
             //初始化蓝牙
             var _this = this;
             var bleCount = 1; //新蓝牙数量
+
             uni.openBluetoothAdapter({
               success: function success(res) {
 
-                console.log(res, " at pages\\ble\\ble.vue:95");
+                console.log(res, " at pages\\ble\\ble.vue:109");
                 if (res.errMsg == "openBluetoothAdapter:ok") {
-                  console.log("************************初始化蓝牙成功************************", " at pages\\ble\\ble.vue:97");
+                  console.log("************************初始化蓝牙成功************************", " at pages\\ble\\ble.vue:111");
                   //蓝牙状态
                   _this.getBleState();
                   //搜寻蓝牙
                   uni.startBluetoothDevicesDiscovery({
                     services: [],
                     success: function success(res) {
-                      console.log("************************开始搜寻蓝牙************************", " at pages\\ble\\ble.vue:104");
+                      console.log("************************开始搜寻旧蓝牙************************", " at pages\\ble\\ble.vue:118");
+                      //搜寻新旧蓝牙
+                      uni.getBluetoothDevices({
+                        success: function success(res) {
+                          console.log(res, " at pages\\ble\\ble.vue:122");
+                          if (res.devices[0]) {
+                            console.log(_this.ab2hex(res.devices[0].advertisData), " at pages\\ble\\ble.vue:124");
+                          }
+                        } });
+
+
+                      console.log("************************开始搜寻新蓝牙************************", " at pages\\ble\\ble.vue:129");
                       //搜寻新蓝牙
                       uni.onBluetoothDeviceFound(function (devices) {
 
-                        console.log("************************新蓝牙 " + bleCount + "************************", " at pages\\ble\\ble.vue:108");
+                        console.log("************************新蓝牙 " + bleCount + "************************", " at pages\\ble\\ble.vue:133");
                         bleCount++;
                         var bles = devices.devices[0]; //蓝牙信息
                         if (_this.bleIndex.indexOf(bles.deviceId) == -1) {
@@ -14305,13 +14330,14 @@ define('pages/ble/ble.js',function(require, module, exports, window, document, f
                         }
 
                       }); //搜寻新蓝牙
+
                     } //搜寻蓝牙 success
                   }); //搜寻蓝牙
                 } //初始化蓝牙 ok
               }, //初始化蓝牙 success
               fail: function fail(re) {
                 //初始化蓝牙失败
-                console.log(re, " at pages\\ble\\ble.vue:129");
+                //console.log(re);
                 if (re.errCode = "10001") {
                   _this.modalName = "isOpenBle";
                 }
@@ -14788,7 +14814,7 @@ define('pages/home/home.js',function(require, module, exports, window, document,
       //
       var _self;var canvaRing = null;var _default = { data: function data() {return { //环状统计初始化数据
             cWidth: '', cHeight: '', pixelRatio: 1, serverData: '', hour: 5, minute: 20, kilometer: 26, //轮播
-            cardCur: 0, swiperList: [{ id: 0, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg' }, { id: 1, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg' }, { id: 2, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg' }, { id: 3, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg' }, { id: 4, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg' }, { id: 5, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg' }, { id: 6, type: 'image', url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg' }], dotStyle: true, towerStart: 0, direction: '' };}, mounted: function mounted() {_self = this;this.cWidth = uni.upx2px(400);this.cHeight = uni.upx2px(400);this.getServerData();}, methods: { getServerData: function getServerData() {var Ring = { "series": [{ "name": "跑步", "data": 2 }, { "name": "骑行", "data": 12 }, { "name": "健走", "data": 1 }, { "name": "登山", "data": 4 }, { "name": "滑雪", "data": 1 }] };_self.showRing("canvasRing", Ring); // uni.request({
+            cardCur: 0, swiperList: [{ id: 0, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/434/50fcc072-a786-4cce-9647-1002b73b5f5f.png' }, { id: 1, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/20/7c196bbb-7c80-4518-94a0-664c03d193ee.png' }, { id: 2, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/175/e35539f4-e087-4778-95fd-7fa8eb247880.png' }, { id: 3, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/787/e927d58d-f47d-4a10-b41a-6dffcf0a6a88.png' }, { id: 4, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/188/3101760b-28c4-4981-9c74-47b8aa840a86.png' }, { id: 5, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/692/0950a380-87c2-4c17-86f8-fc3a1c3d6132.png' }, { id: 6, type: 'image', url: 'https://assets-ouch.icons8.com/thumb/720/53674e5e-9f7c-4856-bc68-c5db866a264d.png' }], dotStyle: true, towerStart: 0, direction: '' };}, mounted: function mounted() {_self = this;this.cWidth = uni.upx2px(400);this.cHeight = uni.upx2px(400);this.getServerData();}, methods: { getServerData: function getServerData() {var Ring = { "series": [{ "name": "跑步", "data": 2 }, { "name": "骑行", "data": 12 }, { "name": "健走", "data": 1 }, { "name": "登山", "data": 4 }, { "name": "滑雪", "data": 1 }] };_self.showRing("canvasRing", Ring); // uni.request({
             // 	url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2',
             // 	data:{
             // 	},
