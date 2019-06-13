@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cu-custom": "/lib/colorui/components/cu-custom"
+  },
+  "component": true
+}

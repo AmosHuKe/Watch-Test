@@ -1,27 +1,27 @@
 
-.content.data-v-b810ba30 {
- 	-webkit-box-pack: center;
- 	-webkit-justify-content: center;
- 	    -ms-flex-pack: center;
- 	        justify-content: center;
- 	-webkit-box-orient: vertical;
- 	-webkit-box-direction: normal;
- 	-webkit-flex-direction: column;
- 	    -ms-flex-direction: column;
- 	        flex-direction: column;
+.page.data-v-b810ba30{
+	padding: 0 36rpx;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
-.sliderBox.data-v-b810ba30 {
- 	-webkit-box-pack: center;
- 	-webkit-justify-content: center;
- 	    -ms-flex-pack: center;
- 	        justify-content: center;
- 	margin-right: 50rpx;
+.margin50.data-v-b810ba30{
+	margin-top:50rpx;
 }
-.text-center.data-v-b810ba30 {
- 	-webkit-box-pack: center;
- 	-webkit-justify-content: center;
- 	    -ms-flex-pack: center;
- 	        justify-content: center;
+.margin100.data-v-b810ba30{
+	margin-top:100rpx;
+}
+.text-right.data-v-b810ba30 {
+	-webkit-box-pack: right;
+	-webkit-justify-content: right;
+	    -ms-flex-pack: right;
+	        justify-content: right;
+}
+.title.data-v-b810ba30{
+	font-size: 48rpx;
+	font-weight: 700;
 }
 .rowBox.data-v-b810ba30 {
  	-webkit-box-orient: horizontal;
@@ -38,42 +38,8 @@
  	    -ms-flex-pack: center;
  	        justify-content: center;
 }
-.mrg50T.data-v-b810ba30 {
- 	margin-top: 50rpx;
+.bg-black.data-v-b810ba30{
+	background: rgba(0,0,0,0.7);
 }
-.tips.data-v-b810ba30 {
- 	color: #999;
- 	font-size: 24rpx;
- 	text-align: center;
- 	margin-top: 100rpx;
-}
-.testBtn.data-v-b810ba30,.bodyWeightbtn.data-v-b810ba30 {
- 	margin-top: 50rpx;
-	-webkit-border-radius: 50rpx;
-	        border-radius: 50rpx;
-	width: 240rpx;
-	background-color: #09BB07;
-}
-.part1.data-v-b810ba30,.part2.data-v-b810ba30 {
- 	-webkit-box-orient: vertical;
- 	-webkit-box-direction: normal;
- 	-webkit-flex-direction: column;
- 	    -ms-flex-direction: column;
- 	        flex-direction: column;
- 	-webkit-box-pack: center;
- 	-webkit-justify-content: center;
- 	    -ms-flex-pack: center;
- 	        justify-content: center;
- 	border-top: 1rpx solid #ccc;
- 	padding-top: 50rpx;
-	padding: 0 24rpx;
-}
-.part1.data-v-b810ba30,.part2>.title.data-v-b810ba30 {
- 		font-size: 32rpx;
- 		padding: 0 30rpx;
-}
-.part2.data-v-b810ba30 {
- 	margin-top: 27px;
-}
- 
+
 

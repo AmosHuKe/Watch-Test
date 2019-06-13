@@ -166,6 +166,36 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -176,44 +206,47 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       // slideMin: 0,  //slider最小值
       // slideMax: 12,  //slider最大值
 
-      minValue: 0,
-      maxValue: 10000,
-      rangeValues: [0, 10000], //[0, 10]
-      slideWidth: 700,
-      slideHeight: 100,
-      slideBlockSize: 50,
-      barheight: 20,
-      slideMin: 0,
-      slideMax: 10000,
-      //
-      rangeValues2: [0, 100], //[0, 10]
-      maxValue2: 100,
-      slideMax2: 100 };
+      backgroundColor: 'rgba(0,0,0,0.7)', //条颜色
+      slideMin: 0, //最小值
+      slideMax: 30000, //最大运动
+      rangeValues: [0, 10000], //[0, 10] 运动默认
+
+      slideMax2: 200, //最大体重
+      rangeValues2: [0, 50.5], //[0, 10] 体重默认
+
+      slideWidth: 676, //宽
+      slideHeight: 100, //高
+      slideBlockSize: 64, //圆形按钮大小
+      barheight: 20 };
+
+
+
 
   },
   components: {
     RangeSlider: RangeSlider },
 
-  onLoad: function onLoad() {
-    console.log('index onload', " at pages\\goal\\goal.vue:98");
-  },
   methods: {
     pad: function pad(num, n) {
       return Array(n - ('' + num).length + 1).join(0) + num;
     },
     onRangeChange: function onRangeChange(e) {
+      //赋值运动
       // this.rangeValues = [e.minValue, e.maxValue];
       this.rangeValues = [0, e.maxValue];
       //console.log(e);
     },
-    test: function test() {
-      this.rangeValues = [0, 8000];
+    setWalk: function setWalk() {
+      //运动建议值
+      this.rangeValues = [0, 10000];
     },
     onRangeChange2: function onRangeChange2(e) {
+      //赋值体重
       this.rangeValues2 = [0, e.maxValue];
     },
-    bodyWeight: function bodyWeight() {
-      this.rangeValues2 = [0, 60];
+    setWeight: function setWeight() {
+      //体重建议值
+      this.rangeValues2 = [0, 55];
     } } };exports.default = _default;
 
 /***/ }),

@@ -1075,26 +1075,15 @@ function gz$gwx_2(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'range-slider'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[7],[3,'width']]],[1,'rpx;height:']],[[7],[3,'height']]],[1,'rpx']])
 Z([3,'__e'])
-Z(z[2])
-Z(z[2])
-Z([3,'block_'])
-Z([[4],[[5],[[5],[[5],[[4],[[5],[[5],[1,'touchstart']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchStart']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'touchmove']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchMove']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'touchend']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchEnd']],[[4],[[5],[1,'$event']]]]]]]]]]])
-Z([[7],[3,'minBlockLeft']])
-Z([3,'minBlock'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[7],[3,'blockSize']]],[1,'rpx;height:']],[[7],[3,'blockSize']]],[1,'rpx;margin-left:']],[[7],[3,'minBlockLeft']]],[1,'rpx;']])
-Z(z[8])
-Z(z[2])
-Z(z[2])
-Z(z[2])
+Z(z[0])
+Z(z[0])
 Z([3,'block'])
-Z(z[6])
+Z([[4],[[5],[[5],[[5],[[4],[[5],[[5],[1,'touchstart']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchStart']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'touchmove']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchMove']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'touchend']],[[4],[[5],[[4],[[5],[[5],[1,'_onBlockTouchEnd']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([[7],[3,'maxBlockLeft']])
 Z([3,'maxBlock'])
 Z([[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'width:'],[[7],[3,'blockSize']]],[1,'rpx;height:']],[[7],[3,'blockSize']]],[1,'rpx;margin-left:']],[[7],[3,'maxBlockLeft']]],[1,'rpx;']])
-Z(z[17])
+Z(z[6])
 })(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
 }
 function gz$gwx_3(){
@@ -1119,40 +1108,37 @@ function gz$gwx_4(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'goal data-v-b810ba30'])
-Z([3,'bg-white'])
-Z([3,'__l'])
-Z([3,'data-v-b810ba30'])
-Z([1,false])
-Z([3,'1'])
-Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
+Z([3,'page data-v-b810ba30'])
+Z([[7],[3,'backgroundColor']])
 Z([[7],[3,'barheight']])
-Z(z[2])
+Z([3,'__l'])
 Z([3,'__e'])
 Z([[7],[3,'slideBlockSize']])
-Z(z[3])
+Z([3,'data-v-b810ba30'])
 Z([[4],[[5],[[4],[[5],[[5],[1,'^rangechange']],[[4],[[5],[[4],[[5],[1,'onRangeChange']]]]]]]]])
 Z([[7],[3,'slideHeight']])
 Z([[7],[3,'slideMax']])
 Z([[7],[3,'slideMin']])
 Z([1,50])
 Z([[7],[3,'rangeValues']])
-Z([3,'2'])
+Z([3,'1'])
 Z([[4],[[5],[1,'maxBlock']]])
 Z([[7],[3,'slideWidth']])
-Z(z[7])
+Z(z[1])
 Z(z[2])
-Z(z[9])
-Z(z[10])
 Z(z[3])
+Z(z[4])
+Z(z[5])
+Z(z[6])
 Z([[4],[[5],[[4],[[5],[[5],[1,'^rangechange']],[[4],[[5],[[4],[[5],[1,'onRangeChange2']]]]]]]]])
-Z(z[13])
+Z(z[8])
 Z([[7],[3,'slideMax2']])
-Z(z[15])
+Z(z[10])
+Z([1,0.5])
 Z([[7],[3,'rangeValues2']])
-Z([3,'3'])
-Z(z[19])
-Z(z[20])
+Z([3,'2'])
+Z(z[14])
+Z(z[15])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
 function gz$gwx_5(){
@@ -1321,17 +1307,10 @@ e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
 d_[x[1]]={}
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
-var cI=_mz(z,'view',['class',0,'style',1],[],e,s,gg)
-var oJ=_mz(z,'view',['bindtouchend',2,'bindtouchmove',1,'bindtouchstart',2,'class',3,'data-event-opts',4,'data-left',5,'data-tag',6,'style',7],[],e,s,gg)
-var lK=_n('slot')
-_rz(z,lK,'name',10,e,s,gg)
-_(oJ,lK)
+var cI=_mz(z,'view',['bindtouchend',0,'bindtouchmove',1,'bindtouchstart',1,'class',2,'data-event-opts',3,'data-left',4,'data-tag',5,'style',6],[],e,s,gg)
+var oJ=_n('slot')
+_rz(z,oJ,'name',8,e,s,gg)
 _(cI,oJ)
-var aL=_mz(z,'view',['bindtouchend',11,'bindtouchmove',1,'bindtouchstart',2,'class',3,'data-event-opts',4,'data-left',5,'data-tag',6,'style',7],[],e,s,gg)
-var tM=_n('slot')
-_rz(z,tM,'name',19,e,s,gg)
-_(aL,tM)
-_(cI,aL)
 _(r,cI)
 return r
 }
@@ -1339,227 +1318,224 @@ e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
 d_[x[2]]={}
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
-var bO=_n('view')
-_rz(z,bO,'class',0,e,s,gg)
-var oP=_mz(z,'cu-custom',['bgColor',1,'bind:__l',1,'class',2,'isBack',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(bO,oP)
-var xQ=_v()
-_(bO,xQ)
-var oR=function(cT,fS,hU,gg){
-var cW=_v()
-_(hU,cW)
-if(_oz(z,11,cT,fS,gg)){cW.wxVkey=1
+var aL=_n('view')
+_rz(z,aL,'class',0,e,s,gg)
+var tM=_mz(z,'cu-custom',['bgColor',1,'bind:__l',1,'class',2,'isBack',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(aL,tM)
+var eN=_v()
+_(aL,eN)
+var bO=function(xQ,oP,oR,gg){
+var cT=_v()
+_(oR,cT)
+if(_oz(z,11,xQ,oP,gg)){cT.wxVkey=1
 }
-cW.wxXCkey=1
-return hU
+cT.wxXCkey=1
+return oR
 }
-xQ.wxXCkey=2
-_2z(z,9,oR,e,s,gg,xQ,'bleList','index','index')
-_(r,bO)
+eN.wxXCkey=2
+_2z(z,9,bO,e,s,gg,eN,'bleList','index','index')
+_(r,aL)
 return r
 }
 e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
 d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var lY=_n('view')
-_rz(z,lY,'class',0,e,s,gg)
-var aZ=_mz(z,'cu-custom',['bgColor',1,'bind:__l',1,'class',2,'isBack',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(lY,aZ)
-var t1=_mz(z,'range-slider',['barHeight',7,'bind:__l',1,'bind:rangechange',2,'blockSize',3,'class',4,'data-event-opts',5,'height',6,'max',7,'min',8,'step',9,'values',10,'vueId',11,'vueSlots',12,'width',13],[],e,s,gg)
-_(lY,t1)
-var e2=_mz(z,'range-slider',['barHeight',21,'bind:__l',1,'bind:rangechange',2,'blockSize',3,'class',4,'data-event-opts',5,'height',6,'max',7,'min',8,'values',9,'vueId',10,'vueSlots',11,'width',12],[],e,s,gg)
-_(lY,e2)
-_(r,lY)
+var oV=_mz(z,'scroll-view',['scrollY',-1,'class',0],[],e,s,gg)
+var cW=_mz(z,'range-slider',['activeColor',1,'barHeight',1,'bind:__l',2,'bind:rangechange',3,'blockSize',4,'class',5,'data-event-opts',6,'height',7,'max',8,'min',9,'step',10,'values',11,'vueId',12,'vueSlots',13,'width',14],[],e,s,gg)
+_(oV,cW)
+var oX=_mz(z,'range-slider',['activeColor',16,'barHeight',1,'bind:__l',2,'bind:rangechange',3,'blockSize',4,'class',5,'data-event-opts',6,'height',7,'max',8,'min',9,'step',10,'values',11,'vueId',12,'vueSlots',13,'width',14],[],e,s,gg)
+_(oV,oX)
+_(r,oV)
 return r
 }
 e_[x[3]]={f:m3,j:[],i:[],ti:[],ic:[]}
 d_[x[4]]={}
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var o4=_mz(z,'swiper',['autoplay',0,'bindchange',1,'circular',1,'class',2,'data-event-opts',3,'duration',4,'indicatorActiveColor',5,'indicatorColor',6,'indicatorDots',7,'interval',8],[],e,s,gg)
-var x5=_v()
-_(o4,x5)
-var o6=function(c8,f7,h9,gg){
-var cAB=_n('view')
-_rz(z,cAB,'class',14,c8,f7,gg)
-var oBB=_v()
-_(cAB,oBB)
-if(_oz(z,15,c8,f7,gg)){oBB.wxVkey=1
+var aZ=_mz(z,'swiper',['autoplay',0,'bindchange',1,'circular',1,'class',2,'data-event-opts',3,'duration',4,'indicatorActiveColor',5,'indicatorColor',6,'indicatorDots',7,'interval',8],[],e,s,gg)
+var t1=_v()
+_(aZ,t1)
+var e2=function(o4,b3,x5,gg){
+var f7=_n('view')
+_rz(z,f7,'class',14,o4,b3,gg)
+var c8=_v()
+_(f7,c8)
+if(_oz(z,15,o4,b3,gg)){c8.wxVkey=1
 }
-var lCB=_v()
-_(cAB,lCB)
-if(_oz(z,16,c8,f7,gg)){lCB.wxVkey=1
+var h9=_v()
+_(f7,h9)
+if(_oz(z,16,o4,b3,gg)){h9.wxVkey=1
 }
-oBB.wxXCkey=1
-lCB.wxXCkey=1
-_(h9,cAB)
-return h9
+c8.wxXCkey=1
+h9.wxXCkey=1
+_(x5,f7)
+return x5
 }
-x5.wxXCkey=2
-_2z(z,12,o6,e,s,gg,x5,'item','index','index')
-_(r,o4)
+t1.wxXCkey=2
+_2z(z,12,e2,e,s,gg,t1,'item','index','index')
+_(r,aZ)
 return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
 d_[x[5]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var tEB=_n('view')
-_rz(z,tEB,'class',0,e,s,gg)
+var cAB=_n('view')
+_rz(z,cAB,'class',0,e,s,gg)
+var oBB=_v()
+_(cAB,oBB)
+if(_oz(z,1,e,s,gg)){oBB.wxVkey=1
+var bGB=_mz(z,'home',['bind:__l',2,'class',1,'vueId',2],[],e,s,gg)
+_(oBB,bGB)
+}
+var lCB=_v()
+_(cAB,lCB)
+if(_oz(z,5,e,s,gg)){lCB.wxVkey=1
+var oHB=_mz(z,'motion',['bind:__l',6,'class',1,'vueId',2],[],e,s,gg)
+_(lCB,oHB)
+}
+var aDB=_v()
+_(cAB,aDB)
+if(_oz(z,9,e,s,gg)){aDB.wxVkey=1
+var xIB=_mz(z,'ble',['bind:__l',10,'class',1,'vueId',2],[],e,s,gg)
+_(aDB,xIB)
+}
+var tEB=_v()
+_(cAB,tEB)
+if(_oz(z,13,e,s,gg)){tEB.wxVkey=1
+var oJB=_mz(z,'goal',['bind:__l',14,'class',1,'vueId',2],[],e,s,gg)
+_(tEB,oJB)
+}
 var eFB=_v()
-_(tEB,eFB)
-if(_oz(z,1,e,s,gg)){eFB.wxVkey=1
-var fKB=_mz(z,'home',['bind:__l',2,'class',1,'vueId',2],[],e,s,gg)
+_(cAB,eFB)
+if(_oz(z,17,e,s,gg)){eFB.wxVkey=1
+var fKB=_mz(z,'mine',['bind:__l',18,'class',1,'vueId',2],[],e,s,gg)
 _(eFB,fKB)
 }
-var bGB=_v()
-_(tEB,bGB)
-if(_oz(z,5,e,s,gg)){bGB.wxVkey=1
-var cLB=_mz(z,'motion',['bind:__l',6,'class',1,'vueId',2],[],e,s,gg)
-_(bGB,cLB)
-}
-var oHB=_v()
-_(tEB,oHB)
-if(_oz(z,9,e,s,gg)){oHB.wxVkey=1
-var hMB=_mz(z,'ble',['bind:__l',10,'class',1,'vueId',2],[],e,s,gg)
-_(oHB,hMB)
-}
-var xIB=_v()
-_(tEB,xIB)
-if(_oz(z,13,e,s,gg)){xIB.wxVkey=1
-var oNB=_mz(z,'goal',['bind:__l',14,'class',1,'vueId',2],[],e,s,gg)
-_(xIB,oNB)
-}
-var oJB=_v()
-_(tEB,oJB)
-if(_oz(z,17,e,s,gg)){oJB.wxVkey=1
-var cOB=_mz(z,'mine',['bind:__l',18,'class',1,'vueId',2],[],e,s,gg)
-_(oJB,cOB)
-}
+oBB.wxXCkey=1
+oBB.wxXCkey=3
+lCB.wxXCkey=1
+lCB.wxXCkey=3
+aDB.wxXCkey=1
+aDB.wxXCkey=3
+tEB.wxXCkey=1
+tEB.wxXCkey=3
 eFB.wxXCkey=1
 eFB.wxXCkey=3
-bGB.wxXCkey=1
-bGB.wxXCkey=3
-oHB.wxXCkey=1
-oHB.wxXCkey=3
-xIB.wxXCkey=1
-xIB.wxXCkey=3
-oJB.wxXCkey=1
-oJB.wxXCkey=3
-_(r,tEB)
+_(r,cAB)
 return r
 }
 e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var lQB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,lQB)
+var hMB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,hMB)
 return r
 }
 e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
 d_[x[7]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var tSB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,tSB)
+var cOB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,cOB)
 return r
 }
 e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var bUB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,bUB)
+var lQB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,lQB)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var xWB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1,'hoverClass',2],[],e,s,gg)
-var oXB=_v()
-_(xWB,oXB)
-if(_oz(z,4,e,s,gg)){oXB.wxVkey=1
+var tSB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1,'hoverClass',2],[],e,s,gg)
+var eTB=_v()
+_(tSB,eTB)
+if(_oz(z,4,e,s,gg)){eTB.wxVkey=1
 }
-oXB.wxXCkey=1
-_(r,xWB)
+eTB.wxXCkey=1
+_(r,tSB)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var cZB=_mz(z,'cu-custom',['bgImage',0,'bind:__l',1,'class',1,'isBack',2,'isShadown',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(r,cZB)
+var oVB=_mz(z,'cu-custom',['bgImage',0,'bind:__l',1,'class',1,'isBack',2,'isShadown',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(r,oVB)
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
 d_[x[11]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var o2B=_mz(z,'scroll-view',['scrollY',-1,'class',0],[],e,s,gg)
+var oXB=_mz(z,'scroll-view',['scrollY',-1,'class',0],[],e,s,gg)
+var fYB=_v()
+_(oXB,fYB)
+if(_oz(z,1,e,s,gg)){fYB.wxVkey=1
+}
+var cZB=_n('view')
+_rz(z,cZB,'class',2,e,s,gg)
+var o4B=_v()
+_(cZB,o4B)
+var l5B=function(t7B,a6B,e8B,gg){
+var o0B=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'data-id',3],[],t7B,a6B,gg)
+var xAC=_v()
+_(o0B,xAC)
+if(_oz(z,11,t7B,a6B,gg)){xAC.wxVkey=1
+}
+var oBC=_v()
+_(o0B,oBC)
+if(_oz(z,12,t7B,a6B,gg)){oBC.wxVkey=1
+}
+var fCC=_v()
+_(o0B,fCC)
+if(_oz(z,13,t7B,a6B,gg)){fCC.wxVkey=1
+}
+xAC.wxXCkey=1
+oBC.wxXCkey=1
+fCC.wxXCkey=1
+_(e8B,o0B)
+return e8B
+}
+o4B.wxXCkey=2
+_2z(z,5,l5B,e,s,gg,o4B,'jk','index','index')
+var h1B=_v()
+_(cZB,h1B)
+if(_oz(z,14,e,s,gg)){h1B.wxVkey=1
+var cDC=_v()
+_(h1B,cDC)
+var hEC=function(cGC,oFC,oHC,gg){
+var aJC=_v()
+_(oHC,aJC)
+if(_oz(z,19,cGC,oFC,gg)){aJC.wxVkey=1
+}
+aJC.wxXCkey=1
+return oHC
+}
+cDC.wxXCkey=2
+_2z(z,17,hEC,e,s,gg,cDC,'sleepD','index','index')
+}
+var o2B=_v()
+_(cZB,o2B)
+if(_oz(z,20,e,s,gg)){o2B.wxVkey=1
+}
 var c3B=_v()
-_(o2B,c3B)
-if(_oz(z,1,e,s,gg)){c3B.wxVkey=1
+_(cZB,c3B)
+if(_oz(z,21,e,s,gg)){c3B.wxVkey=1
 }
-var o4B=_n('view')
-_rz(z,o4B,'class',2,e,s,gg)
-var e8B=_v()
-_(o4B,e8B)
-var b9B=function(xAC,o0B,oBC,gg){
-var cDC=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'data-id',3],[],xAC,o0B,gg)
-var hEC=_v()
-_(cDC,hEC)
-if(_oz(z,11,xAC,o0B,gg)){hEC.wxVkey=1
-}
-var oFC=_v()
-_(cDC,oFC)
-if(_oz(z,12,xAC,o0B,gg)){oFC.wxVkey=1
-}
-var cGC=_v()
-_(cDC,cGC)
-if(_oz(z,13,xAC,o0B,gg)){cGC.wxVkey=1
-}
-hEC.wxXCkey=1
-oFC.wxXCkey=1
-cGC.wxXCkey=1
-_(oBC,cDC)
-return oBC
-}
-e8B.wxXCkey=2
-_2z(z,5,b9B,e,s,gg,e8B,'jk','index','index')
-var l5B=_v()
-_(o4B,l5B)
-if(_oz(z,14,e,s,gg)){l5B.wxVkey=1
-var oHC=_v()
-_(l5B,oHC)
-var lIC=function(tKC,aJC,eLC,gg){
-var oNC=_v()
-_(eLC,oNC)
-if(_oz(z,19,tKC,aJC,gg)){oNC.wxVkey=1
-}
-oNC.wxXCkey=1
-return eLC
-}
-oHC.wxXCkey=2
-_2z(z,17,lIC,e,s,gg,oHC,'sleepD','index','index')
-}
-var a6B=_v()
-_(o4B,a6B)
-if(_oz(z,20,e,s,gg)){a6B.wxVkey=1
-}
-var t7B=_v()
-_(o4B,t7B)
-if(_oz(z,21,e,s,gg)){t7B.wxVkey=1
-}
-l5B.wxXCkey=1
-a6B.wxXCkey=1
-t7B.wxXCkey=1
-_(o2B,o4B)
+h1B.wxXCkey=1
+o2B.wxXCkey=1
 c3B.wxXCkey=1
-_(r,o2B)
+_(oXB,cZB)
+fYB.wxXCkey=1
+_(r,oXB)
 return r
 }
 e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
@@ -1592,7 +1568,7 @@ __wxAppCode__['lib/range-slider/range-slider.wxml']=$gwx('./lib/range-slider/ran
 __wxAppCode__['pages/ble/ble.json']={"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom"},"component":true};
 __wxAppCode__['pages/ble/ble.wxml']=$gwx('./pages/ble/ble.wxml');
 
-__wxAppCode__['pages/goal/goal.json']={"component":true,"usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","range-slider":"/lib/range-slider/range-slider"}};
+__wxAppCode__['pages/goal/goal.json']={"usingComponents":{"range-slider":"/lib/range-slider/range-slider"},"component":true};
 __wxAppCode__['pages/goal/goal.wxml']=$gwx('./pages/goal/goal.wxml');
 
 __wxAppCode__['pages/home/home.json']={"usingComponents":{},"component":true};
@@ -15115,6 +15091,36 @@ define('pages/goal/goal.js',function(require, module, exports, window, document,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
       data: function data() {
         return {
@@ -15125,44 +15131,47 @@ define('pages/goal/goal.js',function(require, module, exports, window, document,
           // slideMin: 0,  //slider最小值
           // slideMax: 12,  //slider最大值
 
-          minValue: 0,
-          maxValue: 10000,
-          rangeValues: [0, 10000], //[0, 10]
-          slideWidth: 700,
-          slideHeight: 100,
-          slideBlockSize: 50,
-          barheight: 20,
-          slideMin: 0,
-          slideMax: 10000,
-          //
-          rangeValues2: [0, 100], //[0, 10]
-          maxValue2: 100,
-          slideMax2: 100 };
+          backgroundColor: 'rgba(0,0,0,0.7)', //条颜色
+          slideMin: 0, //最小值
+          slideMax: 30000, //最大运动
+          rangeValues: [0, 10000], //[0, 10] 运动默认
+
+          slideMax2: 200, //最大体重
+          rangeValues2: [0, 50.5], //[0, 10] 体重默认
+
+          slideWidth: 676, //宽
+          slideHeight: 100, //高
+          slideBlockSize: 64, //圆形按钮大小
+          barheight: 20 };
+
+
+
 
       },
       components: {
         RangeSlider: RangeSlider },
 
-      onLoad: function onLoad() {
-        console.log('index onload', " at pages\\goal\\goal.vue:98");
-      },
       methods: {
         pad: function pad(num, n) {
           return Array(n - ('' + num).length + 1).join(0) + num;
         },
         onRangeChange: function onRangeChange(e) {
+          //赋值运动
           // this.rangeValues = [e.minValue, e.maxValue];
           this.rangeValues = [0, e.maxValue];
           //console.log(e);
         },
-        test: function test() {
-          this.rangeValues = [0, 8000];
+        setWalk: function setWalk() {
+          //运动建议值
+          this.rangeValues = [0, 10000];
         },
         onRangeChange2: function onRangeChange2(e) {
+          //赋值体重
           this.rangeValues2 = [0, e.maxValue];
         },
-        bodyWeight: function bodyWeight() {
-          this.rangeValues2 = [0, 60];
+        setWeight: function setWeight() {
+          //体重建议值
+          this.rangeValues2 = [0, 55];
         } } };exports.default = _default;
 
     /***/},

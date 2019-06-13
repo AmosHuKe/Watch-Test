@@ -1,0 +1,28 @@
+
+.page.data-v-0d2ca4bc{
+	padding: 0 36rpx;
+}
+.margin50.data-v-0d2ca4bc{
+	margin-top:50rpx;
+}
+.margin100.data-v-0d2ca4bc{
+	margin-top:100rpx;
+}
+.text-right.data-v-0d2ca4bc {
+	-webkit-box-pack: right;
+	-webkit-justify-content: right;
+	    -ms-flex-pack: right;
+	        justify-content: right;
+}
+.title.data-v-0d2ca4bc{
+	font-size: 48rpx;
+	font-weight: 700;
+}
+.RangeWalk-page.data-v-0d2ca4bc{
+	height: 100rpx;
+}
+.bg-black.data-v-0d2ca4bc{
+	background: rgba(0,0,0,0.7);
+}
+
+

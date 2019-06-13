@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/motion/children/motion_ydData",
+    "pages/mine/children/login",
+    "pages/mine/children/register",
+    "pages/mine/children/forget"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "手表",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "nvueCompiler": "weex",
+  "splashscreen": {
+    "alwaysShowBeforeRender": false,
+    "autoclose": true
+  },
+  "appname": "智能手表测试",
+  "compilerVersion": "2.0.0",
+  "usingComponents": {
+    "cu-custom": "/lib/colorui/components/cu-custom",
+    "home": "/pages/home/home",
+    "motion": "/pages/motion/motion",
+    "ble": "/pages/ble/ble",
+    "goal": "/pages/goal/goal",
+    "mine": "/pages/mine/mine"
+  }
+}

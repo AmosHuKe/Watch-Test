@@ -26,10 +26,9 @@
 	width: 100%;
 	margin-left: 0 !important;
 	height: 100%;
-	margin-left: 0 !important;
-	-webkit-border-radius: 10000rpx 0 0 10000rpx;
-	        border-radius: 10000rpx 0 0 10000rpx;
-	background-color: blueviolet;
+	-webkit-border-radius: 10000rpx 0 0 10000rpx !important;
+	        border-radius: 10000rpx 0 0 10000rpx !important;
+	background-color: blue;
 }
 .block {
 	position: absolute;
