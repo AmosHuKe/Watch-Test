@@ -3,7 +3,8 @@
 		<!-- 顶部 -->
 		<cu-custom bgColor="bg-white" :isBack="false">
 			<block slot="backText"></block>
-			<block slot="content">设备</block>
+			<block slot="content" ><view :class="discovering?'cuIcon-loading1 animation-rotate':''">{{ discovering?'':'设备' }}</view></block>
+			
 		</cu-custom>
 		
 		<view class="cu-list menu sm-border card-menu margin-top" v-for="(bleList,index) in bleData" v-bind:key="index">
@@ -58,16 +59,28 @@
 			
 			_this.initBle() //初始化蓝牙
 			setInterval(function(){
-				if(!_this.available){
-					_this.initBle() //初始化蓝牙
-				}
-			},1000)
+				setTimeout(function(){
+					if(!_this.available){
+						_this.initBle() //初始化蓝牙
+					}
+				},0)
+			},2000)
 			
 		},
 		methods:{
 			hideModal(){
 				//隐藏弹出
 				this.modalName=""
+			},
+			// ArrayBuffer转16进度字符串示例
+			ab2hex(buffer) {
+				const hexArr = Array.prototype.map.call(
+					new Uint8Array(buffer),
+					function (bit) {
+						return ('00' + bit.toString(16)).slice(-2)
+					}
+				)
+				return hexArr.join('')
 			},
 			getBleState(){
 				//判断蓝牙是否在启用或者搜索 蓝牙状态
@@ -89,6 +102,7 @@
 				//初始化蓝牙
 				var _this=this
 				var bleCount=1 //新蓝牙数量
+				
 				uni.openBluetoothAdapter({
 					success(res) {
 						
@@ -101,7 +115,18 @@
 							uni.startBluetoothDevicesDiscovery({
 								services: [],
 								success(res) {
-									console.log("************************开始搜寻蓝牙************************")
+									console.log("************************开始搜寻旧蓝牙************************")
+									//搜寻新旧蓝牙
+									uni.getBluetoothDevices({
+									  success(res) {
+										console.log(res)
+										if (res.devices[0]) {
+										  console.log(_this.ab2hex(res.devices[0].advertisData))
+										}
+									  }
+									})
+									
+									console.log("************************开始搜寻新蓝牙************************")
 									//搜寻新蓝牙
 									uni.onBluetoothDeviceFound(function (devices) {
 										
@@ -120,13 +145,14 @@
 										}
 									  
 									}) //搜寻新蓝牙
+									
 								} //搜寻蓝牙 success
 							}) //搜寻蓝牙
 						}//初始化蓝牙 ok
 					}, //初始化蓝牙 success
 					fail(re){
 						//初始化蓝牙失败
-						console.log(re);
+						//console.log(re);
 						if(re.errCode="10001"){
 							_this.modalName="isOpenBle"
 						}
