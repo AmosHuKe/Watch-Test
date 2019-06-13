@@ -5,6 +5,15 @@
 [![ColorUI](https://img.shields.io/badge/UI-ColorUI-%230081ff.svg)](https://github.com/weilanwl/ColorUI)
 [![HBuilderX-v1.9.9](https://img.shields.io/badge/HBuilderX-v2.0.0-green.svg)](http://www.dcloud.io/hbuilderx.html)
 
+## 概述  
+
+> 智能手表运动相关的App页面展示。  
+> 该项目是用于模型演示，并没有写入实际功能。  
+> 主要用于学习参考，商业用途需经作者允许。
+
+* 预览  
+![预览](watch.gif)
+
 
 ## 目录结构  
 ```
