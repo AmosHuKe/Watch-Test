@@ -4,7 +4,7 @@
 			<!--轮播图 -->
 			<swiper class="card-swiper swiperbox" :class="dotStyle?'square-dot':'round-dot'" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000" duration="500" @change="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
 				<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''">
-					<view class="swiper-item">
+					<view class="swiper-item bar-shadown">
 						<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
 						<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
 					</view>
@@ -106,31 +106,31 @@
 				swiperList: [{
 					id: 0,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
+					url: 'https://assets-ouch.icons8.com/thumb/434/50fcc072-a786-4cce-9647-1002b73b5f5f.png'
 				}, {
 					id: 1,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg',
+					url: 'https://assets-ouch.icons8.com/thumb/20/7c196bbb-7c80-4518-94a0-664c03d193ee.png',
 				}, {
 					id: 2,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg'
+					url: 'https://assets-ouch.icons8.com/thumb/175/e35539f4-e087-4778-95fd-7fa8eb247880.png'
 				}, {
 					id: 3,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
+					url: 'https://assets-ouch.icons8.com/thumb/787/e927d58d-f47d-4a10-b41a-6dffcf0a6a88.png'
 				}, {
 					id: 4,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'
+					url: 'https://assets-ouch.icons8.com/thumb/188/3101760b-28c4-4981-9c74-47b8aa840a86.png'
 				}, {
 					id: 5,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'
+					url: 'https://assets-ouch.icons8.com/thumb/692/0950a380-87c2-4c17-86f8-fc3a1c3d6132.png'
 				}, {
 					id: 6,
 					type: 'image',
-					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
+					url: 'https://assets-ouch.icons8.com/thumb/720/53674e5e-9f7c-4856-bc68-c5db866a264d.png'
 				}],
 				dotStyle: true,
 				towerStart: 0,
