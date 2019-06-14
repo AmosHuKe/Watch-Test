@@ -62,7 +62,7 @@
 				<view class="flex">
 					<view class="flex-sub" v-for="(item,index) in ydList" :key="index">
 						<view class="cu-card article " @tap="ydToUrl(index)">  <!--跳转到详情-->
-							<view class="cu-item bg-img bg-img-yd shadow-warp" :style="[{backgroundImage:'url('+item.img+')'}]" >
+							<view class="cu-item bg-img bg-img-yd shadow-warp bar-shadown" :style="[{backgroundImage:'url('+item.img+')'}]" >
 								<view class="cu-yd" :style="[{background:item.bgcolor}]">
 									<view class="cardTitle">
 										<!-- 运动类型 -->
@@ -93,7 +93,7 @@
 			<view class="tagTitle">健康</view>
 			<view class="jk">
 				<view class="cu-card cu-card-jk article">
-					<view class="cu-item bg-img shadow-warp">
+					<view class="cu-item bg-img bar-shadown">
 						<view class="cardTitle-jk">
 							<view class="flex">
 								<scroll-view scroll-x class="bg-white nav text-center">
@@ -395,7 +395,7 @@
 	}
 	.content-notice {
 		padding: 15upx;
-		margin: 24upx;
+		margin: 30upx;
 		border-radius: 8upx;
 	}
 	.icon{
@@ -405,7 +405,7 @@
 		margin-top: 4upx;
 	}
 	.tagTitle{
-		margin: 48upx 24upx 0upx 24upx;
+		margin: 48upx 30upx 0upx 30upx;
 		font-size: 32upx;
 		font-weight: 100; 
 		color: rgba(0,0,0,0.5);
@@ -490,7 +490,7 @@
 		position: absolute;
 	}
 	.page_motion_tag{
-		padding: 0 24upx;
+		padding: 0 30upx;
 	}
 	.cu-card {
 		width: 620upx;
@@ -524,7 +524,7 @@
 	/* 具体健康数据 */
 	.cu-card-jk {
 		width: 100%;
-		padding: 0 24upx;
+		padding: 0 30upx;
 		
 		
 	}

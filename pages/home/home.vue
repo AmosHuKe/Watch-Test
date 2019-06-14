@@ -342,5 +342,4 @@
     left: 30px;
     top: -20px;
 }
-
 </style>

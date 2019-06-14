@@ -155,7 +155,7 @@
 
 <style scoped>
 	.page{
-		padding: 0 36upx;
+		padding: 0 30upx;
 		flex-direction: column;
 	}
 	.margin50{
