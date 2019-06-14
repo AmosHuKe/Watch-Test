@@ -16,11 +16,11 @@
   },
   "nvueCompiler": "weex",
   "splashscreen": {
-    "alwaysShowBeforeRender": false,
-    "autoclose": true
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
   },
-  "appname": "智能手表测试",
-  "compilerVersion": "2.0.0",
+  "appname": "运动手表演示",
+  "compilerVersion": "2.0.1",
   "usingComponents": {
     "cu-custom": "/lib/colorui/components/cu-custom",
     "home": "/pages/home/home",
