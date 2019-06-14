@@ -12,7 +12,12 @@
 > 主要用于学习参考，商业用途需经作者允许。  
 > [![插画风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)
 > [![插画风格](https://img.shields.io/badge/插图风格-Undraw-%236c63ff.svg)](https://undraw.co/search)  
-
+  
+| 测试平台 | 是否支持 | 下载演示 |  
+|------|------|------|  
+| Android`8.0` | ✔ | [下载](./demo/WatchApp.apk) |  
+| ios`未测试` | 理论可行 | 无 |  
+  
 ## 目录结构  
 ```
 ├── App.vue    //应用配置（配置App全局样式以及监听等）  
@@ -42,7 +47,9 @@
 │   └── colorui    //ColorUi
 ├── style    //样式文件  
 ├── static    //静态文件  
+├── appstatic    //APP静态文件（Icon，启动图...）
 ├── unpackage    //打包后文件（dist）  
+├── demo    //演示预览文件  
 
 ```
 
