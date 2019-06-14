@@ -10,11 +10,8 @@
 > 智能手表运动相关的App页面展示。  
 > 该项目是用于模型演示，并没有写入实际功能。  
 > 主要用于学习参考，商业用途需经作者允许。  
-> [![插图风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)  
-
-* 预览  
-![预览]()
-
+> [![插画风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)
+> [![插画风格](https://img.shields.io/badge/插图风格-Undraw-%236c63ff.svg)](https://undraw.co/search)  
 
 ## 目录结构  
 ```
@@ -48,3 +45,15 @@
 ├── unpackage    //打包后文件（dist）  
 
 ```
+
+## 预览  
+
+![首页](./demo/1.png)  
+  
+![运动](./demo/2.png)  
+  
+![设备](./demo/3.png)  
+  
+![目标](./demo/4.png)  
+  
+![我的](./demo/5.png)  
