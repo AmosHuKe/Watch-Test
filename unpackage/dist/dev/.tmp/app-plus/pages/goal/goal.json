@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "cu-custom": "/lib/colorui/components/cu-custom",
     "range-slider": "/lib/range-slider/range-slider"
   },
   "component": true

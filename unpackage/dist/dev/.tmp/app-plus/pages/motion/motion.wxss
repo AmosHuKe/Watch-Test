@@ -12,7 +12,7 @@
 }
 .content-notice.data-v-2daf6e08 {
 	padding: 15rpx;
-	margin: 24rpx;
+	margin: 30rpx;
 	-webkit-border-radius: 8rpx;
 	        border-radius: 8rpx;
 }
@@ -23,7 +23,7 @@
 	margin-top: 4rpx;
 }
 .tagTitle.data-v-2daf6e08{
-	margin: 48rpx 24rpx 0rpx 24rpx;
+	margin: 48rpx 30rpx 0rpx 30rpx;
 	font-size: 32rpx;
 	font-weight: 100; 
 	color: rgba(0,0,0,0.5);
@@ -104,7 +104,7 @@
 	position: absolute;
 }
 .page_motion_tag.data-v-2daf6e08{
-	padding: 0 24rpx;
+	padding: 0 30rpx;
 }
 .cu-card.data-v-2daf6e08 {
 	width: 620rpx;
@@ -136,7 +136,7 @@
 /* 具体健康数据 */
 .cu-card-jk.data-v-2daf6e08 {
 	width: 100%;
-	padding: 0 24rpx;
+	padding: 0 30rpx;
 }
 .cu-card-jk.article>.cu-item.data-v-2daf6e08 {
 	/*padding-bottom: 108upx;*/
