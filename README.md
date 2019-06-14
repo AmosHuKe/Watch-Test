@@ -10,10 +10,10 @@
 > 智能手表运动相关的App页面展示。  
 > 该项目是用于模型演示，并没有写入实际功能。  
 > 主要用于学习参考，商业用途需经作者允许。  
-> `插图风格`[Pale](https://icons8.cn/ouch/style/pale)  
+> [![插图风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)  
 
 * 预览  
-![预览](watch.gif)
+![预览]()
 
 
 ## 目录结构  
