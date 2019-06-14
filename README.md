@@ -47,13 +47,14 @@
 ```
 
 ## 预览  
-
-![首页](./demo/1.png)  
   
-![运动](./demo/2.png)  
+<img alt="首页" src="./demo/1.png" style="width:50%">
   
-![设备](./demo/3.png)  
+<img alt="运动" src="./demo/2.png" style="width:50%">
   
-![目标](./demo/4.png)  
+<img alt="设备" src="./demo/3.png" style="width:50%">
   
-![我的](./demo/5.png)  
+<img alt="目标" src="./demo/4.png" style="width:50%">
+  
+<img alt="我的" src="./demo/5.png" style="width:50%">
+  
