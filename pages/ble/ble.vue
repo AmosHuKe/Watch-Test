@@ -1,5 +1,5 @@
 <template>
-	<view class="ble">
+	<view class="ble animation-fade">
 		<!-- 顶部 -->
 		<cu-custom bgColor="bg-white" :isBack="false">
 			<block slot="backText"></block>
@@ -7,8 +7,8 @@
 			
 		</cu-custom>
 		
-		<view class="cu-list menu sm-border card-menu margin-top" v-for="(bleList,index) in bleData" v-bind:key="index">
-			<view class="cu-item">
+		<view class="cu-list menu sm-border card-menu margin-top animation-fade" v-for="(bleList,index) in bleData" v-bind:key="index">
+			<view class="cu-item ">
 				<view class="content">
 					<text class="cuIcon-btn text-black"></text>
 					<text class="text-black">
@@ -167,5 +167,8 @@
 <style scoped>
 	.bleid{
 		margin-left:10upx;
+	}
+	.margin-top{
+		margin-top:32upx;
 	}
 </style>

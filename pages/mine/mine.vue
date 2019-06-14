@@ -1,5 +1,5 @@
 <template>
-	<view class="center">
+	<view class="mine animation-fade">
 		<!-- 顶部 -->
 		<!-- <cu-custom bgImage="linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6))" :isBack="false" :isShadown="false">
 			<block slot="backText"></block>
@@ -58,14 +58,23 @@
 		</view>
 		
 		<!-- 退出登陆 -->
-		<view class="cu-modal bottom-modal" :class="loginOutShow?'show':''">
+		<view class="cu-modal" :class="loginOutShow?'show':''">
 			<view class="cu-dialog">
-				<view class="cu-bar bg-white">
-					<view class="action text-red" @tap="loginOut">确定</view>
-					<view class="action text-black" @tap="loginOutHide">取消</view>
+				<view class="cu-bar bg-white justify-end">
+					<view class="content">退出登陆</view>
+					<view class="action" @tap="loginOutHide">
+						<text class="cuIcon-close text-red"></text>
+					</view>
 				</view>
 				<view class="padding-xl">
 					确定退出登陆？
+				</view>
+				<view class="cu-bar bg-white justify-end">
+					<view class="action">
+						<button class="cu-btn line-green text-black" @tap="loginOutHide">取消</button>
+						<button class="cu-btn bg-red margin-left" @tap="loginOut">确定</button>
+		
+					</view>
 				</view>
 			</view>
 		</view>

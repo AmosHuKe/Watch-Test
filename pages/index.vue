@@ -8,7 +8,7 @@
 			<mine v-if="PageCur=='mine'"></mine> <!-- 我的 -->
 		</view>
 		
-		<view class="cu-bar tabbar bg-white shadow foot mainCD">
+		<view class="cu-bar tabbar bg-white shadow foot mainCD" :style="{zIndex:isTop?'999999':'99'}" >
 			<view class="action" :class="PageCur=='home'?'text-black':'text-gray'" @click="NavChange" data-cur="home">
 				<view class="cuIcon-homefill"></view> 首页
 			</view>
@@ -21,7 +21,7 @@
 			</view>
 			<view class="action" :class="PageCur=='goal'?'text-black':'text-gray'" @click="NavChange" data-cur="goal">
 				<view class="cuIcon-remind">
-					<view class="cu-tag badge">99</view>
+					<view class="cu-tag badge">2</view>
 				</view>
 				目标
 			</view>
@@ -42,6 +42,7 @@
 			return {
 				PageCur: 'home', //切换菜单
 				toPageCur: '', //上次切换的菜单
+				isTop:false, //底部菜单是否在最顶层
 			}
 		},
 		methods: {
@@ -54,7 +55,15 @@
 			//监听菜单变化
 			'PageCur': function(newVal){
 				var _this=this
+				if(newVal=="ble"){
+					//如果切换的蓝牙 就把底部菜单设为最顶层 避免不方便切换
+					_this.isTop=true
+				}else{
+					_this.isTop=false
+				}
+				
 				if(newVal!="ble" && _this.toPageCur=="ble"){
+					
 					uni.stopBluetoothDevicesDiscovery({
 					  success(res) {
 						console.log("关闭蓝牙搜索"+res)
@@ -68,9 +77,6 @@
 </script>
 
 <style scoped>
-	.mainCD{
-		z-index: 9999999999;
-	}
 	.mainIndex{
 		padding-bottom:128upx;
 	}

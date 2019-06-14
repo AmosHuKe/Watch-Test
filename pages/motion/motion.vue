@@ -1,12 +1,27 @@
 <template>
-	<view class="motion">
+	<view class="motion animation-fade">
 		<!-- 顶部 -->
 		<!-- <cu-custom bgColor="bg-white" :isBack="false">
 			<block slot="backText"></block>
 			<block slot="content">运动</block>
 		</cu-custom> -->
 		
+		<!-- 通知 -->
+		<view class="content-notice bar-shadown" v-if="notice.contentmain==''?false:true " :style="[{ backgroundColor:'rgba(0,0,0,0.2)',color:'#FFFFFF'}]">
+			<view class="flex">
+				<view class="flex-treble">
+					<text class="lg icon cuIcon-notice"></text>
+					{{notice.contentmain}}
+				</view>
+				<view class="justify-start icon-close" @tap="noticeClose">
+					<text class="lg cuIcon-close"></text>
+				</view>
+			</view>
+		</view>
+		
 		<scroll-view scroll-y class="page">
+			
+			
 			<!-- 顶部数据图 -->
 			<view class="bg-img padding-bottom-xl motion_top">
 				
@@ -42,28 +57,15 @@
 				
 			</view>
 			
-			<!-- 通知 -->
-			<view class="content-notice" v-if="notice.contentmain==''?false:true " :style="[{ backgroundColor:'rgba(0,0,0,0.2)',color:'#FFFFFF'}]">
-				<view class="flex">
-					<view class="flex-treble">
-						<text class="lg icon cuIcon-notice"></text>
-						{{notice.contentmain}}
-					</view>
-					<view class="justify-start icon-close" @tap="noticeClose">
-						<text class="lg cuIcon-close"></text>
-					</view>
-				</view>
-			</view>
-			
 			<!-- 具体运动数据 -->
 			<view class="tagTitle">运动</view>
 			<scroll-view scroll-x="true" class="page_motion_tag">
 				
 				<view class="flex">
 					<view class="flex-sub" v-for="(item,index) in ydList" :key="index">
-						<view class="cu-card article " @tap="ydToUrl(index)">  <!--跳转到详情-->
-							<view class="cu-item bg-img bg-img-yd shadow-warp bar-shadown" :style="[{backgroundImage:'url('+item.img+')'}]" >
-								<view class="cu-yd" :style="[{background:item.bgcolor}]">
+						<view class="cu-card article" @tap="ydToUrl(index)">  <!--跳转到详情-->
+							<view class="cu-item bar-shadown bg-img bg-img-yd" :style="[{backgroundImage:'url('+item.img+')'}]" >
+								<view class="cu-yd " :style="[{background:item.bgcolor}]">
 									<view class="cardTitle">
 										<!-- 运动类型 -->
 										<view class="flex">
@@ -483,6 +485,7 @@
 	.bg-img-yd{
 		background-size: 256upx;
 		background-position: right;
+		position: relative;
 	}
 	.cu-yd{
 		width: 100%;

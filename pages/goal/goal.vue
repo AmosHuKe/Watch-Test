@@ -1,5 +1,5 @@
 <template>
-	<view class="goal margin100">
+	<view class="goal animation-fade margin100">
 		<!-- 顶部 -->
 		<!-- <cu-custom bgColor="bg-white" :isBack="false">
 			<block slot="backText"></block>
