@@ -97,6 +97,7 @@
 .bg-img-yd.data-v-2daf6e08{
 	background-size: 256rpx;
 	background-position: right;
+	position: relative;
 }
 .cu-yd.data-v-2daf6e08{
 	width: 100%;

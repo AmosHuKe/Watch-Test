@@ -51,8 +51,8 @@
 .animation-fade {
 	-webkit-animation-name: fade;
 	        animation-name: fade;
-	-webkit-animation-duration: .4s;
-	        animation-duration: .4s;
+	-webkit-animation-duration: .1s;
+	        animation-duration: .1s;
 	-webkit-animation-timing-function: linear;
 	        animation-timing-function: linear
 }
@@ -4994,7 +4994,7 @@ page{
 }
 /* 阴影 */
 .bar-shadown{
-	-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
-	box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
+	-webkit-box-shadow: 0 0 36px 0 rgba(43,86,112,.1) !important;
+	box-shadow: 0 0 36px 0 rgba(43,86,112,.1) !important;
 }
 

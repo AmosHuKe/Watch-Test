@@ -173,6 +173,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -187,7 +196,7 @@ var _default =
     goLogin: function goLogin() {
       //登陆
       if (!this.login) {
-        console.log("点击前往登录", " at pages\\mine\\mine.vue:90");
+        console.log("点击前往登录", " at pages\\mine\\mine.vue:99");
         uni.navigateTo({
           url: './mine/children/login',
           animationType: 'pop-in',
@@ -199,7 +208,7 @@ var _default =
       //退出登陆
       var _this = this;
       if (_this.loginOutShow) {
-        console.log("退出登录", " at pages\\mine\\mine.vue:102");
+        console.log("退出登录", " at pages\\mine\\mine.vue:111");
         _this.loginOutShow = false;
       } else {
         _this.loginOutShow = true;

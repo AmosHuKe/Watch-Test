@@ -141,7 +141,8 @@ var _default =
   data: function data() {
     return {
       PageCur: 'home', //切换菜单
-      toPageCur: '' //上次切换的菜单
+      toPageCur: '', //上次切换的菜单
+      isTop: false //底部菜单是否在最顶层
     };
   },
   methods: {
@@ -154,10 +155,18 @@ var _default =
     //监听菜单变化
     'PageCur': function PageCur(newVal) {
       var _this = this;
+      if (newVal == "ble") {
+        //如果切换的蓝牙 就把底部菜单设为最顶层 避免不方便切换
+        _this.isTop = true;
+      } else {
+        _this.isTop = false;
+      }
+
       if (newVal != "ble" && _this.toPageCur == "ble") {
+
         uni.stopBluetoothDevicesDiscovery({
           success: function success(res) {
-            console.log("关闭蓝牙搜索" + res, " at pages\\index.vue:60");
+            console.log("关闭蓝牙搜索" + res, " at pages\\index.vue:69");
           } });
 
       }

@@ -252,6 +252,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 var notice = {
   contentmain: "请连接蓝牙进行操作",
@@ -466,7 +468,7 @@ var jkList = {
         'title_total_2': item.title_total_2,
         'content_total_2': item.content_total_2 });
 
-      console.log(datas, " at pages\\motion\\motion.vue:369");
+      console.log(datas, " at pages\\motion\\motion.vue:371");
       if (datas.indexOf("title_total_0") != -1) {
         uni.navigateTo({
           url: './motion/children/motion_ydData?id=1&datas=' + datas,
