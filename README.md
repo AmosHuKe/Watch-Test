@@ -1,4 +1,4 @@
-# 🏃‍⌚
+﻿# 🏃‍⌚
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
@@ -16,7 +16,7 @@
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
 | Chrome | ✔ | 无 |  
-| Android`8.0` | ✔ | [下载](./demo/WatchApp.apk) |  
+| Android`8.0` | ✔ | [下载](https://github.com/AmosHuKe/Watch-Test/releases/tag/v1.0.0-beta) |  
 | ios`未测试` | 理论可行 | 无 |  
   
 ## 目录结构  
