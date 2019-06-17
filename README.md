@@ -17,7 +17,7 @@
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
 | Chrome | ✔ | 无 |  
-| Android`8.0` | ✔ | [下载](https://github.com/AmosHuKe/Watch-Test/releases/tag/v1.0.0-beta) |  
+| Android`8.0` | ✔ | [下载](https://github.com/AmosHuKe/Watch-Test/releases) |  
 | ios`未测试` | 理论可行 | 无 |  
   
 ## 目录结构  
