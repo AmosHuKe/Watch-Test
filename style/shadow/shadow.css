@@ -1,0 +1,97 @@
+/**
+ * 按钮及边框阴影样式
+ */
+
+/* 按钮加载 */
+.wechat{
+  color: #62b900;
+}
+.buttonLoading{
+    margin-left: 40%;
+    width: 50upx;
+    padding-right: 24upx;
+    padding-left: 17upx;
+    padding-top: 14upx;
+    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -moz-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -ms-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+}
+/* 阴影及圆边 */
+.auth-form-light{
+  border-radius: 0.3125rem ;
+  box-shadow: 0upx 4upx 0upx rgba(170,170,170,0.1);
+  transition: all 0.6s;
+}
+.oBorder{
+    border: none !important;
+    border-radius: 2.5rem !important;
+    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+}
+.oBorder_left{
+    border: none !important;
+    border-radius: 2.5rem 0 0 2.5rem !important;
+    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+}
+.oBorder_right{
+    border: none !important;
+    border-radius: 0 2.5rem  2.5rem 0 !important;
+    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+}
+.buttonBorder{
+    border: none !important;
+    border-radius: 2.5rem !important;
+    -webkit-box-shadow: 0 0 60upx 0 rgba(0,0,0,.2) !important;
+    box-shadow: 0 0 60upx 0 rgba(0,0,0,.2) !important;
+    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -moz-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -ms-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+}
+/* 婊戝潡鏍峰紡 */
+.slider-item{
+  border: none !important;
+  border-radius: 2.5rem !important;
+  -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+  box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) !important;
+}
+.slider-bg{
+  border: none !important;
+  border-radius: 2.5rem !important;
+}
+.slider-btn{
+  border: none !important;
+  border-radius: 2.5rem !important;
+}
+.slider{
+  background: #3e4b5b;
+
+
+}
+/* 超过600upx 变化*/
+@media screen and (max-width: 600px) {
+    .content-wrapper{
+      padding-right: 0upx !important;
+      padding-left: 0upx !important;
+      background: #FFFFFF;
+    }
+    .row{
+      margin-right: 0upx !important;
+      margin-left: 0upx !important;
+    }
+    .col-lg-4{
+      padding-right: 0upx !important;
+      padding-left: 0upx !important;
+    }
+    /* 鐧诲綍杈规 */
+    .auth-form-light{
+      border-radius: none;
+      box-shadow: none;
+      transition: all 0.6s;
+    }
+}

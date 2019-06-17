@@ -10,23 +10,23 @@
 			
 			<view class="list">
 				<view class="tishi">若您忘记了密码，可在此重新设置新密码。</view>
-				<view class="list-call">
-					<text class="img cuIcon-phone text-black"></text>
+				<view class="list-call oBorder">
+					<!-- <text class="img cuIcon-phone text-black"></text> -->
 					<input class="biaoti" type="number" v-model="phoneno" maxlength="11" placeholder="请输入手机号" />
 				</view>
-				<view class="list-call">
-					<text class="img cuIcon-lock text-black"></text>
+				<view class="list-call oBorder">
+					<!-- <text class="img cuIcon-lock text-black"></text> -->
 					<input class="biaoti" type="text" v-model="password" maxlength="32" placeholder="请输入新密码" :password="!showPassword" />
-					<image class="img" :src="showPassword?'/static/shilu-login/op.png':'/static/shilu-login/cl.png'" @tap="display"></image>
+					<image class="img " :class="showPassword?'cuIcon-attention':'cuIcon-attentionforbid'" @tap="display"></image>
 				</view>
-				<view class="list-call">
-					<text class="img cuIcon-safe text-black"></text>
+				<view class="list-call oBorder">
+					<!-- <text class="img cuIcon-safe text-black"></text> -->
 					<input class="biaoti" type="number" v-model="code" maxlength="4" placeholder="验证码" />
 					<view class="yzm" :class="{ yzms: second>0 }" @tap="getcode">{{yanzhengma}}</view>
 				</view>
 			</view>
 			
-			<button class="dlbutton cu-btn round bg-black shadow" hover-class="dlbutton-hover" @tap="bindLogin()">
+			<button class="dlbutton buttonBorder cu-btn round bg-black" hover-class="dlbutton-hover" @tap="bindLogin()">
 				修改密码
 			</button>
 			<!-- <view class="dlbutton" hover-class="dlbutton-hover" @tap="bindLogin()">
@@ -70,6 +70,14 @@
 			    this.showPassword = !this.showPassword
 			},
 			getcode(){
+				if (this.phoneno.length != 11) {
+				     uni.showToast({
+				        icon: 'none',
+						position: 'bottom',
+				        title: '手机号不正确'
+				    });
+				    return false;
+				}
 				if(this.second>0){
 					return;
 				}
@@ -107,6 +115,7 @@
 				if (this.phoneno.length != 11) {
 				     uni.showToast({
 				        icon: 'none',
+						position: 'bottom',
 				        title: '手机号不正确'
 				    });
 				    return;
@@ -114,6 +123,7 @@
 			    if (this.password.length < 6) {
 			        uni.showToast({
 			            icon: 'none',
+						position: 'bottom',
 			            title: '密码不正确'
 			        });
 			        return;
@@ -121,6 +131,7 @@
 				if (this.code.length != 4) {
 				    uni.showToast({
 				        icon: 'none',
+						position: 'bottom',
 				        title: '验证码不正确'
 				    });
 				    return;
@@ -153,75 +164,6 @@
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.tishi {
-		color: #999999;
-		font-size: 28upx;
-		line-height: 50upx;
-		margin-bottom: 50upx;
-	}
-    .list {
-    	display: flex;
-    	flex-direction: column;
-    	padding-top: 50upx;
-    	padding-left: 70upx;
-    	padding-right: 70upx;
-    }
-    .list-call{
-    	display: flex;
-    	flex-direction: row;
-    	justify-content: space-between;
-    	align-items: center;
-    	height: 100upx;
-    	color: #333333;
-    	border-bottom: 1upx solid rgba(230,230,230,1);
-    }
-    .list-call .img{
-    	width: 40upx;
-    	height: 40upx;
-    }
-    .list-call .biaoti{
-    	flex: 1;
-    	text-align: left;
-    	font-size: 32upx;
-    	line-height: 100upx;
-    	margin-left: 16upx;
-    }
-	.dlbutton {
-		color: #FFFFFF;
-		font-size: 34upx;
-		width:470upx;
-		height:100upx;
-		background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-		box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.2);
-		border-radius:50upx;
-		line-height: 100upx;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 100upx;
-	}
-	.dlbutton-hover {
-		background:linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-	}
-	.yzm {
-		color: #FF7D13;
-		font-size: 24upx;
-		line-height: 64upx;
-		padding-left: 10upx;
-		padding-right: 10upx;
-		width:auto;
-		height:64upx;
-		border:1upx solid rgba(255,131,30,1);
-		border-radius: 50upx;
-	}
-	.yzms {
-		color: #999999 !important;
-		border:1upx solid #999999;
-	}
+	@import url("../css/main.css");
 </style>
 

@@ -1,0 +1,110 @@
+@import url("../../../style/shadow/shadow.css");
+	
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	/* margin-top: 128upx; */
+}
+.header {
+	width:161upx;
+	height:161upx;
+	box-shadow:0upx 0upx 60upx 0upx rgba(0,0,0,0.1);
+	border-radius:50%;
+	background-color: #000000; 
+	margin-top: 128upx;
+	margin-bottom: 48upx;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header image{
+	width:161upx;
+	height:161upx;
+	border-radius:50%;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	padding-left: 70upx;
+	padding-right: 70upx;
+}
+.list-call{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100upx;
+	color: #333333;
+	padding: 32upx;
+	margin-top:48upx ;
+}
+.list-call .img{
+	width: 32upx;
+	height: 32upx;
+	font-size: 32upx;
+}
+.list-call .biaoti{
+	flex: 1;
+	text-align: left;
+	font-size: 28upx;
+	line-height: 100upx;
+	margin-left: 20upx;
+}
+
+.dlbutton {
+	color: #FFFFFF;
+	font-size: 30upx;
+	width:601upx;
+	height:100upx;
+	background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+	box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
+	border-radius:2.5rem;
+	line-height: 100upx;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 96upx;
+}
+.dlbutton-hover {
+	background:linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+	box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.1);
+}
+.xieyi{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 28upx;
+	margin-top: 80upx;
+	color: rgba(0,0,0,0.7);
+	text-align: center;
+	height: 40upx;
+	line-height: 40upx;
+}
+.xieyi text{
+	font-size: 24upx;
+	margin-left: 15upx;
+	margin-right: 15upx;
+}
+.yzm {
+	color: rgba(0,0,0,0.7);
+	font-size: 24upx;
+	line-height: 64upx;
+	padding-left: 10upx;
+	padding-right: 10upx;
+	width:auto;
+	height:64upx;
+	border:1upx solid rgba(0,0,0,0.7);
+	border-radius: 50upx;
+}
+.yzms {
+	color: #999999 !important;
+	border:1upx solid #999999;
+}
+.tishi {
+	color: #999999;
+	font-size: 28upx;
+	margin-top: 64upx;
+	margin-left: 48upx;
+}
