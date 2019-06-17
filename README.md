@@ -1,4 +1,4 @@
-﻿# 🏃‍⌚
+# <img src="./appstatic/watch_icon.png" style="width:64px">  
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
@@ -7,6 +7,7 @@
 
 ## 概述  
 
+> 🏃‍⌚  
 > 智能手表运动相关的App页面展示。  
 > 该项目是用于模型演示，并没有写入实际功能。  
 > 主要用于学习参考，商业用途需经作者允许。  
