@@ -58,32 +58,32 @@
 ## 预览 `点击查看大图`  
 > 首页  
 
-[![首页](./demo/1_256.png)](./demo/1.png)  
+[![首页](./demo/1_256.png)](./demo/1.png?raw=true)  
 
 > 运动  
 
-[![运动](./demo/2_256.png)](./demo/2.png)  
+[![运动](./demo/2_256.png)](./demo/2.png?raw=true)  
 
 > 设备（蓝牙）  
 
-[![设备（蓝牙）](./demo/3_256.png)](./demo/3.png)  
+[![设备（蓝牙）](./demo/3_256.png)](./demo/3.png?raw=true)  
 
 > 目标  
 
-[![目标](./demo/4_256.png)](./demo/4.png)  
+[![目标](./demo/4_256.png)](./demo/4.png?raw=true)  
 
 > 我的  
 
-[![我的](./demo/5_256.png)](./demo/5.png)  
+[![我的](./demo/5_256.png)](./demo/5.png?raw=true)  
 
 > 登陆  
 
-[![登陆](./demo/6_256.png)](./demo/6.png)  
+[![登陆](./demo/6_256.png)](./demo/6.png?raw=true)  
 
 > 注册  
 
-[![注册](./demo/7_256.png)](./demo/7.png)  
+[![注册](./demo/7_256.png)](./demo/7.png?raw=true)  
 
 > 找回密码  
 
-[![找回密码](./demo/8_256.png)](./demo/8.png)  
+[![找回密码](./demo/8_256.png)](./demo/8.png?raw=true)  
