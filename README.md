@@ -1,4 +1,4 @@
-# ![logo](./appstatic/watch_icon_64-64.png) 智能手表演示  
+# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
