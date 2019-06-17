@@ -1206,11 +1206,6 @@ function gz$gwx_8(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
 __WXML_GLOBAL__.ops_cached.$gwx_8=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'bg-white'])
-Z([3,'__l'])
-Z([1,true])
-Z([3,'1'])
-Z([[4],[[5],[[5],[1,'backText']],[1,'content']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
@@ -1438,105 +1433,103 @@ e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
 d_[x[7]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var cOB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,cOB)
 return r
 }
 e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var lQB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(r,lQB)
+var oPB=_mz(z,'cu-custom',['bgColor',0,'bind:__l',1,'isBack',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(r,oPB)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var tSB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1,'hoverClass',2],[],e,s,gg)
-var eTB=_v()
-_(tSB,eTB)
-if(_oz(z,4,e,s,gg)){eTB.wxVkey=1
+var aRB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1,'hoverClass',2],[],e,s,gg)
+var tSB=_v()
+_(aRB,tSB)
+if(_oz(z,4,e,s,gg)){tSB.wxVkey=1
 }
-eTB.wxXCkey=1
-_(r,tSB)
+tSB.wxXCkey=1
+_(r,aRB)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var oVB=_mz(z,'cu-custom',['bgImage',0,'bind:__l',1,'class',1,'isBack',2,'isShadown',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(r,oVB)
+var bUB=_mz(z,'cu-custom',['bgImage',0,'bind:__l',1,'class',1,'isBack',2,'isShadown',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(r,bUB)
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
 d_[x[11]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var oXB=_n('view')
-_rz(z,oXB,'class',0,e,s,gg)
-var fYB=_v()
-_(oXB,fYB)
-if(_oz(z,1,e,s,gg)){fYB.wxVkey=1
+var xWB=_n('view')
+_rz(z,xWB,'class',0,e,s,gg)
+var oXB=_v()
+_(xWB,oXB)
+if(_oz(z,1,e,s,gg)){oXB.wxVkey=1
 }
-var cZB=_n('view')
-_rz(z,cZB,'class',2,e,s,gg)
-var o4B=_v()
-_(cZB,o4B)
-var l5B=function(t7B,a6B,e8B,gg){
-var o0B=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'data-id',3],[],t7B,a6B,gg)
+var fYB=_n('view')
+_rz(z,fYB,'class',2,e,s,gg)
+var c3B=_v()
+_(fYB,c3B)
+var o4B=function(a6B,l5B,t7B,gg){
+var b9B=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'data-id',3],[],a6B,l5B,gg)
+var o0B=_v()
+_(b9B,o0B)
+if(_oz(z,11,a6B,l5B,gg)){o0B.wxVkey=1
+}
 var xAC=_v()
-_(o0B,xAC)
-if(_oz(z,11,t7B,a6B,gg)){xAC.wxVkey=1
+_(b9B,xAC)
+if(_oz(z,12,a6B,l5B,gg)){xAC.wxVkey=1
 }
 var oBC=_v()
-_(o0B,oBC)
-if(_oz(z,12,t7B,a6B,gg)){oBC.wxVkey=1
+_(b9B,oBC)
+if(_oz(z,13,a6B,l5B,gg)){oBC.wxVkey=1
 }
-var fCC=_v()
-_(o0B,fCC)
-if(_oz(z,13,t7B,a6B,gg)){fCC.wxVkey=1
-}
+o0B.wxXCkey=1
 xAC.wxXCkey=1
 oBC.wxXCkey=1
-fCC.wxXCkey=1
-_(e8B,o0B)
-return e8B
+_(t7B,b9B)
+return t7B
 }
-o4B.wxXCkey=2
-_2z(z,5,l5B,e,s,gg,o4B,'jk','index','index')
+c3B.wxXCkey=2
+_2z(z,5,o4B,e,s,gg,c3B,'jk','index','index')
+var cZB=_v()
+_(fYB,cZB)
+if(_oz(z,14,e,s,gg)){cZB.wxVkey=1
+var fCC=_v()
+_(cZB,fCC)
+var cDC=function(oFC,hEC,cGC,gg){
+var lIC=_v()
+_(cGC,lIC)
+if(_oz(z,19,oFC,hEC,gg)){lIC.wxVkey=1
+}
+lIC.wxXCkey=1
+return cGC
+}
+fCC.wxXCkey=2
+_2z(z,17,cDC,e,s,gg,fCC,'sleepD','index','index')
+}
 var h1B=_v()
-_(cZB,h1B)
-if(_oz(z,14,e,s,gg)){h1B.wxVkey=1
-var cDC=_v()
-_(h1B,cDC)
-var hEC=function(cGC,oFC,oHC,gg){
-var aJC=_v()
-_(oHC,aJC)
-if(_oz(z,19,cGC,oFC,gg)){aJC.wxVkey=1
-}
-aJC.wxXCkey=1
-return oHC
-}
-cDC.wxXCkey=2
-_2z(z,17,hEC,e,s,gg,cDC,'sleepD','index','index')
+_(fYB,h1B)
+if(_oz(z,20,e,s,gg)){h1B.wxVkey=1
 }
 var o2B=_v()
-_(cZB,o2B)
-if(_oz(z,20,e,s,gg)){o2B.wxVkey=1
+_(fYB,o2B)
+if(_oz(z,21,e,s,gg)){o2B.wxVkey=1
 }
-var c3B=_v()
-_(cZB,c3B)
-if(_oz(z,21,e,s,gg)){c3B.wxVkey=1
-}
+cZB.wxXCkey=1
 h1B.wxXCkey=1
 o2B.wxXCkey=1
-c3B.wxXCkey=1
-_(oXB,cZB)
-fYB.wxXCkey=1
-_(r,oXB)
+_(xWB,fYB)
+oXB.wxXCkey=1
+_(r,xWB)
 return r
 }
 e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
@@ -1557,7 +1550,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index","pages/motion/children/motion_ydData","pages/mine/children/login","pages/mine/children/register","pages/mine/children/forget"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"手表","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8","navigationStyle":"custom"},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":false,"autoclose":true},"appname":"智能手表测试","compilerVersion":"2.0.0","usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","home":"/pages/home/home","motion":"/pages/motion/motion","ble":"/pages/ble/ble","goal":"/pages/goal/goal","mine":"/pages/mine/mine"}};
+__wxAppCode__['app.json']={"pages":["pages/index","pages/motion/children/motion_ydData","pages/mine/children/login","pages/mine/children/register","pages/mine/children/forget"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"手表","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8","navigationStyle":"custom"},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"运动手表演示","compilerVersion":"2.0.1","usingComponents":{"cu-custom":"/lib/colorui/components/cu-custom","home":"/pages/home/home","motion":"/pages/motion/motion","ble":"/pages/ble/ble","goal":"/pages/goal/goal","mine":"/pages/mine/mine"}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['lib/colorui/components/cu-custom.json']={"usingComponents":{},"component":true};
@@ -6178,7 +6171,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -12376,7 +12369,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -12397,14 +12390,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -12473,7 +12466,7 @@ var patch = function(oldVnode, vnode) {
         });
         var diffData = diff(data, mpData);
         if (Object.keys(diffData).length) {
-            if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
+            if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
                 console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
                     ']差量更新',
                     JSON.stringify(diffData));
@@ -12928,957 +12921,6 @@ function normalizeComponent (
     options: options
   }
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/vuex/dist/vuex.esm.js":
-/*!********************************************!*\
-  !*** ./node_modules/vuex/dist/vuex.esm.js ***!
-  \********************************************/
-/*! exports provided: Store, install, mapState, mapMutations, mapGetters, mapActions, createNamespacedHelpers, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapState", function() { return mapState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapMutations", function() { return mapMutations; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapGetters", function() { return mapGetters; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapActions", function() { return mapActions; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNamespacedHelpers", function() { return createNamespacedHelpers; });
-/**
- * vuex v3.0.1
- * (c) 2017 Evan You
- * @license MIT
- */
-var applyMixin = function (Vue) {
-  var version = Number(Vue.version.split('.')[0]);
-
-  if (version >= 2) {
-    Vue.mixin({ beforeCreate: vuexInit });
-  } else {
-    // override init and inject vuex init procedure
-    // for 1.x backwards compatibility.
-    var _init = Vue.prototype._init;
-    Vue.prototype._init = function (options) {
-      if ( options === void 0 ) options = {};
-
-      options.init = options.init
-        ? [vuexInit].concat(options.init)
-        : vuexInit;
-      _init.call(this, options);
-    };
-  }
-
-  /**
-   * Vuex init hook, injected into each instances init hooks list.
-   */
-
-  function vuexInit () {
-    var options = this.$options;
-    // store injection
-    if (options.store) {
-      this.$store = typeof options.store === 'function'
-        ? options.store()
-        : options.store;
-    } else if (options.parent && options.parent.$store) {
-      this.$store = options.parent.$store;
-    }
-  }
-};
-
-var devtoolHook =
-  typeof window !== 'undefined' &&
-  window.__VUE_DEVTOOLS_GLOBAL_HOOK__;
-
-function devtoolPlugin (store) {
-  if (!devtoolHook) { return }
-
-  store._devtoolHook = devtoolHook;
-
-  devtoolHook.emit('vuex:init', store);
-
-  devtoolHook.on('vuex:travel-to-state', function (targetState) {
-    store.replaceState(targetState);
-  });
-
-  store.subscribe(function (mutation, state) {
-    devtoolHook.emit('vuex:mutation', mutation, state);
-  });
-}
-
-/**
- * Get the first item that pass the test
- * by second argument function
- *
- * @param {Array} list
- * @param {Function} f
- * @return {*}
- */
-/**
- * Deep copy the given object considering circular structure.
- * This function caches all nested objects and its copies.
- * If it detects circular structure, use cached copy to avoid infinite loop.
- *
- * @param {*} obj
- * @param {Array<Object>} cache
- * @return {*}
- */
-
-
-/**
- * forEach for object
- */
-function forEachValue (obj, fn) {
-  Object.keys(obj).forEach(function (key) { return fn(obj[key], key); });
-}
-
-function isObject (obj) {
-  return obj !== null && typeof obj === 'object'
-}
-
-function isPromise (val) {
-  return val && typeof val.then === 'function'
-}
-
-function assert (condition, msg) {
-  if (!condition) { throw new Error(("[vuex] " + msg)) }
-}
-
-var Module = function Module (rawModule, runtime) {
-  this.runtime = runtime;
-  this._children = Object.create(null);
-  this._rawModule = rawModule;
-  var rawState = rawModule.state;
-  this.state = (typeof rawState === 'function' ? rawState() : rawState) || {};
-};
-
-var prototypeAccessors$1 = { namespaced: { configurable: true } };
-
-prototypeAccessors$1.namespaced.get = function () {
-  return !!this._rawModule.namespaced
-};
-
-Module.prototype.addChild = function addChild (key, module) {
-  this._children[key] = module;
-};
-
-Module.prototype.removeChild = function removeChild (key) {
-  delete this._children[key];
-};
-
-Module.prototype.getChild = function getChild (key) {
-  return this._children[key]
-};
-
-Module.prototype.update = function update (rawModule) {
-  this._rawModule.namespaced = rawModule.namespaced;
-  if (rawModule.actions) {
-    this._rawModule.actions = rawModule.actions;
-  }
-  if (rawModule.mutations) {
-    this._rawModule.mutations = rawModule.mutations;
-  }
-  if (rawModule.getters) {
-    this._rawModule.getters = rawModule.getters;
-  }
-};
-
-Module.prototype.forEachChild = function forEachChild (fn) {
-  forEachValue(this._children, fn);
-};
-
-Module.prototype.forEachGetter = function forEachGetter (fn) {
-  if (this._rawModule.getters) {
-    forEachValue(this._rawModule.getters, fn);
-  }
-};
-
-Module.prototype.forEachAction = function forEachAction (fn) {
-  if (this._rawModule.actions) {
-    forEachValue(this._rawModule.actions, fn);
-  }
-};
-
-Module.prototype.forEachMutation = function forEachMutation (fn) {
-  if (this._rawModule.mutations) {
-    forEachValue(this._rawModule.mutations, fn);
-  }
-};
-
-Object.defineProperties( Module.prototype, prototypeAccessors$1 );
-
-var ModuleCollection = function ModuleCollection (rawRootModule) {
-  // register root module (Vuex.Store options)
-  this.register([], rawRootModule, false);
-};
-
-ModuleCollection.prototype.get = function get (path) {
-  return path.reduce(function (module, key) {
-    return module.getChild(key)
-  }, this.root)
-};
-
-ModuleCollection.prototype.getNamespace = function getNamespace (path) {
-  var module = this.root;
-  return path.reduce(function (namespace, key) {
-    module = module.getChild(key);
-    return namespace + (module.namespaced ? key + '/' : '')
-  }, '')
-};
-
-ModuleCollection.prototype.update = function update$1 (rawRootModule) {
-  update([], this.root, rawRootModule);
-};
-
-ModuleCollection.prototype.register = function register (path, rawModule, runtime) {
-    var this$1 = this;
-    if ( runtime === void 0 ) runtime = true;
-
-  if (true) {
-    assertRawModule(path, rawModule);
-  }
-
-  var newModule = new Module(rawModule, runtime);
-  if (path.length === 0) {
-    this.root = newModule;
-  } else {
-    var parent = this.get(path.slice(0, -1));
-    parent.addChild(path[path.length - 1], newModule);
-  }
-
-  // register nested modules
-  if (rawModule.modules) {
-    forEachValue(rawModule.modules, function (rawChildModule, key) {
-      this$1.register(path.concat(key), rawChildModule, runtime);
-    });
-  }
-};
-
-ModuleCollection.prototype.unregister = function unregister (path) {
-  var parent = this.get(path.slice(0, -1));
-  var key = path[path.length - 1];
-  if (!parent.getChild(key).runtime) { return }
-
-  parent.removeChild(key);
-};
-
-function update (path, targetModule, newModule) {
-  if (true) {
-    assertRawModule(path, newModule);
-  }
-
-  // update target module
-  targetModule.update(newModule);
-
-  // update nested modules
-  if (newModule.modules) {
-    for (var key in newModule.modules) {
-      if (!targetModule.getChild(key)) {
-        if (true) {
-          console.warn(
-            "[vuex] trying to add a new module '" + key + "' on hot reloading, " +
-            'manual reload is needed'
-          );
-        }
-        return
-      }
-      update(
-        path.concat(key),
-        targetModule.getChild(key),
-        newModule.modules[key]
-      );
-    }
-  }
-}
-
-var functionAssert = {
-  assert: function (value) { return typeof value === 'function'; },
-  expected: 'function'
-};
-
-var objectAssert = {
-  assert: function (value) { return typeof value === 'function' ||
-    (typeof value === 'object' && typeof value.handler === 'function'); },
-  expected: 'function or object with "handler" function'
-};
-
-var assertTypes = {
-  getters: functionAssert,
-  mutations: functionAssert,
-  actions: objectAssert
-};
-
-function assertRawModule (path, rawModule) {
-  Object.keys(assertTypes).forEach(function (key) {
-    if (!rawModule[key]) { return }
-
-    var assertOptions = assertTypes[key];
-
-    forEachValue(rawModule[key], function (value, type) {
-      assert(
-        assertOptions.assert(value),
-        makeAssertionMessage(path, key, type, value, assertOptions.expected)
-      );
-    });
-  });
-}
-
-function makeAssertionMessage (path, key, type, value, expected) {
-  var buf = key + " should be " + expected + " but \"" + key + "." + type + "\"";
-  if (path.length > 0) {
-    buf += " in module \"" + (path.join('.')) + "\"";
-  }
-  buf += " is " + (JSON.stringify(value)) + ".";
-  return buf
-}
-
-var Vue; // bind on install
-
-var Store = function Store (options) {
-  var this$1 = this;
-  if ( options === void 0 ) options = {};
-
-  // Auto install if it is not done yet and `window` has `Vue`.
-  // To allow users to avoid auto-installation in some cases,
-  // this code should be placed here. See #731
-  if (!Vue && typeof window !== 'undefined' && window.Vue) {
-    install(window.Vue);
-  }
-
-  if (true) {
-    assert(Vue, "must call Vue.use(Vuex) before creating a store instance.");
-    assert(typeof Promise !== 'undefined', "vuex requires a Promise polyfill in this browser.");
-    assert(this instanceof Store, "Store must be called with the new operator.");
-  }
-
-  var plugins = options.plugins; if ( plugins === void 0 ) plugins = [];
-  var strict = options.strict; if ( strict === void 0 ) strict = false;
-
-  var state = options.state; if ( state === void 0 ) state = {};
-  if (typeof state === 'function') {
-    state = state() || {};
-  }
-
-  // store internal state
-  this._committing = false;
-  this._actions = Object.create(null);
-  this._actionSubscribers = [];
-  this._mutations = Object.create(null);
-  this._wrappedGetters = Object.create(null);
-  this._modules = new ModuleCollection(options);
-  this._modulesNamespaceMap = Object.create(null);
-  this._subscribers = [];
-  this._watcherVM = new Vue();
-
-  // bind commit and dispatch to self
-  var store = this;
-  var ref = this;
-  var dispatch = ref.dispatch;
-  var commit = ref.commit;
-  this.dispatch = function boundDispatch (type, payload) {
-    return dispatch.call(store, type, payload)
-  };
-  this.commit = function boundCommit (type, payload, options) {
-    return commit.call(store, type, payload, options)
-  };
-
-  // strict mode
-  this.strict = strict;
-
-  // init root module.
-  // this also recursively registers all sub-modules
-  // and collects all module getters inside this._wrappedGetters
-  installModule(this, state, [], this._modules.root);
-
-  // initialize the store vm, which is responsible for the reactivity
-  // (also registers _wrappedGetters as computed properties)
-  resetStoreVM(this, state);
-
-  // apply plugins
-  plugins.forEach(function (plugin) { return plugin(this$1); });
-
-  if (Vue.config.devtools) {
-    devtoolPlugin(this);
-  }
-};
-
-var prototypeAccessors = { state: { configurable: true } };
-
-prototypeAccessors.state.get = function () {
-  return this._vm._data.$$state
-};
-
-prototypeAccessors.state.set = function (v) {
-  if (true) {
-    assert(false, "Use store.replaceState() to explicit replace store state.");
-  }
-};
-
-Store.prototype.commit = function commit (_type, _payload, _options) {
-    var this$1 = this;
-
-  // check object-style commit
-  var ref = unifyObjectStyle(_type, _payload, _options);
-    var type = ref.type;
-    var payload = ref.payload;
-    var options = ref.options;
-
-  var mutation = { type: type, payload: payload };
-  var entry = this._mutations[type];
-  if (!entry) {
-    if (true) {
-      console.error(("[vuex] unknown mutation type: " + type));
-    }
-    return
-  }
-  this._withCommit(function () {
-    entry.forEach(function commitIterator (handler) {
-      handler(payload);
-    });
-  });
-  this._subscribers.forEach(function (sub) { return sub(mutation, this$1.state); });
-
-  if (
-     true &&
-    options && options.silent
-  ) {
-    console.warn(
-      "[vuex] mutation type: " + type + ". Silent option has been removed. " +
-      'Use the filter functionality in the vue-devtools'
-    );
-  }
-};
-
-Store.prototype.dispatch = function dispatch (_type, _payload) {
-    var this$1 = this;
-
-  // check object-style dispatch
-  var ref = unifyObjectStyle(_type, _payload);
-    var type = ref.type;
-    var payload = ref.payload;
-
-  var action = { type: type, payload: payload };
-  var entry = this._actions[type];
-  if (!entry) {
-    if (true) {
-      console.error(("[vuex] unknown action type: " + type));
-    }
-    return
-  }
-
-  this._actionSubscribers.forEach(function (sub) { return sub(action, this$1.state); });
-
-  return entry.length > 1
-    ? Promise.all(entry.map(function (handler) { return handler(payload); }))
-    : entry[0](payload)
-};
-
-Store.prototype.subscribe = function subscribe (fn) {
-  return genericSubscribe(fn, this._subscribers)
-};
-
-Store.prototype.subscribeAction = function subscribeAction (fn) {
-  return genericSubscribe(fn, this._actionSubscribers)
-};
-
-Store.prototype.watch = function watch (getter, cb, options) {
-    var this$1 = this;
-
-  if (true) {
-    assert(typeof getter === 'function', "store.watch only accepts a function.");
-  }
-  return this._watcherVM.$watch(function () { return getter(this$1.state, this$1.getters); }, cb, options)
-};
-
-Store.prototype.replaceState = function replaceState (state) {
-    var this$1 = this;
-
-  this._withCommit(function () {
-    this$1._vm._data.$$state = state;
-  });
-};
-
-Store.prototype.registerModule = function registerModule (path, rawModule, options) {
-    if ( options === void 0 ) options = {};
-
-  if (typeof path === 'string') { path = [path]; }
-
-  if (true) {
-    assert(Array.isArray(path), "module path must be a string or an Array.");
-    assert(path.length > 0, 'cannot register the root module by using registerModule.');
-  }
-
-  this._modules.register(path, rawModule);
-  installModule(this, this.state, path, this._modules.get(path), options.preserveState);
-  // reset store to update getters...
-  resetStoreVM(this, this.state);
-};
-
-Store.prototype.unregisterModule = function unregisterModule (path) {
-    var this$1 = this;
-
-  if (typeof path === 'string') { path = [path]; }
-
-  if (true) {
-    assert(Array.isArray(path), "module path must be a string or an Array.");
-  }
-
-  this._modules.unregister(path);
-  this._withCommit(function () {
-    var parentState = getNestedState(this$1.state, path.slice(0, -1));
-    Vue.delete(parentState, path[path.length - 1]);
-  });
-  resetStore(this);
-};
-
-Store.prototype.hotUpdate = function hotUpdate (newOptions) {
-  this._modules.update(newOptions);
-  resetStore(this, true);
-};
-
-Store.prototype._withCommit = function _withCommit (fn) {
-  var committing = this._committing;
-  this._committing = true;
-  fn();
-  this._committing = committing;
-};
-
-Object.defineProperties( Store.prototype, prototypeAccessors );
-
-function genericSubscribe (fn, subs) {
-  if (subs.indexOf(fn) < 0) {
-    subs.push(fn);
-  }
-  return function () {
-    var i = subs.indexOf(fn);
-    if (i > -1) {
-      subs.splice(i, 1);
-    }
-  }
-}
-
-function resetStore (store, hot) {
-  store._actions = Object.create(null);
-  store._mutations = Object.create(null);
-  store._wrappedGetters = Object.create(null);
-  store._modulesNamespaceMap = Object.create(null);
-  var state = store.state;
-  // init all modules
-  installModule(store, state, [], store._modules.root, true);
-  // reset vm
-  resetStoreVM(store, state, hot);
-}
-
-function resetStoreVM (store, state, hot) {
-  var oldVm = store._vm;
-
-  // bind store public getters
-  store.getters = {};
-  var wrappedGetters = store._wrappedGetters;
-  var computed = {};
-  forEachValue(wrappedGetters, function (fn, key) {
-    // use computed to leverage its lazy-caching mechanism
-    computed[key] = function () { return fn(store); };
-    Object.defineProperty(store.getters, key, {
-      get: function () { return store._vm[key]; },
-      enumerable: true // for local getters
-    });
-  });
-
-  // use a Vue instance to store the state tree
-  // suppress warnings just in case the user has added
-  // some funky global mixins
-  var silent = Vue.config.silent;
-  Vue.config.silent = true;
-  store._vm = new Vue({
-    data: {
-      $$state: state
-    },
-    computed: computed
-  });
-  Vue.config.silent = silent;
-
-  // enable strict mode for new vm
-  if (store.strict) {
-    enableStrictMode(store);
-  }
-
-  if (oldVm) {
-    if (hot) {
-      // dispatch changes in all subscribed watchers
-      // to force getter re-evaluation for hot reloading.
-      store._withCommit(function () {
-        oldVm._data.$$state = null;
-      });
-    }
-    Vue.nextTick(function () { return oldVm.$destroy(); });
-  }
-}
-
-function installModule (store, rootState, path, module, hot) {
-  var isRoot = !path.length;
-  var namespace = store._modules.getNamespace(path);
-
-  // register in namespace map
-  if (module.namespaced) {
-    store._modulesNamespaceMap[namespace] = module;
-  }
-
-  // set state
-  if (!isRoot && !hot) {
-    var parentState = getNestedState(rootState, path.slice(0, -1));
-    var moduleName = path[path.length - 1];
-    store._withCommit(function () {
-      Vue.set(parentState, moduleName, module.state);
-    });
-  }
-
-  var local = module.context = makeLocalContext(store, namespace, path);
-
-  module.forEachMutation(function (mutation, key) {
-    var namespacedType = namespace + key;
-    registerMutation(store, namespacedType, mutation, local);
-  });
-
-  module.forEachAction(function (action, key) {
-    var type = action.root ? key : namespace + key;
-    var handler = action.handler || action;
-    registerAction(store, type, handler, local);
-  });
-
-  module.forEachGetter(function (getter, key) {
-    var namespacedType = namespace + key;
-    registerGetter(store, namespacedType, getter, local);
-  });
-
-  module.forEachChild(function (child, key) {
-    installModule(store, rootState, path.concat(key), child, hot);
-  });
-}
-
-/**
- * make localized dispatch, commit, getters and state
- * if there is no namespace, just use root ones
- */
-function makeLocalContext (store, namespace, path) {
-  var noNamespace = namespace === '';
-
-  var local = {
-    dispatch: noNamespace ? store.dispatch : function (_type, _payload, _options) {
-      var args = unifyObjectStyle(_type, _payload, _options);
-      var payload = args.payload;
-      var options = args.options;
-      var type = args.type;
-
-      if (!options || !options.root) {
-        type = namespace + type;
-        if ( true && !store._actions[type]) {
-          console.error(("[vuex] unknown local action type: " + (args.type) + ", global type: " + type));
-          return
-        }
-      }
-
-      return store.dispatch(type, payload)
-    },
-
-    commit: noNamespace ? store.commit : function (_type, _payload, _options) {
-      var args = unifyObjectStyle(_type, _payload, _options);
-      var payload = args.payload;
-      var options = args.options;
-      var type = args.type;
-
-      if (!options || !options.root) {
-        type = namespace + type;
-        if ( true && !store._mutations[type]) {
-          console.error(("[vuex] unknown local mutation type: " + (args.type) + ", global type: " + type));
-          return
-        }
-      }
-
-      store.commit(type, payload, options);
-    }
-  };
-
-  // getters and state object must be gotten lazily
-  // because they will be changed by vm update
-  Object.defineProperties(local, {
-    getters: {
-      get: noNamespace
-        ? function () { return store.getters; }
-        : function () { return makeLocalGetters(store, namespace); }
-    },
-    state: {
-      get: function () { return getNestedState(store.state, path); }
-    }
-  });
-
-  return local
-}
-
-function makeLocalGetters (store, namespace) {
-  var gettersProxy = {};
-
-  var splitPos = namespace.length;
-  Object.keys(store.getters).forEach(function (type) {
-    // skip if the target getter is not match this namespace
-    if (type.slice(0, splitPos) !== namespace) { return }
-
-    // extract local getter type
-    var localType = type.slice(splitPos);
-
-    // Add a port to the getters proxy.
-    // Define as getter property because
-    // we do not want to evaluate the getters in this time.
-    Object.defineProperty(gettersProxy, localType, {
-      get: function () { return store.getters[type]; },
-      enumerable: true
-    });
-  });
-
-  return gettersProxy
-}
-
-function registerMutation (store, type, handler, local) {
-  var entry = store._mutations[type] || (store._mutations[type] = []);
-  entry.push(function wrappedMutationHandler (payload) {
-    handler.call(store, local.state, payload);
-  });
-}
-
-function registerAction (store, type, handler, local) {
-  var entry = store._actions[type] || (store._actions[type] = []);
-  entry.push(function wrappedActionHandler (payload, cb) {
-    var res = handler.call(store, {
-      dispatch: local.dispatch,
-      commit: local.commit,
-      getters: local.getters,
-      state: local.state,
-      rootGetters: store.getters,
-      rootState: store.state
-    }, payload, cb);
-    if (!isPromise(res)) {
-      res = Promise.resolve(res);
-    }
-    if (store._devtoolHook) {
-      return res.catch(function (err) {
-        store._devtoolHook.emit('vuex:error', err);
-        throw err
-      })
-    } else {
-      return res
-    }
-  });
-}
-
-function registerGetter (store, type, rawGetter, local) {
-  if (store._wrappedGetters[type]) {
-    if (true) {
-      console.error(("[vuex] duplicate getter key: " + type));
-    }
-    return
-  }
-  store._wrappedGetters[type] = function wrappedGetter (store) {
-    return rawGetter(
-      local.state, // local state
-      local.getters, // local getters
-      store.state, // root state
-      store.getters // root getters
-    )
-  };
-}
-
-function enableStrictMode (store) {
-  store._vm.$watch(function () { return this._data.$$state }, function () {
-    if (true) {
-      assert(store._committing, "Do not mutate vuex store state outside mutation handlers.");
-    }
-  }, { deep: true, sync: true });
-}
-
-function getNestedState (state, path) {
-  return path.length
-    ? path.reduce(function (state, key) { return state[key]; }, state)
-    : state
-}
-
-function unifyObjectStyle (type, payload, options) {
-  if (isObject(type) && type.type) {
-    options = payload;
-    payload = type;
-    type = type.type;
-  }
-
-  if (true) {
-    assert(typeof type === 'string', ("Expects string as the type, but found " + (typeof type) + "."));
-  }
-
-  return { type: type, payload: payload, options: options }
-}
-
-function install (_Vue) {
-  if (Vue && _Vue === Vue) {
-    if (true) {
-      console.error(
-        '[vuex] already installed. Vue.use(Vuex) should be called only once.'
-      );
-    }
-    return
-  }
-  Vue = _Vue;
-  applyMixin(Vue);
-}
-
-var mapState = normalizeNamespace(function (namespace, states) {
-  var res = {};
-  normalizeMap(states).forEach(function (ref) {
-    var key = ref.key;
-    var val = ref.val;
-
-    res[key] = function mappedState () {
-      var state = this.$store.state;
-      var getters = this.$store.getters;
-      if (namespace) {
-        var module = getModuleByNamespace(this.$store, 'mapState', namespace);
-        if (!module) {
-          return
-        }
-        state = module.context.state;
-        getters = module.context.getters;
-      }
-      return typeof val === 'function'
-        ? val.call(this, state, getters)
-        : state[val]
-    };
-    // mark vuex getter for devtools
-    res[key].vuex = true;
-  });
-  return res
-});
-
-var mapMutations = normalizeNamespace(function (namespace, mutations) {
-  var res = {};
-  normalizeMap(mutations).forEach(function (ref) {
-    var key = ref.key;
-    var val = ref.val;
-
-    res[key] = function mappedMutation () {
-      var args = [], len = arguments.length;
-      while ( len-- ) args[ len ] = arguments[ len ];
-
-      var commit = this.$store.commit;
-      if (namespace) {
-        var module = getModuleByNamespace(this.$store, 'mapMutations', namespace);
-        if (!module) {
-          return
-        }
-        commit = module.context.commit;
-      }
-      return typeof val === 'function'
-        ? val.apply(this, [commit].concat(args))
-        : commit.apply(this.$store, [val].concat(args))
-    };
-  });
-  return res
-});
-
-var mapGetters = normalizeNamespace(function (namespace, getters) {
-  var res = {};
-  normalizeMap(getters).forEach(function (ref) {
-    var key = ref.key;
-    var val = ref.val;
-
-    val = namespace + val;
-    res[key] = function mappedGetter () {
-      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
-        return
-      }
-      if ( true && !(val in this.$store.getters)) {
-        console.error(("[vuex] unknown getter: " + val));
-        return
-      }
-      return this.$store.getters[val]
-    };
-    // mark vuex getter for devtools
-    res[key].vuex = true;
-  });
-  return res
-});
-
-var mapActions = normalizeNamespace(function (namespace, actions) {
-  var res = {};
-  normalizeMap(actions).forEach(function (ref) {
-    var key = ref.key;
-    var val = ref.val;
-
-    res[key] = function mappedAction () {
-      var args = [], len = arguments.length;
-      while ( len-- ) args[ len ] = arguments[ len ];
-
-      var dispatch = this.$store.dispatch;
-      if (namespace) {
-        var module = getModuleByNamespace(this.$store, 'mapActions', namespace);
-        if (!module) {
-          return
-        }
-        dispatch = module.context.dispatch;
-      }
-      return typeof val === 'function'
-        ? val.apply(this, [dispatch].concat(args))
-        : dispatch.apply(this.$store, [val].concat(args))
-    };
-  });
-  return res
-});
-
-var createNamespacedHelpers = function (namespace) { return ({
-  mapState: mapState.bind(null, namespace),
-  mapGetters: mapGetters.bind(null, namespace),
-  mapMutations: mapMutations.bind(null, namespace),
-  mapActions: mapActions.bind(null, namespace)
-}); };
-
-function normalizeMap (map) {
-  return Array.isArray(map)
-    ? map.map(function (key) { return ({ key: key, val: key }); })
-    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
-}
-
-function normalizeNamespace (fn) {
-  return function (namespace, map) {
-    if (typeof namespace !== 'string') {
-      map = namespace;
-      namespace = '';
-    } else if (namespace.charAt(namespace.length - 1) !== '/') {
-      namespace += '/';
-    }
-    return fn(namespace, map)
-  }
-}
-
-function getModuleByNamespace (store, helper, namespace) {
-  var module = store._modulesNamespaceMap[namespace];
-  if ( true && !module) {
-    console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
-  }
-  return module
-}
-
-var index_esm = {
-  Store: Store,
-  install: install,
-  version: '3.0.1',
-  mapState: mapState,
-  mapMutations: mapMutations,
-  mapGetters: mapGetters,
-  mapActions: mapActions,
-  createNamespacedHelpers: createNamespacedHelpers
-};
-
-
-/* harmony default export */ __webpack_exports__["default"] = (index_esm);
 
 
 /***/ }),
@@ -15871,7 +14913,7 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
         data: function data() {
           return {
             login: false, //是否登陆
-            avatarUrl: "data:image/png;base64,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",
+            avatarUrl: "data:image/png;base64,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2GMaO3asXnvtNe6VAI6Ab+ME/kvPnj01ZcoUzZ07V9dccw3jIQalpKTopptu0pIlSzRu3Dh16NDBOgnwHc5AAJJKly6tq666SgMHDlTVqlWtc+Aj/7lXYt26dXruuec0YcIEua5rnQWY4wwEYtoJJ5ygAQMGaMmSJfrb3/7GeMAR1atXTy+88IIWLlyo3r17Ky6Ot0/ENn4CEJMSExM1cOBALV26VA899JCqVKlinYSAOOWUU/Tcc89p8eLF6tOnD99jgpjFgEBMSUhI0A033KAlS5boL3/5Cw9+wnGrWbOmBg8erMWLF//8CG0gljAgEDN69OihRYsW6ZFHHmE4IGJq1KihF154QTNmzFDz5s2tc4CoYUAg9Nq0aaMZM2bon//8p2rUqGGdg5A644wzNGHCBL399tuqX7++dQ7gOQYEQqtu3boaO3asxowZozPOOMM6BzHi/PPP15w5czR06FClpqZa5wCeYUAgdJKSkvToo4/q448/VuvWra1zEKMuu+wyLVy4UDfddBM3WiKUGBAIld69e2vx4sXq16+fEhJ4zAlsJSUl6YEHHtCcOXPUokUL6xwgohgQCIX09HRNmzZNzz33nCpXrmydA/xK3bp19e6772r48OE6+eSTrXOAiGBAINBOOOEEPfbYY5o7d64aNWpknQP8rs6dO2vZsmW66aabrFOAEmNAILDOO+88zZ8/X9dff711ClAsDzzwgKZNm6Y6depYpwDHjQGBwElKStLgwYM1ceJEVa9e3ToHOC6NGjXSxx9/rFtvvZWbLBFIDAgESuvWrbVw4UL16dPHOgUosdKlS+uee+7RRx99pNNOO806BygWBgQCoWzZsnruuec0duxYPluP0GnYsKFmz56tQYMGWacAx4wBAd8788wzNWfOHPXu3ds6BfDUfffdp9GjRys5Odk6BTgqBgR8y3EcDRo0SB9++CGPoEbMuOCCC/Txxx+rYcOG1inA72JAwJcqV66sCRMm6L777uOBUIg51atX14cffqhrr73WOgU4IgYEfKddu3aaP3++mjVrZp0CmCldurSeeOIJvfLKKypbtqx1DvA/GBDwlRtvvFGjRo3SiSeeaJ0C+MIll1yijz76SDVr1rROAX6FAQFfiIuL0z//+U89+OCDiovjX0vgl+rWrauZM2fq/PPPt04BfsY7NcxVqFBB77//vnr06GGdAvhWuXLlNGbMGP35z3+2TgEkMSBg7NRTT9XMmTPVtGlT6xTA9xzH0R133KG33npLSUlJ1jmIcQwImGnTpo2mTZumatWqWacAgdK2bVvNmDFDp5xyinUKYhgDAiYuu+wyHpgDlMApp5yiKVOmqEmTJtYpiFEMCETd/fffr6FDh/IFQkAJVaxYUe+99546d+5snYIYxIBA1CQkJOjVV1/VzTffbJ0ChEaZMmU0bNgw3XTTTdYpiDEMCERF+fLlNXHiRHXq1Mk6BQgdx3H0wAMP6Nlnn7VOQQxhQMBzVapU0dSpU7lWC3jsiiuu0GuvvcblQUQFAwKeqlGjhqZMmaI6depYpwAx4aKLLtKYMWNUpkwZ6xSEHAMCnqldu7Y+/PBDVa9e3ToFiCmZmZl69913lZiYaJ2CEGNAwBMNGjTQlClTdNJJJ1mnADHpnHPO0YQJE1SuXDnrFIQUAwIRd/bZZ2vSpEmqVKmSdQoQ0xo1aqQPPvhAFSpUsE5BCDEgEFFnnnmm3n33Xf7UA/hEenq6Jk6cyDfcIuIYEIiYBg0aaPz48Vx3BXwmPT1d7733Hk9+RUQ5Xr1wWlqa69Vrw3/S09M1YcIELlsY2rZtmzZu3KgNGzZo06ZNWrFihRYvXmzalJGRobPPPlu1atXSqaeeqjp16qhq1aqmTbFs2bJl6tmzpwoKCqxTEEVZWVme/K5nQKDEatSooalTpyolJcU6JWYUFRXpq6++0qJFi7R48WItWrRI+/bts846JuXLl1fz5s3VokULtWjRQg0bNlRcHCdDo2Xx4sW6/PLLdfDgQesURAkDAr5UvXp1TZw4USeffLJ1Suh9+eWXWrhwoRYtWqRFixYpLy/POikifjkoWrVqpYYNG1onhd7s2bPVp08f6wxECQMCvlOpUiV98MEHfKWwR7KysjR58mQtWLBAn3zyifbu3WudFBUVKlRQRkaGMjMz1aVLFz4K7JHJkyerf//+1hmIAgYEfKVMmTKaNGmSzjrrLOuUUPnqq6/00Ucfadq0afrqq6+sc3yhUaNG6tChgy6++GI1aNDAOidUXnzxRT366KPWGfAYAwK+Mnr0aF1wwQXWGaHw/fffa/z48Xr77be1efNm6xxfq1Onji6//HL16NGDy2YR8qc//Uljx461zoCHGBDwjYceekgDBgywzgi0/Px8TZ48WW+//bY++eQT65xAyszM1JVXXqkOHTrw0eES6tOnj2bPnm2dAY8wIOALffr00eDBg60zAqmoqEgLFy7U2LFj9cEHH+jAgQPWSaFQtmxZXXLJJbr88svVrFkz65xAys/PV6dOnbR69WrrFHiAAQFz7du316hRo6wzAmf37t0aMWKERo8erezsbOucUKtZs6auvvpq/fGPf1TZsmWtcwJlx44duuiii7Rt2zbrFEQYAwKmTj31VM2YMYNTxcWQk5OjV155Ra+++ioP7omyChUqqH///urXrx+PVS+GL774Qp07d9ahQ4esUxBBDAiYSU5O1vTp0/m45jHKycnR888/rzfeeEP79++3zolpJ554ogYMGKB+/frxGOdjNGbMGN1+++3WGYggBgTMjBo1Su3bt7fO8L1du3bppZde0ogRIzjj4DPly5fXjTfeqBtuuEFJSUnWOb535513avTo0dYZiBAGBEzcdtttuuuuu6wzfG3Pnj16+eWXNXz4cOXn51vn4HdUqFBBAwcO1HXXXcfluN9x6NAhdezYkWeRhAQDAlHXqlUrjRs3To7j2b8mgXb48GG99tprevrpp5Wbm2udg2KoUqWK7r//fl122WX8+30EWVlZatOmjX788UfrFJQQAwJRVaNGDc2aNYsb0I5gzpw5uu+++7Rx40brFJRAkyZN9MQTT/BE1SNYvHixunfvbp2BEvJqQPAVePhNw4cPZzz8hh9++EHXXHONrrjiCsZDCCxfvlwdOnTQn//8Z+3Zs8c6x3cyMjI0aNAg6wz4FAMC/+Ovf/2rGjVqZJ3hK67r6rXXXlPLli01ffp06xxE2FtvvaVWrVpp8uTJ1im+c9ddd+mMM86wzoAPcQkDv9KmTRuNGTPGOsNXNm3apBtvvFErVqywTkEUXHjhhRoyZIhSUlKsU3xj06ZNatu2LZ8uCiguYcBz1apV08svv2yd4SsvvviimjdvzniIITNmzFCrVq00YcIE6xTfqFWrlh555BHrDPgMZyAgSYqLi9OUKVPUuHFj6xRf2Lx5s/r376+VK1dap8DQhRdeqH/84x+qWLGidYov9O3bVzNnzrTOQDFxBgKeuv322xkPPxk2bJhat27NeIBmzJihzMxMTZ061TrFF4YOHaoqVapYZ8AnOAMB1atXT7Nnz1ZCQoJ1iqndu3erf//+WrBggXUKfOiqq67SY489pjJlylinmJo5c6b69u1rnYFi4AwEPPPiiy/G/HhYsWKF2rZty3jAEY0ePVqdOnXSli1brFNMtW/fXpdddpl1BnyAARHjbrjhhpj/iNbw4cPVpUsXvmobR/X111+rbdu2mjVrlnWKqb/97W98SgVcwohlqampWrx4ccx+J8ChQ4c0cOBATZo0yToFAXTPPffo1ltvtc4ww6WM4OASBiJu6NChMTse9uzZox49ejAecNyefPJJDRo0SIWFhdYpJriUAQZEjOrRo4cyMzOtM0x8//336tSpk5YsWWKdgoAbP368evXqFbNfpvb444/rpJNOss6AEQZEDEpKStJDDz1knWHiP9998O2331qnICQWLVqkzp0764cffrBOibpy5crp/vvvt86AEQZEDLrnnntUuXJl64yomzVrlrp168aXJiHi1q5dqz/84Q9as2aNdUrU9e7dm+/OiVEMiBhTp04d/fGPf7TOiLoxY8boqquu0sGDB61TEFI7d+5Ux44dtXjxYuuUqHv22WetE2CAARFjnnvuOcXHx1tnRNUzzzyj22+/3ToDMSA/P1/du3fXtGnTrFOi6vTTT9e1115rnYEoY0DEkMsuu0xNmza1zoiqxx57TIMHD7bOQIy5/vrr9dFHH1lnRNVf/vIXvjMkxjAgYkTZsmX18MMPW2dE1eOPP64XXnjBOgMxqKioSNdee62mTJlinRI1ycnJ3FAZYxgQMWLQoEEx9eS4xx57TEOHDrXOQIzr379/TJ2JuPzyy1WnTh3rDEQJAyIGpKSkaMCAAdYZUTN06FDOPMAXioqKdP3118fMjZVxcXF68MEHrTMQJQyIGHDHHXfohBNOsM6IismTJ+vxxx+3zgB+VlhYqL59++qbb76xTomKDh066KyzzrLOQBQwIEKuevXqMfO8+gULFsTUmRYER15ennr27BkzD5t65JFHrBMQBQyIkLv33ntj4mObq1at0jXXXKOioiLrFOA35eTkqHfv3tq7d691iueaNWumtm3bWmfAYwyIEEtPT1f37t2tMzy3fft29e7dW/n5+dYpwO9at26drrnmmpj4Aq4HHnjAOgEeY0CEWCx8pGr//v264oortHPnTusU4Jh88skn+vOf/2yd4bnTTjtNnTp1ss6AhxgQIZWenq4LL7zQOsNTRUVF6tevn1atWmWdAhTL2LFj9dJLL1lneI4nwIYbAyKk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ZWRkqE+fPtYZAI5i8uTJatmypYYMGaIDBw785j+zdetWzZo1K8pl8AoDIiQmTpyonJwc6wxPPPzww6patap1BoCjOHDggJ566illZmb+5kfMR4wYYVAFrzAgQmT48OHWCZ5ITk7WP//5T+sMAMdo8+bNuv7663XZZZfp22+/lfTvcfHWW28ZlyGS4r164eTk5Ie9em38ttWrV+v6669XqVKlrFMirkaNGtq7d6+WL19unQLgGG3evFn/+te/lJ+fr82bN2vKlCnWSTFp3759f/XidfkURsg88sgjof3448GDB9WuXTtt2LDBOgUAAoNPYeCYvPDCCzp8+LB1hidKly6tYcOGKSEhwToFAGIeAyJksrOzNWnSJOsMz5x++ul69NFHrTMAIOYxIEJo6NCh1gmeuvbaa9W1a1frDACIaQyIEFq9erVmzpxpneGpIUOGqGHDhtYZABCzGBAh9eSTT1oneOqEE07QyJEjlZycbJ0CHJdzzjlHM2bM0Nlnn22dAhwXBkRIff3115o2bZp1hqeqV6+ukSNHWmcAxVarVi2NGjVKZ5xxhj788EO98MILqlKlinUWUCwMiBAbPHiwXDfcn6Zt2bKlXn75ZesM4JglJSXprbfeUsWKFX/+e927d9eiRYt088038ykjBAYPkgqxHTt26LTTTlN6erp1iqcaNGigMmXKaP78+dYpwO9yHEdvv/22zjrrrP/5/5UuXVqtW7dWjx499M0332jz5s0GhQgjrx4kxRmIkHv66aetE6Ji0KBBuuaaa6wzgN/11FNPKSMj43f/mVq1amn8+PEaPXq0atasGaUyoPg4AxFyOTk5qlevnho0aGCd4rn27dvrm2++0bp166xTgP9x9913q3///sf8z9epU0c33HCDSpUqpWXLloX2AXHwHo+yxnE75ZRTtGjRIuuMqOndu7fmzZtnnQH87KabbtIDDzxw3P/9bdu26W9/+5vee++9CFYhVvAoaxy3jRs3atiwYdYZUTNy5Eg1atTIOgOQJF155ZUlGg+SdPLJJ+uFF17QxIkTdeqpp0aoDCgZzkDEiKSkJC1dulQVKlSwTomKH3/8UZdcconWrl1rnYIY1qVLF73yyitynMi91R4+fFgjR47Uk08+qby8vIi9LsKLMxAokby8PD3xxBPWGVFz4okn6t133w39J1DgX926ddOwYcMiOh4kKSEhQf369dOnn36qK664IqKvDRQHZyBiiOM4mjNnTkz9Ut2zZ4969OihVatWWacghvTu3VtDhgyJ+Hj4LV9//bVuu+02ffnll54fC8HEGQiUmOu6uvvuu60zoqpChQp6//33dc4551inIEb069dPzz33XFTGgyQ1bNhQH330kYYMGaJKlSpF5ZiAxICIOZ988knoH3H938qVK6d33nnnqJ+/B0rqvvvuM/m6ecdxdPnll2vx4sW64YYbFBfHWzu8xyWMGFS9enUtWbLEOsPEgAEDNHHiROsMhNDf//53XX311dYZkqT169frnnvu0cKFC61T4ANeXcLgQVIxaO/evTpw4IBat25tnRJ1nTt3VmFhoT755BPrFIREYmKi3nzzTV1yySXWKT+rVKmSevXqpfr162vp0qXat2+fdRIM8SApRFR8fLzmzJmjunXrWqeYeP/99zVw4EAVFhZapyDAqlatqrFjx6pevXrWKUdUUFCgoUOH6oUXXtDBgwetc2CAmygRUYWFhbrtttusM8x07dpV48eP/9U3IgLFcc4552jWrFm+Hg/Sv8+Q3HXXXVq4cKE6duxonYMQYUDEsKVLl+qtt96yzjDTvHlzzZw5Mya+JwSR1bNnT33wwQeBGqDVq1fXiBEj9Pbbb+uUU06xzkEIcAkjxpUrV06LFy9WSkqKdYqZgoICDRgwQNOnT7dOgc+VLl1aTz75ZOAf4HTo0CENHz5cgwcPVkFBgXUOPMZNlPDEwYMHtX379pg+tVmqVCl169ZNRUVF3FyJI6pdu7bGjx+vtm3bWqeUWHx8vJo2baorrrhCO3fu5EFrIcdNlPDUqFGj1L59e+sMc4sWLdKNN96o7du3W6fARzp16qTnn39eZcuWtU7xxPLly3XHHXfom2++sU6BB7iJEp66+eabtW3bNusMcy1atND8+fPVq1cv6xT4QGJiop5++mm9+uqroR0PktSkSRPNnj1bf//732PmC/dQcpyBwM+aNWumCRMmRO0RvH43a9Ys3XLLLdq1a5d1Cgyce+65evnll1WtWjXrlKjavXu3nnrqKb3++utyXd7Gw4AzEPDcp59+qn/84x/WGb5xwQUXaP78+erWrZt1CqKoTJkyevTRRzVp0qSYGw+SVLFiRT3xxBP6+OOP1bhxY+sc+BhnIPA/Jk+erHPPPdc6w1dmzZqlP//5z8rOzrZOgYcaN26sF198kY85/sLEiRM1YMAA6wyUAGcgEDX9+/fn0bf/5YILLtC8efMC//E9/Lby5ctr8ODB+vDDDxkP/4VLeDgSzkDgN11wwQUaPXq0dYYvccd6uPTp00f33XcfX4X9G5YtW6YuXbpwL0TA8RwIRNXGjRtVqlQpNW/e3DrFd6pWraq+ffuqatWqWrZsGQ/iCagGDRrojTfe0DXXXKPExETrHN/ZuXOnunbtqvz8fOsUlBDPgYCJN998U+3atbPO8K29e/fqqaee0ogRI6xTcIxOPfVU3Xnnnbr00kutU3ytS5cuWrp0qXUGIsCrMxAMCPyu5ORkzZgxQ7Vr17ZO8bUtW7bo2Wef1bhx4/iGT5869dRTddddd6lz586Ki+P2r99z7733auTIkdYZiBAGBMykp6dr2rRpnOY9Bps2bdLgwYM1fvx46xT8JD09XXfeeac6d+5snRII48aN06233mqdgQhiQMBUx44dOU1fDBs2bNArr7yiUaNGWafErEaNGum2225Thw4drFMC48svv1SXLl104MAB6xREEAMC5u666y7ddttt1hmBsnPnTv3rX//SyJEjtXv3buucmNCiRQvdeuutat26tXVKoGRlZalDhw58D0wIMSDgC8OHD+dU8HF6/fXXNXLkSK1evdo6JZS6du2qG264QU2aNLFOCZy8vDx16tRJa9assU6BBxgQ8IVSpUpp0qRJPOK2BD7//HO99dZbevfdd5WXl2edE2gNGjRQnz591L17d57jcJwOHz6s7t27a8mSJdYp8AgDAr5RqVIlTZ8+PSa/JyCS9u/fr4kTJ2rChAmaO3eudU5gVKhQQV27dtWVV16pM8880zon8AYNGsRNvyHHgICv1K1bVx999FGov+I4mnbt2qVp06Zp0qRJmj9/voqKiqyTfKVChQrq3LmzunTpohYtWighIcE6KRSeeuopDRkyxDoDHmNAwHfat2/Ppww88OOPP2r27NmaOnWq5s+frz179lgnmahRo4Zat26tSy+9VJmZmdY5oTNmzBjdfvvt1hmIAgYEfOmKK67Qs88+a50RasuXL9e8efM0b948LV682DrHM+np6WratKmaN2+uzMxMpaamWieF1scff6wrr7zSOgNRwoCAb1199dX6+9//bp0RM5YtW6bPPvtMy5Yt0yeffKKcnBzrpONy5plnqmnT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",
             uerInfo: {}, //用户信息
             loginOutShow: false //登陆退出确认框
           };
@@ -17012,50 +16054,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var _vuex = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -17096,7 +16095,43 @@ var _vuex = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.j
 //
 //
 //
-var tha;var _default = { onLoad: function onLoad() {tha = this;}, data: function data() {return { phoneno: '', password: '' };}, methods: _objectSpread({}, (0, _vuex.mapMutations)(['login']), { bindLogin: function bindLogin() {if (this.phoneno.length != 11) {uni.showToast({ icon: 'none', position: 'top', title: '手机号不正确' });return;}if (this.password.length < 6) {uni.showToast({ icon: 'none', position: 'top', title: '密码不正确' });return;}uni.showToast({ icon: 'success', position: 'top', title: '登陆成功' }); // uni.request({
+
+var tha;var _default =
+{
+  onLoad: function onLoad() {
+    tha = this;
+  },
+  data: function data() {
+    return {
+      phoneno: '',
+      password: '' };
+
+  },
+  methods: {
+    bindLogin: function bindLogin() {
+      if (this.phoneno.length != 11) {
+        uni.showToast({
+          icon: 'none',
+          position: 'bottom',
+          title: '手机号不正确' });
+
+        return;
+      }
+      if (this.password.length < 6) {
+        uni.showToast({
+          icon: 'none',
+          position: 'bottom',
+          title: '密码不正确' });
+
+        return;
+      }
+
+      uni.showToast({
+        icon: 'success',
+        position: 'bottom',
+        title: '登陆成功' });
+
+      // uni.request({
       //     url: 'http://***/login.html',
       //     data: {
       // 		phoneno:this.phoneno,
@@ -17114,7 +16149,8 @@ var tha;var _default = { onLoad: function onLoad() {tha = this;}, data: function
       // 		}
       //     }
       // });
-    } }) };exports.default = _default;
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
@@ -17305,7 +16341,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 var tha, js;var _default =
 {
@@ -17349,6 +16384,14 @@ var tha, js;var _default =
       this.xieyi = !this.xieyi;
     },
     getcode: function getcode() {
+      if (this.phoneno.length != 11) {
+        uni.showToast({
+          icon: 'none',
+          position: 'bottom',
+          title: '手机号不正确' });
+
+        return false;
+      }
       if (this.second > 0) {
         return;
       }
@@ -17383,6 +16426,7 @@ var tha, js;var _default =
       if (this.xieyi == false) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '请先阅读《软件用户协议》' });
 
         return;
@@ -17390,6 +16434,7 @@ var tha, js;var _default =
       if (this.phoneno.length != 11) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '手机号不正确' });
 
         return;
@@ -17397,6 +16442,7 @@ var tha, js;var _default =
       if (this.password.length < 6) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '密码不正确' });
 
         return;
@@ -17404,11 +16450,12 @@ var tha, js;var _default =
       if (this.code.length != 4) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '验证码不正确' });
 
         return;
       }
-      console.log("注册成功", " at pages\\mine\\children\\register.vue:150");
+      console.log("注册成功", " at pages\\mine\\children\\register.vue:161");
       // uni.request({
       //     url: 'http://***/reg.html',
       //     data: {
@@ -17648,6 +16695,14 @@ var tha, js;var _default =
       this.showPassword = !this.showPassword;
     },
     getcode: function getcode() {
+      if (this.phoneno.length != 11) {
+        uni.showToast({
+          icon: 'none',
+          position: 'bottom',
+          title: '手机号不正确' });
+
+        return false;
+      }
       if (this.second > 0) {
         return;
       }
@@ -17658,7 +16713,7 @@ var tha, js;var _default =
           clearInterval(js);
         }
       }, 1000);
-      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:83");
+      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:91");
       // uni.request({
       //     url: 'http://***/getcode.html', //仅为示例，并非真实接口地址。
       //     data: {phoneno:this.phoneno,code_type:'reg'},
@@ -17685,6 +16740,7 @@ var tha, js;var _default =
       if (this.phoneno.length != 11) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '手机号不正确' });
 
         return;
@@ -17692,6 +16748,7 @@ var tha, js;var _default =
       if (this.password.length < 6) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '密码不正确' });
 
         return;
@@ -17699,11 +16756,12 @@ var tha, js;var _default =
       if (this.code.length != 4) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '验证码不正确' });
 
         return;
       }
-      console.log("修改密码成功", " at pages\\mine\\children\\forget.vue:128");
+      console.log("修改密码成功", " at pages\\mine\\children\\forget.vue:139");
       // uni.request({
       //     url: 'http://***/forget.html',
       //     data: {

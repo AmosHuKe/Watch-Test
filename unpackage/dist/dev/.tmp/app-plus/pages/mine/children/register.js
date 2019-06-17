@@ -144,7 +144,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 var tha, js;var _default =
 {
@@ -188,6 +187,14 @@ var tha, js;var _default =
       this.xieyi = !this.xieyi;
     },
     getcode: function getcode() {
+      if (this.phoneno.length != 11) {
+        uni.showToast({
+          icon: 'none',
+          position: 'bottom',
+          title: '手机号不正确' });
+
+        return false;
+      }
       if (this.second > 0) {
         return;
       }
@@ -222,6 +229,7 @@ var tha, js;var _default =
       if (this.xieyi == false) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '请先阅读《软件用户协议》' });
 
         return;
@@ -229,6 +237,7 @@ var tha, js;var _default =
       if (this.phoneno.length != 11) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '手机号不正确' });
 
         return;
@@ -236,6 +245,7 @@ var tha, js;var _default =
       if (this.password.length < 6) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '密码不正确' });
 
         return;
@@ -243,11 +253,12 @@ var tha, js;var _default =
       if (this.code.length != 4) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '验证码不正确' });
 
         return;
       }
-      console.log("注册成功", " at pages\\mine\\children\\register.vue:150");
+      console.log("注册成功", " at pages\\mine\\children\\register.vue:161");
       // uni.request({
       //     url: 'http://***/reg.html',
       //     data: {

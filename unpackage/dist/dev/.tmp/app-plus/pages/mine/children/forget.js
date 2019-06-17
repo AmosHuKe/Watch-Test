@@ -170,6 +170,14 @@ var tha, js;var _default =
       this.showPassword = !this.showPassword;
     },
     getcode: function getcode() {
+      if (this.phoneno.length != 11) {
+        uni.showToast({
+          icon: 'none',
+          position: 'bottom',
+          title: '手机号不正确' });
+
+        return false;
+      }
       if (this.second > 0) {
         return;
       }
@@ -180,7 +188,7 @@ var tha, js;var _default =
           clearInterval(js);
         }
       }, 1000);
-      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:83");
+      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:91");
       // uni.request({
       //     url: 'http://***/getcode.html', //仅为示例，并非真实接口地址。
       //     data: {phoneno:this.phoneno,code_type:'reg'},
@@ -207,6 +215,7 @@ var tha, js;var _default =
       if (this.phoneno.length != 11) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '手机号不正确' });
 
         return;
@@ -214,6 +223,7 @@ var tha, js;var _default =
       if (this.password.length < 6) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '密码不正确' });
 
         return;
@@ -221,11 +231,12 @@ var tha, js;var _default =
       if (this.code.length != 4) {
         uni.showToast({
           icon: 'none',
+          position: 'bottom',
           title: '验证码不正确' });
 
         return;
       }
-      console.log("修改密码成功", " at pages\\mine\\children\\forget.vue:128");
+      console.log("修改密码成功", " at pages\\mine\\children\\forget.vue:139");
       // uni.request({
       //     url: 'http://***/forget.html',
       //     data: {

@@ -5,7 +5,7 @@
     "iPad"
   ],
   "id": "__UNI__98CA8AF",
-  "name": "智能手表测试",
+  "name": "运动手表演示",
   "version": {
     "name": "1.0.0",
     "code": "100"
@@ -29,8 +29,9 @@
       "concatenate": true
     },
     "splashscreen": {
-      "autoclose": false,
-      "waiting": false,
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
       "delay": 0
     },
     "popGesture": "close",
@@ -78,6 +79,13 @@
           }
         }
       },
+      "splashscreen": {
+        "android": {
+          "hdpi": "appstatic/480-762.png",
+          "xhdpi": "appstatic/720-1242.png",
+          "xxhdpi": "appstatic/1080-1882.png"
+        }
+      },
       "google": {
         "permissions": [
           "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
@@ -116,7 +124,7 @@
     "arguments": "{\"name\":\"\",\"path\":\"\",\"query\":\"\",\"id\":0}",
     "allowsInlineMediaPlayback": true,
     "uni-app": {
-      "compilerVersion": "2.0.0",
+      "compilerVersion": "2.0.1",
       "control": "v8",
       "nvueCompiler": "weex"
     }

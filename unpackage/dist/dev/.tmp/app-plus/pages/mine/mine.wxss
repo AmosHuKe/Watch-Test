@@ -53,6 +53,7 @@ page.data-v-3628eae8 {
 	height: 150rpx;
 	-webkit-border-radius: 150rpx;
 	        border-radius: 150rpx;
+	background: #000000;
 }
 .logo-title.data-v-3628eae8 {
 	height: 150rpx;
