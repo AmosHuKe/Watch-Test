@@ -1,4 +1,4 @@
-# ![logo](./appstatic/watch_icon_64-64.png)  
+# ![logo](./appstatic/watch_icon_64-64.png) 智能手表演示  
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
@@ -56,13 +56,13 @@
 ```
 
 ## 预览  
+> 点击查看大图
 
-![首页](./demo/1.png)  
-  
-![运动](./demo/2.png)  
-  
-![设备](./demo/3.png)  
-  
-![目标](./demo/4.png)  
-  
-![我的](./demo/5.png)  
+[![预览](./demo/1_256.png)](./demo/1.png)
+[![预览](./demo/2_256.png)](./demo/2.png)
+[![预览](./demo/3_256.png)](./demo/3.png)
+[![预览](./demo/4_256.png)](./demo/4.png)
+[![预览](./demo/5_256.png)](./demo/5.png)
+[![预览](./demo/6_256.png)](./demo/6.png)
+[![预览](./demo/7_256.png)](./demo/7.png)
+[![预览](./demo/8_256.png)](./demo/8.png)
