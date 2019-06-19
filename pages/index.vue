@@ -56,14 +56,14 @@
 			'PageCur': function(newVal){
 				var _this=this
 				if(newVal=="ble"){
-					//如果切换的蓝牙 就把底部菜单设为最顶层 避免不方便切换
+					//如果切换的蓝牙 就把底部菜单设为最顶层 避免蓝牙处弹出提示不方便切换菜单
 					_this.isTop=true
 				}else{
 					_this.isTop=false
 				}
 				
+				//如果上一次切换的菜单是蓝牙，但是本次不是切换不是蓝牙，就关闭蓝牙搜索
 				if(newVal!="ble" && _this.toPageCur=="ble"){
-					
 					uni.stopBluetoothDevicesDiscovery({
 					  success(res) {
 						console.log("关闭蓝牙搜索"+res)

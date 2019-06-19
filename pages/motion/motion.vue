@@ -7,7 +7,11 @@
 		</cu-custom> -->
 		
 		<!-- 通知 -->
-		<view class="content-notice bar-shadown" v-if="notice.contentmain==''?false:true " :style="[{ backgroundColor:'rgba(0,0,0,0.2)',color:'#FFFFFF'}]">
+		<view 
+			class="content-notice bar-shadown" 
+			v-if="notice.contentmain==''?false:true " 
+			:style="[{ backgroundColor:'rgba(0,0,0,0.2)',color:'#FFFFFF'}]"
+		>
 			<view class="flex">
 				<view class="flex-treble">
 					<text class="lg icon cuIcon-notice"></text>
@@ -20,37 +24,35 @@
 		</view>
 		
 		<scroll-view scroll-y class="page">
-			
-			
 			<!-- 顶部数据图 -->
 			<view class="bg-img padding-bottom-xl motion_top">
 				
 				<view class="m-time heart1" >
 					<view class="flex">
-						<view class="cu-tag cu-tag-top round line-blue shadow"><text class="text-blue">100%</text></view>
+						<view class="cu-tag cu-tag-top round line-blue shadow"><text class="text-blue">{{ goalC[0].progress }}</text></view>
 						<view class="flex-sub page-m">
-							<view class="t-title">12</view>
-							<view class="t-text"><text class="cuIcon-timefill"></text>12小时</view>
+							<view class="t-title">{{ goalC[0].actual }}</view>
+							<view class="t-text"><text class="cuIcon-timefill"></text>{{ goalC[0].goal }}</view>
 						</view>
 					</view>
 				</view>
 				
 				<view class="m-foot heart2">
 					<view class="flex ">
-						<view class="cu-tag cu-tag-top round line-cyan shadow"><text class="text-cyan">36%</text></view>
+						<view class="cu-tag cu-tag-top round line-cyan shadow"><text class="text-cyan">{{ goalC[2].progress }}</text></view>
 						<view class="flex-sub page-m">
-							<view class="t-title">3600</view>
-							<view class="t-text"><text class="cuIcon-usefullfill"></text>5000步</view>
+							<view class="t-title">{{ goalC[2].actual }}</view>
+							<view class="t-text"><text class="cuIcon-usefullfill"></text>{{ goalC[2].goal }}</view>
 						</view>
 					</view>
 				</view>
 				
 				<view class="m-kll heart3">
 					<view class="flex">
-						<view class="cu-tag cu-tag-top round line-red shadow"><text class="text-red">32%</text></view>
+						<view class="cu-tag cu-tag-top round line-red shadow"><text class="text-red">{{ goalC[1].progress }}</text></view>
 						<view class="flex-sub page-m">
-							<view class="t-title">198</view>
-							<view class="t-text"><text class="cuIcon-hotfill"></text>307千卡</view>
+							<view class="t-title">{{ goalC[1].actual }}</view>
+							<view class="t-text"><text class="cuIcon-hotfill"></text>{{ goalC[1].goal }}</view>
 						</view>
 					</view>
 				</view>
@@ -99,7 +101,14 @@
 						<view class="cardTitle-jk">
 							<view class="flex">
 								<scroll-view scroll-x class="bg-white nav text-center">
-									<view class="cu-item" :class="index==TabCur?'text-blue cur':''" v-for="(jk,index) in jkList" :key="index" @tap="tabSelect" :data-id="index">
+									<view 
+										class="cu-item" 
+										:class="index==TabCur?'text-blue cur':''" 
+										v-for="(jk,index) in jkList" 
+										:key="index" 
+										@tap="tabSelect" 
+										:data-id="index"
+									>
 										<view v-if="index=='sleep'">睡眠</view>
 										<view v-if="index=='heartbeat'">心率</view>
 										<view v-if="index=='pulse'">脉搏</view>
@@ -109,7 +118,11 @@
 							<!-- 健康详情 -->
 							<!-- 睡眠 -->
 							<view v-if="TabCur=='sleep'">
-								<view class="flex animation-fade jk-text" v-for="(sleepD,index) in jkList.sleep[0].content" :key="index">
+								<view 
+									class="flex animation-fade jk-text" 
+									v-for="(sleepD,index) in jkList.sleep[0].content" 
+									:key="index"
+								>
 									<view class="cu-timeline" >
 										<view class="cu-time" :style="[{color:sleepD.color}]">{{sleepD.time}}</view>
 										<view class="cu-item" :style="[{color:sleepD.color}]" v-if="sleepD.content">
@@ -155,6 +168,7 @@
 </template>
 
 <script>
+	//通知数据
 	const notice={
 		contentmain:"请连接蓝牙进行操作",
 		content:{
@@ -162,6 +176,28 @@
 			1:'坚持运动'
 		}
 	}
+	
+	//目标完成数据
+	const goalC=[
+		//计划时间
+		{
+			'progress':'100%',
+			'goal':'12小时',
+			'actual':'12',
+		},
+		//计划步数
+		{
+			'progress':'36%',
+			'goal':'5000步',
+			'actual':'3600',
+		},
+		//计划卡路里
+		{
+			'progress':'32%',
+			'goal':'307千卡',
+			'actual':'198',
+		}
+	]
 	
 	const ydList=[{
 		title: '跑步',
@@ -329,6 +365,8 @@
 			return {
 				//通知
 				notice: notice,
+				//计划完成度
+				goalC: goalC,
 				//运动数据
 				ydList: ydList,
 				//健康数据
