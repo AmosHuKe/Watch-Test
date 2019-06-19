@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/motion/children/motion_ydData",
+    "pages/mine/children/login",
+    "pages/mine/children/register",
+    "pages/mine/children/forget"
+  ],
+  "window": {
+    "defaultTitle": "手表",
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}

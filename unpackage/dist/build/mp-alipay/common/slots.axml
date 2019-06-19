@@ -1,0 +1,21 @@
+
+<template name="backText_0" parent="16d02f8a"><block class="_block data-v-2f7e7fcd"></block></template>
+
+<template name="content_1" parent="16d02f8a"><block class="_block data-v-2f7e7fcd"><view class="_view {{ h[ 1005 + _t ].cl }} data-v-2f7e7fcd">{{ h[ 1006 + _t ].t }}</view></block></template>
+
+<template name="maxBlock_2" parent="522a14b2"><view class="_view range-slider-block data-v-11e82c6e"></view></template>
+
+<template name="maxBlock_3" parent="522a14b2"><view class="_view range-slider-block data-v-11e82c6e"></view></template>
+
+<template name="backText_4" parent="3c63a90a"><block class="_block data-v-41a5a8b2"></block></template>
+
+<template name="content_5" parent="3c63a90a"><block class="_block data-v-41a5a8b2">{{ h[ 1005 + _t ].t }}</block></template>
+
+<template name="backText_6" parent="1fdf1ab4"><block class="_block"></block></template>
+
+<template name="content_7" parent="1fdf1ab4"><block class="_block">注册</block></template>
+
+<template name="backText_8" parent="eabec384"><block class="_block"></block></template>
+
+<template name="content_9" parent="eabec384"><block class="_block">找回密码</block></template>
+
