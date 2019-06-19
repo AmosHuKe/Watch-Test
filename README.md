@@ -20,7 +20,7 @@
 | Chrome | ✔ | 无 |  
 | Android`8.0` | ✔ | [下载](https://github.com/AmosHuKe/Watch-Test/releases) |  
 | ios`未测试` | 理论可行 | 无 |  
-| 微信小程序 | ✔ | 已提交，正在审核中…… |  
+| 微信小程序 | ✔ | [![微信小程序](./demo/wechat_128.jpg)](./demo/wechat_128.jpg?raw=true)   |  
 
 ## APP模块权限配置（manifest.json）
 
