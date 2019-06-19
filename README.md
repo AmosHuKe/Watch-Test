@@ -95,3 +95,5 @@
 > 找回密码  
 
 [![找回密码](./demo/8_256.png)](./demo/8.png?raw=true)  
+  
+© AmosHuKe. All Rights Reserved.
