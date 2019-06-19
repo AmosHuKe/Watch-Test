@@ -98,7 +98,10 @@
         /* 小程序特有相关 */
         "appid" : "",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : true,
+            "minified" : true,
+            "postcss" : true,
+            "es6" : true
         },
         "usingComponents" : true
     }
