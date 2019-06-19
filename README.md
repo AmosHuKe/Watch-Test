@@ -19,6 +19,12 @@
 | Chrome | ✔ | 无 |  
 | Android`8.0` | ✔ | [下载](https://github.com/AmosHuKe/Watch-Test/releases) |  
 | ios`未测试` | 理论可行 | 无 |  
+
+## APP模块权限配置（manifest.json）
+
+| APP模块 | 是否使用 |  
+|------|------|  
+| `Bluetooth(低功耗蓝牙)` | ✔ |   
   
 ## 目录结构  
 ```
