@@ -1148,7 +1148,7 @@ __WXML_GLOBAL__.ops_cached.$gwx_5=[];
 Z([1,true])
 Z([3,'__e'])
 Z(z[0])
-Z([[4],[[5],[[5],[1,'card-swiper swiperbox data-v-bab5c754']],[[2,'?:'],[[7],[3,'dotStyle']],[1,'square-dot'],[1,'round-dot']]]])
+Z([[4],[[5],[[5],[1,'card-swiper swiperbox data-v-0eb47e48']],[[2,'?:'],[[7],[3,'dotStyle']],[1,'square-dot'],[1,'round-dot']]]])
 Z([[4],[[5],[[4],[[5],[[5],[1,'change']],[[4],[[5],[[4],[[5],[[5],[1,'cardSwiper']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([3,'500'])
 Z([3,'#0081ff'])
@@ -1159,7 +1159,7 @@ Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'swiperList']])
 Z(z[10])
-Z([3,'swiper-item bar-shadown data-v-bab5c754'])
+Z([3,'swiper-item bar-shadown data-v-0eb47e48'])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'image']])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'video']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
@@ -1168,10 +1168,10 @@ function gz$gwx_6(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
 __WXML_GLOBAL__.ops_cached.$gwx_6=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'mainIndex data-v-2ef798b6'])
+Z([3,'mainIndex data-v-09395000'])
 Z([[2,'=='],[[7],[3,'PageCur']],[1,'home']])
 Z([3,'__l'])
-Z([3,'data-v-2ef798b6'])
+Z([3,'data-v-09395000'])
 Z([3,'1'])
 Z([[2,'=='],[[7],[3,'PageCur']],[1,'motion']])
 Z(z[2])
@@ -1247,15 +1247,15 @@ function gz$gwx_12(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
 __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'motion animation-fade data-v-2b787b0e'])
+Z([3,'motion animation-fade data-v-34f71963'])
 Z([[2,'?:'],[[2,'=='],[[6],[[7],[3,'notice']],[3,'contentmain']],[1,'']],[1,false],[1,true]])
-Z([3,'cardTitle-jk data-v-2b787b0e'])
+Z([3,'cardTitle-jk data-v-34f71963'])
 Z([3,'index'])
 Z([3,'jk'])
 Z([[7],[3,'jkList']])
 Z(z[3])
 Z([3,'__e'])
-Z([[4],[[5],[[5],[1,'cu-item data-v-2b787b0e']],[[2,'?:'],[[2,'=='],[[7],[3,'index']],[[7],[3,'TabCur']]],[1,'text-blue cur'],[1,'']]]])
+Z([[4],[[5],[[5],[1,'cu-item data-v-34f71963']],[[2,'?:'],[[2,'=='],[[7],[3,'index']],[[7],[3,'TabCur']]],[1,'text-blue cur'],[1,'']]]])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'tabSelect']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([[7],[3,'index']])
 Z([[2,'=='],[[7],[3,'index']],[1,'sleep']])
@@ -2496,18 +2496,11 @@ define('pages/home/home.js',function(require, module, exports, window, document,
 "use strict";
 
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/home/home"], {
-  "000e": function e(A, E, I) {
-    "use strict";
-
-    var g = I("8794"),
-        i = I.n(g);
-    i.a;
-  },
   "004e": function e(A, E, I) {
     "use strict";
 
     I.r(E);
-    var g = I("c4c1"),
+    var g = I("2534"),
         i = I("9194");
 
     for (var Q in i) {
@@ -2518,10 +2511,33 @@ define('pages/home/home.js',function(require, module, exports, window, document,
       }(Q);
     }
 
-    I("000e");
+    I("0d3b");
     var B = I("2877"),
-        C = Object(B["a"])(i["default"], g["a"], g["b"], !1, null, "bab5c754", null);
+        C = Object(B["a"])(i["default"], g["a"], g["b"], !1, null, "0eb47e48", null);
     E["default"] = C.exports;
+  },
+  "0d3b": function d3b(A, E, I) {
+    "use strict";
+
+    var g = I("d864"),
+        i = I.n(g);
+    i.a;
+  },
+  2534: function _(A, E, I) {
+    "use strict";
+
+    var g = function g() {
+      var A = this,
+          E = A.$createElement;
+      A._self._c;
+    },
+        i = [];
+
+    I.d(E, "a", function () {
+      return g;
+    }), I.d(E, "b", function () {
+      return i;
+    });
   },
   "3bf7": function bf7(A, E, I) {
     "use strict";
@@ -2589,6 +2605,16 @@ define('pages/home/home.js',function(require, module, exports, window, document,
           g = this, this.cWidth = A.upx2px(400), this.cHeight = A.upx2px(400), this.getServerData();
         },
         methods: {
+          copyUrl: function copyUrl() {
+            A.setClipboardData({
+              data: "https://github.com/AmosHuKe/Watch-Test",
+              success: function success() {
+                A.showToast({
+                  title: "地址复制成功"
+                });
+              }
+            });
+          },
           getServerData: function getServerData() {
             var A = {
               series: [{
@@ -2691,7 +2717,6 @@ define('pages/home/home.js',function(require, module, exports, window, document,
       E.default = C;
     }).call(this, I("6e42")["default"]);
   },
-  8794: function _(A, E, I) {},
   9194: function _(A, E, I) {
     "use strict";
 
@@ -2709,22 +2734,7 @@ define('pages/home/home.js',function(require, module, exports, window, document,
 
     E["default"] = i.a;
   },
-  c4c1: function c4c1(A, E, I) {
-    "use strict";
-
-    var g = function g() {
-      var A = this,
-          E = A.$createElement;
-      A._self._c;
-    },
-        i = [];
-
-    I.d(E, "a", function () {
-      return g;
-    }), I.d(E, "b", function () {
-      return i;
-    });
-  }
+  d864: function d864(A, E, I) {}
 }]);
 ;
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push(['pages/home/home-create-component', {
@@ -2852,6 +2862,22 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
 "use strict";
 
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/motion/motion"], {
+  "136f": function f(M, N, j) {
+    "use strict";
+
+    var I = function I() {
+      var M = this,
+          N = M.$createElement;
+      M._self._c;
+    },
+        t = [];
+
+    j.d(N, "a", function () {
+      return I;
+    }), j.d(N, "b", function () {
+      return t;
+    });
+  },
   "20b5": function b5(M, N, j) {
     "use strict";
 
@@ -2867,6 +2893,19 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
         }
       },
           I = [{
+        progress: "100%",
+        goal: "12小时",
+        actual: "12"
+      }, {
+        progress: "36%",
+        goal: "5000步",
+        actual: "3600"
+      }, {
+        progress: "32%",
+        goal: "307千卡",
+        actual: "198"
+      }],
+          t = [{
         title: "跑步",
         img: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTU5OTY4Mzc1ODcwIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijk3NSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTY4LjkwNSAzMTkuNDg4YTQ1LjUyNCA0NS40ODggMCAxIDAgOTEuMDQ4IDAgNDUuNTI0IDQ1LjQ4OCAwIDEgMC05MS4wNDggMFoiIGZpbGw9IiM5Qjk3QUQiIHAtaWQ9Ijk3NiI+PC9wYXRoPjxwYXRoIGQ9Ik0zOTUuOTIgNDQ4LjUyMmMyMy4yMDItMjguNTYgNDIuMzktNDIuODM5IDU3LjU2NS00Mi44MzloNjEuOTc2Yy0yMS43NiA1OC4yOTMtNDEuODExIDk3Ljc3Mi02MC4xNTMgMTE4LjQzNy0yNy41MTEgMzAuOTk4LTQxLjQwOCA0NS40ODktODYuOTMyIDQ1LjQ4OS0zMC4zNDkgMC01Ni45MDUtMTUuMTYzLTc5LjY2Ni00NS40ODlMMjczIDU0Ni4zNjJjMzQuNDM2IDQxLjQyIDY4Ljk0NSA2NC45NiAxMDMuNTI2IDcwLjYyMiA1Ny40NDQgOS40MDQgODguNjEzLTE1LjcxNCAxMTcuMDQtMzYuMDAzIDIyLjc2MyAxMS4zNzIgODkuNjA4IDMyLjg5IDgzLjkwOCA3OC4wNjctMy44IDMwLjExOC0xNC40NjYgNjQuNzQ2LTMxLjk5NyAxMDMuODg2aDM5LjEzN2MyMC41ODUtMzEuNDA4IDM0LjY3LTY5Ljg1NiA0Mi4yNTgtMTE1LjM0NCA3LjU4Ny00NS40ODktMjEuODY3LTg1LjM2LTg4LjM2NC0xMTkuNjE1bDQzLjE2LTU0LjQ0NmMxMy41MSAzNi4zNCAzMS42NDYgNTguMzAyIDU0LjQwNyA2NS44ODMgMjIuNzYyIDcuNTgyIDU4LjcyLTEuMzA2IDEwNy44NzMtMjYuNjY0bC0xMS4zODEtMjIuNzQ0Yy0zOC45MTggOS43Ny02NS45NjUgMTAuODY1LTgxLjE0IDMuMjg0LTIyLjc2MS0xMS4zNzMtMTYuOTktNDAuODgyLTM0LjMwOC03MC43ODQtMTkuMTIyLTMzLjAxNi0zMi41MDUtNDUuOTE3LTUzLjI1My01OC4yNDctMjAuNzUtMTIuMzMxLTEwMi43NTctMTguMDU1LTEzNy4wMTQgNS45NDEtMjIuODM4IDE1Ljk5OC00MC4yMzcgMzguNTQ2LTUyLjE5NiA2Ny42NDVsMjEuMjY0IDEwLjY4eiIgZmlsbD0iIzlCOTdBRCIgcC1pZD0iOTc3Ij48L3BhdGg+PC9zdmc+",
         url: " ",
@@ -2927,7 +2966,7 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
         title_total_2: "总次数",
         content_total_2: "1"
       }],
-          t = {
+          D = {
         sleep: [{
           title: "睡眠",
           mode: "sleep",
@@ -2998,12 +3037,13 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
           }]
         }]
       },
-          D = {
+          L = {
         data: function data() {
           return {
             notice: j,
-            ydList: I,
-            jkList: t,
+            goalC: I,
+            ydList: t,
+            jkList: D,
             TabCur: "sleep"
           };
         },
@@ -3017,8 +3057,8 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
             this.TabCur = M.currentTarget.dataset.id;
           },
           ydToUrl: function ydToUrl(N) {
-            var j = I[N],
-                t = JSON.stringify({
+            var j = t[N],
+                I = JSON.stringify({
               title: j.title,
               bgcolor: j.bgcolor,
               title_total_0: j.title_total_0,
@@ -3028,21 +3068,21 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
               title_total_2: j.title_total_2,
               content_total_2: j.content_total_2
             });
-            console.log(t, " at pages\\motion\\motion.vue:371"), -1 != t.indexOf("title_total_0") && M.navigateTo({
-              url: "./motion/children/motion_ydData?id=1&datas=" + t,
+            console.log(I, " at pages\\motion\\motion.vue:409"), -1 != I.indexOf("title_total_0") && M.navigateTo({
+              url: "./motion/children/motion_ydData?id=1&datas=" + I,
               animationType: "pop-in",
               animationDuration: 200
             });
           }
         }
       };
-      N.default = D;
+      N.default = L;
     }).call(this, j("6e42")["default"]);
   },
-  "4d54": function d54(M, N, j) {
+  "4b8f": function b8f(M, N, j) {
     "use strict";
 
-    var I = j("78cb"),
+    var I = j("dfe6"),
         t = j.n(I);
     t.a;
   },
@@ -3063,28 +3103,11 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
 
     N["default"] = t.a;
   },
-  "78cb": function cb(M, N, j) {},
-  a441: function a441(M, N, j) {
-    "use strict";
-
-    var I = function I() {
-      var M = this,
-          N = M.$createElement;
-      M._self._c;
-    },
-        t = [];
-
-    j.d(N, "a", function () {
-      return I;
-    }), j.d(N, "b", function () {
-      return t;
-    });
-  },
   a993: function a993(M, N, j) {
     "use strict";
 
     j.r(N);
-    var I = j("a441"),
+    var I = j("136f"),
         t = j("5ab0");
 
     for (var D in t) {
@@ -3095,11 +3118,12 @@ define('pages/motion/motion.js',function(require, module, exports, window, docum
       }(D);
     }
 
-    j("4d54");
+    j("4b8f");
     var L = j("2877"),
-        T = Object(L["a"])(t["default"], I["a"], I["b"], !1, null, "2b787b0e", null);
-    N["default"] = T.exports;
-  }
+        g = Object(L["a"])(t["default"], I["a"], I["b"], !1, null, "34f71963", null);
+    N["default"] = g.exports;
+  },
+  dfe6: function dfe6(M, N, j) {}
 }]);
 ;
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push(['pages/motion/motion-create-component', {
@@ -3113,7 +3137,7 @@ require('pages/motion/motion.js');
 __wxRoute = 'pages/index';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/index.js';
 
 define('pages/index.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index"],{"4e19":function(e,t,n){},"57a8":function(e,t,n){"use strict";var u=function(){var e=this,t=e.$createElement;e._self._c},a=[];n.d(t,"a",function(){return u}),n.d(t,"b",function(){return a})},a2f1:function(e,t,n){"use strict";n.r(t);var u=n("e578"),a=n.n(u);for(var o in u)"default"!==o&&function(e){n.d(t,e,function(){return u[e]})}(o);t["default"]=a.a},be48:function(e,t,n){"use strict";var u=n("4e19"),a=n.n(u);a.a},d18d:function(e,t,n){"use strict";n.r(t);var u=n("57a8"),a=n("a2f1");for(var o in a)"default"!==o&&function(e){n.d(t,e,function(){return a[e]})}(o);n("be48");var r=n("2877"),c=Object(r["a"])(a["default"],u["a"],u["b"],!1,null,"2ef798b6",null);t["default"]=c.exports},e578:function(e,t,n){"use strict";(function(e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n={data:function(){return{PageCur:"home",toPageCur:"",isTop:!1}},methods:{NavChange:function(e){this.PageCur=e.currentTarget.dataset.cur}},watch:{PageCur:function(t){var n=this;n.isTop="ble"==t,"ble"!=t&&"ble"==n.toPageCur&&e.stopBluetoothDevicesDiscovery({success:function(e){console.log("关闭蓝牙搜索"+e," at pages\\index.vue:69")}}),n.toPageCur=t}}};t.default=n}).call(this,n("6e42")["default"])}},[["17f6","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index"],{"3b2e":function(e,t,n){},a2f1:function(e,t,n){"use strict";n.r(t);var u=n("e578"),a=n.n(u);for(var o in u)"default"!==o&&function(e){n.d(t,e,function(){return u[e]})}(o);t["default"]=a.a},a616:function(e,t,n){"use strict";var u=function(){var e=this,t=e.$createElement;e._self._c},a=[];n.d(t,"a",function(){return u}),n.d(t,"b",function(){return a})},d18d:function(e,t,n){"use strict";n.r(t);var u=n("a616"),a=n("a2f1");for(var o in a)"default"!==o&&function(e){n.d(t,e,function(){return a[e]})}(o);n("ee57");var r=n("2877"),c=Object(r["a"])(a["default"],u["a"],u["b"],!1,null,"09395000",null);t["default"]=c.exports},e578:function(e,t,n){"use strict";(function(e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n={data:function(){return{PageCur:"home",toPageCur:"",isTop:!1}},methods:{NavChange:function(e){this.PageCur=e.currentTarget.dataset.cur}},watch:{PageCur:function(t){var n=this;n.isTop="ble"==t,"ble"!=t&&"ble"==n.toPageCur&&e.stopBluetoothDevicesDiscovery({success:function(e){console.log("关闭蓝牙搜索"+e," at pages\\index.vue:69")}}),n.toPageCur=t}}};t.default=n}).call(this,n("6e42")["default"])},ee57:function(e,t,n){"use strict";var u=n("3b2e"),a=n.n(u);a.a}},[["17f6","common/runtime","common/vendor"]]]);
 });
 require('pages/index.js');
 __wxRoute = 'pages/motion/children/motion_ydData';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/motion/children/motion_ydData.js';
