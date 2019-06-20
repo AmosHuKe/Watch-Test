@@ -11,6 +11,22 @@
 				</swiper-item>
 			</swiper>
 			
+			<!-- #ifndef H5 -->
+			<view class="cu-card article" @tap="copyUrl">
+				<view class="cu-item bar-shadown">
+					<view class="title">
+						<view class="text-cut">
+							<text class="cuIcon-title text-black"></text> 
+							Github地址(点击复制)
+						</view>
+					</view>
+					<view class="content">
+						https://github.com/AmosHuKe/Watch-Test
+					</view>
+				</view>
+			</view>
+			<!-- #endif -->
+			
 			<!-- 统计图 -->
 			<view class="ring">
 				<view class="cu-card article">
@@ -151,6 +167,16 @@
 			this.getServerData();
 		},
 		methods: {
+			copyUrl() {
+				uni.setClipboardData({
+					data: 'https://github.com/AmosHuKe/Watch-Test',
+					success: function () {
+						uni.showToast({
+							title: '地址复制成功'
+						})
+					}
+				});
+			},
 			getServerData(){
 				let Ring= {
 				  "series": [{
