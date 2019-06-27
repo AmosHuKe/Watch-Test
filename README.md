@@ -10,7 +10,7 @@
 
 > 🏃‍⌚  
 > 智能手表运动相关的App页面展示。  
-> 该项目是用于模型演示，并没有写入实际功能。  
+> 该项目是用于模型演示。  
 > 主要用于学习参考，商业用途需经作者允许。  
 > [![插画风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)
 > [![插画风格](https://img.shields.io/badge/插图风格-Undraw-%236c63ff.svg)](https://undraw.co/search)  
@@ -28,12 +28,17 @@
 |------|------|  
 | `Bluetooth(低功耗蓝牙)` | ✔ |   
   
+## 注意  
+
+> 请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`    
+
 ## 目录结构  
 ```
 ├── App.vue    //应用配置（配置App全局样式以及监听等）  
 ├── main.js    //Vue初始化入口文件  
 ├── manifest.json    //配置应用名称、appid、logo、版本等打包信息
 ├── pages.json   //配置页面路由、导航条、选项卡等页面类信息
+├── mock    //模拟数据
 ├── common    //共用文件
 ├── components    //组件文件
 ├── pages    //页面文件夹  
@@ -55,6 +60,9 @@
 │   │   ├── mine.vue   //我的页
 ├── lib    //第三方库/框架  
 │   └── colorui    //ColorUi
+├── service    //服务请求相关
+│   └── api    //api接口
+│   └── request    //请求全局配置，请求拦截
 ├── style    //样式文件  
 ├── static    //静态文件  
 ├── appstatic    //APP静态文件（Icon，启动图...）
