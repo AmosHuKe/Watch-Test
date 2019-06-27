@@ -14,11 +14,11 @@
 			<view class="list">
 				<view class="list-call oBorder">
 					<!-- <text class="img cuIcon-phone text-black"></text> -->
-					<input class="biaoti" v-model="phoneno" type="number" maxlength="11" placeholder="输入手机号" />
+					<input class="biaoti" v-model="phoneno" type="text" maxlength="11" placeholder="用户名" />
 				</view>
 				<view class="list-call oBorder">
 					<!-- <text class="img cuIcon-lock text-black"></text> -->
-					<input class="biaoti" v-model="password" type="text" maxlength="32" placeholder="输入密码" password="true" />
+					<input class="biaoti" v-model="password" type="text" maxlength="32" placeholder="密码" password="true" />
 				</view>
 				
 			</view>
@@ -40,6 +40,9 @@
 </template>
 
 <script>
+	import {
+		getLogin,
+	} from '../../../service/api/login.js' //登陆api
 	var tha;
 	export default {
 		onLoad(){
@@ -53,15 +56,24 @@
 		},
 		methods: {
 		    bindLogin() {
-				if (this.phoneno.length != 11) {
+				var _this=this
+				// if (this.phoneno.length != 11) {
+				//      uni.showToast({
+				//         icon: 'none',
+				// 		position: 'bottom',
+				//         title: '手机号不正确'
+				//     });
+				//     return;
+				// }
+				if (this.phoneno.length == "") {
 				     uni.showToast({
 				        icon: 'none',
 						position: 'bottom',
-				        title: '手机号不正确'
+				        title: '用户名不能为空'
 				    });
 				    return;
 				}
-		        if (this.password.length < 6) {
+		        if (this.password.length < 5) {
 		            uni.showToast({
 		                icon: 'none',
 						position: 'bottom',
@@ -69,30 +81,39 @@
 		            });
 		            return;
 		        }
-				
-				uni.showToast({
-					icon: 'success',
-					position: 'bottom',
-					title: '登陆成功'
+				uni.showLoading({
+					title: '登陆中'
 				});
-				// uni.request({
-				//     url: 'http://***/login.html',
-				//     data: {
-				// 		phoneno:this.phoneno,
-				// 		password:this.password
-				// 	},
-				// 	method: 'POST',
-				// 	dataType:'json',
-				//     success: (res) => {
-				// 		if(res.data.code!=200){
-				// 			uni.showToast({title:res.data.msg,icon:'none'});
-				// 		}else{
-				// 			uni.setStorageSync('user_data', JSON.stringify(res.data.data));
-				// 			this.login();
-				// 			uni.navigateBack();
-				// 		}
-				//     }
-				// });
+				getLogin()
+				.then(res => {
+					//console.log(res)
+					//简单验证下登陆
+					if(_this.phoneno==res.data.username && _this.password==res.data.password){
+						_this.$store.dispatch("setUserData",res.data)
+						uni.showToast({
+							icon: 'success',
+							position: 'bottom',
+							title: '登陆成功'
+						});
+						uni.reLaunch({
+							url: '../../../pages/index',
+						});
+					}else{
+						_this.password=""
+						uni.showToast({
+							icon: 'error',
+							position: 'bottom',
+							title: '账号或密码错误'
+						});
+					}
+					uni.hideLoading();
+				}).catch(err => {
+					uni.hideLoading();
+				})
+				
+				
+				
+				
 				
 		    }
 		}

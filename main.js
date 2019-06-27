@@ -20,11 +20,18 @@ Vue.component('goal',goal)
 import mine from './pages/mine/mine.vue'
 Vue.component('mine',mine)
 
+import {http} from './service/request/index.js' //请求拦截
+Vue.prototype.$http=http
+
+import store from './store/index.js' //状态管理
+Vue.prototype.$store = store
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'
 
 const app = new Vue({
+	store,
     ...App
 })
 app.$mount()

@@ -44,6 +44,10 @@
 </template>
 
 <script>
+	import {
+		getisLogin,
+	} from '../../service/api/login.js' //登陆api
+	
 	export default{
 		data(){
 			return{
@@ -56,6 +60,7 @@
 		},
 		mounted() {
 			var _this=this
+			getisLogin() //是否登陆
 			
 			_this.initBle() //初始化蓝牙
 			setInterval(function(){

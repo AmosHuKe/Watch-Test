@@ -96,6 +96,9 @@
 
 <script>
 	import RangeSlider from '../../lib/range-slider/range-slider.vue';
+	import {
+		getisLogin,
+	} from '../../service/api/login.js' //登陆api
 	export default{
 	data() {
 		return {
@@ -125,6 +128,9 @@
 	},
 	components: {
 		RangeSlider
+	},
+	mounted() {
+		getisLogin() //是否登陆
 	},
 	methods: {
 		pad: function(num, n) {
