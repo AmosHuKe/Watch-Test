@@ -210,10 +210,11 @@
 			},
 			isDownload(){
 				var _this=this
+				_this.loginOutHide()
 				//下载更新包 整包下载（浪费 不推荐）
 				console.log(_this.vDownUrl)
 				var wgtUrl=_this.vDownUrl;
-				plus.nativeUI.showWaiting("下载App文件,时间较长请勿关闭...");  
+				plus.nativeUI.showWaiting("正在下载,由于是国外服务器,时间较长请勿关闭...");  
 				plus.downloader.createDownload( wgtUrl, {filename:"_doc/update/"}, function(d,status){  
 					if ( status == 200 ) {   
 						console.log("下载App成功："+d.filename);  
