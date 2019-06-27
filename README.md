@@ -14,13 +14,16 @@
 > 主要用于学习参考，商业用途需经作者允许。  
 > [![插画风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)
 > [![插画风格](https://img.shields.io/badge/插图风格-Undraw-%236c63ff.svg)](https://undraw.co/search)    
-> 登陆账号：admin 密码：admin
+> 
+> 登陆账号：admin 密码：admin  
+  
+* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Mock
   
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
 | Chrome | ✔ | 无 |  
 | Android`8.0` | ✔ | [下载](https://github.com/AmosHuKe/Watch-Test/releases) |  
-| ios`未测试` | 理论可行 | 无 |  
+| ios`未测试` | 未测试 | 无 |  
 | 微信小程序 | ✔ | [![微信小程序](./demo/wechat_128.jpg)](./demo/wechat_128.jpg?raw=true)   |  
 
 ## APP模块权限配置（manifest.json）
