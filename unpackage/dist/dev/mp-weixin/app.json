@@ -21,5 +21,6 @@
     "ble": "/pages/ble/ble",
     "goal": "/pages/goal/goal",
     "mine": "/pages/mine/mine"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
