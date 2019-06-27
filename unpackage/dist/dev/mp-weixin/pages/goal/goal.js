@@ -98,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var RangeSlider = function RangeSlider() {return __webpack_require__.e(/*! import() | lib/range-slider/range-slider */ "lib/range-slider/range-slider").then(__webpack_require__.bind(null, /*! ../../lib/range-slider/range-slider.vue */ "../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue"));};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -196,7 +196,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-{
+var _login = __webpack_require__(/*! ../../service/api/login.js */ "../../../../Aproject/github/watch-test/service/api/login.js");var RangeSlider = function RangeSlider() {return __webpack_require__.e(/*! import() | lib/range-slider/range-slider */ "lib/range-slider/range-slider").then(__webpack_require__.bind(null, /*! ../../lib/range-slider/range-slider.vue */ "../../../../Aproject/github/watch-test/lib/range-slider/range-slider.vue"));};
+
+//登陆api
+var _default = {
   data: function data() {
     return {
       // rangeValues: [2, 5], //当前区间值
@@ -226,6 +229,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   components: {
     RangeSlider: RangeSlider },
 
+  mounted: function mounted() {
+    (0, _login.getisLogin)(); //是否登陆
+  },
   methods: {
     pad: function pad(num, n) {
       return Array(n - ('' + num).length + 1).join(0) + num;

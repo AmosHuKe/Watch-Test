@@ -98,101 +98,122 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
-var tha;var _default =
-{
-  onLoad: function onLoad() {
-    tha = this;
-  },
-  data: function data() {
-    return {
-      phoneno: '',
-      password: '' };
 
-  },
-  methods: {
-    bindLogin: function bindLogin() {
-      if (this.phoneno.length != 11) {
-        uni.showToast({
-          icon: 'none',
-          position: 'bottom',
-          title: '手机号不正确' });
 
-        return;
-      }
-      if (this.password.length < 6) {
-        uni.showToast({
-          icon: 'none',
-          position: 'bottom',
-          title: '密码不正确' });
 
-        return;
-      }
 
-      uni.showToast({
-        icon: 'success',
-        position: 'bottom',
-        title: '登陆成功' });
 
-      // uni.request({
-      //     url: 'http://***/login.html',
-      //     data: {
-      // 		phoneno:this.phoneno,
-      // 		password:this.password
-      // 	},
-      // 	method: 'POST',
-      // 	dataType:'json',
-      //     success: (res) => {
-      // 		if(res.data.code!=200){
-      // 			uni.showToast({title:res.data.msg,icon:'none'});
-      // 		}else{
-      // 			uni.setStorageSync('user_data', JSON.stringify(res.data.data));
-      // 			this.login();
-      // 			uni.navigateBack();
-      // 		}
-      //     }
-      // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _login = __webpack_require__(/*! ../../../service/api/login.js */ "../../../../Aproject/github/watch-test/service/api/login.js"); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//登陆api
+var tha;var _default = { onLoad: function onLoad() {tha = this;}, data: function data() {return { phoneno: '', password: '' };}, methods: { bindLogin: function bindLogin() {var _this = this; // if (this.phoneno.length != 11) {
+      //      uni.showToast({
+      //         icon: 'none',
+      // 		position: 'bottom',
+      //         title: '手机号不正确'
+      //     });
+      //     return;
+      // }
+      if (this.phoneno.length == "") {uni.showToast({ icon: 'none', position: 'bottom', title: '用户名不能为空' });return;}if (this.password.length < 5) {uni.showToast({ icon: 'none', position: 'bottom', title: '密码不正确' });return;}uni.showLoading({ title: '登陆中' });(0, _login.getLogin)().then(function (res) {//console.log(res)
+        //简单验证下登陆
+        if (_this.phoneno == res.data.username && _this.password == res.data.password) {_this.$store.dispatch("setUserData", res.data);uni.showToast({ icon: 'success', position: 'bottom',
+            title: '登陆成功' });
+
+          uni.reLaunch({
+            url: '../../../pages/index' });
+
+        } else {
+          _this.password = "";
+          uni.showToast({
+            icon: 'error',
+            position: 'bottom',
+            title: '账号或密码错误，账号admin密码admin' });
+
+        }
+        uni.hideLoading();
+      }).catch(function (err) {
+        uni.hideLoading();
+      });
+
+
+
+
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))

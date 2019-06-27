@@ -98,7 +98,53 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _login = __webpack_require__(/*! ../../service/api/login.js */ "../../../../Aproject/github/watch-test/service/api/login.js"); //
 //
 //
 //
@@ -143,60 +189,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-var _default =
-{
-  data: function data() {
-    return {
-      bleData: [], //蓝牙名字列表
+//登陆api
+var _default = { data: function data() {return { bleData: [], //蓝牙名字列表
       bleIndex: [], //蓝牙查重
       modalName: "", //提示窗口 默认弹出蓝牙
       available: false, //蓝牙是否可用
       discovering: false //蓝牙是否已开始搜索
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
+    };}, mounted: function mounted() {var _this = this;(0, _login.getisLogin)(); //是否登陆
     _this.initBle(); //初始化蓝牙
-    setInterval(function () {
-      setTimeout(function () {
-        if (!_this.available) {
-          _this.initBle(); //初始化蓝牙
-        }
-      }, 0);
-    }, 2000);
-
-  },
-  methods: {
-    hideModal: function hideModal() {
-      //隐藏弹出
-      this.modalName = "";
-    },
-    // ArrayBuffer转16进度字符串示例
-    ab2hex: function ab2hex(buffer) {
-      var hexArr = Array.prototype.map.call(
-      new Uint8Array(buffer),
-      function (bit) {
-        return ('00' + bit.toString(16)).slice(-2);
-      });
-
-      return hexArr.join('');
-    },
-    getBleState: function getBleState() {
-      //判断蓝牙是否在启用或者搜索 蓝牙状态
-      var _this = this;
-      uni.onBluetoothAdapterStateChange(function (res) {
-        _this.available = res.available;
-        _this.discovering = res.discovering;
-        console.log('蓝牙是否可用：' + res.available);
-        console.log('蓝牙是否搜索：' + res.discovering);
-
-        if (!_this.available) {
-          _this.modalName = "isOpenBle";
-        } else {
-          _this.modalName = "";
-        }
-      });
+    setInterval(function () {setTimeout(function () {if (!_this.available) {_this.initBle(); //初始化蓝牙
+        }}, 0);}, 2000);}, methods: { hideModal: function hideModal() {//隐藏弹出
+      this.modalName = "";}, // ArrayBuffer转16进度字符串示例
+    ab2hex: function ab2hex(buffer) {var hexArr = Array.prototype.map.call(new Uint8Array(buffer), function (bit) {return ('00' + bit.toString(16)).slice(-2);});return hexArr.join('');}, getBleState: function getBleState() {//判断蓝牙是否在启用或者搜索 蓝牙状态
+      var _this = this;uni.onBluetoothAdapterStateChange(function (res) {_this.available = res.available;_this.discovering = res.discovering;console.log('蓝牙是否可用：' + res.available);console.log('蓝牙是否搜索：' + res.discovering);if (!_this.available) {_this.modalName = "isOpenBle";} else {_this.modalName = "";}});
     },
     initBle: function initBle() {
       //初始化蓝牙
