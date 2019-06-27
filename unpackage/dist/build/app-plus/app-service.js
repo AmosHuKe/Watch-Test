@@ -1224,7 +1224,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__e'])
-Z([3,'logo flexlogo data-v-51a3d17e'])
+Z([3,'logo flexlogo data-v-b22e3252'])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goLogin']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([[2,'?:'],[[2,'!'],[[7],[3,'login']]],[1,'logo-hover'],[1,'']])
 Z([[2,'!'],[[7],[3,'login']]])
@@ -2763,23 +2763,30 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
     "use strict";
 
     r.r(n);
-    var t = r("75a9"),
+    var t = r("9380"),
         e = r("bc39");
 
-    for (var a in e) {
-      "default" !== a && function (A) {
+    for (var d in e) {
+      "default" !== d && function (A) {
         r.d(n, A, function () {
           return e[A];
         });
-      }(a);
+      }(d);
     }
 
-    r("f1b7");
-    var d = r("2877"),
-        i = Object(d["a"])(e["default"], t["a"], t["b"], !1, null, "51a3d17e", null);
+    r("7fd6");
+    var a = r("2877"),
+        i = Object(a["a"])(e["default"], t["a"], t["b"], !1, null, "b22e3252", null);
     n["default"] = i.exports;
   },
-  "75a9": function a9(A, n, r) {
+  "7fd6": function fd6(A, n, r) {
+    "use strict";
+
+    var t = r("d8ba"),
+        e = r.n(t);
+    e.a;
+  },
+  9380: function _(A, n, r) {
     "use strict";
 
     var t = function t() {
@@ -2795,7 +2802,6 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
       return e;
     });
   },
-  8226: function _(A, n, r) {},
   "9f4a": function f4a(A, n, r) {
     "use strict";
 
@@ -2805,7 +2811,7 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
       }), n.default = void 0;
       var t = r("2630"),
           e = r("2bc1"),
-          a = {
+          d = {
         data: function data() {
           return {
             login: !1,
@@ -2859,23 +2865,23 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
           },
           isDownload: function isDownload() {
             var A = this;
-            console.log(A.vDownUrl, " at pages\\mine\\mine.vue:214");
+            A.loginOutHide(), console.log(A.vDownUrl, " at pages\\mine\\mine.vue:215");
             var n = A.vDownUrl;
-            plus.nativeUI.showWaiting("下载App文件,时间较长请勿关闭..."), plus.downloader.createDownload(n, {
+            plus.nativeUI.showWaiting("正在下载,由于是国外服务器,时间较长请勿关闭..."), plus.downloader.createDownload(n, {
               filename: "_doc/update/"
             }, function (A, n) {
-              200 == n ? (console.log("下载App成功：" + A.filename, " at pages\\mine\\mine.vue:219"), plus.nativeUI.showWaiting("安装中..."), plus.runtime.install(A.filename, {}, function () {
-                plus.nativeUI.closeWaiting(), console.log("安装成功！", " at pages\\mine\\mine.vue:223"), plus.nativeUI.alert("应用资源更新完成！", function () {
+              200 == n ? (console.log("下载App成功：" + A.filename, " at pages\\mine\\mine.vue:220"), plus.nativeUI.showWaiting("安装中..."), plus.runtime.install(A.filename, {}, function () {
+                plus.nativeUI.closeWaiting(), console.log("安装成功！", " at pages\\mine\\mine.vue:224"), plus.nativeUI.alert("应用资源更新完成！", function () {
                   plus.runtime.restart();
                 });
               }, function (A) {
-                plus.nativeUI.closeWaiting(), console.log("安装失败[" + A.code + "]：" + A.message, " at pages\\mine\\mine.vue:229"), plus.nativeUI.alert("安装失败[" + A.code + "]：" + A.message);
-              })) : (console.log("下载App失败！", " at pages\\mine\\mine.vue:233"), plus.nativeUI.alert("下载App失败！")), plus.nativeUI.closeWaiting();
+                plus.nativeUI.closeWaiting(), console.log("安装失败[" + A.code + "]：" + A.message, " at pages\\mine\\mine.vue:230"), plus.nativeUI.alert("安装失败[" + A.code + "]：" + A.message);
+              })) : (console.log("下载App失败！", " at pages\\mine\\mine.vue:234"), plus.nativeUI.alert("下载App失败！")), plus.nativeUI.closeWaiting();
             }).start();
           }
         }
       };
-      n.default = a;
+      n.default = d;
     }).call(this, r("6e42")["default"]);
   },
   bc39: function bc39(A, n, r) {
@@ -2885,23 +2891,17 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
     var t = r("9f4a"),
         e = r.n(t);
 
-    for (var a in t) {
-      "default" !== a && function (A) {
+    for (var d in t) {
+      "default" !== d && function (A) {
         r.d(n, A, function () {
           return t[A];
         });
-      }(a);
+      }(d);
     }
 
     n["default"] = e.a;
   },
-  f1b7: function f1b7(A, n, r) {
-    "use strict";
-
-    var t = r("8226"),
-        e = r.n(t);
-    e.a;
-  }
+  d8ba: function d8ba(A, n, r) {}
 }]);
 ;
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push(['pages/mine/mine-create-component', {

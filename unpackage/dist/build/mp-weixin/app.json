@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/mine/children/login",
     "pages/index",
     "pages/motion/children/motion_ydData",
-    "pages/mine/children/login",
     "pages/mine/children/register",
     "pages/mine/children/forget"
   ],
