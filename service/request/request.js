@@ -13,7 +13,7 @@ export default class Request {
     },
     method: 'GET',
     dataType: 'json',
-    responseType: 'json',
+    responseType: 'text',
     success () {
     },
     fail () {
