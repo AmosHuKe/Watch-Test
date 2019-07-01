@@ -64,7 +64,7 @@
 	}
 	
 	body{
-		background-color: #FFFFFF;
+		background-color: rgba(255,255,255,1);
 	}
 	
 	/* 阴影 */

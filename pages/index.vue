@@ -54,6 +54,7 @@
 		watch:{
 			//监听菜单变化
 			'PageCur': function(newVal){
+				
 				var _this=this
 				if(newVal=="ble"){
 					//如果切换的蓝牙 就把底部菜单设为最顶层 避免蓝牙处弹出提示不方便切换菜单
