@@ -1,2 +1,2 @@
-setCssToHead([".",[1],"mainIndex.",[1],"data-v-e40b8fa8{ padding-bottom:",[0,128],"; }\n",],undefined,{path:"./pages/index.wxss"})();
+setCssToHead([".",[1],"mainIndex.",[1],"data-v-8b48312c{ padding-bottom:",[0,128],"; }\n",],undefined,{path:"./pages/index.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index.wxml') } }));

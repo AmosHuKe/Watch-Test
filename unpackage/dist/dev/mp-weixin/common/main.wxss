@@ -4992,7 +4992,7 @@ scroll-view.cu-steps .cu-item {
 	border-left: 3px solid #FFF0F6;
 }
 page{
-	background-color: #FFFFFF;
+	background-color: rgba(255,255,255,1);
 }
 /* 阴影 */
 .bar-shadown{

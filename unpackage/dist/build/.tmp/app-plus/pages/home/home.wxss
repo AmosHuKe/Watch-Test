@@ -1,27 +1,27 @@
 
-.home.data-v-4d94f567{
+.home.data-v-904ffa5e{
 	margin-top: 100rpx;
 }
-.swiperbox.data-v-4d94f567{
+.swiperbox.data-v-904ffa5e{
 	margin-bottom: 32rpx;
 }
-.tagb-content.data-v-4d94f567{
+.tagb-content.data-v-904ffa5e{
 	font-size: 24rpx; 
 	margin-bottom: 10rpx;
 }
-.tagb.data-v-4d94f567{
+.tagb.data-v-904ffa5e{
 	font-size: 40rpx;
 	width: 40rpx;
 }
 /*uCharts start*/
-.charts.data-v-4d94f567{
+.charts.data-v-904ffa5e{
 	width: 400rpx; 
 	height:400rpx;
 	background-color:transparent;
 	margin-top: 36rpx;
 }
 /*uCharts end*/
-.today_run.data-v-4d94f567{
+.today_run.data-v-904ffa5e{
 	position: relative;
     left: 30px;
     top: -20px;
