@@ -10,6 +10,9 @@ http.setConfig((config) => { /* 设置全局配置 */
 	return config
 })
 http.interceptor.request((config, cancel) => { /* 请求之前拦截器 */
+	uni.showToast({
+		icon:"loading"
+	});//加载中动画
 	console.log("用户数据",store.getters.getUserData)
 	//是否需要登陆权限，是否登陆  否则跳转到登陆
 	if (!config.header.isLogin && store.getters.getUserData=="") { 
@@ -27,6 +30,7 @@ http.interceptor.request((config, cancel) => { /* 请求之前拦截器 */
 	return config;
 })
 http.interceptor.response((response) => { /* 请求之后拦截器 */
+	uni.hideToast();//关闭加载动画
 	console.log("请求后拦截")
 	return response;
 })

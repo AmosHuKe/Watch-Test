@@ -37,7 +37,7 @@
 					<text class="text-grey">检测更新</text>
 				</view>
 				<view class="action">
-					{{ version }}
+					v{{ version }}
 				</view>
 				
 			</view>
@@ -162,6 +162,11 @@
 				var _this=this
 				if(_this.loginOutShow){
 					_this.$store.dispatch("setUserData","") //清空登陆状态
+					try {
+						uni.removeStorageSync('setUserData'); //清空登陆缓存
+					} catch (e) {
+						// error
+					}
 					getisLogin() //检测登陆状态
 					console.log("退出登录")
 					_this.loginOutShow=false
@@ -214,8 +219,8 @@
 				//下载更新包 整包下载（浪费 不推荐）
 				console.log(_this.vDownUrl)
 				var wgtUrl=_this.vDownUrl;
-				plus.nativeUI.showWaiting("正在下载,由于是国外服务器,时间较长请勿关闭...");  
-				plus.downloader.createDownload( wgtUrl, {filename:"_doc/update/"}, function(d,status){  
+				
+				var downToak=plus.downloader.createDownload( wgtUrl, {filename:"_doc/update/"}, function(d,status){  
 					if ( status == 200 ) {   
 						console.log("下载App成功："+d.filename);  
 						plus.nativeUI.showWaiting("安装中...");  
@@ -235,9 +240,33 @@
 						plus.nativeUI.alert("下载App失败！");  
 					}  
 					plus.nativeUI.closeWaiting();  
-				}).start();  
+				})
+				downToak.start(); // 开启下载的任务
+				var prg = 0;
+				var showLoading = plus.nativeUI.showWaiting("正在下载,由于是国外服务器,时间较长请勿关闭...");   //创建一个showWaiting对象 
+				downToak.addEventListener("statechanged", function(task, status) {  //给下载任务设置一个监听 并根据状态  做操作
+					switch(task.state) {
+						case 1:
+							showLoading.setTitle("正在下载");
+						break;
+						case 2:
+							showLoading.setTitle("已连接到服务器");
+						break;
+						case 3:
+							prg = parseInt(parseFloat(task.downloadedSize) / parseFloat(task.totalSize) * 100);
+							if(prg % 1 == 0) {  // 让百分比 增长
+								showLoading.setTitle("　　 已下载" + prg + "%　　 ");
+							}
+						break;
+						case 4:
+							plus.nativeUI.closeWaiting();
+						break;
 				
-			}
+					}
+				
+				});
+
+			},
 			
 		}
 	}
