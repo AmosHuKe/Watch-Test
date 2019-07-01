@@ -54,7 +54,27 @@
 				password:''
 			};
 		},
+		created() {
+			this.isLogin();
+		},
 		methods: {
+			isLogin(){
+				//判断缓存中是否登陆过，直接登陆
+				var _this=this
+				try {
+					const value = uni.getStorageSync('setUserData');
+					if (value) {
+						//有登陆信息
+						console.log("已登录用户：",value);
+						_this.$store.dispatch("setUserData",value); //存入状态
+						uni.reLaunch({
+							url: '../../../pages/index',
+						});
+					}
+				} catch (e) {
+					// error
+				}
+			},
 		    bindLogin() {
 				var _this=this
 				// if (this.phoneno.length != 11) {
@@ -87,9 +107,19 @@
 				getLogin()
 				.then(res => {
 					//console.log(res)
-					//简单验证下登陆
+					//简单验证下登陆（不安全）
 					if(_this.phoneno==res.data.username && _this.password==res.data.password){
-						_this.$store.dispatch("setUserData",res.data)
+						let userdata={
+							"username":res.data.username,
+							"nickname":res.data.nickname,
+							"accesstoken":res.data.accesstoken,
+						} //保存用户信息和accesstoken
+						_this.$store.dispatch("setUserData",userdata); //存入状态
+						try {
+							uni.setStorageSync('setUserData', userdata); //存入缓存
+						} catch (e) {
+							// error
+						}
 						uni.showToast({
 							icon: 'success',
 							position: 'bottom',
