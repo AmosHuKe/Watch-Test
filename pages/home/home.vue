@@ -2,8 +2,20 @@
 	<view class="home animation-fade">
 		<scroll-view scroll-y class="page">
 			<!--轮播图 -->
-			<swiper class="card-swiper swiperbox" :class="dotStyle?'square-dot':'round-dot'" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000" duration="500" @change="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-				<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''">
+			<swiper
+				v-if="swiperList==''?false:true"
+				:class="['card-swiper swiperbox animation-fade',dotStyle?'square-dot':'round-dot']" 
+				:indicator-dots="true" :circular="true" 
+				:autoplay="true" interval="5000" 
+				duration="500" @change="cardSwiper" 
+				indicator-color="#8799a3" 
+				indicator-active-color="#0081ff"
+			>
+				<swiper-item 
+					v-for="(item,index) in swiperList" 
+					:key="index" 
+					:class="cardCur==index?'cur':''"
+				>
 					<view class="swiper-item bar-shadown">
 						<image :src="item.url" mode="aspectFill" v-if="item.type=='image'" lazy-load="true"></image>
 						<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
@@ -12,7 +24,7 @@
 			</swiper>
 			
 			<!-- #ifndef H5 -->
-			<view class="cu-card article" @tap="copyUrl">
+			<view class="cu-card article animation-fade" v-if="swiperList==''?false:true" @tap="copyUrl">
 				<view class="cu-item bar-shadown">
 					<view class="title">
 						<view class="text-cut">
@@ -28,7 +40,7 @@
 			<!-- #endif -->
 			
 			<!-- 统计图 -->
-			<view class="ring">
+			<view class="ring animation-fade" v-if="ringList==''?false:true && swiperList==''?false:true">
 				<view class="cu-card article">
 					<view class="cu-item bar-shadown">
 						<view class="title">
@@ -51,23 +63,22 @@
 											<text class="tagb"></text>{{ rList.time }}，{{ rList.data }}公里
 										</view>
 									</view>
-									
 								</view>
+								
 							</view>
 						</view>
+						
 					</view>
 				</view>
-				
-				
 			</view>
 			
 		</scroll-view>
-	
+		
 	</view>
 </template>
 
 <script>
-	import uCharts from '../../lib/u-charts/u-charts.js'; 
+	import uCharts from '../../lib/u-charts/u-charts.js'; //统计图
 	import {
 		getSwiper,
 		getRing,
@@ -75,7 +86,7 @@
 	import {
 		getisLogin,
 	} from '../../service/api/login.js' //登陆api
-	var _self;
+	var _this;
 	var canvaRing=null;
    
 	export default {
@@ -101,27 +112,34 @@
 			}
 		},
 		mounted() {
-			_self = this;
+			_this = this;
 			getisLogin() //是否登陆
 			
-			_self.getSwiperData();//获取轮播数据
+			_this.getSwiperData();//获取轮播数据
 			
-			_self.cWidth=uni.upx2px(400);
-			_self.cHeight=uni.upx2px(400);
-			_self.getServerData();//获取统计数据
+			_this.cWidth=uni.upx2px(400);
+			_this.cHeight=uni.upx2px(400);
+			_this.getServerData();//获取统计数据
 			
 		},
 		methods: {
 			getSwiperData(){
-				var _this=this;
-				//获取轮播数据
-				getSwiper()
-				.then(res => {
-					//console.log(res)
-					_this.swiperList=res.data.swiperList
-				}).catch(err => {
+				const swiperData=_this.$store.getters.getSwiperData; //获取状态值
+				//判断状态中是否有值
+				if(swiperData!=""){
+					_this.swiperList=swiperData
+				}else{
+					//获取轮播数据
+					getSwiper()
+					.then(res => {
+						//console.log(res)
+						_this.swiperList=res.data.swiperList;
+						_this.$store.dispatch("setSwiperData",res.data.swiperList); //存入状态
+					}).catch(err => {
+					
+					})
+				}
 				
-				})
 			},
 			copyUrl() {
 				uni.setClipboardData({
@@ -134,28 +152,40 @@
 				});
 			},
 			getServerData(){
-				var _this=this;
-				//获取统计数据
-				getRing()
-				.then(res => {
-					//console.log(res)
-					let data=res.data.series; //获取统计数据
-					_this.ringList=data; //赋值统计数据
-					var ringData={series:[]} //统计图数据装载
-					for(let i=0;i<data.length;i++){
+				var setRingData={series:[]}; //统计图数据装载
+				
+				const ringData=_this.$store.getters.getRingData; //获取状态值
+				if(ringData!=""){
+					_this.ringList=ringData; //赋值统计数据
+					for(let i=0;i<ringData.length;i++){
 						//统计图数据装载
-						ringData.series.push({"name":data[i].name,"data":data[i].data})
+						setRingData.series.push({"name":ringData[i].name,"data":ringData[i].data})
 					}
-					//console.log(ringData)
-					_self.showRing("canvasRing",ringData);
-				}).catch(err => {
-					
-				})
+					_this.showRing("canvasRing",setRingData);
+				}else{
+					//获取统计数据
+					getRing()
+					.then(res => {
+						//console.log(res)
+						const data=res.data.series; //获取统计数据
+						_this.ringList=data; //赋值统计数据
+						_this.$store.dispatch("setRingData",data); //存入状态
+						for(let i=0;i<data.length;i++){
+							//统计图数据装载
+							setRingData.series.push({"name":data[i].name,"data":data[i].data})
+						}
+						_this.showRing("canvasRing",setRingData);
+						//console.log(ringData)
+					}).catch(err => {
+						
+					})
+				}
+				
 				
 			},
 			showRing(canvasId,chartData){
 				canvaRing=new uCharts({
-					$this:_self,
+					$this:_this,
 					canvasId: canvasId,
 					type: 'ring',
 					fontSize:11,
@@ -163,28 +193,28 @@
 					// title: {
 					// 	name: '',
 					// 	color: '#7cb5ec',
-					// 	fontSize: 25*_self.pixelRatio,
-					// 	offsetY:-20*_self.pixelRatio,
+					// 	fontSize: 25*_this.pixelRatio,
+					// 	offsetY:-20*_this.pixelRatio,
 					// },
 					subtitle: {
 						name: '',
 						color: '#666666',
-						fontSize: 1*_self.pixelRatio,
-						offsetY:2*_self.pixelRatio,
+						fontSize: 1*_this.pixelRatio,
+						offsetY:2*_this.pixelRatio,
 					},
 					extra: {
 						pie: {
 						  offsetAngle: -45,
-						  ringWidth: 5*_self.pixelRatio,
+						  ringWidth: 5*_this.pixelRatio,
 						  lableWidth: 15,
 						}
 					},
 					background:'#FFFFFF',
-					pixelRatio:_self.pixelRatio,
+					pixelRatio:_this.pixelRatio,
 					series: chartData.series,
 					animation: true,
-					width: _self.cWidth*_self.pixelRatio,
-					height: _self.cHeight*_self.pixelRatio,
+					width: _this.cWidth*_this.pixelRatio,
+					height: _this.cHeight*_this.pixelRatio,
 					disablePieStroke: false,
 					dataLabel: true,
 				});

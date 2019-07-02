@@ -77,8 +77,21 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+	@import "../style/color/color.less";
+	
 	.mainIndex{
 		padding-bottom:128upx;
+	}
+	.text-black{
+		color: @blackColor !important;
+	}
+	.bg-black{
+		background: @blackColor !important;
+	}
+	
+	.cu-bar.tabbar.shadow {
+		-webkit-box-shadow: 0 0.5px 36px 0 rgba(43,86,112,.2) !important;
+		box-shadow: 0 0.5px 36px 0 rgba(43,86,112,.2) !important;
 	}
 </style>

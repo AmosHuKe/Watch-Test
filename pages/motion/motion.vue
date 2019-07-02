@@ -25,7 +25,7 @@
 		
 		<scroll-view scroll-y class="page">
 			<!-- 顶部数据图 -->
-			<view class="bg-img padding-bottom-xl motion_top" v-if="goalC[0]">
+			<view class="bg-img padding-bottom-xl motion_top animation-fade" v-if="goalC[0]">
 				
 				<view class="m-time heart1" >
 					<view class="flex">
@@ -60,14 +60,14 @@
 			</view>
 			
 			<!-- 具体运动数据 -->
-			<view class="tagTitle">运动</view>
-			<scroll-view scroll-x="true" class="page_motion_tag" v-if="ydList[0]">
+			<view class="tagTitle" v-if="ydList[0]">运动</view>
+			<scroll-view scroll-x="true" class="page_motion_tag animation-fade" v-if="ydList[0]">
 				
 				<view class="flex" >
 					<view class="flex-sub" v-for="(item,index) in ydList" :key="index">
 						<view class="cu-card article" @tap="ydToUrl(index)">  <!--跳转到详情-->
 							<view class="cu-item bar-shadown bg-img bg-img-yd" :style="[{backgroundImage:'url('+item.img+')'}]" >
-								<view class="cu-yd " :style="[{background:item.bgcolor}]">
+								<view :class="['cu-yd',item.bgcolor ]">
 									<view class="cardTitle">
 										<!-- 运动类型 -->
 										<view class="flex">
@@ -94,8 +94,8 @@
 			</scroll-view>
 			
 			<!-- 具体健康数据 -->
-			<view class="tagTitle">健康</view>
-			<view class="jk" v-if="jkList">
+			<view class="tagTitle" v-if="jkList">健康</view>
+			<view class="jk animation-fade" v-if="jkList">
 				<view class="cu-card cu-card-jk article">
 					<view class="cu-item bg-img bar-shadown">
 						<view class="cardTitle-jk">
@@ -168,6 +168,7 @@
 </template>
 
 <script>
+	var _this;
 	import {
 		getGoalc,
 		getYdList,
@@ -201,38 +202,59 @@
 			}
 		},
 		mounted(){
+			_this=this
 			getisLogin() //是否登陆
-			this.getData()//获取数据
+			
+			_this.getData()//获取数据
 		},
 		methods: {
 			getData(){
-				var _this=this
-				//获取数据计划完成度
-				getGoalc()
-				.then(res => {
-					//console.log(res)
-					_this.goalC=res.data
-				}).catch(err => {
-					
-				})
+				//获取数据
+				const goalcData=_this.$store.getters.getGoalcData; //计划完成度数据
+				const ydData=_this.$store.getters.getYdData; //运动数据
+				const jkData=_this.$store.getters.getJkData; //健康数据
 				
-				//获取运动数据
-				getYdList()
-				.then(res => {
-					//console.log(res)
-					_this.ydList=res.data
-				}).catch(err => {
-					
-				})
+				if(goalcData!=""){
+					_this.goalC=goalcData
+				}else{
+					//获取数据计划完成度
+					getGoalc()
+					.then(res => {
+						//console.log(res)
+						_this.goalC=res.data
+						_this.$store.dispatch('setGoalcData',res.data)
+					}).catch(err => {
+						
+					})
+				}
 				
-				//获取健康数据
-				getJkList()
-				.then(res => {
-					//console.log(res)
-					_this.jkList=res.data
-				}).catch(err => {
-					
-				})
+				if(ydData!=""){
+					_this.ydList=ydData
+				}else{
+					//获取运动数据
+					getYdList()
+					.then(res => {
+						//console.log(res)
+						_this.ydList=res.data
+						_this.$store.dispatch('setYdData',res.data)
+					}).catch(err => {
+						
+					})
+				}
+				
+				if(jkData!=""){
+					_this.jkList=jkData
+				}else{
+					//获取健康数据
+					getJkList()
+					.then(res => {
+						//console.log(res)
+						_this.jkList=res.data
+						_this.$store.dispatch('setJkData',res.data)
+					}).catch(err => {
+						
+					})
+				}
 			},
 			noticeClose(e){
 				//关闭通知
@@ -277,7 +299,9 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+	@import "../../style/color/color.less"; //颜色
+	
 	.motion{
 		margin-top:100upx;
 	}
@@ -306,7 +330,7 @@
 		margin: 48upx 30upx 0upx 30upx;
 		font-size: 32upx;
 		font-weight: 100; 
-		color: rgba(0,0,0,0.5);
+		color: @blackColor;
 	}
 	
 	/* 顶部数据圈 */
@@ -315,43 +339,43 @@
 		left:216upx;
 		top:36upx;
 		font-weight: 900 !important;
-		color: rgba(90,126,215,1);
+		color: @blueColor;
 	}
 	.m-foot{
 		position: absolute;
 		left:24upx;
 		top:376upx;
 		font-weight: 900 !important;
-		color: rgba(240,116,106,1);
+		color: @redColor;
 	}
 	.m-kll{
 		position: absolute;
 		left:500upx;
 		top:248upx;
 		font-weight: 900 !important; 
-		color: rgba(28,187,180,1);
+		color: @cyanColor;
 	}
 	
 	.line-red{
-		color:rgba(240,116,106,0.7) !important;
+		color:@redColor !important;
 	}
 	.text-red{
 		font-size: 24upx;
-		color:rgba(240,116,106,1) !important;
+		color:@redColor !important;
 	}
 	.line-blue{
-		color:rgba(90,126,215,0.7) !important;
+		color:@blueColor !important;
 	}
 	.text-blue{
 		font-size: 24upx;
-		color:rgba(90,126,215,1) !important;
+		color:@blueColor !important;
 	}
 	.line-cyan{
-		color:rgba(28,187,180,0.5) !important;
+		color:@cyanColor !important;
 	}
 	.text-cyan{
 		font-size: 24upx;
-		color:rgba(28,187,180,1) !important;
+		color:@cyanColor !important;
 	}
 	
 	
@@ -418,7 +442,22 @@
 		font-size: 40upx;
 		font-weight: 700;
 	}
-	
+	/* 运动颜色 数据库取出 */
+	.yd-red{
+		background: @redColor-linear;
+	}
+	.yd-blue{
+		background: @blueColor-linear;
+	}
+	.yd-purple{
+		background: @purpleColor-linear;
+	}
+	.yd-black{
+		background: @blackColor-linear;
+	}
+	.yd-cyan{
+		background: @cyanColor-linear;
+	}
 	
 	/* 具体健康数据 */
 	.cu-card-jk {
@@ -441,10 +480,10 @@
 		margin-bottom: 24upx;
 		font-size: 48upx;
 		font-weight: 700;
-		color: #333333;
+		color: @blackColor;
 	}
 	.jk-text{
-		color: #333333;
+		color: @blackColor;
 	}
 	.jk-text-title{
 		font-size: 24upx;
@@ -475,7 +514,7 @@
 		margin-left: -12upx;
 	}
 	.bg-red{
-		background-color:rgba(240,116,106,0.7);
+		background-color:@redColor;
 	}
 	
 	.pulse{
@@ -494,7 +533,7 @@
 		margin-left: -12upx;
 	}
 	.bg-blue{
-		background-color:rgba(90,126,215,0.7); 
+		background-color:@blueColor; 
 	}
 	
 	

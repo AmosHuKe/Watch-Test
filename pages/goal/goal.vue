@@ -109,7 +109,7 @@
 			// slideMin: 0,  //slider最小值
 			// slideMax: 12,  //slider最大值
 			
-			backgroundColor: 'rgba(0,0,0,0.7)', //条颜色
+			backgroundColor: 'rgba(35,35,35,.8)', //条颜色
 			slideMin: 0, //最小值
 			slideMax: 30000, //最大运动
 			rangeValues: [0, 10000],//[0, 10] 运动默认
@@ -159,7 +159,9 @@
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+	@import "../../style/color/color.less";
+	
 	.page{
 		padding: 0 30upx;
 		flex-direction: column;
@@ -183,7 +185,6 @@
 	 	justify-content: center;
 	 }
 	.bg-black{
-		background: rgba(0,0,0,0.7);
+		background: @blackColor;
 	}
-	
 </style>

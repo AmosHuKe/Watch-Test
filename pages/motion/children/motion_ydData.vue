@@ -1,13 +1,13 @@
 <template>
 	<view class="motion_ydData">
 		<!-- 顶部 -->
-		<cu-custom :bgImage="datas.bgcolor" :isBack="true" :isShadown="false">
+		<cu-custom :bgColor="datas.bgcolor" :isBack="true" :isShadown="false">
 			<block slot="backText"></block>
 			<block slot="content">{{ datas.title }}</block>
 		</cu-custom>
 		
 		<scroll-view scroll-y class="page">
-			<view class="main-data shadow" :style="{background:datas.bgcolor}">
+			<view :class="['main-data shadow',datas.bgcolor]" >
 				<view class="flex justify-center padding align-end">
 					<view class=" margin-xs data-title">{{ datas.content_total_0 }}</view>
 					<view class=" margin-xs data-d">{{ datas.title_total_0 }}</view>
@@ -65,7 +65,25 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+	@import "../../../style/color/color.less"; //颜色
+	
+	/* 运动颜色 数据库取出 */
+	.yd-red{
+		background: @redColor-linear;
+	}
+	.yd-blue{
+		background: @blueColor-linear;
+	}
+	.yd-purple{
+		background: @purpleColor-linear;
+	}
+	.yd-black{
+		background: @blackColor-linear;
+	}
+	.yd-cyan{
+		background: @cyanColor-linear;
+	}
 	.shadow{
 		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 		box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;

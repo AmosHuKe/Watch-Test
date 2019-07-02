@@ -272,12 +272,15 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+	@import "../../style/color/color.less";
+	
 	button .cu-tag {
 		position: absolute;
 		top: 8upx;
 		right: 8upx;
 	}
+	
 	@font-face {
 		font-family: texticons;
 		font-weight: normal;
@@ -301,9 +304,10 @@
 		height: 360upx;
 		padding: 36upx;
 		box-sizing: border-box;
-		background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+		background: @blackColor-linear;
 		flex-direction: row;
 		align-items: center;
+		
 	}
 
 	.logo-hover {
