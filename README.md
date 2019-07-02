@@ -19,7 +19,7 @@
 > 
 > 登陆账号：admin 密码：admin  
   
-* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Mock
+* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Less + Mock
   
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
