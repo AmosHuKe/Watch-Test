@@ -64,7 +64,30 @@
 	}
 </script>
 
-<style>
+<style lang="less">
+	@import "../../../style/color/color.less"; //颜色
+	/* 运动颜色 数据库取出 */
+	.yd-red{
+		background: @redColor-linear;
+		color: #FFF;
+	}
+	.yd-blue{
+		background: @blueColor-linear;
+		color: #FFF;
+	}
+	.yd-purple{
+		background: @purpleColor-linear;
+		color: #FFF;
+	}
+	.yd-black{
+		background: @blackColor-linear;
+		color: #FFF;
+	}
+	.yd-cyan{
+		background: @cyanColor-linear;
+		color: #FFF;
+	}
+	
 	.cu-bar-shadown{
 		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
 		box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
