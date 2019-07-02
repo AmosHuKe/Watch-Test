@@ -167,6 +167,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 var _uCharts = _interopRequireDefault(__webpack_require__(/*! ../../lib/u-charts/u-charts.js */ "../../../../Aproject/github/watch-test/lib/u-charts/u-charts.js"));
 var _home = __webpack_require__(/*! ../../service/api/home.js */ "../../../../Aproject/github/watch-test/service/api/home.js");
 
@@ -240,51 +251,70 @@ var _login = __webpack_require__(/*! ../../service/api/login.js */ "../../../../
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//统计图
 //首页api
 //登陆api
-var _self;var canvaRing = null;var _default = { data: function data() {return { swiperList: [], //轮播数据
+var _this;var canvaRing = null;var _default = { data: function data() {return { swiperList: [], //轮播数据
       //轮播
       cardCur: 0, dotStyle: true, towerStart: 0, direction: '', //统计数据
       ringList: {}, //环状统计初始化数据
       cWidth: '', cHeight: '', pixelRatio: 1, //总小时公里
-      hour: 5, minute: 20, kilometer: 26 };}, mounted: function mounted() {_self = this;(0, _login.getisLogin)(); //是否登陆
-    _self.getSwiperData(); //获取轮播数据
-    _self.cWidth = uni.upx2px(400);_self.cHeight = uni.upx2px(400);_self.getServerData(); //获取统计数据
-  }, methods: { getSwiperData: function getSwiperData() {var _this = this; //获取轮播数据
-      (0, _home.getSwiper)().then(function (res) {//console.log(res)
-        _this.swiperList = res.data.swiperList;}).catch(function (err) {});}, copyUrl: function copyUrl() {uni.setClipboardData({ data: 'https://github.com/AmosHuKe/Watch-Test', success: function success() {uni.showToast({ title: '地址复制成功' });} });}, getServerData: function getServerData() {var _this = this; //获取统计数据
-      (0, _home.getRing)().then(function (res) {//console.log(res)
-        var data = res.data.series; //获取统计数据
-        _this.ringList = data; //赋值统计数据
-        var ringData = { series: [] //统计图数据装载
-        };for (var i = 0; i < data.length; i++) {//统计图数据装载
-          ringData.series.push({ "name": data[i].name, "data": data[i].data });} //console.log(ringData)
-        _self.showRing("canvasRing", ringData);}).catch(function (err) {});}, showRing: function showRing(canvasId, chartData) {canvaRing = new _uCharts.default({ $this: _self, canvasId: canvasId, type: 'ring', fontSize: 11, legend: false, //底部tag
+      hour: 5, minute: 20, kilometer: 26 };}, mounted: function mounted() {_this = this;(0, _login.getisLogin)(); //是否登陆
+    _this.getSwiperData(); //获取轮播数据
+    _this.cWidth = uni.upx2px(400);_this.cHeight = uni.upx2px(400);_this.getServerData(); //获取统计数据
+  }, methods: { getSwiperData: function getSwiperData() {var swiperData = _this.$store.getters.getSwiperData; //获取状态值
+      //判断状态中是否有值
+      if (swiperData != "") {_this.swiperList = swiperData;} else {//获取轮播数据
+        (0, _home.getSwiper)().then(function (res) {//console.log(res)
+          _this.swiperList = res.data.swiperList;_this.$store.dispatch("setSwiperData", res.data.swiperList); //存入状态
+        }).catch(function (err) {});}}, copyUrl: function copyUrl() {uni.setClipboardData({ data: 'https://github.com/AmosHuKe/Watch-Test', success: function success() {uni.showToast({ title: '地址复制成功' });} });}, getServerData: function getServerData() {var setRingData = { series: [] }; //统计图数据装载
+      var ringData = _this.$store.getters.getRingData; //获取状态值
+      if (ringData != "") {_this.ringList = ringData; //赋值统计数据
+        for (var i = 0; i < ringData.length; i++) {//统计图数据装载
+          setRingData.series.push({ "name": ringData[i].name, "data": ringData[i].data });}_this.showRing("canvasRing", setRingData);} else {//获取统计数据
+        (0, _home.getRing)().then(function (res) {//console.log(res)
+          var data = res.data.series; //获取统计数据
+          _this.ringList = data; //赋值统计数据
+          _this.$store.dispatch("setRingData", data); //存入状态
+          for (var _i = 0; _i < data.length; _i++) {//统计图数据装载
+            setRingData.series.push({ "name": data[_i].name, "data": data[_i].data });}_this.showRing("canvasRing", setRingData); //console.log(ringData)
+        }).catch(function (err) {});}}, showRing: function showRing(canvasId, chartData) {canvaRing = new _uCharts.default({ $this: _this, canvasId: canvasId, type: 'ring', fontSize: 11, legend: false, //底部tag
         // title: {
         // 	name: '',
         // 	color: '#7cb5ec',
-        // 	fontSize: 25*_self.pixelRatio,
-        // 	offsetY:-20*_self.pixelRatio,
+        // 	fontSize: 25*_this.pixelRatio,
+        // 	offsetY:-20*_this.pixelRatio,
         // },
         subtitle: {
           name: '',
           color: '#666666',
-          fontSize: 1 * _self.pixelRatio,
-          offsetY: 2 * _self.pixelRatio },
+          fontSize: 1 * _this.pixelRatio,
+          offsetY: 2 * _this.pixelRatio },
 
         extra: {
           pie: {
             offsetAngle: -45,
-            ringWidth: 5 * _self.pixelRatio,
+            ringWidth: 5 * _this.pixelRatio,
             lableWidth: 15 } },
 
 
         background: '#FFFFFF',
-        pixelRatio: _self.pixelRatio,
+        pixelRatio: _this.pixelRatio,
         series: chartData.series,
         animation: true,
-        width: _self.cWidth * _self.pixelRatio,
-        height: _self.cHeight * _self.pixelRatio,
+        width: _this.cWidth * _this.pixelRatio,
+        height: _this.cHeight * _this.pixelRatio,
         disablePieStroke: false,
         dataLabel: true });
 
@@ -340,9 +370,9 @@ var _self;var canvaRing = null;var _default = { data: function data() {return { 
       } else {
         var _mLeft = list[list.length - 1].mLeft;
         var _zIndex = list[list.length - 1].zIndex;
-        for (var _i = this.swiperList.length - 1; _i > 0; _i--) {
-          this.swiperList[_i].mLeft = this.swiperList[_i - 1].mLeft;
-          this.swiperList[_i].zIndex = this.swiperList[_i - 1].zIndex;
+        for (var _i2 = this.swiperList.length - 1; _i2 > 0; _i2--) {
+          this.swiperList[_i2].mLeft = this.swiperList[_i2 - 1].mLeft;
+          this.swiperList[_i2].zIndex = this.swiperList[_i2 - 1].zIndex;
         }
         this.swiperList[0].mLeft = _mLeft;
         this.swiperList[0].zIndex = _zIndex;

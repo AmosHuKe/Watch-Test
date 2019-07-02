@@ -4008,20 +4008,81 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js"));
 
 
-var _LoginModule = _interopRequireDefault(__webpack_require__(/*! ./module/Login/LoginModule.js */ "../../../../Aproject/github/watch-test/store/module/Login/LoginModule.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //modules
-//登陆
-_vue.default.use(_vuex.default);var _default =
+var _loginModule = _interopRequireDefault(__webpack_require__(/*! ./module/login/loginModule.js */ "../../../../Aproject/github/watch-test/store/module/login/loginModule.js"));
 
-new _vuex.default.Store({
+var _homeModule = _interopRequireDefault(__webpack_require__(/*! ./module/home/homeModule.js */ "../../../../Aproject/github/watch-test/store/module/home/homeModule.js"));
+var _motionModule = _interopRequireDefault(__webpack_require__(/*! ./module/motion/motionModule.js */ "../../../../Aproject/github/watch-test/store/module/motion/motionModule.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //modules
+//登陆
+//首页
+//运动
+_vue.default.use(_vuex.default);var _default = new _vuex.default.Store({
   state: {},
   modules: {
-    Login: _LoginModule.default } });exports.default = _default;
+    login: _loginModule.default,
+    home: _homeModule.default,
+    motion: _motionModule.default } });exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/store/module/Login/LoginModule.js":
+/***/ "../../../../Aproject/github/watch-test/store/module/home/homeModule.js":
+/*!*********************************************************************!*\
+  !*** D:/Aproject/github/watch-test/store/module/home/homeModule.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //home数据
+var state = {
+  swiperData: '', //轮播数据
+  ringData: '' //统计数据
+};
+var mutations = {
+  set_SwiperData: function set_SwiperData(state, SwiperData) {
+    //赋值
+    state.swiperData = SwiperData;
+  },
+  set_RingData: function set_RingData(state, RingData) {
+    //赋值
+    state.ringData = RingData;
+  } };
+
+
+
+var actions = {
+  setSwiperData: function setSwiperData(_ref, SwiperData) {var commit = _ref.commit;
+    //赋值
+    commit("set_SwiperData", SwiperData);
+  },
+  setRingData: function setRingData(_ref2, RingData) {var commit = _ref2.commit;
+    //赋值
+    commit("set_RingData", RingData);
+  } };
+
+var getters = {
+  getSwiperData: function getSwiperData(state) {
+    //获取
+    return state.swiperData;
+  },
+  getRingData: function getRingData(state) {
+    //获取
+    return state.ringData;
+  } };
+
+
+
+//暴露出去
+var _default = {
+  state: state,
+  mutations: mutations,
+  actions: actions,
+  getters: getters };exports.default = _default;
+
+/***/ }),
+
+/***/ "../../../../Aproject/github/watch-test/store/module/login/loginModule.js":
 /*!***********************************************************************!*\
-  !*** D:/Aproject/github/watch-test/store/module/Login/LoginModule.js ***!
+  !*** D:/Aproject/github/watch-test/store/module/login/loginModule.js ***!
   \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -4050,6 +4111,75 @@ var getters = {
   getUserData: function getUserData(state) {
     //获取用户信息
     return state.userData;
+  } };
+
+
+
+//暴露出去
+var _default = {
+  state: state,
+  mutations: mutations,
+  actions: actions,
+  getters: getters };exports.default = _default;
+
+/***/ }),
+
+/***/ "../../../../Aproject/github/watch-test/store/module/motion/motionModule.js":
+/*!*************************************************************************!*\
+  !*** D:/Aproject/github/watch-test/store/module/motion/motionModule.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //motion数据
+var state = {
+  goalcData: '', //计划完成度数据
+  ydData: '', //运动数据
+  jkData: '' //健康数据
+};
+var mutations = {
+  set_GoalcData: function set_GoalcData(state, GoalcData) {
+    //赋值
+    state.goalcData = GoalcData;
+  },
+  set_YdData: function set_YdData(state, YdData) {
+    //赋值
+    state.ydData = YdData;
+  },
+  set_JkData: function set_JkData(state, JkData) {
+    //赋值
+    state.jkData = JkData;
+  } };
+
+
+
+var actions = {
+  setGoalcData: function setGoalcData(_ref, GoalcData) {var commit = _ref.commit;
+    //赋值
+    commit("set_GoalcData", GoalcData);
+  },
+  setYdData: function setYdData(_ref2, YdData) {var commit = _ref2.commit;
+    //赋值
+    commit("set_YdData", YdData);
+  },
+  setJkData: function setJkData(_ref3, JkData) {var commit = _ref3.commit;
+    //赋值
+    commit("set_JkData", JkData);
+  } };
+
+var getters = {
+  getGoalcData: function getGoalcData(state) {
+    //获取
+    return state.goalcData;
+  },
+  getYdData: function getYdData(state) {
+    //获取
+    return state.ydData;
+  },
+  getJkData: function getJkData(state) {
+    //获取
+    return state.jkData;
   } };
 
 
@@ -4558,7 +4688,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -10734,7 +10864,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -10755,14 +10885,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -10831,7 +10961,7 @@ var patch = function(oldVnode, vnode) {
         });
         var diffData = diff(data, mpData);
         if (Object.keys(diffData).length) {
-            if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+            if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
                 console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
                     ']差量更新',
                     JSON.stringify(diffData));

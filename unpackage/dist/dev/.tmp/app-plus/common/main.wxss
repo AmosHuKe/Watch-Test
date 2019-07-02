@@ -1,50 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*每个页面公共css */
 /* 动画 */
 /* 渐显 */
@@ -4979,22 +4932,22 @@ scroll-view.cu-steps .cu-item {
 }
 /* 加载loding */
 .cu-load.load-modal {
-	width: 0px;
-	height: 0px;
-	background-color: transparent;
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
 }
 .cu-load.load-modal::after {
-	background-color: rgba(0, 0, 0, 0.3);
-	width: 30px;
-	height: 30px;
-	border-left: 3px solid #FFF0F6;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 30px;
+  height: 30px;
+  border-left: 3px solid #FFF0F6;
 }
-page{
-	background-color: rgba(255,255,255,1);
+page {
+  background: #FFFFFF !important;
 }
 /* 阴影 */
-.bar-shadown{
-	-webkit-box-shadow: 0 0 36px 0 rgba(43,86,112,.1) !important;
-	box-shadow: 0 0 36px 0 rgba(43,86,112,.1) !important;
+.bar-shadown {
+  -webkit-box-shadow: 0 0 36px 0 rgba(43, 86, 112, 0.1) !important;
+  box-shadow: 0 0 36px 0 rgba(43, 86, 112, 0.1) !important;
 }
 

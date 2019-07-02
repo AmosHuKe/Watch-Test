@@ -31,7 +31,7 @@
     "splashscreen": {
       "target": "id:1",
       "autoclose": true,
-      "waiting": true,
+      "waiting": false,
       "delay": 0
     },
     "popGesture": "close",
