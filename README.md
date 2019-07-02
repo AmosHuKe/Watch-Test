@@ -8,7 +8,7 @@
 
 ## 概述  
 
-![watch](./demo/watch_1080.png)
+![演示](./demo/watch_1080.webp)
 
 > 🏃‍⌚  
 > 智能手表运动相关的App页面展示。  
