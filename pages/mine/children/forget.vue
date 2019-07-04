@@ -1,76 +1,83 @@
 <template>
-	<view>
+	<view class="forget">
 		<cu-custom bgColor="bg-white" :isBack="true" >
 			<block slot="backText"></block>
 			<block slot="content">找回密码</block>
 		</cu-custom>
 		
-	
 		<view class="content">
-			
-			<view class="list">
-				<view class="tishi">若您忘记了密码，可在此重新设置新密码。</view>
-				<view class="list-call oBorder">
-					<!-- <text class="img cuIcon-phone text-black"></text> -->
-					<input class="biaoti" type="number" v-model="phoneno" maxlength="11" placeholder="请输入手机号" />
+			<!-- 主体 -->
+			<view class="main">
+				<view class="tips">若你忘记了密码，可在此重置新密码。</view>
+				<view class="main-list oBorder">
+					<input 
+						class="main-input" 
+						type="text" 
+						v-model="phoneData" 
+						maxlength="11" 
+						placeholder="请输入手机号" 
+					/>
 				</view>
-				<view class="list-call oBorder">
-					<!-- <text class="img cuIcon-lock text-black"></text> -->
-					<input class="biaoti" type="text" v-model="password" maxlength="32" placeholder="请输入新密码" :password="!showPassword" />
-					<image class="img " :class="showPassword?'cuIcon-attention':'cuIcon-attentionforbid'" @tap="display"></image>
+				<view class="main-list oBorder">
+					<input 
+						class="main-input" 
+						type="text" 
+						v-model="passData" 
+						maxlength="32" 
+						placeholder="请输入新密码" 
+						:password="!showPassword" 
+					/>
+					<image class="img" 
+						:class="showPassword?'cuIcon-attention':'cuIcon-attentionforbid'" 
+						@tap="isShowPass"
+					></image>
 				</view>
-				<view class="list-call oBorder">
-					<!-- <text class="img cuIcon-safe text-black"></text> -->
-					<input class="biaoti" type="number" v-model="code" maxlength="4" placeholder="验证码" />
-					<view class="yzm" :class="{ yzms: second>0 }" @tap="getcode">{{yanzhengma}}</view>
+				<view class="main-list oBorder">
+					<input 
+						class="main-input" 
+						type="number" 
+						v-model="verCode" 
+						maxlength="4" 
+						placeholder="验证码" 
+					/>
+					<view 
+						:class="['vercode',{'vercode-run': second>0}]" 
+						@tap="getVerCode()"
+					>{{ getVerCodeSecond }}</view>
 				</view>
 			</view>
 			
-			<button class="dlbutton buttonBorder cu-btn round bg-black" hover-class="dlbutton-hover" @tap="bindLogin()">
-				修改密码
-			</button>
-			<!-- <view class="dlbutton" hover-class="dlbutton-hover" @tap="bindLogin()">
-				<text>修改密码</text>
-			</view> -->
+			<button class="dlbutton buttonBorder" @tap="startRePass()">重置密码</button>
 
 		</view>
 	</view>
 </template>
 
 <script>
-	var tha,js;
+	var _this,countDown;
+	
 	export default {
 		data() {
 			return {
-				phoneno:'',
-				second:0,
-				code:"",
-				showPassword:false,
-				password:''
+				phoneData: "", //电话
+				passData: "", //密码
+				showPassword:false, //密码是否显示
+				second: 0, //倒计时
+				verCode:"", //验证码
 			}
 		},
-		onLoad(){
-			tha = this;
-		},
-		computed:{
-			yanzhengma(){
-				if(this.second==0){
-					return '获取验证码';
-				}else{
-					if(this.second<10){
-						return '重新获取0'+this.second;
-					}else{
-						return '重新获取'+this.second;
-					}
-				}
-			}
+		mounted() {
+			_this= this;
+			clearInterval(countDown);//先清理一次循环，避免缓存
 		},
 		methods: {
-			display() {
-			    this.showPassword = !this.showPassword
+			isShowPass() {
+				//是否显示密码
+			    _this.showPassword = !_this.showPassword
 			},
-			getcode(){
-				if (this.phoneno.length != 11) {
+			getVerCode(){
+				//获取验证码
+				if (_this.phoneData.length != 11) {
 				     uni.showToast({
 				        icon: 'none',
 						position: 'bottom',
@@ -78,88 +85,64 @@
 				    });
 				    return false;
 				}
-				if(this.second>0){
-					return;
+				if(_this.second>0){
+					return false;
 				}
-				tha.second = 60;
-				js = setInterval(function(){
-					tha.second--;
-					if(tha.second==0){
-						clearInterval(js)
+				_this.second = 60;
+				countDown = setInterval(function(){
+					_this.second--;
+					if(_this.second==0){
+						clearInterval(countDown)
 					}
 				},1000)
 				console.log("获取验证码")
-				// uni.request({
-				//     url: 'http://***/getcode.html', //仅为示例，并非真实接口地址。
-				//     data: {phoneno:this.phoneno,code_type:'reg'},
-				// 	method: 'POST',
-				// 	dataType:'json',
-				//     success: (res) => {
-				// 		if(res.data.code!=200){
-				// 			uni.showToast({title:res.data.msg,icon:'none'});
-				// 			tha.second = 0;
-				// 		}else{
-				// 			uni.showToast({title:res.data.msg});
-				// 			tha.second = 60;
-				// 			js = setInterval(function(){
-				// 				tha.second--;
-				// 				if(tha.second==0){
-				// 					clearInterval(js)
-				// 				}
-				// 			},1000)
-				// 		}
-				//     }
-				// });
 			},
-			bindLogin() {
-				if (this.phoneno.length != 11) {
+			startRePass() {
+				//重置密码
+				if (this.phoneData.length != 11) {
 				     uni.showToast({
 				        icon: 'none',
 						position: 'bottom',
 				        title: '手机号不正确'
 				    });
-				    return;
+				    return false;
 				}
-			    if (this.password.length < 6) {
+			    if (this.passData.length < 6) {
 			        uni.showToast({
 			            icon: 'none',
 						position: 'bottom',
 			            title: '密码不正确'
 			        });
-			        return;
+			        return false;
 			    }
-				if (this.code.length != 4) {
+				if (this.verCode.length != 4) {
 				    uni.showToast({
 				        icon: 'none',
 						position: 'bottom',
 				        title: '验证码不正确'
 				    });
-				    return;
+				    return false;
 				}
-				console.log("修改密码成功")
-				// uni.request({
-				//     url: 'http://***/forget.html',
-				//     data: {
-				// 		phoneno:this.phoneno,
-				// 		password:this.password,
-				// 		code:this.code
-				// 	},
-				// 	method: 'POST',
-				// 	dataType:'json',
-				//     success: (res) => {
-				// 		if(res.data.code!=200){
-				// 			uni.showToast({title:res.data.msg,icon:'none'});
-				// 		}else{
-				// 			uni.showToast({title:res.data.msg});
-				// 			setTimeout(function(){
-				// 				uni.navigateBack();
-				// 			},1500) 
-				// 		}
-				//     }
-				// });
+				console.log("重置密码成功")
+				
 				
 			}
-		}
+		},
+		computed:{
+			getVerCodeSecond(){
+				//验证码倒计时计算
+				if(this.second<=0){
+					return '获取验证码';
+				}else{
+					if(this.second<10){
+						return '0'+this.second;
+					}else{
+						return this.second;
+					}
+				}
+				
+			}
+		},
 	}
 </script>
 
