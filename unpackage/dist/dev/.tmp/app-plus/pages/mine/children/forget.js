@@ -137,40 +137,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-var tha, js;var _default =
+var _this, countDown;var _default =
+
 {
   data: function data() {
     return {
-      phoneno: '',
-      second: 0,
-      code: "",
-      showPassword: false,
-      password: '' };
-
+      phoneData: "", //电话
+      passData: "", //密码
+      showPassword: false, //密码是否显示
+      second: 0, //倒计时
+      verCode: "" //验证码
+    };
   },
-  onLoad: function onLoad() {
-    tha = this;
+  mounted: function mounted() {
+    _this = this;
+    clearInterval(countDown); //先清理一次循环，避免缓存
   },
-  computed: {
-    yanzhengma: function yanzhengma() {
-      if (this.second == 0) {
-        return '获取验证码';
-      } else {
-        if (this.second < 10) {
-          return '重新获取0' + this.second;
-        } else {
-          return '重新获取' + this.second;
-        }
-      }
-    } },
-
   methods: {
-    display: function display() {
-      this.showPassword = !this.showPassword;
+    isShowPass: function isShowPass() {
+      //是否显示密码
+      _this.showPassword = !_this.showPassword;
     },
-    getcode: function getcode() {
-      if (this.phoneno.length != 11) {
+    getVerCode: function getVerCode() {
+      //获取验证码
+      if (_this.phoneData.length != 11) {
         uni.showToast({
           icon: 'none',
           position: 'bottom',
@@ -178,85 +185,61 @@ var tha, js;var _default =
 
         return false;
       }
-      if (this.second > 0) {
-        return;
+      if (_this.second > 0) {
+        return false;
       }
-      tha.second = 60;
-      js = setInterval(function () {
-        tha.second--;
-        if (tha.second == 0) {
-          clearInterval(js);
+      _this.second = 60;
+      countDown = setInterval(function () {
+        _this.second--;
+        if (_this.second == 0) {
+          clearInterval(countDown);
         }
       }, 1000);
-      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:91");
-      // uni.request({
-      //     url: 'http://***/getcode.html', //仅为示例，并非真实接口地址。
-      //     data: {phoneno:this.phoneno,code_type:'reg'},
-      // 	method: 'POST',
-      // 	dataType:'json',
-      //     success: (res) => {
-      // 		if(res.data.code!=200){
-      // 			uni.showToast({title:res.data.msg,icon:'none'});
-      // 			tha.second = 0;
-      // 		}else{
-      // 			uni.showToast({title:res.data.msg});
-      // 			tha.second = 60;
-      // 			js = setInterval(function(){
-      // 				tha.second--;
-      // 				if(tha.second==0){
-      // 					clearInterval(js)
-      // 				}
-      // 			},1000)
-      // 		}
-      //     }
-      // });
+      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:98");
     },
-    bindLogin: function bindLogin() {
-      if (this.phoneno.length != 11) {
+    startRePass: function startRePass() {
+      //重置密码
+      if (this.phoneData.length != 11) {
         uni.showToast({
           icon: 'none',
           position: 'bottom',
           title: '手机号不正确' });
 
-        return;
+        return false;
       }
-      if (this.password.length < 6) {
+      if (this.passData.length < 6) {
         uni.showToast({
           icon: 'none',
           position: 'bottom',
           title: '密码不正确' });
 
-        return;
+        return false;
       }
-      if (this.code.length != 4) {
+      if (this.verCode.length != 4) {
         uni.showToast({
           icon: 'none',
           position: 'bottom',
           title: '验证码不正确' });
 
-        return;
+        return false;
       }
-      console.log("修改密码成功", " at pages\\mine\\children\\forget.vue:139");
-      // uni.request({
-      //     url: 'http://***/forget.html',
-      //     data: {
-      // 		phoneno:this.phoneno,
-      // 		password:this.password,
-      // 		code:this.code
-      // 	},
-      // 	method: 'POST',
-      // 	dataType:'json',
-      //     success: (res) => {
-      // 		if(res.data.code!=200){
-      // 			uni.showToast({title:res.data.msg,icon:'none'});
-      // 		}else{
-      // 			uni.showToast({title:res.data.msg});
-      // 			setTimeout(function(){
-      // 				uni.navigateBack();
-      // 			},1500) 
-      // 		}
-      //     }
-      // });
+      console.log("重置密码成功", " at pages\\mine\\children\\forget.vue:126");
+
+
+    } },
+
+  computed: {
+    getVerCodeSecond: function getVerCodeSecond() {
+      //验证码倒计时计算
+      if (this.second <= 0) {
+        return '获取验证码';
+      } else {
+        if (this.second < 10) {
+          return '0' + this.second;
+        } else {
+          return this.second;
+        }
+      }
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
