@@ -10,7 +10,7 @@
         "usingComponents" : true,
         "splashscreen" : {
             "alwaysShowBeforeRender" : true,
-            "waiting" : false,
+            "waiting" : true,
             "autoclose" : true,
             "delay" : 0
         },
@@ -107,7 +107,7 @@
     },
     "h5" : {
         "devServer" : {
-            "https" : true
+            "https" : false
         }
     }
 }
