@@ -2,13 +2,13 @@
 	<view class="forget">
 		<cu-custom bgColor="bg-white" :isBack="true" >
 			<block slot="backText"></block>
-			<block slot="content">找回密码</block>
+			<block slot="content">重置密码</block>
 		</cu-custom>
 		
 		<view class="content">
 			<!-- 主体 -->
 			<view class="main">
-				<view class="tips">若你忘记了密码，可在此重置新密码。</view>
+				<view class="tips">忘记了密码？可在此重置新密码。</view>
 				<view class="main-list oBorder">
 					<input 
 						class="main-input" 

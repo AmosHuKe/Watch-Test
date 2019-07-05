@@ -13,7 +13,7 @@
 						v-model="phoneData" 
 						type="text" 
 						maxlength="11" 
-						placeholder="用户名/电话" 
+						placeholder="用户名:admin" 
 					/>
 				</view>
 				<view class="main-list oBorder">
@@ -22,7 +22,7 @@
 						v-model="passData" 
 						type="text" 
 						maxlength="32" 
-						placeholder="密码" 
+						placeholder="密码:admin" 
 						password="true" 
 					/>
 				</view>
@@ -37,6 +37,7 @@
 				<text>|</text>
 				<navigator url="register" open-type="navigate">注册账号</navigator>
 			</view>
+			
 		</view>
 	</view>
 </template>
