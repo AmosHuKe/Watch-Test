@@ -1,112 +1,3 @@
-/**
- * 按钮及边框阴影样式
- */
-
-/* 按钮加载 */
-.wechat{
-  color: #62b900;
-}
-.buttonLoading{
-    margin-left: 40%;
-    width: 50rpx;
-    padding-right: 24rpx;
-    padding-left: 17rpx;
-    padding-top: 14rpx;
-    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-}
-
-/* 阴影及圆边 */
-.auth-form-light{
-  -webkit-border-radius: 0.3125rem ;
-          border-radius: 0.3125rem ;
-  -webkit-box-shadow: 0rpx 4rpx 0rpx rgba(170,170,170,0.1);
-          box-shadow: 0rpx 4rpx 0rpx rgba(170,170,170,0.1);
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.oBorder{
-    border: none !important;
-    -webkit-border-radius: 2.5rem !important;
-            border-radius: 2.5rem !important;
-    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-}
-.oBorder_left{
-    border: none !important;
-    -webkit-border-radius: 2.5rem 0 0 2.5rem !important;
-            border-radius: 2.5rem 0 0 2.5rem !important;
-    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-}
-.oBorder_right{
-    border: none !important;
-    -webkit-border-radius: 0 2.5rem  2.5rem 0 !important;
-            border-radius: 0 2.5rem  2.5rem 0 !important;
-    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-}
-.buttonBorder{
-    border: none !important;
-    -webkit-border-radius: 2.5rem !important;
-            border-radius: 2.5rem !important;
-    -webkit-box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2) !important;
-    box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2) !important;
-    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-}
-
-/* 婊戝潡鏍峰紡 */
-.slider-item{
-  border: none !important;
-  -webkit-border-radius: 2.5rem !important;
-          border-radius: 2.5rem !important;
-  -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-  box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) !important;
-}
-.slider-bg{
-  border: none !important;
-  -webkit-border-radius: 2.5rem !important;
-          border-radius: 2.5rem !important;
-}
-.slider-btn{
-  border: none !important;
-  -webkit-border-radius: 2.5rem !important;
-          border-radius: 2.5rem !important;
-}
-.slider{
-  background: #3e4b5b;
-}
-
-/* 超过600upx 变化*/
-@media screen and (max-width: 600px) {
-.content-wrapper{
-      padding-right: 0rpx !important;
-      padding-left: 0rpx !important;
-      background: #FFFFFF;
-}
-.row{
-      margin-right: 0rpx !important;
-      margin-left: 0rpx !important;
-}
-.col-lg-4{
-      padding-right: 0rpx !important;
-      padding-left: 0rpx !important;
-}
-    /* 鐧诲綍杈规 */
-.auth-form-light{
-      -webkit-border-radius: none;
-              border-radius: none;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      -webkit-transition: all 0.6s;
-      -o-transition: all 0.6s;
-      transition: all 0.6s;
-}
-}
 .content {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -123,6 +14,8 @@
 	        justify-content:center;
 	/* margin-top: 128upx; */
 }
+
+/* 头部 logo */
 .header {
 	width:161rpx;
 	height:161rpx;
@@ -142,7 +35,9 @@
 	-webkit-border-radius:50%;
 	        border-radius:50%;
 }
-.list {
+
+/* 主体 */
+.main {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -155,7 +50,7 @@
 	padding-left: 70rpx;
 	padding-right: 70rpx;
 }
-.list-call{
+.main-list{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -178,12 +73,12 @@
 	padding: 32rpx;
 	margin-top:48rpx;
 }
-.list-call .img{
+.main-list .img{
 	width: 32rpx;
 	height: 32rpx;
 	font-size: 32rpx;
 }
-.list-call .biaoti{
+.main-list .main-input{
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
@@ -191,7 +86,22 @@
 	text-align: left;
 	font-size: 28rpx;
 	line-height: 100rpx;
+	padding-right: 10rpx;
 	margin-left: 20rpx;
+}
+.vercode {
+	color: rgba(0,0,0,0.7);
+	font-size: 24rpx;
+	line-height: 100rpx;
+}
+.vercode-run {
+	color: rgba(0,0,0,0.4) !important;
+}
+.tips {
+	color: #999999;
+	font-size: 28rpx;
+	margin-top: 64rpx;
+	margin-left: 48rpx;
 }
 .dlbutton {
 	color: #FFFFFF;
@@ -212,15 +122,9 @@
 	margin-right: auto;
 	margin-top: 96rpx;
 }
-.dlbutton-hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(deg, -90), color-stop(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.6)));
-	background:-webkit-linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-	background:-o-linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-	background:linear-gradient(-90 deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-	-webkit-box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.1);
-	        box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.1);
-}
-.xieyi{
+
+/* 底部 */
+.footer{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -245,31 +149,42 @@
 	height: 40rpx;
 	line-height: 40rpx;
 }
-.xieyi text{
+.footer text{
 	font-size: 24rpx;
 	margin-left: 15rpx;
 	margin-right: 15rpx;
 }
-.yzm {
-	color: rgba(0,0,0,0.7);
-	font-size: 24rpx;
-	line-height: 64rpx;
-	padding-left: 10rpx;
-	padding-right: 10rpx;
-	width:auto;
-	height:64rpx;
-	border:1rpx solid rgba(0,0,0,0.7);
-	-webkit-border-radius: 50rpx;
-	        border-radius: 50rpx;
+
+/* 表单/按钮 阴影及圆边 */
+.oBorder{
+    border: none;
+    -webkit-border-radius: 2.5rem ;
+            border-radius: 2.5rem ;
+    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1);
+    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1);
 }
-.yzms {
-	color: #999999 !important;
-	border:1rpx solid #999999;
+.oBorder_left{
+    border: none ;
+    -webkit-border-radius: 2.5rem 0 0 2.5rem ;
+            border-radius: 2.5rem 0 0 2.5rem ;
+    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1);
+    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1);
 }
-.tishi {
-	color: #999999;
-	font-size: 28rpx;
-	margin-top: 64rpx;
-	margin-left: 48rpx;
+.oBorder_right{
+    border: none ;
+    -webkit-border-radius: 0 2.5rem  2.5rem 0 ;
+            border-radius: 0 2.5rem  2.5rem 0 ;
+    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1);
+    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1);
+}
+.buttonBorder{
+    border: none ;
+    -webkit-border-radius: 2.5rem ;
+            border-radius: 2.5rem ;
+    -webkit-box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2);
+    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
 }
 

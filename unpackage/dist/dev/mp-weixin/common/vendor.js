@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../../../Aproject/github/watch-test/lib/u-charts/u-charts.js":
-/*!**************************************************************!*\
-  !*** D:/Aproject/github/watch-test/lib/u-charts/u-charts.js ***!
-  \**************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/lib/u-charts/u-charts.js":
+/*!**************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/lib/u-charts/u-charts.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3536,17 +3536,17 @@ module.exports = Charts;
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js":
-/*!*********************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js ***!
-  \*********************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js":
+/*!*********************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../Aproject/github/watch-test/App.vue"));
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../Amos_project/project/github/Watch-Test/App.vue"));
 
 
 
@@ -3567,15 +3567,15 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../
 
 
 
-var _index = __webpack_require__(/*! ./service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js");
+var _index = __webpack_require__(/*! ./service/request/index.js */ "../../../../../Amos_project/project/github/Watch-Test/service/request/index.js");
 
 
-var _index2 = _interopRequireDefault(__webpack_require__(/*! ./store/index.js */ "../../../../Aproject/github/watch-test/store/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | lib/colorui/components/cu-custom */ "lib/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./lib/colorui/components/cu-custom.vue */ "../../../../Aproject/github/watch-test/lib/colorui/components/cu-custom.vue"));};_vue.default.component('cu-custom', cuCustom); //首页
-var home = function home() {return Promise.all(/*! import() | pages/home/home */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/home/home")]).then(__webpack_require__.bind(null, /*! ./pages/home/home.vue */ "../../../../Aproject/github/watch-test/pages/home/home.vue"));};_vue.default.component('home', home); //运动
-var motion = function motion() {return Promise.all(/*! import() | pages/motion/motion */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/motion/motion")]).then(__webpack_require__.bind(null, /*! ./pages/motion/motion.vue */ "../../../../Aproject/github/watch-test/pages/motion/motion.vue"));};_vue.default.component('motion', motion); //设备（蓝牙）
-var ble = function ble() {return Promise.all(/*! import() | pages/ble/ble */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/ble/ble")]).then(__webpack_require__.bind(null, /*! ./pages/ble/ble.vue */ "../../../../Aproject/github/watch-test/pages/ble/ble.vue"));};_vue.default.component('ble', ble); //目标
-var goal = function goal() {return Promise.all(/*! import() | pages/goal/goal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/goal/goal")]).then(__webpack_require__.bind(null, /*! ./pages/goal/goal.vue */ "../../../../Aproject/github/watch-test/pages/goal/goal.vue"));};_vue.default.component('goal', goal); //我的
-var mine = function mine() {return Promise.all(/*! import() | pages/mine/mine */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/mine/mine")]).then(__webpack_require__.bind(null, /*! ./pages/mine/mine.vue */ "../../../../Aproject/github/watch-test/pages/mine/mine.vue"));};_vue.default.component('mine', mine); //请求拦截
+var _index2 = _interopRequireDefault(__webpack_require__(/*! ./store/index.js */ "../../../../../Amos_project/project/github/Watch-Test/store/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | lib/colorui/components/cu-custom */ "lib/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./lib/colorui/components/cu-custom.vue */ "../../../../../Amos_project/project/github/Watch-Test/lib/colorui/components/cu-custom.vue"));};_vue.default.component('cu-custom', cuCustom); //首页
+var home = function home() {return Promise.all(/*! import() | pages/home/home */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/home/home")]).then(__webpack_require__.bind(null, /*! ./pages/home/home.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/home/home.vue"));};_vue.default.component('home', home); //运动
+var motion = function motion() {return Promise.all(/*! import() | pages/motion/motion */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/motion/motion")]).then(__webpack_require__.bind(null, /*! ./pages/motion/motion.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/motion/motion.vue"));};_vue.default.component('motion', motion); //设备（蓝牙）
+var ble = function ble() {return Promise.all(/*! import() | pages/ble/ble */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/ble/ble")]).then(__webpack_require__.bind(null, /*! ./pages/ble/ble.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/ble/ble.vue"));};_vue.default.component('ble', ble); //目标
+var goal = function goal() {return Promise.all(/*! import() | pages/goal/goal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/goal/goal")]).then(__webpack_require__.bind(null, /*! ./pages/goal/goal.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/goal/goal.vue"));};_vue.default.component('goal', goal); //我的
+var mine = function mine() {return Promise.all(/*! import() | pages/mine/mine */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/mine/mine")]).then(__webpack_require__.bind(null, /*! ./pages/mine/mine.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/mine/mine.vue"));};_vue.default.component('mine', mine); //请求拦截
 _vue.default.prototype.$http = _index.http; //状态管理
 _vue.default.prototype.$store = _index2.default;_vue.default.config.productionTip = false;_App.default.mpType = 'app';var app = new _vue.default(_objectSpread({
   store: _index2.default },
@@ -3586,95 +3586,95 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Findex\"}":
-/*!**********************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Findex"} ***!
-  \**********************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Findex\"}":
+/*!**********************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Findex"} ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index.vue */ "../../../../Aproject/github/watch-test/pages/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Fmine%2Fchildren%2Fforget\"}":
-/*!*****************************************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Fmine%2Fchildren%2Fforget"} ***!
-  \*****************************************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Fmine%2Fchildren%2Fforget\"}":
+/*!*****************************************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Fmine%2Fchildren%2Fforget"} ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _forget = _interopRequireDefault(__webpack_require__(/*! ./pages/mine/children/forget.vue */ "../../../../Aproject/github/watch-test/pages/mine/children/forget.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _forget = _interopRequireDefault(__webpack_require__(/*! ./pages/mine/children/forget.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/mine/children/forget.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_forget.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Fmine%2Fchildren%2Flogin\"}":
-/*!****************************************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Fmine%2Fchildren%2Flogin"} ***!
-  \****************************************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Fmine%2Fchildren%2Flogin\"}":
+/*!****************************************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Fmine%2Fchildren%2Flogin"} ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/mine/children/login.vue */ "../../../../Aproject/github/watch-test/pages/mine/children/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/mine/children/login.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/mine/children/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_login.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Fmine%2Fchildren%2Fregister\"}":
-/*!*******************************************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Fmine%2Fchildren%2Fregister"} ***!
-  \*******************************************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Fmine%2Fchildren%2Fregister\"}":
+/*!*******************************************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Fmine%2Fchildren%2Fregister"} ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/mine/children/register.vue */ "../../../../Aproject/github/watch-test/pages/mine/children/register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/mine/children/register.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/mine/children/register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_register.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/main.js?{\"page\":\"pages%2Fmotion%2Fchildren%2Fmotion_ydData\"}":
-/*!**************************************************************************************************!*\
-  !*** D:/Aproject/github/watch-test/main.js?{"page":"pages%2Fmotion%2Fchildren%2Fmotion_ydData"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/main.js?{\"page\":\"pages%2Fmotion%2Fchildren%2Fmotion_ydData\"}":
+/*!**************************************************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/main.js?{"page":"pages%2Fmotion%2Fchildren%2Fmotion_ydData"} ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../Aproject/github/watch-test/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../Amos_project/project/github/Watch-Test/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _motion_ydData = _interopRequireDefault(__webpack_require__(/*! ./pages/motion/children/motion_ydData.vue */ "../../../../Aproject/github/watch-test/pages/motion/children/motion_ydData.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _motion_ydData = _interopRequireDefault(__webpack_require__(/*! ./pages/motion/children/motion_ydData.vue */ "../../../../../Amos_project/project/github/Watch-Test/pages/motion/children/motion_ydData.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_motion_ydData.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/pages.json":
-/*!************************************************!*\
-  !*** D:/Aproject/github/watch-test/pages.json ***!
-  \************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/pages.json":
+/*!************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/pages.json ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3683,10 +3683,10 @@ createPage(_motion_ydData.default);
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/service/api/home.js":
-/*!*********************************************************!*\
-  !*** D:/Aproject/github/watch-test/service/api/home.js ***!
-  \*********************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/service/api/home.js":
+/*!*********************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/service/api/home.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3694,7 +3694,7 @@ createPage(_motion_ydData.default);
 Object.defineProperty(exports, "__esModule", { value: true });exports.getSwiper = getSwiper;exports.getRing = getRing;
 
 
-var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js"); /**
+var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../../Amos_project/project/github/Watch-Test/service/request/index.js"); /**
                                                          * 首页api
                                                          */ //请求拦截
 /**
@@ -3720,10 +3720,10 @@ function getRing() {
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/service/api/login.js":
-/*!**********************************************************!*\
-  !*** D:/Aproject/github/watch-test/service/api/login.js ***!
-  \**********************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/service/api/login.js":
+/*!**********************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/service/api/login.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3731,7 +3731,7 @@ function getRing() {
 Object.defineProperty(exports, "__esModule", { value: true });exports.getisLogin = getisLogin;exports.getLogin = getLogin;
 
 
-var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js"); /**
+var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../../Amos_project/project/github/Watch-Test/service/request/index.js"); /**
                                                          * 首页api
                                                          */ //请求拦截
 /**
@@ -3761,10 +3761,10 @@ function getLogin() {
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/service/api/motion.js":
-/*!***********************************************************!*\
-  !*** D:/Aproject/github/watch-test/service/api/motion.js ***!
-  \***********************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/service/api/motion.js":
+/*!***********************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/service/api/motion.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3772,7 +3772,7 @@ function getLogin() {
 Object.defineProperty(exports, "__esModule", { value: true });exports.getGoalc = getGoalc;exports.getYdList = getYdList;exports.getJkList = getJkList;
 
 
-var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js"); /**
+var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../../Amos_project/project/github/Watch-Test/service/request/index.js"); /**
                                                          * 运动api
                                                          */ //请求拦截
 /**
@@ -3809,10 +3809,10 @@ function getJkList() {
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/service/api/version.js":
-/*!************************************************************!*\
-  !*** D:/Aproject/github/watch-test/service/api/version.js ***!
-  \************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/service/api/version.js":
+/*!************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/service/api/version.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3820,7 +3820,7 @@ function getJkList() {
 Object.defineProperty(exports, "__esModule", { value: true });exports.getVersion = getVersion;
 
 
-var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js"); /**
+var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../../Amos_project/project/github/Watch-Test/service/request/index.js"); /**
                                                          * 版本api
                                                          */ //请求拦截
 /**
@@ -3835,17 +3835,17 @@ var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../..
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/service/request/index.js":
-/*!**************************************************************!*\
-  !*** D:/Aproject/github/watch-test/service/request/index.js ***!
-  \**************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/service/request/index.js":
+/*!**************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/service/request/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.http = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ../../store/index.js */ "../../../../Aproject/github/watch-test/store/index.js"));
-var _request = _interopRequireDefault(__webpack_require__(/*! ./request.js */ "../../../../Aproject/github/watch-test/service/request/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //状态管理
+var _index = _interopRequireDefault(__webpack_require__(/*! ../../store/index.js */ "../../../../../Amos_project/project/github/Watch-Test/store/index.js"));
+var _request = _interopRequireDefault(__webpack_require__(/*! ./request.js */ "../../../../../Amos_project/project/github/Watch-Test/service/request/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //状态管理
 var http = new _request.default();exports.http = http;
 http.setConfig(function (config) {/* 设置全局配置 */
   config.baseUrl = 'https://www.easy-mock.com/mock/5d1443deed2ae904ba2cdd78/mock/'; //默认请求地址
@@ -3883,10 +3883,10 @@ http.interceptor.response(function (response) {/* 请求之后拦截器 */
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/service/request/request.js":
-/*!****************************************************************!*\
-  !*** D:/Aproject/github/watch-test/service/request/request.js ***!
-  \****************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/service/request/request.js":
+/*!****************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/service/request/request.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3996,10 +3996,10 @@ Request = /*#__PURE__*/function () {function Request() {_classCallCheck(this, Re
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/store/index.js":
-/*!****************************************************!*\
-  !*** D:/Aproject/github/watch-test/store/index.js ***!
-  \****************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/store/index.js":
+/*!****************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/store/index.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4008,26 +4008,70 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js"));
 
 
-var _loginModule = _interopRequireDefault(__webpack_require__(/*! ./module/login/loginModule.js */ "../../../../Aproject/github/watch-test/store/module/login/loginModule.js"));
+var _LoginModule = _interopRequireDefault(__webpack_require__(/*! ./module/Login/LoginModule.js */ "../../../../../Amos_project/project/github/Watch-Test/store/module/Login/LoginModule.js"));
 
-var _homeModule = _interopRequireDefault(__webpack_require__(/*! ./module/home/homeModule.js */ "../../../../Aproject/github/watch-test/store/module/home/homeModule.js"));
-var _motionModule = _interopRequireDefault(__webpack_require__(/*! ./module/motion/motionModule.js */ "../../../../Aproject/github/watch-test/store/module/motion/motionModule.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //modules
+var _homeModule = _interopRequireDefault(__webpack_require__(/*! ./module/home/homeModule.js */ "../../../../../Amos_project/project/github/Watch-Test/store/module/home/homeModule.js"));
+var _motionModule = _interopRequireDefault(__webpack_require__(/*! ./module/motion/motionModule.js */ "../../../../../Amos_project/project/github/Watch-Test/store/module/motion/motionModule.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //modules
 //登陆
 //首页
 //运动
 _vue.default.use(_vuex.default);var _default = new _vuex.default.Store({
   state: {},
   modules: {
-    login: _loginModule.default,
+    login: _LoginModule.default,
     home: _homeModule.default,
     motion: _motionModule.default } });exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/store/module/home/homeModule.js":
-/*!*********************************************************************!*\
-  !*** D:/Aproject/github/watch-test/store/module/home/homeModule.js ***!
-  \*********************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/store/module/Login/LoginModule.js":
+/*!***********************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/store/module/Login/LoginModule.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //Login数据
+var state = {
+  userData: '' //用户信息
+};
+var mutations = {
+  set_UserData: function set_UserData(state, UserData) {
+    //赋值用户信息
+    state.userData = UserData;
+  } };
+
+
+
+
+var actions = {
+  setUserData: function setUserData(_ref, UserData) {var commit = _ref.commit;
+    //赋值用户信息
+    commit("set_UserData", UserData);
+  } };
+
+var getters = {
+  getUserData: function getUserData(state) {
+    //获取用户信息
+    return state.userData;
+  } };
+
+
+
+//暴露出去
+var _default = {
+  state: state,
+  mutations: mutations,
+  actions: actions,
+  getters: getters };exports.default = _default;
+
+/***/ }),
+
+/***/ "../../../../../Amos_project/project/github/Watch-Test/store/module/home/homeModule.js":
+/*!*********************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/store/module/home/homeModule.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4080,54 +4124,10 @@ var _default = {
 
 /***/ }),
 
-/***/ "../../../../Aproject/github/watch-test/store/module/login/loginModule.js":
-/*!***********************************************************************!*\
-  !*** D:/Aproject/github/watch-test/store/module/login/loginModule.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //Login数据
-var state = {
-  userData: '' //用户信息
-};
-var mutations = {
-  set_UserData: function set_UserData(state, UserData) {
-    //赋值用户信息
-    state.userData = UserData;
-  } };
-
-
-
-
-var actions = {
-  setUserData: function setUserData(_ref, UserData) {var commit = _ref.commit;
-    //赋值用户信息
-    commit("set_UserData", UserData);
-  } };
-
-var getters = {
-  getUserData: function getUserData(state) {
-    //获取用户信息
-    return state.userData;
-  } };
-
-
-
-//暴露出去
-var _default = {
-  state: state,
-  mutations: mutations,
-  actions: actions,
-  getters: getters };exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../../Aproject/github/watch-test/store/module/motion/motionModule.js":
-/*!*************************************************************************!*\
-  !*** D:/Aproject/github/watch-test/store/module/motion/motionModule.js ***!
-  \*************************************************************************/
+/***/ "../../../../../Amos_project/project/github/Watch-Test/store/module/motion/motionModule.js":
+/*!*************************************************************************************!*\
+  !*** E:/Amos_project/project/github/Watch-Test/store/module/motion/motionModule.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
