@@ -30,7 +30,7 @@
 			<button 
 				class="dlbutton buttonBorder" 
 				@tap="startLogin()"
-			>登 陆</button>
+			>登 录</button>
 			<!-- 底部信息 -->
 			<view class="footer">
 				<navigator url="forget" open-type="navigate">找回密码</navigator>
@@ -46,7 +46,7 @@
 	var _this;
 	import {
 		getLogin,
-	} from '../../../service/api/login.js' //登陆api
+	} from '../../../service/api/login.js' //登录api
 	
 	export default {
 		data() {
@@ -63,11 +63,11 @@
 		},
 		methods: {
 			isLogin(){
-				//判断缓存中是否登陆过，直接登陆
+				//判断缓存中是否登录过，直接登录
 				try {
 					const value = uni.getStorageSync('setUserData');
 					if (value) {
-						//有登陆信息
+						//有登录信息
 						console.log("已登录用户：",value);
 						_this.$store.dispatch("setUserData",value); //存入状态
 						uni.reLaunch({
@@ -79,7 +79,7 @@
 				}
 			},
 		    startLogin(){
-				//登陆
+				//登录
 				if (this.phoneData.length == "") {
 				     uni.showToast({
 				        icon: 'none',
@@ -97,12 +97,12 @@
 		            return;
 		        }
 				uni.showLoading({
-					title: '登陆中'
+					title: '登录中'
 				});
 				getLogin()
 				.then(res => {
 					//console.log(res)
-					//简单验证下登陆（不安全）
+					//简单验证下登录（不安全）
 					if(_this.phoneData==res.data.username && _this.passData==res.data.password){
 						let userdata={
 							"username":res.data.username,
@@ -118,7 +118,7 @@
 						uni.showToast({
 							icon: 'success',
 							position: 'bottom',
-							title: '登陆成功'
+							title: '登录成功'
 						});
 						uni.reLaunch({
 							url: '../../../pages/index',
