@@ -164,6 +164,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 var _this, countDown;var _default =
 
@@ -177,8 +185,10 @@ var _this, countDown;var _default =
       showPassword: false, //密码是否显示
       second: 0, //倒计时
       verCode: "", //验证码
-      showAgree: true //协议是否选择
+      showAgree: true, //协议是否选择
+      isRotate: false //是否加载旋转
     };
+
   },
   mounted: function mounted() {
     _this = this;
@@ -213,10 +223,14 @@ var _this, countDown;var _default =
           clearInterval(countDown);
         }
       }, 1000);
-      console.log("获取验证码", " at pages\\mine\\children\\register.vue:116");
+      console.log("获取验证码", " at pages\\mine\\children\\register.vue:126");
     },
     startReg: function startReg() {
       //注册
+      if (this.isRotate) {
+        //判断是否加载中，避免重复点击请求
+        return false;
+      }
       if (this.showAgree == false) {
         uni.showToast({
           icon: 'none',
@@ -249,7 +263,11 @@ var _this, countDown;var _default =
 
         return false;
       }
-      console.log("注册成功", " at pages\\mine\\children\\register.vue:152");
+      console.log("注册成功", " at pages\\mine\\children\\register.vue:166");
+      _this.isRotate = true;
+      setTimeout(function () {
+        _this.isRotate = false;
+      }, 3000);
     } },
 
   computed: {

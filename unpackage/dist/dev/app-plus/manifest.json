@@ -7,8 +7,8 @@
   "id": "__UNI__98CA8AF",
   "name": "运动手表演示",
   "version": {
-    "name": "1.0.3",
-    "code": 103
+    "name": "1.0.4",
+    "code": 104
   },
   "description": "",
   "launch_path": "__uniappview.html",
@@ -31,7 +31,7 @@
     "splashscreen": {
       "target": "id:1",
       "autoclose": true,
-      "waiting": false,
+      "waiting": true,
       "delay": 0
     },
     "popGesture": "close",

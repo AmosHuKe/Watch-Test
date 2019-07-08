@@ -153,6 +153,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 var _this, countDown;var _default =
 
@@ -163,7 +170,8 @@ var _this, countDown;var _default =
       passData: "", //密码
       showPassword: false, //密码是否显示
       second: 0, //倒计时
-      verCode: "" //验证码
+      verCode: "", //验证码
+      isRotate: false //是否加载旋转
     };
   },
   mounted: function mounted() {
@@ -195,10 +203,14 @@ var _this, countDown;var _default =
           clearInterval(countDown);
         }
       }, 1000);
-      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:98");
+      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:106");
     },
     startRePass: function startRePass() {
       //重置密码
+      if (this.isRotate) {
+        //判断是否加载中，避免重复点击请求
+        return false;
+      }
       if (this.phoneData.length != 11) {
         uni.showToast({
           icon: 'none',
@@ -223,7 +235,12 @@ var _this, countDown;var _default =
 
         return false;
       }
-      console.log("重置密码成功", " at pages\\mine\\children\\forget.vue:126");
+
+      console.log("重置密码成功", " at pages\\mine\\children\\forget.vue:139");
+      _this.isRotate = true;
+      setTimeout(function () {
+        _this.isRotate = false;
+      }, 3000);
 
 
     } },

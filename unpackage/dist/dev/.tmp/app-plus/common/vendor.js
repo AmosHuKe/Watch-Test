@@ -4008,7 +4008,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js"));
 
 
-var _loginModule = _interopRequireDefault(__webpack_require__(/*! ./module/login/loginModule.js */ "../../../../Aproject/github/watch-test/store/module/login/loginModule.js"));
+var _LoginModule = _interopRequireDefault(__webpack_require__(/*! ./module/Login/LoginModule.js */ "../../../../Aproject/github/watch-test/store/module/Login/LoginModule.js"));
 
 var _homeModule = _interopRequireDefault(__webpack_require__(/*! ./module/home/homeModule.js */ "../../../../Aproject/github/watch-test/store/module/home/homeModule.js"));
 var _motionModule = _interopRequireDefault(__webpack_require__(/*! ./module/motion/motionModule.js */ "../../../../Aproject/github/watch-test/store/module/motion/motionModule.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //modules
@@ -4018,9 +4018,53 @@ var _motionModule = _interopRequireDefault(__webpack_require__(/*! ./module/moti
 _vue.default.use(_vuex.default);var _default = new _vuex.default.Store({
   state: {},
   modules: {
-    login: _loginModule.default,
+    login: _LoginModule.default,
     home: _homeModule.default,
     motion: _motionModule.default } });exports.default = _default;
+
+/***/ }),
+
+/***/ "../../../../Aproject/github/watch-test/store/module/Login/LoginModule.js":
+/*!***********************************************************************!*\
+  !*** D:/Aproject/github/watch-test/store/module/Login/LoginModule.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //Login数据
+var state = {
+  userData: '' //用户信息
+};
+var mutations = {
+  set_UserData: function set_UserData(state, UserData) {
+    //赋值用户信息
+    state.userData = UserData;
+  } };
+
+
+
+
+var actions = {
+  setUserData: function setUserData(_ref, UserData) {var commit = _ref.commit;
+    //赋值用户信息
+    commit("set_UserData", UserData);
+  } };
+
+var getters = {
+  getUserData: function getUserData(state) {
+    //获取用户信息
+    return state.userData;
+  } };
+
+
+
+//暴露出去
+var _default = {
+  state: state,
+  mutations: mutations,
+  actions: actions,
+  getters: getters };exports.default = _default;
 
 /***/ }),
 
@@ -4067,50 +4111,6 @@ var getters = {
   getRingData: function getRingData(state) {
     //获取
     return state.ringData;
-  } };
-
-
-
-//暴露出去
-var _default = {
-  state: state,
-  mutations: mutations,
-  actions: actions,
-  getters: getters };exports.default = _default;
-
-/***/ }),
-
-/***/ "../../../../Aproject/github/watch-test/store/module/login/loginModule.js":
-/*!***********************************************************************!*\
-  !*** D:/Aproject/github/watch-test/store/module/login/loginModule.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //Login数据
-var state = {
-  userData: '' //用户信息
-};
-var mutations = {
-  set_UserData: function set_UserData(state, UserData) {
-    //赋值用户信息
-    state.userData = UserData;
-  } };
-
-
-
-
-var actions = {
-  setUserData: function setUserData(_ref, UserData) {var commit = _ref.commit;
-    //赋值用户信息
-    commit("set_UserData", UserData);
-  } };
-
-var getters = {
-  getUserData: function getUserData(state) {
-    //获取用户信息
-    return state.userData;
   } };
 
 

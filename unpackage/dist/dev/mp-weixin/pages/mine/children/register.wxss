@@ -122,6 +122,25 @@
 	margin-right: auto;
 	margin-top: 96rpx;
 }
+.dlbutton_loading {
+	color: #FFFFFF;
+	font-size: 30rpx;
+	width:100rpx;
+	height:100rpx;
+	background:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.6)));
+	background:-webkit-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+	background:-o-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+	background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+	-webkit-box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.4);
+	        box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.4);
+	-webkit-border-radius:2.5rem;
+	        border-radius:2.5rem;
+	line-height: 100rpx;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 96rpx;
+}
 
 /* 底部 */
 .footer{
@@ -186,5 +205,21 @@
     -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
     -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
     transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+}
+
+/* 旋转动画 */
+.rotate_loop{
+ -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 1s linear infinite;
+    animation: rotate 1s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+to{-webkit-transform: rotate(360deg)}
+}
+@keyframes rotate{from{-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+to{-webkit-transform: rotate(359deg);transform: rotate(359deg)}
 }
 

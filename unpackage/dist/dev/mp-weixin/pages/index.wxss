@@ -1,13 +1,13 @@
-.mainIndex.data-v-44e411c7 {
+.mainIndex.data-v-2358f62b {
   padding-bottom: 128rpx;
 }
-.text-black.data-v-44e411c7 {
+.text-black.data-v-2358f62b {
   color: rgba(35, 35, 35, 0.9) !important;
 }
-.bg-black.data-v-44e411c7 {
+.bg-black.data-v-2358f62b {
   background: rgba(35, 35, 35, 0.9) !important;
 }
-.cu-bar.tabbar.shadow.data-v-44e411c7 {
+.cu-bar.tabbar.shadow.data-v-2358f62b {
   -webkit-box-shadow: 0 0.5px 36px 0 rgba(43, 86, 112, 0.2) !important;
   box-shadow: 0 0.5px 36px 0 rgba(43, 86, 112, 0.2) !important;
 }
