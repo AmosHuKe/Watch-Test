@@ -88,6 +88,12 @@
 			},
 		    startLogin(){
 				//登录
+				
+				if(this.isRotate){
+					//判断是否加载中，避免重复点击请求
+					return false;
+				}
+				
 				if (this.phoneData.length == "") {
 				     uni.showToast({
 				        icon: 'none',
@@ -104,50 +110,54 @@
 		            });
 		            return;
 		        }
-				uni.showLoading({
-					title: '登录中'
-				});
+				// uni.showLoading({
+				// 	tittle: '登录中'
+				// });
 				_this.isRotate=true
 				
-				getLogin()
-				.then(res => {
-					//console.log(res)
-					//简单验证下登录（不安全）
-					if(_this.phoneData==res.data.username && _this.passData==res.data.password){
-						let userdata={
-							"username":res.data.username,
-							"nickname":res.data.nickname,
-							"accesstoken":res.data.accesstoken,
-						} //保存用户信息和accesstoken
-						_this.$store.dispatch("setUserData",userdata); //存入状态
-						try {
-							uni.setStorageSync('setUserData', userdata); //存入缓存
-						} catch (e) {
-							// error
+				//这里加了个延时，主要是为了让登陆动画完整显示出来， 不需要可以删除
+				setTimeout(function(){
+					getLogin()
+					.then(res => {
+						//console.log(res)
+						//简单验证下登录（不安全）
+						if(_this.phoneData==res.data.username && _this.passData==res.data.password){
+							let userdata={
+								"username":res.data.username,
+								"nickname":res.data.nickname,
+								"accesstoken":res.data.accesstoken,
+							} //保存用户信息和accesstoken
+							_this.$store.dispatch("setUserData",userdata); //存入状态
+							try {
+								uni.setStorageSync('setUserData', userdata); //存入缓存
+							} catch (e) {
+								// error
+							}
+							_this.isRotate=false
+							uni.showToast({
+								icon: 'success',
+								position: 'bottom',
+								title: '登录成功'
+							});
+							uni.reLaunch({
+								url: '../../../pages/index',
+							});
+						}else{
+							_this.isRotate=false
+							_this.passData=""
+							uni.showToast({
+								icon: 'error',
+								position: 'bottom',
+								title: '账号或密码错误，账号admin密码admin'
+							});
 						}
+						uni.hideLoading();
+					}).catch(err => {
 						_this.isRotate=false
-						uni.showToast({
-							icon: 'success',
-							position: 'bottom',
-							title: '登录成功'
-						});
-						uni.reLaunch({
-							url: '../../../pages/index',
-						});
-					}else{
-						_this.isRotate=false
-						_this.passData=""
-						uni.showToast({
-							icon: 'error',
-							position: 'bottom',
-							title: '账号或密码错误，账号admin密码admin'
-						});
-					}
-					uni.hideLoading();
-				}).catch(err => {
-					_this.isRotate=false
-					uni.hideLoading();
-				})
+						uni.hideLoading();
+					})
+				},2000)
+				
 				
 		    }
 		}
