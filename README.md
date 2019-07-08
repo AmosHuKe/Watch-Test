@@ -74,6 +74,7 @@
 ├── appstatic    //APP静态文件（Icon，启动图...）
 ├── unpackage    //打包后文件（dist）  
 ├── demo    //演示预览文件  
+│   └── amos-login    //登录模板(http://ext.dcloud.net.cn/plugin?id=538)
 
 ```
 

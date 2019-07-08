@@ -1,0 +1,21 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页,
+        {
+            "path": "pages/login/login",
+            "style": {}
+        }, {
+            "path": "pages/login/forget",
+            "style": {}
+        }, {
+            "path": "pages/login/register",
+            "style": {}
+        } 
+    ],
+    "globalStyle": {
+    	"navigationBarTextStyle": "black",
+    	"navigationBarTitleText": "登陆模板",
+    	"navigationBarBackgroundColor": "#F8F8F8",
+    	"backgroundColor": "#F8F8F8",
+    	"navigationStyle": "custom"
+    }
+}
