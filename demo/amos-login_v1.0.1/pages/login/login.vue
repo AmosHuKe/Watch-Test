@@ -82,6 +82,10 @@
 			},
 		    startLogin(){
 				//登录
+				if(this.isRotate){
+					//判断是否加载中，避免重复点击请求
+					return false;
+				}
 				if (this.phoneData.length == "") {
 				     uni.showToast({
 				        icon: 'none',
