@@ -50,7 +50,15 @@
 				</view>
 				
 			</view>
-			<button class="dlbutton buttonBorder" @tap="startReg()">注 册</button>
+			<button 
+				:class="['buttonBorder',!isRotate?'dlbutton':'dlbutton_loading']" 
+				@tap="startReg()"
+			>
+				<view :class="isRotate?'rotate_loop':''">
+					<text v-if="isRotate" class="cuIcon-loading1 "></text>
+					<text v-if="!isRotate">注 册</text>
+				</view>
+			</button>
 			<!-- 底部信息 -->
 			<view class="footer">
 				<text 
@@ -78,6 +86,8 @@
 				second: 0, //倒计时
 				verCode:"", //验证码
 				showAgree:true, //协议是否选择
+				isRotate: false, //是否加载旋转
+				
 			}
 		},
 		mounted() {
@@ -150,6 +160,10 @@
 				    return false;
 				}
 				console.log("注册成功")
+				_this.isRotate=true
+				setTimeout(function(){
+					_this.isRotate=false
+				},3000)
 		    }
 		},
 		computed:{

@@ -46,8 +46,15 @@
 					>{{ getVerCodeSecond }}</view>
 				</view>
 			</view>
-			
-			<button class="dlbutton buttonBorder" @tap="startRePass()">重置密码</button>
+			<button 
+				:class="['buttonBorder',!isRotate?'dlbutton':'dlbutton_loading']" 
+				@tap="startRePass()"
+			>
+				<view :class="isRotate?'rotate_loop':''">
+					<text v-if="isRotate" class="cuIcon-loading1 "></text>
+					<text v-if="!isRotate">重置密码</text>
+				</view>
+			</button>
 
 		</view>
 	</view>
@@ -64,6 +71,7 @@
 				showPassword:false, //密码是否显示
 				second: 0, //倒计时
 				verCode:"", //验证码
+				isRotate: false, //是否加载旋转
 			}
 		},
 		mounted() {
@@ -123,7 +131,12 @@
 				    });
 				    return false;
 				}
+				
 				console.log("重置密码成功")
+				_this.isRotate=true
+				setTimeout(function(){
+					_this.isRotate=false
+				},3000)
 				
 				
 			}
