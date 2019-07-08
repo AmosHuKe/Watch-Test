@@ -1248,7 +1248,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__e'])
-Z([3,'logo flexlogo data-v-15fd0b2c'])
+Z([3,'logo flexlogo data-v-7d4ce10c'])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goLogin']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([[2,'?:'],[[2,'!'],[[7],[3,'login']]],[1,'logo-hover'],[1,'']])
 Z([[2,'!'],[[7],[3,'login']]])
@@ -2876,6 +2876,13 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
 "use strict";
 
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/mine/mine"], {
+  "0b3c": function b3c(A, n, r) {
+    "use strict";
+
+    var t = r("51e2"),
+        e = r.n(t);
+    e.a;
+  },
   "0b4a": function b4a(A, n, r) {
     "use strict";
 
@@ -3006,35 +3013,8 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
       n.default = a;
     }).call(this, r("6e42")["default"]);
   },
-  "261e": function e(A, n, r) {
-    "use strict";
-
-    var t = r("e934"),
-        e = r.n(t);
-    e.a;
-  },
-  "6cbb": function cbb(A, n, r) {
-    "use strict";
-
-    r.r(n);
-    var t = r("f43f"),
-        e = r("0b4a");
-
-    for (var a in e) {
-      "default" !== a && function (A) {
-        r.d(n, A, function () {
-          return e[A];
-        });
-      }(a);
-    }
-
-    r("261e");
-    var d = r("2877"),
-        i = Object(d["a"])(e["default"], t["a"], t["b"], !1, null, "15fd0b2c", null);
-    n["default"] = i.exports;
-  },
-  e934: function e934(A, n, r) {},
-  f43f: function f43f(A, n, r) {
+  "51e2": function e2(A, n, r) {},
+  "6b33": function b33(A, n, r) {
     "use strict";
 
     var t = function t() {
@@ -3049,6 +3029,26 @@ define('pages/mine/mine.js',function(require, module, exports, window, document,
     }), r.d(n, "b", function () {
       return e;
     });
+  },
+  "6cbb": function cbb(A, n, r) {
+    "use strict";
+
+    r.r(n);
+    var t = r("6b33"),
+        e = r("0b4a");
+
+    for (var a in e) {
+      "default" !== a && function (A) {
+        r.d(n, A, function () {
+          return e[A];
+        });
+      }(a);
+    }
+
+    r("0b3c");
+    var d = r("2877"),
+        i = Object(d["a"])(e["default"], t["a"], t["b"], !1, null, "7d4ce10c", null);
+    n["default"] = i.exports;
   }
 }]);
 ;
