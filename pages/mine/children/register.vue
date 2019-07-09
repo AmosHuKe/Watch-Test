@@ -66,7 +66,7 @@
 					:class="showAgree?'cuIcon-radiobox':'cuIcon-round'"
 				>同意</text>
 				<!-- 协议地址 -->
-				<navigator url="" open-type="navigate">《软件用户协议》</navigator>
+				<navigator url="" open-type="navigate">《协议》</navigator>
 			</view>
 		</view>
 	</view>
