@@ -37,6 +37,18 @@
 				</view>
 			</button>
 			
+			<!-- 其他登录 -->
+			<view class="other_login">
+				<view class="login_icon">
+					<view class="cuIcon-weixin" @tap="login_weixin"></view>
+				</view>
+				<view class="login_icon">
+					<view class="cuIcon-weibo" @tap="login_weibo"></view>
+				</view>
+				<view class="login_icon">
+					<view class="cuIcon-github" @tap="login_github"></view>
+				</view>
+			</view>
 			<!-- 底部信息 -->
 			<view class="footer">
 				<navigator url="forget" open-type="navigate">找回密码</navigator>
@@ -52,6 +64,7 @@
 	var _this;
 	import {
 		getLogin,
+		wexinLogin,
 	} from '../../../service/api/login.js' //登录api
 	
 	export default {
@@ -115,7 +128,7 @@
 				// });
 				_this.isRotate=true
 				
-				//这里加了个延时，主要是为了让登陆动画完整显示出来， 不需要可以删除
+				//这里加了个延时，主要是为了让登录动画完整显示出来， 不需要可以删除
 				setTimeout(function(){
 					getLogin()
 					.then(res => {
@@ -159,7 +172,65 @@
 				},2000)
 				
 				
-		    }
+		    },
+			login_weixin() {
+				//微信登录（没有服务器 测试不了，就做到这一步没了哈哈哈哈）
+				// #ifdef MP-WEIXIN
+				
+				const appid=''; //小程序id
+				const secret=''; //小程序 appSecret
+				
+				let jscode=''; //登录时获取的 code
+				wx.login({
+					success (res) {
+						if (res.code) {
+							console.log(res.code);
+							jscode = res.code;
+							//微信登录
+							wexinLogin(appid,secret,jscode)
+							.then(res => {
+								console.log(res)
+							}).catch(err => {
+								console.log(err)
+								uni.showToast({
+									icon: 'none',
+									position: 'bottom',
+									title: '做了一点，没服务器测试不了...'+err.errMsg
+								});
+							})
+							
+						} else {
+						  console.log('登录失败！' + res.errMsg)
+						}
+					}
+				})
+				
+				// #endif
+				// #ifndef MP-WEIXIN
+					uni.showToast({
+						icon: 'none',
+						position: 'bottom',
+						title: '...'
+					});
+				// #endif
+			},
+			login_weibo() {
+				//微博登录
+				uni.showToast({
+					icon: 'none',
+					position: 'bottom',
+					title: '...'
+				});
+			},
+			login_github() {
+				//github登录
+				uni.showToast({
+					icon: 'none',
+					position: 'bottom',
+					title: '...'
+				});
+			}
+			
 		}
 	}
 </script>

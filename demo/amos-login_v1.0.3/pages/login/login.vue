@@ -36,6 +36,20 @@
 					<text v-if="!isRotate">登 录</text>
 				</view>
 			</button>
+			
+			<!-- 其他登录 -->
+			<view class="other_login">
+				<view class="login_icon">
+					<view class="cuIcon-weixin" @tap="login_weixin"></view>
+				</view>
+				<view class="login_icon">
+					<view class="cuIcon-weibo" @tap="login_weibo"></view>
+				</view>
+				<view class="login_icon">
+					<view class="cuIcon-github" @tap="login_github"></view>
+				</view>
+			</view>
+			
 			<!-- 底部信息 -->
 			<view class="footer">
 				<navigator url="forget" open-type="navigate">找回密码</navigator>
@@ -150,6 +164,31 @@
 				// })
 				
 		    }
+			,
+			login_weixin() {
+				//微信登录
+				uni.showToast({
+					icon: 'none',
+					position: 'bottom',
+					title: '...'
+				});
+			},
+			login_weibo() {
+				//微博登录
+				uni.showToast({
+					icon: 'none',
+					position: 'bottom',
+					title: '...'
+				});
+			},
+			login_github() {
+				//github登录
+				uni.showToast({
+					icon: 'none',
+					position: 'bottom',
+					title: '...'
+				});
+			}
 		}
 	}
 </script>

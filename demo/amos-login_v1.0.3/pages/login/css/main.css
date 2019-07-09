@@ -97,6 +97,31 @@
 	margin-top: 96upx;
 }
 
+/* 其他登录方式 */
+.other_login{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 256upx;
+	text-align: center;
+}
+.login_icon{
+	border: none;
+	font-size: 64upx;
+	margin: 0 64upx 0 64upx;
+	color: rgba(0,0,0,0.7)
+}
+.wechat_color{
+	color: #83DC42;
+}
+.weibo_color{
+	color: #F9221D;
+}
+.github_color{
+	color: #24292E;
+}
+
 /* 底部 */
 .footer{
 	display: flex;

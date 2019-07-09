@@ -63,7 +63,7 @@
 					_this.isTop=false
 				}
 				
-				//如果上一次切换的菜单是蓝牙，但是本次不是切换不是蓝牙，就关闭蓝牙搜索
+				//如果上一次切换的菜单是蓝牙，但是本次切换不是蓝牙，就关闭蓝牙搜索
 				if(newVal!="ble" && _this.toPageCur=="ble"){
 					uni.stopBluetoothDevicesDiscovery({
 					  success(res) {
