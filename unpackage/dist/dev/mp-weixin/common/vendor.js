@@ -3728,14 +3728,14 @@ function getRing() {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getisLogin = getisLogin;exports.getLogin = getLogin;
+Object.defineProperty(exports, "__esModule", { value: true });exports.getisLogin = getisLogin;exports.getLogin = getLogin;exports.wexinLogin = wexinLogin;
 
 
 var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js"); /**
                                                          * 首页api
                                                          */ //请求拦截
 /**
- * 检测登陆状态 只是通过请求触发过滤器，用以判断是否登陆 否则跳转到登陆
+ * 检测登录状态 只是通过请求触发过滤器，用以判断是否登录 否则跳转到登录
  * @returns {Promise}
  */function getisLogin() {
   var datas = {};
@@ -3745,17 +3745,41 @@ var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../..
 }
 
 /**
-   * 登陆
+   * 登录
    * @returns {Promise}
    */
 function getLogin() {
   var datas = {};
   var config = {
     header: {
-      "isLogin": true //不用检测是否需要登陆权限
+      "isLogin": true //不用检测是否需要登录权限
     } };
 
   var e = _index.http.post("login", datas, config);
+  return e;
+}
+
+/**
+   * 微信登录
+   * @param appid 小程序id
+   * @param secret 小程序 appSecret
+   * @param jscode 登录时获取的 code
+   * 
+   */
+function wexinLogin(appid, secret, jscode) {
+  var datas = {
+    "appid": appid, //小程序id
+    "secret": secret, //小程序 appSecret
+    "js_code": jscode, //登录时获取的 code
+    "grant_type": "authorization_code" //授权类型，此处只需填写 authorization_code
+  };
+  var config = {
+    header: {
+      "isLogin": true, //不用检测是否需要登录权限
+      "service": "weixin" //微信请求地址
+    } };
+
+  var e = _index.http.get("jscode2session", datas, config);
   return e;
 }
 
@@ -3859,18 +3883,24 @@ http.interceptor.request(function (config, cancel) {/* 请求之前拦截器 */
     icon: "loading" });
   //加载中动画
   console.log("用户数据", _index.default.getters.getUserData);
-  //是否需要登陆权限，是否登陆  否则跳转到登陆
+  //是否需要登录权限，是否登录  否则跳转到登录
   if (!config.header.isLogin && _index.default.getters.getUserData == "") {
     uni.reLaunch({
       url: './mine/children/login' });
 
     return false;
   }
+  if (config.header.service == "weixin") {
+    //更换微信请求地址
+    console.log("更换微信请求地址");
+    config.url = 'https://api.weixin.qq.com/sns/'; //微信请求地址
+  }
   /*
     if (!token) { // 如果token不存在，调用cancel 会取消本次请求，但是该函数的catch() 仍会执行
     	cancel('token 不存在') // 接收一个参数，会传给catch((err) => {}) err.errMsg === 'token 不存在'
     }
     */
+  console.log(config);
   console.log("请求前拦截");
   return config;
 });
@@ -4688,7 +4718,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -10864,7 +10894,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -10885,14 +10915,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -10961,7 +10991,7 @@ var patch = function(oldVnode, vnode) {
         });
         var diffData = diff(data, mpData);
         if (Object.keys(diffData).length) {
-            if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+            if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
                 console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
                     ']差量更新',
                     JSON.stringify(diffData));
