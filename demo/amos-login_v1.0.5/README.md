@@ -1,7 +1,7 @@
-# 登录模板说明  
+﻿# 登录模板说明  
 > 极简的登录模板，包含登录，注册，找回密码三个页面。  
 > 这里也写了个简单的项目运用了Vuex进行管理，可供学习使用。  
-> [喜欢可以star下，Github地址](https://github.com/AmosHuKe/Watch-Test)  
+> [喜欢可以star下，点击查看Github](https://github.com/AmosHuKe/Watch-Test)    
 
 ```
 登录目录
