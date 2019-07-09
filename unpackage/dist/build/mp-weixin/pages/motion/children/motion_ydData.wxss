@@ -1,36 +1,61 @@
-
-.shadow.data-v-2707af64{
-	-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
-	box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;
+/* 运动颜色 数据库取出 */
+.yd-red.data-v-4968242b {
+  background: -webkit-linear-gradient(315deg, rgba(240, 116, 106, 0.9), rgba(240, 116, 106, 0.7));
+  background: -o-linear-gradient(315deg, rgba(240, 116, 106, 0.9), rgba(240, 116, 106, 0.7));
+  background: linear-gradient(135deg, rgba(240, 116, 106, 0.9), rgba(240, 116, 106, 0.7));
 }
-.main-data.data-v-2707af64{
-	width: 100%;
-	height: 540rpx;
-	color: #FFFFFF;
+.yd-blue.data-v-4968242b {
+  background: -webkit-linear-gradient(315deg, rgba(90, 126, 215, 0.9), rgba(90, 126, 215, 0.7));
+  background: -o-linear-gradient(315deg, rgba(90, 126, 215, 0.9), rgba(90, 126, 215, 0.7));
+  background: linear-gradient(135deg, rgba(90, 126, 215, 0.9), rgba(90, 126, 215, 0.7));
 }
-.data-title.data-v-2707af64{
-	font-size: 76rpx;
-	font-weight: 900;
-	font-style: italic;
-	margin-top: 180rpx;
+.yd-purple.data-v-4968242b {
+  background: -webkit-linear-gradient(315deg, rgba(120, 80, 191, 0.9), rgba(120, 80, 191, 0.7));
+  background: -o-linear-gradient(315deg, rgba(120, 80, 191, 0.9), rgba(120, 80, 191, 0.7));
+  background: linear-gradient(135deg, rgba(120, 80, 191, 0.9), rgba(120, 80, 191, 0.7));
 }
-.data-d.data-v-2707af64{
-	font-style: italic;
+.yd-black.data-v-4968242b {
+  background: -webkit-linear-gradient(315deg, rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.7));
+  background: -o-linear-gradient(315deg, rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.7));
+  background: linear-gradient(135deg, rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.7));
 }
-.data-content.data-v-2707af64{
-	margin-left: 128rpx;
-	margin-top: 40rpx;
-	font-size: 32rpx;
-	color: rgba(255,255,255,0.7);
+.yd-cyan.data-v-4968242b {
+  background: -webkit-linear-gradient(315deg, rgba(28, 187, 180, 0.9), rgba(28, 187, 180, 0.7));
+  background: -o-linear-gradient(315deg, rgba(28, 187, 180, 0.9), rgba(28, 187, 180, 0.7));
+  background: linear-gradient(135deg, rgba(28, 187, 180, 0.9), rgba(28, 187, 180, 0.7));
 }
-.data-ct.data-v-2707af64{
-	font-size: 24rpx;
+.shadow.data-v-4968242b {
+  -webkit-box-shadow: 0 0 30px 0 rgba(43, 86, 112, 0.1) !important;
+  box-shadow: 0 0 30px 0 rgba(43, 86, 112, 0.1) !important;
 }
-.data-cd.data-v-2707af64{
-	font-weight: 700;
+.main-data.data-v-4968242b {
+  width: 100%;
+  height: 540rpx;
+  color: #FFFFFF;
 }
-.list-data.data-v-2707af64{
-	margin-top: 0rpx;
-	width: 100%;
+.data-title.data-v-4968242b {
+  font-size: 76rpx;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 180rpx;
+}
+.data-d.data-v-4968242b {
+  font-style: italic;
+}
+.data-content.data-v-4968242b {
+  margin-left: 128rpx;
+  margin-top: 40rpx;
+  font-size: 32rpx;
+  color: rgba(255, 255, 255, 0.7);
+}
+.data-ct.data-v-4968242b {
+  font-size: 24rpx;
+}
+.data-cd.data-v-4968242b {
+  font-weight: 700;
+}
+.list-data.data-v-4968242b {
+  margin-top: 0rpx;
+  width: 100%;
 }
 

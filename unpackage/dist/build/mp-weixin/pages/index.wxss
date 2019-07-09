@@ -1,5 +1,14 @@
-
-.mainIndex.data-v-e40b8fa8{
-	padding-bottom:128rpx;
+.mainIndex.data-v-506e6fac {
+  padding-bottom: 128rpx;
+}
+.text-black.data-v-506e6fac {
+  color: rgba(35, 35, 35, 0.9) !important;
+}
+.bg-black.data-v-506e6fac {
+  background: rgba(35, 35, 35, 0.9) !important;
+}
+.cu-bar.tabbar.shadow.data-v-506e6fac {
+  -webkit-box-shadow: 0 0.5px 36px 0 rgba(43, 86, 112, 0.2) !important;
+  box-shadow: 0 0.5px 36px 0 rgba(43, 86, 112, 0.2) !important;
 }
 
