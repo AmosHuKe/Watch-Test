@@ -13,7 +13,7 @@
 	border-radius:50%;
 	background-color: #000000; 
 	margin-top: 128upx;
-	margin-bottom: 48upx;
+	margin-bottom: 72upx;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -30,70 +30,11 @@
 	padding-left: 70upx;
 	padding-right: 70upx;
 }
-.main-list{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 100upx;
-	color: #333333;
-	padding: 32upx;
-	margin-top:48upx ;
-}
-.main-list .img{
-	width: 32upx;
-	height: 32upx;
-	font-size: 32upx;
-}
-.main-list .main-input{
-	flex: 1;
-	text-align: left;
-	font-size: 28upx;
-	line-height: 100upx;
-	padding-right: 10upx;
-	margin-left: 20upx;
-}
-.vercode {
-	color: rgba(0,0,0,0.7);
-	font-size: 24upx;
-	line-height: 100upx;
-}
-.vercode-run {
-	color: rgba(0,0,0,0.4) !important;
-}
 .tips {
 	color: #999999;
 	font-size: 28upx;
 	margin-top: 64upx;
 	margin-left: 48upx;
-}
-.dlbutton {
-	color: #FFFFFF;
-	font-size: 30upx;
-	width:601upx;
-	height:100upx;
-	background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-	box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
-	border-radius:2.5rem;
-	line-height: 100upx;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 96upx;
-}
-.dlbutton_loading {
-	color: #FFFFFF;
-	font-size: 30upx;
-	width:100upx;
-	height:100upx;
-	background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-	box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
-	border-radius:2.5rem;
-	line-height: 100upx;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 96upx;
 }
 
 /* 其他登录方式 */
@@ -138,60 +79,4 @@
 	font-size: 24upx;
 	margin-left: 15upx;
 	margin-right: 15upx;
-}
-
-
-/* 表单/按钮 阴影及圆边 */
-.oBorder{
-    border: none;
-    border-radius: 2.5rem ;
-    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-}
-.oBorder_left{
-    border: none ;
-    border-radius: 2.5rem 0 0 2.5rem ;
-    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-}
-.oBorder_right{
-    border: none ;
-    border-radius: 0 2.5rem  2.5rem 0 ;
-    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-}
-.buttonBorder{
-    border: none ;
-    border-radius: 2.5rem ;
-    -webkit-box-shadow: 0 0 60upx 0 rgba(0,0,0,.2) ;
-    box-shadow: 0 0 60upx 0 rgba(0,0,0,.2) ;
-    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    -moz-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    -ms-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    -o-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
-}
-
-/* 旋转动画 */
-.rotate_loop{
- -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-    -webkit-animation: rotate 1s linear infinite;
-    -moz-animation: rotate 1s linear infinite;
-    -o-animation: rotate 1s linear infinite;
-    animation: rotate 1s linear infinite;
-}
-@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
-    to{-webkit-transform: rotate(360deg)}
-}
-@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
-    to{-moz-transform: rotate(359deg)}
-}
-@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
-    to{-o-transform: rotate(359deg)}
-}
-@keyframes rotate{from{transform: rotate(0deg)}
-    to{transform: rotate(359deg)}
 }

@@ -9,30 +9,32 @@
 			<!-- 主体 -->
 			<view class="main">
 				<view class="tips">忘记了密码？可在此重置新密码。</view>
-				<view class="main-list oBorder">
-					<input 
-						class="main-input" 
-						type="text" 
-						v-model="phoneData" 
-						maxlength="11" 
-						placeholder="请输入手机号" 
-					/>
-				</view>
-				<view class="main-list oBorder">
-					<input 
-						class="main-input" 
-						type="text" 
-						v-model="passData" 
-						maxlength="32" 
-						placeholder="请输入新密码" 
-						:password="!showPassword" 
-					/>
-					<image class="img" 
-						:class="showPassword?'cuIcon-attention':'cuIcon-attentionforbid'" 
-						@tap="isShowPass"
-					></image>
-				</view>
-				<view class="main-list oBorder">
+				<wInput
+					v-model="phoneData"
+					type="text"
+					maxlength="11"
+					placeholder="请输入手机号码"
+				></wInput>
+				<wInput
+					v-model="passData"
+					type="password"
+					maxlength="11"
+					placeholder="请输入新密码"
+					isShowPass
+				></wInput>
+				
+				<wInput
+					v-model="verCode"
+					type="text"
+					maxlength="4"
+					placeholder="验证码"
+					
+					isShowCode
+					ref="runCode"
+					@setCode="getVerCode()"
+				></wInput>
+				
+				<!-- <view class="main-list oBorder">
 					<input 
 						class="main-input" 
 						type="number" 
@@ -44,48 +46,44 @@
 						:class="['vercode',{'vercode-run': second>0}]" 
 						@tap="getVerCode()"
 					>{{ getVerCodeSecond }}</view>
-				</view>
+				</view> -->
 			</view>
-			<button 
-				:class="['buttonBorder',!isRotate?'dlbutton':'dlbutton_loading']" 
-				@tap="startRePass()"
-			>
-				<view :class="isRotate?'rotate_loop':''">
-					<text v-if="isRotate" class="cuIcon-loading1 "></text>
-					<text v-if="!isRotate">重置密码</text>
-				</view>
-			</button>
+			
+			<wButton 
+				text="重置密码"
+				:rotate="isRotate" 
+				@click.native="startRePass()"
+			></wButton>
 
 		</view>
 	</view>
 </template>
 
 <script>
-	var _this,countDown;
-	
+	var _this;
+	import wInput from '../../../components/watch-login/watch-input.vue'; //输入框
+	import wButton from '../../../components/watch-login/watch-button.vue'; //按钮
 	export default {
 		data() {
 			return {
 				phoneData: "", //电话
 				passData: "", //密码
-				showPassword:false, //密码是否显示
-				second: 0, //倒计时
 				verCode:"", //验证码
 				isRotate: false, //是否加载旋转
+				isRunCode: false, //是否开始倒计时
 			}
+		},
+		components:{
+			wInput,
+			wButton
 		},
 		mounted() {
 			_this= this;
-			clearInterval(countDown);//先清理一次循环，避免缓存
 		},
 		methods: {
-			isShowPass() {
-				//是否显示密码
-			    _this.showPassword = !_this.showPassword
-			},
 			getVerCode(){
 				//获取验证码
-				if (_this.phoneData.length != 11) {
+				if (this.phoneData.length != 11) {
 				     uni.showToast({
 				        icon: 'none',
 						position: 'bottom',
@@ -93,17 +91,8 @@
 				    });
 				    return false;
 				}
-				if(_this.second>0){
-					return false;
-				}
-				_this.second = 60;
-				countDown = setInterval(function(){
-					_this.second--;
-					if(_this.second==0){
-						clearInterval(countDown)
-					}
-				},1000)
 				console.log("获取验证码")
+				this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
 			},
 			startRePass() {
 				//重置密码
@@ -142,21 +131,6 @@
 					_this.isRotate=false
 				},3000)
 				
-				
-			}
-		},
-		computed:{
-			getVerCodeSecond(){
-				//验证码倒计时计算
-				if(this.second<=0){
-					return '获取验证码';
-				}else{
-					if(this.second<10){
-						return '0'+this.second;
-					}else{
-						return this.second;
-					}
-				}
 				
 			}
 		},
