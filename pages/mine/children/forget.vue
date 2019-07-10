@@ -33,20 +33,6 @@
 					ref="runCode"
 					@setCode="getVerCode()"
 				></wInput>
-				
-				<!-- <view class="main-list oBorder">
-					<input 
-						class="main-input" 
-						type="number" 
-						v-model="verCode" 
-						maxlength="4" 
-						placeholder="验证码" 
-					/>
-					<view 
-						:class="['vercode',{'vercode-run': second>0}]" 
-						@tap="getVerCode()"
-					>{{ getVerCodeSecond }}</view>
-				</view> -->
 			</view>
 			
 			<wButton 
@@ -70,7 +56,6 @@
 				passData: "", //密码
 				verCode:"", //验证码
 				isRotate: false, //是否加载旋转
-				isRunCode: false, //是否开始倒计时
 			}
 		},
 		components:{
