@@ -276,34 +276,34 @@ var _default = { data: function data() {return { //logo图片 base64
     login_weixin: function login_weixin() {
       //微信登录（没有服务器 测试不了，就做到这一步没了哈哈哈哈）
 
+      uni.showToast({
+        icon: 'none',
+        position: 'bottom',
+        title: '无服务器进行测试...' });
 
-      var appid = ''; //小程序id
-      var secret = ''; //小程序 appSecret
-
-      var jscode = ''; //登录时获取的 code
-      wx.login({
-        success: function success(res) {
-          if (res.code) {
-            console.log(res.code);
-            jscode = res.code;
-            //微信登录
-            (0, _login.wexinLogin)(appid, secret, jscode).
-            then(function (res) {
-              console.log(res);
-            }).catch(function (err) {
-              console.log(err);
-              uni.showToast({
-                icon: 'none',
-                position: 'bottom',
-                title: '做了一点，没服务器测试不了...' + err.errMsg });
-
-            });
-
-          } else {
-            console.log('登录失败！' + res.errMsg);
-          }
-        } });
-
+      // const appid=''; //小程序id
+      // const secret=''; //小程序 appSecret
+      // 
+      // let jscode=''; //登录时获取的 code
+      // wx.login({
+      // 	success (res) {
+      // 		if (res.code) {
+      // 			console.log(res.code);
+      // 			jscode = res.code;
+      // 			//微信登录
+      // 			wexinLogin(appid,secret,jscode)
+      // 			.then(res => {
+      // 				console.log(res)
+      // 			}).catch(err => {
+      // 				console.log(err)
+      // 				
+      // 			})
+      // 			
+      // 		} else {
+      // 		  console.log('登录失败！' + res.errMsg)
+      // 		}
+      // 	}
+      // })
 
 
 
