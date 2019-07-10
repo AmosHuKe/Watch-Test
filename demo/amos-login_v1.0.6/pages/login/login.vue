@@ -20,7 +20,6 @@
 					placeholder="密码"
 				></wInput>
 			</view>
-			
 			<wButton 
 				text="登 录"
 				:rotate="isRotate" 
@@ -28,7 +27,7 @@
 			></wButton>
 			
 			<!-- 其他登录 -->
-			<view class="other_login">
+			<view class="other_login cuIcon">
 				<view class="login_icon">
 					<view class="cuIcon-weixin" @tap="login_weixin"></view>
 				</view>

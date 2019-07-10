@@ -48,6 +48,7 @@
 			<view class="footer">
 				<text 
 					@tap="isShowAgree" 
+					class="cuIcon"
 					:class="showAgree?'cuIcon-radiobox':'cuIcon-round'"
 				>同意</text>
 				<!-- 协议地址 -->

@@ -22,7 +22,7 @@
 	display: inline-block;
 }
 
-[class*="cuIcon-"] {
+.cuIcon {
 	font-family: "cuIcon";
 	font-size: inherit;
 	font-style: normal;

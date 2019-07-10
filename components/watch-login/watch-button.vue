@@ -4,7 +4,7 @@
 		<button :class="['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']">
 			<view :class="_rotate?'rotate_loop':''">
 				<text v-if="_rotate" class="cuIcon-loading1 "></text>
-				<text v-if="!_rotate" v-html="text"></text>
+				<text v-if="!_rotate">{{ text }}</text>
 			</view>
 		</button>
 	</view>

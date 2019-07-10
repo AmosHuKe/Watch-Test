@@ -13,7 +13,7 @@
 		<!-- 是否可见密码 -->
 		<image 
 			v-if="_isShowPass&&type==='password'&&!_isShowCode"
-			class="img" 
+			class="img cuIcon" 
 			:class="showPassword?'cuIcon-attention':'cuIcon-attentionforbid'" 
 			@tap="showPass"
 		></image>
@@ -150,12 +150,12 @@
 		margin-top:24upx;
 		margin-bottom: 24upx;
 	}
-	.main-list .img{
+	.img{
 		width: 32upx;
 		height: 32upx;
 		font-size: 32upx;
 	}
-	.main-list .main-input{
+	.main-input{
 		flex: 1;
 		text-align: left;
 		font-size: 28upx;
