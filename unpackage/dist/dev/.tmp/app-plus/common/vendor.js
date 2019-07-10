@@ -3728,14 +3728,14 @@ function getRing() {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getisLogin = getisLogin;exports.getLogin = getLogin;
+Object.defineProperty(exports, "__esModule", { value: true });exports.getisLogin = getisLogin;exports.getLogin = getLogin;exports.wexinLogin = wexinLogin;
 
 
 var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../../../Aproject/github/watch-test/service/request/index.js"); /**
                                                          * 首页api
                                                          */ //请求拦截
 /**
- * 检测登陆状态 只是通过请求触发过滤器，用以判断是否登陆 否则跳转到登陆
+ * 检测登录状态 只是通过请求触发过滤器，用以判断是否登录 否则跳转到登录
  * @returns {Promise}
  */function getisLogin() {
   var datas = {};
@@ -3745,17 +3745,41 @@ var _index = __webpack_require__(/*! ../../service/request/index.js */ "../../..
 }
 
 /**
-   * 登陆
+   * 登录
    * @returns {Promise}
    */
 function getLogin() {
   var datas = {};
   var config = {
     header: {
-      "isLogin": true //不用检测是否需要登陆权限
+      "isLogin": true //不用检测是否需要登录权限
     } };
 
   var e = _index.http.post("login", datas, config);
+  return e;
+}
+
+/**
+   * 微信登录
+   * @param appid 小程序id
+   * @param secret 小程序 appSecret
+   * @param jscode 登录时获取的 code
+   * 
+   */
+function wexinLogin(appid, secret, jscode) {
+  var datas = {
+    "appid": appid, //小程序id
+    "secret": secret, //小程序 appSecret
+    "js_code": jscode, //登录时获取的 code
+    "grant_type": "authorization_code" //授权类型，此处只需填写 authorization_code
+  };
+  var config = {
+    header: {
+      "isLogin": true, //不用检测是否需要登录权限
+      "service": "weixin" //微信请求地址
+    } };
+
+  var e = _index.http.get("jscode2session", datas, config);
   return e;
 }
 
@@ -3859,24 +3883,30 @@ http.interceptor.request(function (config, cancel) {/* 请求之前拦截器 */
     icon: "loading" });
   //加载中动画
   console.log("用户数据", _index.default.getters.getUserData, " at service\\request\\index.js:16");
-  //是否需要登陆权限，是否登陆  否则跳转到登陆
+  //是否需要登录权限，是否登录  否则跳转到登录
   if (!config.header.isLogin && _index.default.getters.getUserData == "") {
     uni.reLaunch({
       url: './mine/children/login' });
 
     return false;
   }
+  if (config.header.service == "weixin") {
+    //更换微信请求地址
+    console.log("更换微信请求地址", " at service\\request\\index.js:26");
+    config.url = 'https://api.weixin.qq.com/sns/'; //微信请求地址
+  }
   /*
     if (!token) { // 如果token不存在，调用cancel 会取消本次请求，但是该函数的catch() 仍会执行
     	cancel('token 不存在') // 接收一个参数，会传给catch((err) => {}) err.errMsg === 'token 不存在'
     }
     */
-  console.log("请求前拦截", " at service\\request\\index.js:29");
+  console.log(config, " at service\\request\\index.js:34");
+  console.log("请求前拦截", " at service\\request\\index.js:35");
   return config;
 });
 http.interceptor.response(function (response) {/* 请求之后拦截器 */
   uni.hideToast(); //关闭加载动画
-  console.log("请求后拦截", " at service\\request\\index.js:34");
+  console.log("请求后拦截", " at service\\request\\index.js:40");
   return response;
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))

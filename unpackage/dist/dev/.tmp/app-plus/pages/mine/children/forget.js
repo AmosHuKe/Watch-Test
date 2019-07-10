@@ -145,47 +145,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-var _this, countDown;var _default =
+var _this;var wInput = function wInput() {return __webpack_require__.e(/*! import() | components/watch-login/watch-input */ "components/watch-login/watch-input").then(__webpack_require__.bind(null, /*! ../../../components/watch-login/watch-input.vue */ "../../../../Aproject/github/watch-test/components/watch-login/watch-input.vue"));};var wButton = function wButton() {return __webpack_require__.e(/*! import() | components/watch-login/watch-button */ "components/watch-login/watch-button").then(__webpack_require__.bind(null, /*! ../../../components/watch-login/watch-button.vue */ "../../../../Aproject/github/watch-test/components/watch-login/watch-button.vue"));};
 
-{
+//按钮
+var _default = {
   data: function data() {
     return {
       phoneData: "", //电话
       passData: "", //密码
-      showPassword: false, //密码是否显示
-      second: 0, //倒计时
       verCode: "", //验证码
       isRotate: false //是否加载旋转
     };
   },
+  components: {
+    wInput: wInput,
+    wButton: wButton },
+
   mounted: function mounted() {
     _this = this;
-    clearInterval(countDown); //先清理一次循环，避免缓存
   },
   methods: {
-    isShowPass: function isShowPass() {
-      //是否显示密码
-      _this.showPassword = !_this.showPassword;
-    },
     getVerCode: function getVerCode() {
       //获取验证码
-      if (_this.phoneData.length != 11) {
+      if (this.phoneData.length != 11) {
         uni.showToast({
           icon: 'none',
           position: 'bottom',
@@ -193,17 +176,8 @@ var _this, countDown;var _default =
 
         return false;
       }
-      if (_this.second > 0) {
-        return false;
-      }
-      _this.second = 60;
-      countDown = setInterval(function () {
-        _this.second--;
-        if (_this.second == 0) {
-          clearInterval(countDown);
-        }
-      }, 1000);
-      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:106");
+      console.log("获取验证码", " at pages\\mine\\children\\forget.vue:79");
+      this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
     },
     startRePass: function startRePass() {
       //重置密码
@@ -236,27 +210,12 @@ var _this, countDown;var _default =
         return false;
       }
 
-      console.log("重置密码成功", " at pages\\mine\\children\\forget.vue:139");
+      console.log("重置密码成功", " at pages\\mine\\children\\forget.vue:113");
       _this.isRotate = true;
       setTimeout(function () {
         _this.isRotate = false;
       }, 3000);
 
-
-    } },
-
-  computed: {
-    getVerCodeSecond: function getVerCodeSecond() {
-      //验证码倒计时计算
-      if (this.second <= 0) {
-        return '获取验证码';
-      } else {
-        if (this.second < 10) {
-          return '0' + this.second;
-        } else {
-          return this.second;
-        }
-      }
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))

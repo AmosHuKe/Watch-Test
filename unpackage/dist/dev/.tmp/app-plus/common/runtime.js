@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/ble/ble":1,"pages/goal/goal":1,"pages/home/home":1,"pages/mine/mine":1,"pages/motion/motion":1,"lib/colorui/components/cu-custom":1,"lib/range-slider/range-slider":1};
+/******/ 		var cssChunks = {"pages/ble/ble":1,"pages/goal/goal":1,"pages/home/home":1,"pages/mine/mine":1,"pages/motion/motion":1,"lib/colorui/components/cu-custom":1,"components/watch-login/watch-button":1,"components/watch-login/watch-input":1,"lib/range-slider/range-slider":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"pages/ble/ble":"pages/ble/ble","pages/goal/goal":"pages/goal/goal","pages/home/home":"pages/home/home","pages/mine/mine":"pages/mine/mine","pages/motion/motion":"pages/motion/motion","lib/colorui/components/cu-custom":"lib/colorui/components/cu-custom","lib/range-slider/range-slider":"lib/range-slider/range-slider"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"pages/ble/ble":"pages/ble/ble","pages/goal/goal":"pages/goal/goal","pages/home/home":"pages/home/home","pages/mine/mine":"pages/mine/mine","pages/motion/motion":"pages/motion/motion","lib/colorui/components/cu-custom":"lib/colorui/components/cu-custom","components/watch-login/watch-button":"components/watch-login/watch-button","components/watch-login/watch-input":"components/watch-login/watch-input","lib/range-slider/range-slider":"lib/range-slider/range-slider"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
