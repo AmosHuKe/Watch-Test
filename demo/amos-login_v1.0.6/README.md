@@ -75,7 +75,7 @@ getVerCode(){
 | placeholder | 无 | 占位符 提示性语句 |  
 | isShowPass（与isShowCode二选一） | false | 开启 是否显示密码图标 |  
 | isShowCode（与isShowPass二选一） | false | 开启 验证码 |  
-| ref="runCode" （配合isShowCode使用） | 无 | 注册用于触发验证码倒计时 |  
+| ref="runCode" （配合isShowCode使用） | 无 | 注册用于触发验证码倒计时 this.$refs.runCode.$emit('runCode'); |  
 | @setCode="自定义事件"（配合isShowCode使用） | 无 | 设置绑定 点击触发的事件 |  
  
 
