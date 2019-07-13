@@ -154,7 +154,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		height: 36upx;
+		height: 100upx;
 		color: #333333;
 		padding: 32upx;
 		margin-top:24upx;
