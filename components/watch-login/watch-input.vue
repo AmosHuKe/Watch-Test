@@ -56,6 +56,11 @@
 				type: [Boolean,String],
 				default: false,
 			},
+			setTime:{
+				//倒计时时间设置
+				type: [Number,String],
+				default: 60,
+			}
 		},
 		model: {
 			prop: 'value',
@@ -93,7 +98,7 @@
 					return false;
 				}
 				this.isRunCode= true
-				this.second = 60 //倒数秒数
+				this.second = this._setTime //倒数秒数
 				countDown = setInterval(function(){
 					_this.second--
 					if(_this.second==0){
@@ -118,6 +123,11 @@
 			_isShowCode() {
 				//处理值
 				return String(this.isShowCode) !== 'false'
+			},
+			_setTime() {
+				//处理值
+				const setTime = Number(this.setTime)
+				return setTime>0 ? setTime : 60
 			},
 			getVerCodeSecond(){
 				//验证码倒计时计算
@@ -144,7 +154,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		height: 100upx;
+		height: 36upx;
 		color: #333333;
 		padding: 32upx;
 		margin-top:24upx;

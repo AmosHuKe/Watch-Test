@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<!-- 按钮 -->
-		<button :class="['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']">
+		<button :class="['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']" :style="{'background':bgColor, 'color': fontColor}">
 			<view :class="_rotate?'rotate_loop':''">
 				<text v-if="_rotate" class="cuIcon cuIcon-loading1 "></text>
 				<text v-if="!_rotate">{{ text }}</text>
@@ -19,6 +19,16 @@
 				type: [Boolean,String],
 				default: false,
 			}, 
+			bgColor:{
+				//按钮背景颜色
+				type: String,
+				default: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6))",
+			},
+			fontColor:{
+				//按钮字体颜色
+				type: String,
+				default: "#FFFFFF",
+			},
 		},
 		computed:{
 			_rotate() {
