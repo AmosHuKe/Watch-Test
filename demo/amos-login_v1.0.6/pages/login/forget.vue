@@ -26,6 +26,7 @@
 					placeholder="验证码"
 					
 					isShowCode
+					setTime="30"
 					ref="runCode"
 					@setCode="getVerCode()"
 				></wInput>
