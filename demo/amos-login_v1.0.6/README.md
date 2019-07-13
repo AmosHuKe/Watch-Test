@@ -44,7 +44,7 @@ export default {
 ></wInput>
 ```
 
-* 验证码
+* 倒计时
 
 ```
 <wInput
@@ -52,7 +52,8 @@ export default {
 	type="number"            //Input数字类型
 	placeholder="验证码"      //占位符 提示性语句
 	
-	isShowCode               //开启 验证码
+	isShowCode               //开启 倒计时
+	setTime="30"             //设置倒计时时间，默认60秒，（选填）
 	ref="runCode"            //注册用于触发验证码倒计时
 	@setCode="getVerCode()"  //设置绑定 点击触发的事件
 ></wInput>
@@ -66,17 +67,23 @@ getVerCode(){
 }
 ```
 
-> 参数说明
+> Input参数说明
 
-| 参数 | 默认 | 说明 |  
-|-----|----|----|  
-| type | 无 | Input类型 |  
-| maxlength | 20 | 最大长度 |  
-| placeholder | 无 | 占位符 提示性语句 |  
-| isShowPass（与isShowCode二选一） | false | 开启 是否显示密码图标 |  
-| isShowCode（与isShowPass二选一） | false | 开启 验证码 |  
-| ref="runCode" （配合isShowCode使用） | 无 | 注册用于触发验证码倒计时 this.$refs.runCode.$emit('runCode'); |  
-| @setCode="自定义事件"（配合isShowCode使用） | 无 | 设置绑定 点击触发的事件 |  
+| 参数 | 默认 | 是否必选 | 说明 |  
+|-----|----|----|----|  
+| type | 无 | √ | Input类型 |  
+| maxlength | 20 | × | 最大长度 |  
+| placeholder | 无 | × | 占位符 提示性语句 |  
+| isShowPass（与isShowCode二选一） | false | × | 开启 是否显示密码图标 |  
+| isShowCode（与isShowPass二选一） | false | × | 开启 倒计时 |  
+
+> 使用 `isShowCode（倒计时）` 参数  
+
+| 参数 | 默认 | 是否必选 | 说明 |  
+|-----|----|----|----|  
+| ref="runCode" （配合isShowCode使用） | 无 | √ | 注册用于触发验证码倒计时 this.$refs.runCode.$emit('runCode'); |  
+| @setCode="自定义事件"（配合isShowCode使用） | 无 | √ | 设置绑定 点击触发的事件 |  
+| setTime（配合isShowCode使用） | 60 | × | 设置倒计时时间（秒） |  
  
 
 
@@ -86,16 +93,20 @@ getVerCode(){
 <wButton 
 	text="重置密码"                  //按钮文本
 	rotate="false"                  //是否开启加载动画
+	bgColor="#333333"               //按钮背景颜色（可选）
+	fontColor="#FFFFFF"             //字体颜色（可选）
 	@click.native="startRePass()"   //触发自定义点击事件
 ></wButton>
 ```
 
-> 参数说明
+> Button参数说明
 
-| 参数 | 默认 | 说明 |  
-|-----|----|----|  
-| text | 无 | 按钮文本 |  
-| rotate | false | 是否开启加载动画 |  
+| 参数 | 默认 | 是否必选 | 说明 |  
+|-----|----|----|----|  
+| text | 无 | √ | 按钮文本 |  
+| rotate | false | × | 是否开启加载动画 |  
+| bgColor | linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6)); | × | 按钮背景颜色 |  
+| fontColor | #FFFFFF | × | 字体颜色 |  
 
 
 ## 目录结构  
