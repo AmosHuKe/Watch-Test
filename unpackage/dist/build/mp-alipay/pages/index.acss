@@ -1,6 +1,0 @@
-
-.mainIndex.data-v-09395000{
-	padding-bottom:128rpx;
-}
-
-page::after{position: fixed;left: -1000px;top: -1000px;content: url(https://cdn.dcloud.net.cn/img/shadow-grey.png)}
