@@ -28,8 +28,8 @@ export default {
 <wInput
 	v-model="username"        //绑定值
 	type="text"               //Input文本类型
-	maxlength="11"            //最大长度（默认20）
-	placeholder="请输入用户名" //占位符 提示性语句
+	maxlength="11"            //最大长度（默认20）（选填）
+	placeholder="请输入用户名" //占位符 提示性语句（选填）
 ></wInput>
 ```
 
@@ -39,8 +39,8 @@ export default {
 <wInput
 	v-model="password"        //绑定值
 	type="password"           //Input密码类型
-	placeholder="请输入密码"   //占位符 提示性语句
-	isShowPass                //开启 是否显示密码图标
+	placeholder="请输入密码"   //占位符 提示性语句（选填）
+	isShowPass                //开启 是否显示密码图标（选填）
 ></wInput>
 ```
 
@@ -50,7 +50,7 @@ export default {
 <wInput
 	v-model="verCode"        //绑定值
 	type="number"            //Input数字类型
-	placeholder="验证码"      //占位符 提示性语句
+	placeholder="验证码"      //占位符 提示性语句（选填）
 	
 	isShowCode               //开启 倒计时
 	setTime="30"             //设置倒计时时间，默认60秒，（选填）
@@ -105,7 +105,7 @@ getVerCode(){
 |-----|----|----|----|  
 | text | 无 | √ | 按钮文本 |  
 | rotate | false | × | 是否开启加载动画 |  
-| bgColor | linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6)); | × | 按钮背景颜色 |  
+| bgColor | linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6)) | × | 按钮背景颜色 |  
 | fontColor | #FFFFFF | × | 字体颜色 |  
 
 
