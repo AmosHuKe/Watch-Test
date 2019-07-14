@@ -36,7 +36,9 @@
   
 ## 注意  
 
-> 请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`    
+> 1、项目需开启 `Less`   
+> 2、服务器数据请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`   
+
 
 ## 目录结构  
 ```
