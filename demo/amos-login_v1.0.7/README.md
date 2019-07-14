@@ -53,6 +53,7 @@ export default {
 	placeholder="验证码"      //占位符 提示性语句（选填）
 	
 	isShowCode               //开启 倒计时
+	codeText="获取重置码"     //自定义倒计时文字，默认 获取验证码（选填）
 	setTime="30"             //设置倒计时时间，默认60秒，（选填）
 	ref="runCode"            //注册用于触发验证码倒计时
 	@setCode="getVerCode()"  //设置绑定 点击触发的事件
@@ -64,6 +65,9 @@ getVerCode(){
 	console.log("获取验证码")
 	//触发倒计时（一般用于请求成功验证码后调用）
 	this.$refs.runCode.$emit('runCode'); 
+	
+	//终止倒计时（用于突然需要终止倒计时的场景）
+	this.$refs.runCode.$emit('runCode',0); 
 }
 ```
 
@@ -81,8 +85,9 @@ getVerCode(){
 
 | 参数 | 默认 | 是否必选 | 说明 |  
 |-----|----|----|----|  
-| ref="runCode" （配合isShowCode使用） | 无 | √ | 注册用于触发验证码倒计时 this.$refs.runCode.$emit('runCode'); |  
+| ref="runCode" （配合isShowCode使用） | 无 | √ | 触发倒计时：this.$refs.runCode.$emit('runCode');  <br>终止倒计时：this.$refs.runCode.$emit('runCode',0);  |  
 | @setCode="自定义事件"（配合isShowCode使用） | 无 | √ | 设置绑定 点击触发的事件 |  
+| codeText（配合isShowCode使用） | 获取验证码 | × | 自定义倒计时文字 |  
 | setTime（配合isShowCode使用） | 60 | × | 设置倒计时时间（秒） |  
  
 

@@ -30,6 +30,7 @@
 					placeholder="验证码"
 					
 					isShowCode
+					codeText="获取"
 					ref="runCode"
 					@setCode="getVerCode()"
 				></wInput>

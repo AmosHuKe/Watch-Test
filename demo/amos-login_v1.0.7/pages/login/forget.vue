@@ -26,6 +26,7 @@
 					placeholder="验证码"
 					
 					isShowCode
+					codeText="获取重置码"
 					setTime="30"
 					ref="runCode"
 					@setCode="getVerCode()"
@@ -75,6 +76,20 @@
 				}
 				console.log("获取验证码")
 				this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
+				uni.showToast({
+				    icon: 'none',
+					position: 'bottom',
+				    title: '模拟倒计时触发'
+				});
+				
+				setTimeout(function(){
+					_this.$refs.runCode.$emit('runCode',0); //假装模拟下需要 终止倒计时
+					uni.showToast({
+					    icon: 'none',
+						position: 'bottom',
+					    title: '模拟倒计时终止'
+					});
+				},3000)
 			},
 			startRePass() {
 				//重置密码
@@ -83,7 +98,7 @@
 					return false;
 				}
 				if (this.phoneData.length != 11) {
-				     uni.showToast({
+				    uni.showToast({
 				        icon: 'none',
 						position: 'bottom',
 				        title: '手机号不正确'

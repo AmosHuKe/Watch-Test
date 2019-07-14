@@ -56,6 +56,10 @@
 				type: [Boolean,String],
 				default: false,
 			},
+			codeText:{
+				type: String,
+				default: "获取验证码",
+			},
 			setTime:{
 				//倒计时时间设置
 				type: [Number,String],
@@ -93,6 +97,14 @@
 			},
 			runCode(val){
 				//开始倒计时
+				if(String(val)=="0"){
+					
+					//判断是否需要终止循环
+					this.second = 0; //初始倒计时
+					clearInterval(countDown);//清理循环
+					this.isRunCode= false; //关闭循环状态
+					return false;
+				}
 				if(this.isRunCode){
 					//判断是否开始倒计时，避免重复点击
 					return false;
@@ -132,7 +144,7 @@
 			getVerCodeSecond(){
 				//验证码倒计时计算
 				if(this.second<=0){
-					return '获取验证码';
+					return this.codeText;
 				}else{
 					if(this.second<10){
 						return '0'+this.second;
@@ -154,7 +166,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		height: 36upx;
+		height: 36upx;   /* Input 高度 */
 		color: #333333;
 		padding: 32upx;
 		margin-top:24upx;
