@@ -166,7 +166,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		height: 100upx; /* Input 高度 */
+		height: 36upx;   /* Input 高度 */
 		color: #333333;
 		padding: 32upx;
 		margin-top:24upx;
