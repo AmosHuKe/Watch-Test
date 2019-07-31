@@ -111,6 +111,8 @@
 				}
 				this.isRunCode= true
 				this.second = this._setTime //倒数秒数
+				
+				let _this=this;
 				countDown = setInterval(function(){
 					_this.second--
 					if(_this.second==0){
