@@ -16,11 +16,11 @@
 > 主要用于学习参考，商业用途需经作者允许。  
 > [![插画风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)
 > [![插画风格](https://img.shields.io/badge/插图风格-Undraw-%236c63ff.svg)](https://undraw.co/search)    
-> 
+>
 > 登陆账号：admin 密码：admin  
-  
+
 * Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Less + Mock
-  
+
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
 | Chrome | ✔ | 无 |  
@@ -33,7 +33,7 @@
 | APP模块 | 是否使用 |  
 |------|------|  
 | `Bluetooth(低功耗蓝牙)` | ✔ |   
-  
+
 ## 注意  
 
 > 1、项目需开启 `Less`   
@@ -80,5 +80,11 @@
 
 ```
 
-  
+## 感谢  
+
+[ColorUI-UniApp](http://ext.dcloud.net.cn/plugin?id=239)  
+[uCharts](http://ext.dcloud.net.cn/plugin?id=271)  
+[luch-request](http://ext.dcloud.net.cn/plugin?id=392)  
+[区间选择滑块组件](http://ext.dcloud.net.cn/plugin?id=106)  
+
 © AmosHuKe. All Rights Reserved.
