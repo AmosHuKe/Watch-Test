@@ -44,7 +44,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 	/*每个页面公共css */
 	@import url("./style/animation/animation.css"); /* 动画 */
 	/* ColorUi */

@@ -65,24 +65,24 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	@import "../../../style/color/color.less"; //颜色
+<style lang="scss" scoped>
+	@import "../../../style/color/color.scss"; //颜色
 	
 	/* 运动颜色 数据库取出 */
 	.yd-red{
-		background: @redColor-linear;
+		background: $redColor-linear;
 	}
 	.yd-blue{
-		background: @blueColor-linear;
+		background: $blueColor-linear;
 	}
 	.yd-purple{
-		background: @purpleColor-linear;
+		background: $purpleColor-linear;
 	}
 	.yd-black{
-		background: @blackColor-linear;
+		background: $blackColor-linear;
 	}
 	.yd-cyan{
-		background: @cyanColor-linear;
+		background: $cyanColor-linear;
 	}
 	.shadow{
 		-webkit-box-shadow: 0 0 30px 0 rgba(43,86,112,.1) !important;

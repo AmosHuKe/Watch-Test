@@ -64,27 +64,27 @@
 	}
 </script>
 
-<style lang="less">
-	@import "../../../style/color/color.less"; //颜色
+<style lang="scss">
+	@import "../../../style/color/color.scss"; //颜色
 	/* 运动颜色 数据库取出 */
 	.yd-red{
-		background: @redColor-linear;
+		background: $redColor-linear;
 		color: #FFF;
 	}
 	.yd-blue{
-		background: @blueColor-linear;
+		background: $blueColor-linear;
 		color: #FFF;
 	}
 	.yd-purple{
-		background: @purpleColor-linear;
+		background: $purpleColor-linear;
 		color: #FFF;
 	}
 	.yd-black{
-		background: @blackColor-linear;
+		background: $blackColor-linear;
 		color: #FFF;
 	}
 	.yd-cyan{
-		background: @cyanColor-linear;
+		background: $cyanColor-linear;
 		color: #FFF;
 	}
 	

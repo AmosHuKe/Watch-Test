@@ -1,4 +1,4 @@
-﻿# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
+# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
@@ -19,7 +19,7 @@
 >
 > 登陆账号：admin 密码：admin  
 
-* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Less + Mock
+* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Scss + Mock
 
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
@@ -36,7 +36,7 @@
 
 ## 注意  
 
-> 1、项目需开启 `Less`   
+> 1、项目需开启 `Scss`   
 > 2、服务器数据请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`   
 
 

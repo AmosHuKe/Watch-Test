@@ -159,8 +159,8 @@
 }
 </script>
 
-<style lang="less" scoped>
-	@import "../../style/color/color.less";
+<style lang="scss" scoped>
+	@import "../../style/color/color.scss";
 	
 	.page{
 		padding: 0 30upx;
@@ -185,6 +185,6 @@
 	 	justify-content: center;
 	 }
 	.bg-black{
-		background: @blackColor;
+		background: $blackColor;
 	}
 </style>

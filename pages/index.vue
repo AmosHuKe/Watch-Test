@@ -77,17 +77,17 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	@import "../style/color/color.less";
+<style lang="scss" scoped>
+	@import "../style/color/color.scss";
 	
 	.mainIndex{
 		padding-bottom:128upx;
 	}
 	.text-black{
-		color: @blackColor !important;
+		color: $blackColor !important;
 	}
 	.bg-black{
-		background: @blackColor !important;
+		background: $blackColor !important;
 	}
 	
 	.cu-bar.tabbar.shadow {

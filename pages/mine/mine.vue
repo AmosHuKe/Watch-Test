@@ -272,8 +272,8 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	@import "../../style/color/color.less";
+<style lang="scss" scoped>
+	@import "../../style/color/color.scss";
 	
 	button .cu-tag {
 		position: absolute;
@@ -304,7 +304,7 @@
 		height: 360upx;
 		padding: 36upx;
 		box-sizing: border-box;
-		background: @blackColor-linear;
+		background: $blackColor-linear;
 		flex-direction: row;
 		align-items: center;
 		

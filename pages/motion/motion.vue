@@ -299,8 +299,8 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	@import "../../style/color/color.less"; //颜色
+<style lang="scss" scoped>
+	@import "../../style/color/color.scss"; //颜色
 	
 	.motion{
 		margin-top:100upx;
@@ -330,7 +330,7 @@
 		margin: 48upx 30upx 0upx 30upx;
 		font-size: 32upx;
 		font-weight: 100; 
-		color: @blackColor;
+		color: $blackColor;
 	}
 	
 	/* 顶部数据圈 */
@@ -339,43 +339,43 @@
 		left:216upx;
 		top:36upx;
 		font-weight: 900 !important;
-		color: @blueColor;
+		color: $blueColor;
 	}
 	.m-foot{
 		position: absolute;
 		left:24upx;
 		top:376upx;
 		font-weight: 900 !important;
-		color: @redColor;
+		color: $redColor;
 	}
 	.m-kll{
 		position: absolute;
 		left:500upx;
 		top:248upx;
 		font-weight: 900 !important; 
-		color: @cyanColor;
+		color: $cyanColor;
 	}
 	
 	.line-red{
-		color:@redColor !important;
+		color:$redColor !important;
 	}
 	.text-red{
 		font-size: 24upx;
-		color:@redColor !important;
+		color:$redColor !important;
 	}
 	.line-blue{
-		color:@blueColor !important;
+		color:$blueColor !important;
 	}
 	.text-blue{
 		font-size: 24upx;
-		color:@blueColor !important;
+		color:$blueColor !important;
 	}
 	.line-cyan{
-		color:@cyanColor !important;
+		color:$cyanColor !important;
 	}
 	.text-cyan{
 		font-size: 24upx;
-		color:@cyanColor !important;
+		color:$cyanColor !important;
 	}
 	
 	
@@ -444,19 +444,19 @@
 	}
 	/* 运动颜色 数据库取出 */
 	.yd-red{
-		background: @redColor-linear;
+		background: $redColor-linear;
 	}
 	.yd-blue{
-		background: @blueColor-linear;
+		background: $blueColor-linear;
 	}
 	.yd-purple{
-		background: @purpleColor-linear;
+		background: $purpleColor-linear;
 	}
 	.yd-black{
-		background: @blackColor-linear;
+		background: $blackColor-linear;
 	}
 	.yd-cyan{
-		background: @cyanColor-linear;
+		background: $cyanColor-linear;
 	}
 	
 	/* 具体健康数据 */
@@ -480,10 +480,10 @@
 		margin-bottom: 24upx;
 		font-size: 48upx;
 		font-weight: 700;
-		color: @blackColor;
+		color: $blackColor;
 	}
 	.jk-text{
-		color: @blackColor;
+		color: $blackColor;
 	}
 	.jk-text-title{
 		font-size: 24upx;
@@ -514,7 +514,7 @@
 		margin-left: -12upx;
 	}
 	.bg-red{
-		background-color:@redColor;
+		background-color:$redColor;
 	}
 	
 	.pulse{
@@ -533,7 +533,7 @@
 		margin-left: -12upx;
 	}
 	.bg-blue{
-		background-color:@blueColor; 
+		background-color:$blueColor; 
 	}
 	
 	
