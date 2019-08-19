@@ -36,7 +36,7 @@
 
 ## 注意  
 
-> 1、项目需开启 `Scss`   
+> 1、项目需开启 `Scss`（HBuilderX v2.1.0 - 工具 - 插件安装 - Scss）     
 > 2、服务器数据请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`   
 
 
