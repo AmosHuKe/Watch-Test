@@ -129,7 +129,7 @@
 				setTimeout(function(){
 					getLogin()
 					.then(res => {
-						//console.log(res)
+						console.log(res) 
 						//简单验证下登录（不安全）
 						if(_this.phoneData==res.data.username && _this.passData==res.data.password){
 							let userdata={
@@ -163,8 +163,15 @@
 						}
 						uni.hideLoading();
 					}).catch(err => {
+						console.log(err)
+						let msg = err.errMsg; //错误信息
+						uni.showToast({
+						    icon: 'none',
+							position: 'center',
+						    title: '超时，Mock地址可能挂掉'
+						});
 						_this.isRotate=false
-						uni.hideLoading();
+						//uni.hideLoading();
 					})
 				},2000)
 				
