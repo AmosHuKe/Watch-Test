@@ -1,4 +1,4 @@
-# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
+﻿# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
@@ -19,7 +19,9 @@
 >
 > 登陆账号：admin 密码：admin  
 
-* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Scss + Mock
+* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Scss + Mock  
+
+* 注：登录不进入（请求失败），可能是因为Mock地址挂了。
 
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
