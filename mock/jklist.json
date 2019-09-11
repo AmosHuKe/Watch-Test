@@ -1,11 +1,9 @@
-{
+﻿{
   'sleep': [{
     title: '睡眠',
-    mode: 'sleep', //睡眠
-    //背景图
+    mode: 'sleep', 
     img: '',
     url: ' ',
-    //背景颜色
     bgcolor: 'rgba(229,77,66,0.7)',
     content: [{
         time: '昨日11:30',
@@ -26,25 +24,21 @@
         time: '结束06:09',
         color: 'rgba(35,35,35,0.7)'
       },
-    ], //内容
+    ],
   }],
   'heartbeat': [{
     title: '心跳',
     mode: 'heartbeat',
-    //背景图
     img: '',
     url: ' ',
-    //背景颜色
     bgcolor: 'rgba(229,77,66,0.7)',
     content: [],
   }],
   'pulse': [{
     title: '脉搏',
     mode: 'pulse',
-    //背景图
     img: '',
     url: ' ',
-    //背景颜色
     bgcolor: 'rgba(229,77,66,0.7)',
     content: [],
   }]
