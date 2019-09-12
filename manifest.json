@@ -107,7 +107,16 @@
     },
     "h5" : {
         "devServer" : {
-            "https" : false
+            "https" : false,
+			"port": 8000,
+			"disableHostCheck": true,
+			"proxy": {
+			    "/mock": {
+			        "target": "http://raw.githack.com/AmosHuKe/Watch-Test/master",
+			        "changeOrigin": true,
+			        "secure": false
+			    }
+			}
         }
     }
 }

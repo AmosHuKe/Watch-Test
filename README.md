@@ -1,4 +1,4 @@
-﻿# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
+# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
 
 [![Vue2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
 [![uni-app](https://img.shields.io/badge/build-Uni--App-brightgreen.svg)](https://github.com/dcloudio/uni-app)
@@ -21,7 +21,6 @@
 
 * Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Scss + Mock  
 
-* 注：登录不进入（请求失败），可能是因为Mock地址挂了。
 
 | 测试平台 | 是否支持 | 下载演示 |  
 |------|------|------|  
@@ -40,6 +39,24 @@
 
 > 1、项目需开启 `Scss`（HBuilderX v2.1.0 - 工具 - 插件安装 - Scss）     
 > 2、服务器数据请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`   
+> 3、`manifest.json`源码中`H5`已开启代理，将原有的easymock（官网经常挂）改为github的json请求。
+
+```json
+"h5" : {
+	"devServer" : {
+		"https" : false,
+		"port": 8000,
+		"disableHostCheck": true,
+		"proxy": {
+			"/mock": {
+				"target": "http://raw.githack.com/AmosHuKe/Watch-Test/master",
+				"changeOrigin": true,
+				"secure": false
+			}
+		}
+	}
+}
+```
 
 
 ## 目录结构  

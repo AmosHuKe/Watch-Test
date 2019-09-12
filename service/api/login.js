@@ -10,7 +10,7 @@ import {http} from '../../service/request/index.js' //请求拦截
 export function getisLogin(){
     let datas = {}
 	let config = {}
-    let e = http.post("login",datas,config);
+    let e = http.get("/mock/login.json",datas,config);
     return e;
 }
 
@@ -25,7 +25,7 @@ export function getLogin(){
 			"isLogin":true //不用检测是否需要登录权限
 		}
 	}
-    let e = http.post("login",datas,config);
+    let e = http.get("/mock/login.json",datas,config);
     return e;
 }
 

@@ -219,8 +219,8 @@
 				}else{
 					//获取数据计划完成度
 					getGoalc()
-					.then(res => {
-						//console.log(res)
+					.then(res => {		
+						console.log(res)
 						_this.goalC=res.data
 						_this.$store.dispatch('setGoalcData',res.data)
 					}).catch(err => {
@@ -234,7 +234,7 @@
 					//获取运动数据
 					getYdList()
 					.then(res => {
-						//console.log(res)
+						console.log(res)
 						_this.ydList=res.data
 						_this.$store.dispatch('setYdData',res.data)
 					}).catch(err => {
@@ -248,11 +248,11 @@
 					//获取健康数据
 					getJkList()
 					.then(res => {
-						//console.log(res)
+						console.log(res)
 						_this.jkList=res.data
 						_this.$store.dispatch('setJkData',res.data)
 					}).catch(err => {
-						
+						console.log(err)
 					})
 				}
 			},

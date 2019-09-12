@@ -3,7 +3,14 @@ import store from '../../store/index.js' //状态管理
 import Request from './request.js'
 const http = new Request();
 http.setConfig((config) => { /* 设置全局配置 */
-	config.baseUrl = 'https://www.easy-mock.com/mock/5d1443deed2ae904ba2cdd78/mock/'; //默认请求地址
+	//原easymock地址
+	//config.baseUrl = 'https://www.easy-mock.com/mock/5d1443deed2ae904ba2cdd78/mock/'; //默认请求地址
+	config.baseUrl = ''; // 由于easy-mock网站经常挂掉，就开GitHub代理
+	//#ifndef H5
+	// 由于easy-mock网站经常挂掉，就使用Github的本地数据，在manifest.json中H5开启代理
+	config.baseUrl = 'http://raw.githack.com/AmosHuKe/Watch-Test/master'; //默认请求地址
+	//#endif
+	
 	config.header = {
         'Content-Type': 'application/json;charset=UTF-8'
     };

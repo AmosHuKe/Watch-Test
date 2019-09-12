@@ -10,6 +10,6 @@ import {http} from '../../service/request/index.js' //请求拦截
 export function getVersion(){
     let datas = {}
 	let config = {}
-    let e = http.get("version",datas,config);
+    let e = http.get("/mock/version.json",datas,config);
     return e;
 }
