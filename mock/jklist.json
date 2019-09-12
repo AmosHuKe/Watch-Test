@@ -24,7 +24,7 @@
         "time": "结束06:09",
         "color": "rgba(35,35,35,0.7)"
       }] 
-  }]
+  }],
   "heartbeat": [{
     "title": "心跳",
     "mode": "heartbeat",
@@ -32,7 +32,7 @@
     "url": " ",
     "bgcolor": "rgba(229,77,66,0.7)",
     "content": []
-  }]
+  }],
   "pulse": [{
     "title": "脉搏",
     "mode": "pulse",
@@ -40,5 +40,5 @@
     "url": " ",
     "bgcolor": "rgba(229,77,66,0.7)",
     "content": []
-  }]
+  }],
 }
