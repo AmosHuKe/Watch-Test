@@ -95,8 +95,7 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wx6f2bbd22b476ac7c",
         "setting" : {
             "urlCheck" : true,
             "minified" : true,
@@ -108,15 +107,15 @@
     "h5" : {
         "devServer" : {
             "https" : false,
-			"port": 8000,
-			"disableHostCheck": true,
-			"proxy": {
-			    "/mock": {
-			        "target": "http://raw.githack.com/AmosHuKe/Watch-Test/master",
-			        "changeOrigin": true,
-			        "secure": false
-			    }
-			}
+            "port" : 8000,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/mock" : {
+                    "target" : "http://raw.githack.com/AmosHuKe/Watch-Test/master",
+                    "changeOrigin" : true,
+                    "secure" : false
+                }
+            }
         }
     }
 }

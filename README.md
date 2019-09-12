@@ -29,6 +29,8 @@
 | ios`未测试` | 未测试 | 无 |  
 | 微信小程序 | ✔ | [![微信小程序](./demo/wechat_128.jpg)](./demo/wechat_128.jpg?raw=true)   |  
 
+* ！！！注：微信小程序演示登录不上，很大原因是[Easy-Mock](https://www.easy-mock.com/)网站挂掉了，数据请求失败。
+
 ## APP模块权限配置（manifest.json）
 
 | APP模块 | 是否使用 |  
@@ -39,7 +41,7 @@
 
 > 1、项目需开启 `Scss`（HBuilderX v2.1.0 - 工具 - 插件安装 - Scss）     
 > 2、服务器数据请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`   
-> 3、`manifest.json`源码中`H5`已开启代理，将原有的easymock（官网经常挂）改为github的json请求。
+> 3、`manifest.json`源码中`H5`已开启代理，将原有的[Easy-Mock](https://www.easy-mock.com/)（官网经常挂）改为github的json请求，但是由于微信小程序服务器接口地址需要认证，所以微信小程序的请求还是[Easy-Mock](https://www.easy-mock.com/)。
 
 ```json
 "h5" : {

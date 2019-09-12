@@ -10,7 +10,12 @@ import {http} from '../../service/request/index.js' //请求拦截
 export function getSwiper(){
     let datas = {}
 	let config = {}
-    let e = http.get("/mock/swiper.json",datas,config);
+	//#ifndef MP-WEIXIN
+	let e = http.get("/mock/swiper.json",datas,config);
+	//#endif
+	//#ifdef MP-WEIXIN
+	let e = http.get("swiper",datas,config);
+	//#endif
     return e;
 }
 
@@ -21,6 +26,11 @@ export function getSwiper(){
 export function getRing(){
     let datas = {}
 	let config = {}
-    let e = http.get("/mock/ring.json",datas,config);
+	//#ifndef MP-WEIXIN
+	let e = http.get("/mock/ring.json",datas,config);
+	//#endif
+	//#ifdef MP-WEIXIN
+	let e = http.get("ring",datas,config);
+	//#endif
     return e;
 }
