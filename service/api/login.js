@@ -14,7 +14,7 @@ export function getisLogin(){
     let e = http.get("/mock/login.json",datas,config);
     //#endif
     //#ifdef MP-WEIXIN
-    let e = http.get("login",datas,config);
+    let e = http.post("login",datas,config);
     //#endif
     return e;
 }
@@ -34,7 +34,7 @@ export function getLogin(){
     let e = http.get("/mock/login.json",datas,config);
 	//#endif
 	//#ifdef MP-WEIXIN
-	let e = http.get("login",datas,config);
+	let e = http.post("login",datas,config);
 	//#endif
     return e;
 }
