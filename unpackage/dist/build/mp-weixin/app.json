@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/mine/children/login",
+    "pages/index",
+    "pages/motion/children/motion_ydData",
+    "pages/mine/children/register",
+    "pages/mine/children/forget"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "运动",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/lib/colorui/components/cu-custom",
+    "home": "/pages/home/home",
+    "motion": "/pages/motion/motion",
+    "ble": "/pages/ble/ble",
+    "goal": "/pages/goal/goal",
+    "mine": "/pages/mine/mine"
+  },
+  "sitemapLocation": "sitemap.json"
+}

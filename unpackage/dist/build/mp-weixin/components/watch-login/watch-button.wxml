@@ -1,0 +1,1 @@
+<view><button class="{{['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']}}" style="{{'background:'+(bgColor)+';'+('color:'+(fontColor)+';')}}"><view class="{{[_rotate?'rotate_loop':'']}}"><block wx:if="{{_rotate}}"><text class="cuIcon cuIcon-loading1 "></text></block><block wx:if="{{!_rotate}}"><text>{{text}}</text></block></view></button></view>
