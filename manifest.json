@@ -2,8 +2,8 @@
     "name" : "运动手表演示",
     "appid" : "__UNI__98CA8AF",
     "description" : "",
-    "versionName" : "1.0.5",
-    "versionCode" : 105,
+    "versionName" : "1.0.6",
+    "versionCode" : 106,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */
@@ -95,7 +95,6 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
         "appid" : "",
         "setting" : {
             "urlCheck" : true,
@@ -107,7 +106,16 @@
     },
     "h5" : {
         "devServer" : {
-            "https" : false
+            "https" : false,
+            "port" : 8000,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/mock" : {
+                    "target" : "http://raw.githack.com/AmosHuKe/Watch-Test/master",
+                    "changeOrigin" : true,
+                    "secure" : false
+                }
+            }
         }
     }
 }

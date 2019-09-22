@@ -206,6 +206,7 @@
 					}
 					
 				}).catch(err => {
+					console.log(err)
 					uni.hideLoading();
 					uni.showToast({
 						position: 'bottom',
