@@ -10,16 +10,16 @@
 
 [![演示](./demo/watch_1080.webp)](./demo/watch_1080.jpg?raw=true)
 
+> ！！！ 主要用于学习参考并无实际功能。   
+>   
 > 🏃‍⌚  
 > 智能手表运动相关的App页面展示。  
-> 该项目是用于模型演示，并无实际功能。  
-> 主要用于学习参考，商业用途需经作者允许。  
 > [![插画风格](https://img.shields.io/badge/插图风格-Pale-%23E75353.svg)](https://icons8.cn/ouch/style/pale)
 > [![插画风格](https://img.shields.io/badge/插图风格-Undraw-%236c63ff.svg)](https://undraw.co/search)    
 >
-> 登陆账号：admin 密码：admin  
-
-* Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Scss + Mock  
+> 登陆账号：admin 密码：admin    
+>   
+> Vue2.0 + Uni-App + Vuex + ColorUI + uCharts + Scss + Mock  
 
 
 | 测试平台 | 是否支持 | 下载演示 |  
@@ -41,7 +41,7 @@
 
 > 1、项目需开启 `Scss`（HBuilderX v2.1.0 - 工具 - 插件安装 - Scss）     
 > 2、服务器数据请求地址更改：`./service/request/index.js` 下的 `config.baseUrl`   
-> 3、`manifest.json`源码中`H5`已开启代理，将原有的[Easy-Mock](https://www.easy-mock.com/)（官网经常挂）改为github的json请求，但是由于微信小程序服务器接口地址需要认证，所以微信小程序的请求还是[Easy-Mock](https://www.easy-mock.com/)。
+> 3、`manifest.json`源码中`H5`已开启代理，App端将原有的[Easy-Mock](https://www.easy-mock.com/)（官网经常挂）改为github的json请求，但是由于微信小程序服务器接口地址需要认证，所以微信小程序的请求还是[Easy-Mock](https://www.easy-mock.com/)。
 
 ```json
 "h5" : {
