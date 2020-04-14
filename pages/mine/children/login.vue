@@ -25,6 +25,7 @@
 				text="登 录"
 				:rotate="isRotate" 
 				@click.native="startLogin()"
+				class="wbutton"
 			></wButton>
 			
 			<!-- 其他登录 -->
@@ -241,4 +242,8 @@
 
 <style>
 	@import url("../css/main.css");
+	
+	.wbutton{
+		margin-top: 96upx;
+	}
 </style>
