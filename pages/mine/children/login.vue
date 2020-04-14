@@ -242,8 +242,4 @@
 
 <style>
 	@import url("../css/main.css");
-	
-	.wbutton{
-		margin-top: 96upx;
-	}
 </style>
