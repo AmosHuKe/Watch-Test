@@ -1,4 +1,4 @@
-﻿{
+{
     "name" : "运动手表演示",
     "appid" : "__UNI__98CA8AF",
     "description" : "",
@@ -52,9 +52,9 @@
             "sdkConfigs" : {},
             "icons" : {
                 "android" : {
-                    "hdpi" : "unpackage/res/icons/72x72.png",
-                    "xhdpi" : "unpackage/res/icons/96x96.png",
-                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : "",
                     "xxxhdpi" : "unpackage/res/icons/192x192.png"
                 },
                 "ios" : {
