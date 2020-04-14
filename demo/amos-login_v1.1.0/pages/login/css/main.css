@@ -37,6 +37,11 @@
 	margin-left: 48upx;
 }
 
+/* 登录按钮 */
+.wbutton{
+	margin-top: 96upx;
+}
+
 /* 其他登录方式 */
 .other_login{
 	display: flex;

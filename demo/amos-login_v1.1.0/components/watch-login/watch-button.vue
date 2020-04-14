@@ -43,6 +43,9 @@
 	@import url("./css/icon.css");
 	
 	.dlbutton {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		color: #FFFFFF;
 		font-size: 30upx;
 		width:601upx;
@@ -50,13 +53,12 @@
 		background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 		box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
 		border-radius:2.5rem;
-		line-height: 100upx;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 96upx;
+		margin-top: 0upx;
 	}
 	.dlbutton_loading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		color: #FFFFFF;
 		font-size: 30upx;
 		width:100upx;
@@ -64,11 +66,7 @@
 		background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
 		box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
 		border-radius:2.5rem;
-		line-height: 100upx;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 96upx;
+		margin-top: 0upx;
 	}
 	.buttonBorder{
 	    border: none ;
