@@ -8,7 +8,19 @@
 			:maxlength="maxlength" 
 			:placeholder="placeholder" 
 			:password="type==='password'&&!showPassword" 
-			@input="onInput"
+			
+			@input="$emit('input', $event.target.value)"
+			@blur="$emit('blur', $event.target.value)"
+			@focus="$emit('focus', $event.target.value)"
+			@longpress="$emit('longpress', $event.target.value)"
+			@confirm="$emit('confirm', $event.target.value)"
+			@click="$emit('click', $event.target.value)"
+			@longtap="$emit('longtap', $event.target.value)"
+			@tap="$emit('tap', $event.target.value)"
+			@touchcancel="$emit('touchcancel', $event.target.value)"
+			@touchend="$emit('touchend', $event.target.value)"
+			@touchmove="$emit('touchmove', $event.target.value)"
+			@touchstart="$emit('touchstart', $event.target.value)"
 		/>
 		<!-- 是否可见密码 -->
 		<image 
@@ -83,10 +95,6 @@
 				//是否显示密码
 				this.showPassword = !this.showPassword
 			},
-			onInput(e) {
-				//传出值
-				this.$emit('input', e.target.value)
-			},
 			setCode(){
 				//设置获取验证码的事件
 				if(this.isRunCode){
@@ -121,8 +129,6 @@
 					}
 				},1000)
 			}
-			
-			
 		},
 		computed:{
 			_type(){
@@ -168,29 +174,29 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		height: 36upx;   /* Input 高度 */
+		height: 36rpx;   /* Input 高度 */
 		color: #333333;
-		padding: 32upx;
-		margin-top:24upx;
-		margin-bottom: 24upx;
+		padding: 32rpx;
+		margin-top:24rpx;
+		margin-bottom: 24rpx;
 	}
 	.img{
-		width: 32upx;
-		height: 32upx;
-		font-size: 32upx;
+		width: 32rpx;
+		height: 32rpx;
+		font-size: 32rpx;
 	}
 	.main-input{
 		flex: 1;
 		text-align: left;
-		font-size: 28upx;
-		/* line-height: 100upx; */
-		padding-right: 10upx;
-		margin-left: 20upx;
+		font-size: 28rpx;
+		/* line-height: 100rpx; */
+		padding-right: 10rpx;
+		margin-left: 20rpx;
 	}
 	.vercode {
 		color: rgba(0,0,0,0.7);
-		font-size: 24upx;
-		line-height: 100upx;
+		font-size: 24rpx;
+		line-height: 100rpx;
 	}
 	.vercode-run {
 		color: rgba(0,0,0,0.4) !important;
@@ -198,7 +204,7 @@
 	.oBorder{
 	    border: none;
 	    border-radius: 2.5rem ;
-	    -webkit-box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
-	    box-shadow: 0 0 60upx 0 rgba(43,86,112,.1) ;
+	    -webkit-box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) ;
+	    box-shadow: 0 0 60rpx 0 rgba(43,86,112,.1) ;
 	}
 </style>

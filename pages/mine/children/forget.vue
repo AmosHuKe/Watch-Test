@@ -37,6 +37,7 @@
 			</view>
 			
 			<wButton 
+				class="wbutton"
 				text="重置密码"
 				:rotate="isRotate" 
 				@click.native="startRePass()"

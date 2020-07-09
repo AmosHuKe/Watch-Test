@@ -39,6 +39,7 @@
 			</view>
 			
 			<wButton 
+				class="wbutton"
 				text="注 册"
 				:rotate="isRotate" 
 				@click.native="startReg()"

@@ -1,7 +1,25 @@
 <template>
 	<view>
 		<!-- 按钮 -->
-		<button :class="['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']" :style="{'background':bgColor, 'color': fontColor}">
+		<button 
+			:class="['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']" 
+			:style="{'background':bgColor, 'color': fontColor}"
+			
+			@click="$emit('click', $event.target.value)"
+			@contact="$emit('contact', $event.target.value)"
+			@error="$emit('error', $event.target.value)"
+			@getphonenumber="$emit('getphonenumber', $event.target.value)"
+			@getuserinfo="$emit('getuserinfo', $event.target.value)"
+			@launchapp="$emit('launchapp', $event.target.value)"
+			@longpress="$emit('longpress', $event.target.value)"
+			@longtap="$emit('longtap', $event.target.value)"
+			@opensetting="$emit('opensetting', $event.target.value)"
+			@tap="$emit('tap', $event.target.value)"
+			@touchcancel="$emit('touchcancel', $event.target.value)"
+			@touchend="$emit('touchend', $event.target.value)"
+			@touchmove="$emit('touchmove', $event.target.value)"
+			@touchstart="$emit('touchstart', $event.target.value)"
+		>
 			<view :class="_rotate?'rotate_loop':''">
 				<text v-if="_rotate" class="cuIcon cuIcon-loading1 "></text>
 				<text v-if="!_rotate">{{ text }}</text>
@@ -47,32 +65,34 @@
 		justify-content: center;
 		align-items: center;
 		color: #FFFFFF;
-		font-size: 30upx;
-		width:601upx;
-		height:100upx;
+		font-size: 30rpx;
+		white-space:nowrap;
+		overflow: hidden;
+		width:601rpx;
+		height:100rpx;
 		background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-		box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
+		box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.4);
 		border-radius:2.5rem;
-		margin-top: 0upx;
+		margin-top: 0rpx;
 	}
 	.dlbutton_loading {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: #FFFFFF;
-		font-size: 30upx;
-		width:100upx;
-		height:100upx;
+		font-size: 30rpx;
+		width:100rpx;
+		height:100rpx;
 		background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
-		box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.4);
+		box-shadow:0rpx 0rpx 13rpx 0rpx rgba(164,217,228,0.4);
 		border-radius:2.5rem;
-		margin-top: 0upx;
+		margin-top: 0rpx;
 	}
 	.buttonBorder{
 	    border: none ;
 	    border-radius: 2.5rem ;
-	    -webkit-box-shadow: 0 0 60upx 0 rgba(0,0,0,.2) ;
-	    box-shadow: 0 0 60upx 0 rgba(0,0,0,.2) ;
+	    -webkit-box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2) ;
+	    box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2) ;
 	    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
 	    -moz-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
 	    -ms-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);

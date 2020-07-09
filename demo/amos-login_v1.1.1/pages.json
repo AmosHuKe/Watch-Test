@@ -16,6 +16,6 @@
     	"navigationBarTitleText": "登陆模板",
     	"navigationBarBackgroundColor": "#F8F8F8",
     	"backgroundColor": "#F8F8F8",
-    	"navigationStyle": "custom"
+    	"navigationStyle": "custom" //取消默认的原生导航栏
     }
 }

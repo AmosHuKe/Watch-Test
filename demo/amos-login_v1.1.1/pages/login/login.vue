@@ -12,6 +12,7 @@
 					type="text"
 					maxlength="11"
 					placeholder="用户名/电话"
+					
 				></wInput>
 				<wInput
 					v-model="passData"
@@ -21,10 +22,10 @@
 				></wInput>
 			</view>
 			<wButton 
+				class="wbutton"
 				text="登 录"
 				:rotate="isRotate" 
 				@click.native="startLogin()"
-				class="wbutton"
 			></wButton>
 			
 			<!-- 其他登录 -->
