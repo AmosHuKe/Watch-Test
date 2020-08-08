@@ -12,7 +12,6 @@
 					type="text"
 					maxlength="11"
 					placeholder="用户名/电话"
-					
 				></wInput>
 				<wInput
 					v-model="passData"
@@ -25,7 +24,7 @@
 				class="wbutton"
 				text="登 录"
 				:rotate="isRotate" 
-				@click.native="startLogin()"
+				@click="startLogin"
 			></wButton>
 			
 			<!-- 其他登录 -->
@@ -91,7 +90,8 @@
 				// 	// error
 				// }
 			},
-		    startLogin(){
+		    startLogin(e){
+                console.log(e)
 				//登录
 				if(this.isRotate){
 					//判断是否加载中，避免重复点击请求

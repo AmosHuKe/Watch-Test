@@ -2,8 +2,8 @@
     "name" : "Watch-Login",
     "appid" : "",
     "description" : "登录模板",
-    "versionName" : "1.1.1",
-    "versionCode" : 111,
+    "versionName" : "1.1.2",
+    "versionCode" : 112,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {

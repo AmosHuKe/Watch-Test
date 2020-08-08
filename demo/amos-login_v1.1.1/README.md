@@ -1,8 +1,8 @@
-﻿
+
 ## 登录模板说明  
 
 > 极简的登录模板，包含登录，注册，找回密码三个页面。  
-> 这里也写了个简单的项目运用了Vuex进行管理，可供学习使用。  
+> 这里也写了个简单的项目(无实际功能)，可供学习使用。  
 > [喜欢可以star下，点击查看Github](https://github.com/AmosHuKe/Watch-Test)    
 
 ## 使用组件  
@@ -105,13 +105,24 @@ getVerCode(){
 	fontColor="#FFFFFF"             //字体颜色（可选）
 	@click.native="startRePass()"   //触发自定义点击事件
 ></wButton>
+
+<wButton
+	rotate="false"                  //是否开启加载动画
+	bgColor="#333333"               //按钮背景颜色（可选）
+	fontColor="#FFFFFF"             //字体颜色（可选）
+	@click.native="startRePass()"   //触发自定义点击事件
+>
+    <view slot="text">
+        按钮文本另一种用法
+    </view>
+</wButton>
 ```
 
 > Button参数说明
 
 | 参数 | 类型 | 默认 | 是否必选 | 说明 |  
 |-----|----|----|----|----|  
-| text | String | 无 | √ | 按钮文本 |  
+| text | String/slot | 无 | √ | 按钮文本 |  
 | rotate | Boolean | false | × | 是否开启加载动画 |  
 | bgColor | String | linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6)) | × | 按钮背景颜色 |  
 | fontColor | String | #FFFFFF | × | 字体颜色 |  

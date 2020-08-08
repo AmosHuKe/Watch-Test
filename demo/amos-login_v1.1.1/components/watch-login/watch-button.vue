@@ -4,25 +4,23 @@
 		<button 
 			:class="['buttonBorder',!_rotate?'dlbutton':'dlbutton_loading']" 
 			:style="{'background':bgColor, 'color': fontColor}"
-			
-			@click="$emit('click', $event.target.value)"
-			@contact="$emit('contact', $event.target.value)"
-			@error="$emit('error', $event.target.value)"
-			@getphonenumber="$emit('getphonenumber', $event.target.value)"
-			@getuserinfo="$emit('getuserinfo', $event.target.value)"
-			@launchapp="$emit('launchapp', $event.target.value)"
-			@longpress="$emit('longpress', $event.target.value)"
-			@longtap="$emit('longtap', $event.target.value)"
-			@opensetting="$emit('opensetting', $event.target.value)"
-			@tap="$emit('tap', $event.target.value)"
-			@touchcancel="$emit('touchcancel', $event.target.value)"
-			@touchend="$emit('touchend', $event.target.value)"
-			@touchmove="$emit('touchmove', $event.target.value)"
-			@touchstart="$emit('touchstart', $event.target.value)"
+            
+			@click="$emit('click', $event)"
+			@contact="$emit('contact', $event)"
+			@error="$emit('error', $event)"
+			@getphonenumber="$emit('getphonenumber', $event)"
+			@getuserinfo="$emit('getuserinfo', $event)"
+			@launchapp="$emit('launchapp', $event)"
+			@longtap="$emit('longtap', $event)"
+			@opensetting="$emit('opensetting', $event)"
+			@touchcancel="$emit('touchcancel', $event)"
+			@touchend="$emit('touchend', $event)"
+			@touchmove="$emit('touchmove', $event)"
+			@touchstart="$emit('touchstart', $event)"
 		>
 			<view :class="_rotate?'rotate_loop':''">
 				<text v-if="_rotate" class="cuIcon cuIcon-loading1 "></text>
-				<text v-if="!_rotate">{{ text }}</text>
+				<view v-if="!_rotate"><slot name="text">{{ text }}</slot></view>
 			</view>
 		</button>
 	</view>

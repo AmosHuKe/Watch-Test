@@ -10,17 +10,16 @@
 			:password="type==='password'&&!showPassword" 
 			
 			@input="$emit('input', $event.target.value)"
-			@blur="$emit('blur', $event.target.value)"
-			@focus="$emit('focus', $event.target.value)"
-			@longpress="$emit('longpress', $event.target.value)"
-			@confirm="$emit('confirm', $event.target.value)"
-			@click="$emit('click', $event.target.value)"
-			@longtap="$emit('longtap', $event.target.value)"
-			@tap="$emit('tap', $event.target.value)"
-			@touchcancel="$emit('touchcancel', $event.target.value)"
-			@touchend="$emit('touchend', $event.target.value)"
-			@touchmove="$emit('touchmove', $event.target.value)"
-			@touchstart="$emit('touchstart', $event.target.value)"
+			@blur="$emit('blur', $event)"
+			@focus="$emit('focus', $event)"
+			@longpress="$emit('longpress', $event)"
+			@confirm="$emit('confirm', $event)"
+			@click="$emit('click', $event)"
+			@longtap="$emit('longtap', $event)"
+			@touchcancel="$emit('touchcancel', $event)"
+			@touchend="$emit('touchend', $event)"
+			@touchmove="$emit('touchmove', $event)"
+			@touchstart="$emit('touchstart', $event)"
 		/>
 		<!-- 是否可见密码 -->
 		<image 
@@ -174,11 +173,10 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		height: 36rpx;   /* Input 高度 */
+		/* height: 36rpx; */   /* Input 高度 */
 		color: #333333;
-		padding: 32rpx;
-		margin-top:24rpx;
-		margin-bottom: 24rpx;
+		padding: 40rpx 32rpx;
+		margin:32rpx 0;
 	}
 	.img{
 		width: 32rpx;
@@ -196,7 +194,7 @@
 	.vercode {
 		color: rgba(0,0,0,0.7);
 		font-size: 24rpx;
-		line-height: 100rpx;
+		/* line-height: 100rpx; */
 	}
 	.vercode-run {
 		color: rgba(0,0,0,0.4) !important;
