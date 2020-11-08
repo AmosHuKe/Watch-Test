@@ -4,12 +4,13 @@
 		<input 
 			class="main-input" 
 			:value="value" 
-			:type="_type" 
+			:type="_type"
+			:focus="_focus"
 			:maxlength="maxlength" 
 			:placeholder="placeholder" 
 			:password="type==='password'&&!showPassword" 
 			
-			@input="$emit('input', $event.target.value)"
+			@input="$emit('input', $event.detail.value)"
 			@blur="$emit('blur', $event)"
 			@focus="$emit('focus', $event)"
 			@longpress="$emit('longpress', $event)"
@@ -39,7 +40,7 @@
 </template>
 
 <script>
-	var _this, countDown;
+	let _this, countDown;
 	export default{
 		data(){
 			return{
@@ -75,7 +76,12 @@
 				//倒计时时间设置
 				type: [Number,String],
 				default: 60,
-			}
+			},
+			focus:{  
+				//是否聚焦  
+				type: [Boolean,String],  
+				default: false  
+			}  
 		},
 		model: {
 			prop: 'value',
@@ -148,6 +154,10 @@
 				const setTime = Number(this.setTime)
 				return setTime>0 ? setTime : 60
 			},
+			_focus() {  
+				//处理值  
+				return String(this.focus) !== 'false'  
+			},  
 			getVerCodeSecond(){
 				//验证码倒计时计算
 				if(this.second<=0){

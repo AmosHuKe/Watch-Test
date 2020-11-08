@@ -33,6 +33,7 @@ export default {
 	type="text"               //Input文本类型
 	maxlength="11"            //最大长度（默认20）（选填）
 	placeholder="请输入用户名" //占位符 提示性语句（选填）
+	focus 					//是否默认聚焦
 ></wInput>
 ```
 
@@ -81,6 +82,7 @@ getVerCode(){
 | type | String | 无 | √ | Input类型 |  
 | maxlength | Number | 20 | × | 最大长度 |  
 | placeholder | String | 无 | × | 占位符 提示性语句 |  
+| focus | Boolean | 无 | × | 默认聚焦 |  
 | isShowPass（与isShowCode二选一） | Boolean | false | × | 开启 是否显示密码图标 |  
 | isShowCode（与isShowPass二选一） | Boolean | false | × | 开启 倒计时 |  
 

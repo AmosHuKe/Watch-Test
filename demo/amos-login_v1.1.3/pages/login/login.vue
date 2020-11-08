@@ -12,6 +12,7 @@
 					type="text"
 					maxlength="11"
 					placeholder="用户名/电话"
+					:focus="isFocus"
 				></wInput>
 				<wInput
 					v-model="passData"
@@ -51,7 +52,7 @@
 </template>
 
 <script>
-	var _this;
+	let _this;
 	import wInput from '../../components/watch-login/watch-input.vue' //input
 	import wButton from '../../components/watch-login/watch-button.vue' //button
 	
@@ -63,6 +64,7 @@
 				phoneData:'', //用户/电话
 				passData:'', //密码
 				isRotate: false, //是否加载旋转
+				isFocus: true // 是否聚焦
 			};
 		},
 		components:{
@@ -160,8 +162,7 @@
 				// 	uni.hideLoading();
 				// })
 				
-		    }
-			,
+		    },
 			login_weixin() {
 				//微信登录
 				uni.showToast({

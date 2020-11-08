@@ -58,6 +58,16 @@
 <style>
 	@import url("./css/icon.css");
 	
+	button{
+		outline: none;  /* 或者 outline: 0 */
+	}
+	button:after {  
+	    border: none;  
+	}
+	button:focus{
+		outline: none;  /* 或者 outline: 0 */
+	}
+	
 	.dlbutton {
 		display: flex;
 		justify-content: center;
