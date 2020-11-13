@@ -61,7 +61,7 @@
 	button{
 		outline: none;  /* 或者 outline: 0 */
 	}
-	button:after {  
+	button::after {  
 	    border: none;  
 	}
 	button:focus{
