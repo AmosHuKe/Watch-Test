@@ -2,8 +2,8 @@
     "name" : "运动手表演示",
     "appid" : "",
     "description" : "",
-    "versionName" : "1.0.7",
-    "versionCode" : 107,
+    "versionName" : "1.0.8",
+    "versionCode" : 108,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */
@@ -22,39 +22,22 @@
             /* 应用发布信息 */
             "android" : {
                 /* android打包配置 */
-                "permissions" : [
-                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
-                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
-                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
-                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
-                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
-                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
-                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
-                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
-                    "<uses-feature android:name=\"android.hardware.camera\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
-                ]
+                "permissions" : [ "<uses-permission android:name=\"android.permission.INTERNET\"/>" ],
+                "autoSdkPermissions" : true,
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ],
+                "targetSdkVersion" : 31,
+                "minSdkVersion" : 21
             },
-            "ios" : {},
+            "ios" : {
+                "idfa" : false
+            },
             /* ios打包配置 */
             "sdkConfigs" : {},
             "icons" : {
                 "android" : {
-                    "hdpi" : "",
-                    "xhdpi" : "",
-                    "xxhdpi" : "",
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
                     "xxxhdpi" : "unpackage/res/icons/192x192.png"
                 },
                 "ios" : {
@@ -87,7 +70,8 @@
                     "hdpi" : "appstatic/480-762.png",
                     "xhdpi" : "appstatic/720-1242.png",
                     "xxhdpi" : "appstatic/1080-1882.png"
-                }
+                },
+                "androidStyle" : "default"
             }
         }
     },
@@ -104,18 +88,7 @@
         },
         "usingComponents" : true
     },
-    "h5" : {
-        "devServer" : {
-            "https" : false,
-            "port" : 8000,
-            "disableHostCheck" : true,
-            "proxy" : {
-                "/mock" : {
-                    "target" : "http://raw.githack.com/AmosHuKe/Watch-Test/master",
-                    "changeOrigin" : true,
-                    "secure" : false
-                }
-            }
-        }
-    }
+    "h5" : {},
+    "fallbackLocale" : "zh-Hans",
+    "locale" : "auto"
 }
