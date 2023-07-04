@@ -10,12 +10,7 @@ import {http} from '../../service/request/index.js' //请求拦截
 export function getisLogin(){
     let datas = {}
 	let config = {}
-    //#ifndef MP-WEIXIN
-    let e = http.get("/mock/login.json",datas,config);
-    //#endif
-    //#ifdef MP-WEIXIN
-    let e = http.post("login",datas,config);
-    //#endif
+    let e = http.get("/login",datas,config);
     return e;
 }
 
@@ -30,12 +25,7 @@ export function getLogin(){
 			"isLogin":true //不用检测是否需要登录权限
 		}
 	}
-	//#ifndef MP-WEIXIN
-    let e = http.get("/mock/login.json",datas,config);
-	//#endif
-	//#ifdef MP-WEIXIN
-	let e = http.post("login",datas,config);
-	//#endif
+    let e = http.get("/login",datas,config);
     return e;
 }
 

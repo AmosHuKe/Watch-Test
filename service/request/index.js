@@ -3,22 +3,12 @@ import store from '../../store/index.js' //状态管理
 import Request from './request.js'
 const http = new Request();
 http.setConfig((config) => { /* 设置全局配置 */
-	
-	config.baseUrl = ''; // 由于easy-mock网站经常挂掉，就开GitHub代理
-	//#ifndef H5
-	// 由于easy-mock网站经常挂掉，就使用Github的本地数据，在manifest.json中H5开启代理
-	config.baseUrl = 'http://raw.githack.com/AmosHuKe/Watch-Test/master'; //默认请求地址
-	//#endif
-	
-	//#ifdef MP-WEIXIN
-	//由于微信小程序接口地址需要认证，这里还是采用原easymock地址
-	config.baseUrl = 'https://www.easy-mock.com/mock/5d1443deed2ae904ba2cdd78/mock/'; //默认请求地址
-	//#endif
-	
-	config.header = {
+    //默认请求地址，这里是 json-server 服务启动的地址
+    config.baseUrl = 'http://10.0.2.2:3000';
+    config.header = {
         'Content-Type': 'application/json;charset=UTF-8'
     };
-	return config
+    return config
 })
 http.interceptor.request((config, cancel) => { /* 请求之前拦截器 */
 	uni.showToast({
@@ -42,7 +32,7 @@ http.interceptor.request((config, cancel) => { /* 请求之前拦截器 */
 		cancel('token 不存在') // 接收一个参数，会传给catch((err) => {}) err.errMsg === 'token 不存在'
 	}
 	*/
-   console.log(config)
+    console.log(config)
 	console.log("请求前拦截")
 	return config;
 })

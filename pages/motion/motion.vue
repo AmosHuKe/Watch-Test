@@ -171,12 +171,12 @@
 	var _this;
 	import {
 		getGoalc,
-		getYdList,
-		getJkList,
+		getSportList,
+		getHealthList,
 	} from '../../service/api/motion.js' //运动api
 	import {
 		getisLogin,
-	} from '../../service/api/login.js' //登陆api
+	} from '../../service/api/login.js' //登录api
 	//通知数据
 	const notice={
 		contentmain:"请连接蓝牙进行操作",
@@ -203,7 +203,7 @@
 		},
 		mounted(){
 			_this=this
-			getisLogin() //是否登陆
+			getisLogin() //是否登录
 			
 			_this.getData()//获取数据
 		},
@@ -232,7 +232,7 @@
 					_this.ydList=ydData
 				}else{
 					//获取运动数据
-					getYdList()
+					getSportList()
 					.then(res => {
 						console.log(res)
 						_this.ydList=res.data
@@ -246,7 +246,7 @@
 					_this.jkList=jkData
 				}else{
 					//获取健康数据
-					getJkList()
+					getHealthList()
 					.then(res => {
 						console.log(res)
 						_this.jkList=res.data
