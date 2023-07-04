@@ -31,7 +31,7 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 
 const app = new Vue({
-	store,
+    store,
     ...App
 })
 app.$mount()

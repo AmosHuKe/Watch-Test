@@ -67,11 +67,11 @@ export default {
       },
     },
   },
-	provide() {
-		return {
-			uparse: this
-		}
-	},
+    provide() {
+        return {
+            uparse: this
+        }
+    },
   components: {
     wxParseTemplate,
   },

@@ -9,8 +9,8 @@ import {http} from '../../service/request/index.js' //请求拦截
  */
 export function getGoalc(){
     let datas = {}
-	let config = {}
-	let e = http.get("/goalc",datas,config);
+    let config = {}
+    let e = http.get("/goalc",datas,config);
     return e;
 }
 
@@ -20,8 +20,8 @@ export function getGoalc(){
  */
 export function getSportList(){
     let datas = {}
-	let config = {}
-	let e = http.get("/sportlist",datas,config);
+    let config = {}
+    let e = http.get("/sportlist",datas,config);
     return e;
 }
 
@@ -31,7 +31,7 @@ export function getSportList(){
  */
 export function getHealthList(){
     let datas = {}
-	let config = {}
-	let e = http.get("/healthlist",datas,config);
+    let config = {}
+    let e = http.get("/healthlist",datas,config);
     return e;
 }

@@ -1,16 +1,16 @@
 <template>
-	<view>
-		<!--判断是否是标签节点-->
-		<block v-if="node.node == 'element'">
-			<block v-if="node.tag == 'button'">
-				<button type="default" size="mini">
-					<block v-for="(node, index) of node.nodes" :key="index">
-						<wx-parse-template :node="node" />
-					</block>
-				</button>
-			</block>
+    <view>
+        <!--判断是否是标签节点-->
+        <block v-if="node.node == 'element'">
+            <block v-if="node.tag == 'button'">
+                <button type="default" size="mini">
+                    <block v-for="(node, index) of node.nodes" :key="index">
+                        <wx-parse-template :node="node" />
+                    </block>
+                </button>
+            </block>
 
-			<!--li类型-->
+        	<!--li类型-->
 			<block v-else-if="node.tag == 'li'">
 				<view :class="node.classStr" :style="node.styleStr">
 					<block v-for="(node, index) of node.nodes" :key="index">

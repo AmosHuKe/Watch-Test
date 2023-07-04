@@ -9,7 +9,7 @@ import {http} from '../../service/request/index.js' //请求拦截
  */
 export function getVersion(){
     let datas = {}
-	let config = {}
-	let e = http.get("/version",datas,config);
+    let config = {}
+    let e = http.get("/version",datas,config);
     return e;
 }

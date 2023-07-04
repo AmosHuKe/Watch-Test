@@ -9,8 +9,8 @@ import {http} from '../../service/request/index.js' //请求拦截
  */
 export function getSwiper(){
     let datas = {}
-	let config = {}
-	let e = http.get("/swiper",datas,config);
+    let config = {}
+    let e = http.get("/swiper",datas,config);
     return e;
 }
 
@@ -20,7 +20,7 @@ export function getSwiper(){
  */
 export function getRing(){
     let datas = {}
-	let config = {}
-	let e = http.get("/ring",datas,config);
+    let config = {}
+    let e = http.get("/ring",datas,config);
     return e;
 }

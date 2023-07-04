@@ -13,8 +13,8 @@ export default new Vuex.Store({
     state: {},
     modules:{
         login: LoginModule ,
-		home: homeModule,
-		motion: motionModule,
+        home: homeModule,
+        motion: motionModule,
     }
 
 })

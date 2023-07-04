@@ -1,42 +1,42 @@
 /* 动画 */
-	
+    
 /* 渐显 */
 .animation-fade {
-	animation-name: fade;
-	animation-duration: .1s;
-	animation-timing-function: linear
+    animation-name: fade;
+    animation-duration: .1s;
+    animation-timing-function: linear
 }
 @keyframes fade {
-	0% {
-		opacity: 0
-	}
+    0% {
+        opacity: 0
+    }
 
-	100% {
-		opacity: 1
-	}
+    100% {
+        opacity: 1
+    }
 }
 
 /* 上下浮动 */
 .heart1{
-	animation: heart1 ease-in-out 2.2s infinite alternate;
+    animation: heart1 ease-in-out 2.2s infinite alternate;
 }
 @keyframes heart1{
-	from{transform:translate(0,0)}
-	to{transform:translate(0,14upx)}
+    from{transform:translate(0,0)}
+    to{transform:translate(0,14upx)}
 }
 .heart2{
-	animation: heart2 ease-in-out 2.4s infinite alternate;
+    animation: heart2 ease-in-out 2.4s infinite alternate;
 }
 @keyframes heart2{
-	from{transform:translate(0,0)}
-	to{transform:translate(0,14upx)}
+    from{transform:translate(0,0)}
+    to{transform:translate(0,14upx)}
 }
 .heart3{
-	animation: heart3 ease-in-out 2.8s infinite alternate;
+    animation: heart3 ease-in-out 2.8s infinite alternate;
 }
 @keyframes heart3{
-	from{transform:translate(0,0)}
-	to{transform:translate(0,14upx)}
+    from{transform:translate(0,0)}
+    to{transform:translate(0,14upx)}
 }
 
 /* 一直旋转 */
@@ -51,18 +51,18 @@
     animation: rotate 3s linear infinite;
 }
 @-webkit-keyframes rotate{
-	from{-webkit-transform: rotate(0deg)}
+    from{-webkit-transform: rotate(0deg)}
     to{-webkit-transform: rotate(360deg)}
 }
 @-moz-keyframes rotate{
-	from{-moz-transform: rotate(0deg)}
+    from{-moz-transform: rotate(0deg)}
     to{-moz-transform: rotate(359deg)}
 }
 @-o-keyframes rotate{
-	from{-o-transform: rotate(0deg)}
+    from{-o-transform: rotate(0deg)}
     to{-o-transform: rotate(359deg)}
 }
 @keyframes rotate{
-	from{transform: rotate(0deg)}
+    from{transform: rotate(0deg)}
     to{transform: rotate(359deg)}
 }

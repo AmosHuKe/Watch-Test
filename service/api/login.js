@@ -9,7 +9,7 @@ import {http} from '../../service/request/index.js' //请求拦截
  */
 export function getisLogin(){
     let datas = {}
-	let config = {}
+    let config = {}
     let e = http.get("/login",datas,config);
     return e;
 }
@@ -20,11 +20,11 @@ export function getisLogin(){
  */
 export function getLogin(){
     let datas = {}
-	let config = {
-		header:{
-			"isLogin":true //不用检测是否需要登录权限
-		}
-	}
+    let config = {
+        header:{
+            "isLogin":true //不用检测是否需要登录权限
+        }
+    }
     let e = http.get("/login",datas,config);
     return e;
 }
@@ -38,17 +38,17 @@ export function getLogin(){
  */
 export function wexinLogin(appid,secret,jscode){
     let datas = {
-		"appid": appid, //小程序id
-		"secret": secret, //小程序 appSecret
-		"js_code": jscode, //登录时获取的 code
-		"grant_type": "authorization_code", //授权类型，此处只需填写 authorization_code
-	}
-	let config = {
-		header:{
-			"isLogin": true, //不用检测是否需要登录权限
-			"service": "weixin", //微信请求地址
-		}
-	}
+        "appid": appid, //小程序id
+        "secret": secret, //小程序 appSecret
+        "js_code": jscode, //登录时获取的 code
+        "grant_type": "authorization_code", //授权类型，此处只需填写 authorization_code
+    }
+    let config = {
+        header:{
+            "isLogin": true, //不用检测是否需要登录权限
+            "service": "weixin", //微信请求地址
+        }
+    }
     let e = http.get("jscode2session",datas,config);
     return e;
 }

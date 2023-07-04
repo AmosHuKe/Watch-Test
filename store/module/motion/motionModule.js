@@ -1,22 +1,22 @@
 //motion数据
 const state = {
     goalcData: '', //计划完成度数据
-	ydData: '', //运动数据
-	jkData: '', //健康数据
+    sportData: '', //运动数据
+    healthData: '', //健康数据
 }
 const mutations = {
     set_GoalcData(state,GoalcData) {
         //赋值
         state.goalcData = GoalcData;
     },
-	set_YdData(state,YdData) {
-	    //赋值
-	    state.ydData = YdData;
-	},
-	set_JkData(state,JkData) {
-	    //赋值
-	    state.jkData = JkData;
-	},
+    set_SportData(state,SportData) {
+        //赋值
+        state.sportData = SportData;
+    },
+    set_HealthData(state,HealthData) {
+        //赋值
+        state.healthData = HealthData;
+    },
 } 
 
 
@@ -25,28 +25,28 @@ const actions = {
         //赋值
         commit("set_GoalcData", GoalcData);
     },
-	setYdData ({commit},YdData) {
-	    //赋值
-	    commit("set_YdData", YdData);
-	},
-	setJkData ({commit},JkData) {
-	    //赋值
-	    commit("set_JkData", JkData);
-	},
+    setSportData ({commit},SportData) {
+        //赋值
+        commit("set_SportData", SportData);
+    },
+    setHealthData ({commit},HealthData) {
+        //赋值
+        commit("set_HealthData", HealthData);
+    },
 }
 const getters = {
     getGoalcData(state){
         //获取
         return state.goalcData;
     },
-	getYdData(state){
-	    //获取
-	    return state.ydData;
-	},
-	getJkData(state){
-	    //获取
-	    return state.jkData;
-	}
+    getSportData(state){
+        //获取
+        return state.sportData;
+    },
+    getHealthData(state){
+        //获取
+        return state.healthData;
+    }
 
 }
 

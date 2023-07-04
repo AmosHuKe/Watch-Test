@@ -16,10 +16,10 @@ import wInput from './components/watch-login/watch-input.vue' //input
 import wButton from './components/watch-login/watch-button.vue' //button
 
 export default {
-	components:{
-		wInput,  //input
-		wButton  //button
-	}
+    components:{
+        wInput,  //input
+        wButton  //button
+    }
 }
 ```  
 
@@ -29,11 +29,11 @@ export default {
 
 ```
 <wInput
-	v-model="username"        //绑定值
-	type="text"               //Input文本类型
-	maxlength="11"            //最大长度（默认20）（选填）
-	placeholder="请输入用户名" //占位符 提示性语句（选填）
-	focus 					//是否默认聚焦
+    v-model="username"        //绑定值
+    type="text"               //Input文本类型
+    maxlength="11"            //最大长度（默认20）（选填）
+    placeholder="请输入用户名" //占位符 提示性语句（选填）
+    focus                     //是否默认聚焦
 ></wInput>
 ```
 
@@ -41,10 +41,10 @@ export default {
 
 ```
 <wInput
-	v-model="password"        //绑定值
-	type="password"           //Input密码类型
-	placeholder="请输入密码"   //占位符 提示性语句（选填）
-	isShowPass                //开启 是否显示密码图标（选填）
+    v-model="password"        //绑定值
+    type="password"           //Input密码类型
+    placeholder="请输入密码"   //占位符 提示性语句（选填）
+    isShowPass                //开启 是否显示密码图标（选填）
 ></wInput>
 ```
 
@@ -52,26 +52,26 @@ export default {
 
 ```
 <wInput
-	v-model="verCode"        //绑定值
-	type="number"            //Input数字类型
-	placeholder="验证码"      //占位符 提示性语句（选填）
+    v-model="verCode"        //绑定值
+    type="number"            //Input数字类型
+    placeholder="验证码"      //占位符 提示性语句（选填）
 
-	isShowCode               //开启 倒计时
-	codeText="获取重置码"     //自定义倒计时文字，默认 获取验证码（选填）
-	setTime="30"             //设置倒计时时间，默认60秒，（选填）
-	ref="runCode"            //注册用于触发验证码倒计时
-	@setCode="getVerCode()"  //设置绑定 点击触发的事件
+    isShowCode               //开启 倒计时
+    codeText="获取重置码"     //自定义倒计时文字，默认 获取验证码（选填）
+    setTime="30"             //设置倒计时时间，默认60秒，（选填）
+    ref="runCode"            //注册用于触发验证码倒计时
+    @setCode="getVerCode()"  //设置绑定 点击触发的事件
 ></wInput>
 
 //自定义事件
 getVerCode(){
-	//获取验证码
-	console.log("获取验证码")
-	//触发倒计时（一般用于请求成功验证码后调用）
-	this.$refs.runCode.$emit('runCode');
+    //获取验证码
+    console.log("获取验证码")
+    //触发倒计时（一般用于请求成功验证码后调用）
+    this.$refs.runCode.$emit('runCode');
 
-	//终止倒计时（用于突然需要终止倒计时的场景）
-	this.$refs.runCode.$emit('runCode',0);
+    //终止倒计时（用于突然需要终止倒计时的场景）
+    this.$refs.runCode.$emit('runCode',0);
 }
 ```
 
@@ -101,18 +101,18 @@ getVerCode(){
 
 ```
 <wButton
-	text="重置密码"                  //按钮文本
-	rotate="false"                  //是否开启加载动画
-	bgColor="#333333"               //按钮背景颜色（可选）
-	fontColor="#FFFFFF"             //字体颜色（可选）
-	@click.native="startRePass()"   //触发自定义点击事件
+    text="重置密码"                  //按钮文本
+    rotate="false"                  //是否开启加载动画
+    bgColor="#333333"               //按钮背景颜色（可选）
+    fontColor="#FFFFFF"             //字体颜色（可选）
+    @click.native="startRePass()"   //触发自定义点击事件
 ></wButton>
 
 <wButton
-	rotate="false"                  //是否开启加载动画
-	bgColor="#333333"               //按钮背景颜色（可选）
-	fontColor="#FFFFFF"             //字体颜色（可选）
-	@click.native="startRePass()"   //触发自定义点击事件
+    rotate="false"                  //是否开启加载动画
+    bgColor="#333333"               //按钮背景颜色（可选）
+    fontColor="#FFFFFF"             //字体颜色（可选）
+    @click.native="startRePass()"   //触发自定义点击事件
 >
     <view slot="text">
         按钮文本另一种用法
