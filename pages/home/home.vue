@@ -85,7 +85,7 @@
 	} from '../../service/api/home.js'; //首页api
 	import {
 		getisLogin,
-	} from '../../service/api/login.js' //登陆api
+	} from '../../service/api/login.js' //登录api
 	var _this;
 	var canvaRing=null;
    
@@ -113,7 +113,7 @@
 		},
 		mounted() {
 			_this = this;
-			getisLogin() //是否登陆
+			getisLogin() //是否登录
 			
 			_this.getSwiperData();//获取轮播数据
 			
