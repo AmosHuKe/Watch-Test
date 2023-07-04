@@ -1,6 +1,7 @@
-node_modules/
 .project
-unpackage/
 .DS_Store
+.hbuilderx
+unpackage/
+node_modules/
 wxcomponents/**/*.vue
 wxcomponents/**/*.css
