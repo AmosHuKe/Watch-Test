@@ -5,7 +5,7 @@ const http = new Request();
 /* 设置全局配置 */
 http.setConfig((config) => {
     //默认请求地址，这里是 json-server 服务启动的地址
-    config.baseUrl = 'http://10.0.2.2:3000';
+    config.baseUrl = 'http://localhost:3000';
     config.header = {
         'Content-Type': 'application/json;charset=UTF-8'
     };
