@@ -104,8 +104,6 @@ $ json-server --watch mock/db.json
 在确保本地 json-server 服务启动的情况下，
 检查一下服务端口是否一致（默认端口为 3000）。
 
-> 位置：service/request/index.js 内的默认请求地址
-
 如果是 Android 模拟器，需要修改默认请求地址为：10.0.2.2 或者本地 IP 地址。
 
 > 位置：service/request/index.js 内的默认请求地址
