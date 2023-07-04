@@ -1,4 +1,4 @@
-# ![logo](./appstatic/watch_icon_64-64.png) 运动手表演示  
+# ![logo](./appstatic/watch_icon_64-64.png) 运动手表相关页面演示  
 
 ![v1.0.8](https://img.shields.io/badge/version-1.0.8-%23000000.svg)
 [![Vue 2.0](https://img.shields.io/badge/build-Vue2.0-%234fc08d.svg)](https://github.com/vuejs/vue)
